@@ -1205,4 +1205,33 @@ function displaySkillsList(filter) {
 window.addEventListener('load', () => {
     // Attendre que KaTeX soit chargé puis initialiser
     setTimeout(initApp, 100);
+    
+    // Ajouter le gestionnaire de plein écran pour les graphiques
+    const fullscreenBtn = document.getElementById('fullscreen-btn');
+    const graphContainer = document.getElementById('graph-container');
+    
+    if (fullscreenBtn && graphContainer) {
+        fullscreenBtn.addEventListener('click', () => {
+            graphContainer.classList.toggle('fullscreen');
+            
+            // Redimensionner le graphique après le changement
+            if (chartInstance) {
+                setTimeout(() => {
+                    chartInstance.resize();
+                }, 100);
+            }
+        });
+        
+        // Permettre de fermer le plein écran avec la touche Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && graphContainer.classList.contains('fullscreen')) {
+                graphContainer.classList.remove('fullscreen');
+                if (chartInstance) {
+                    setTimeout(() => {
+                        chartInstance.resize();
+                    }, 100);
+                }
+            }
+        });
+    }
 });
