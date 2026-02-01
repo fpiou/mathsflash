@@ -1215,12 +1215,8 @@ window.addEventListener('load', () => {
             if (graphContainer) {
                 graphContainer.classList.toggle('fullscreen');
                 
-                // Redimensionner le graphique sans réinitialiser le zoom
-                if (chartInstance) {
-                    setTimeout(() => {
-                        chartInstance.resize('none');
-                    }, 100);
-                }
+                // Pas de redimensionnement automatique pour éviter le zoom
+                // Le canvas s'adaptera automatiquement via CSS
             }
         }
     });
@@ -1234,12 +1230,8 @@ window.addEventListener('load', () => {
             if (graphContainer) {
                 graphContainer.classList.toggle('fullscreen');
                 
-                // Redimensionner le graphique sans réinitialiser le zoom
-                if (chartInstance) {
-                    setTimeout(() => {
-                        chartInstance.resize('none');
-                    }, 100);
-                }
+                // Pas de redimensionnement automatique pour éviter le zoom
+                // Le canvas s'adaptera automatiquement via CSS
             }
         }
     });
@@ -1249,11 +1241,7 @@ window.addEventListener('load', () => {
         const graphContainer = document.getElementById('graph-container');
         if (e.key === 'Escape' && graphContainer && graphContainer.classList.contains('fullscreen')) {
             graphContainer.classList.remove('fullscreen');
-            if (chartInstance) {
-                setTimeout(() => {
-                    chartInstance.resize('none');
-                }, 100);
-            }
+            // Pas de redimensionnement automatique pour éviter le zoom
         }
     });
 });
