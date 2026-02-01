@@ -845,19 +845,58 @@ header h1 {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+    
     header {
         flex-direction: column;
         gap: 15px;
+        padding: 15px;
+        align-items: stretch;
     }
     
     header h1 {
         font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+        margin: 0;
     }
     
-    .quiz-container {
-        padding: 20px;
+    .header-actions {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: stretch;
     }
+    
+    .btn-icon {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.95em;
+        text-align: center;
+        display: block;
+    }
+    
+    .score-container {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        display: block;
+    }
+    
+    .quiz-container,
+    .selection-container {
+        padding: 15px;
+    }
+}
     
     .question-header-top {
         flex-direction: column;
