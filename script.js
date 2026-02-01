@@ -237,6 +237,10 @@ const totalSkillsDisplay = document.getElementById('total-skills');
 const masteredSkillsDisplay = document.getElementById('mastered-skills');
 const progressPercentageDisplay = document.getElementById('progress-percentage');
 const headerSkillsBtn = document.getElementById('header-skills-btn');
+const startLevelTestBtn = document.getElementById('start-level-test-btn');
+
+// Variables pour le mode test complet
+let isLevelTestMode = false;
 
 // Charger les questions depuis le fichier JSON
 async function loadQuestions() {
@@ -299,6 +303,16 @@ function populateThemeSelect() {
         themeSelect.appendChild(option);
     });
     themeSelect.disabled = false;
+    
+    // Afficher le bouton de test complet si un niveau est sélectionné
+    if (selectedLevel) {
+        const levelQuestions = quizData.filter(q => q.level === selectedLevel);
+        if (levelQuestions.length >= 20) {
+            startLevelTestBtn.style.display = 'block';
+        } else {
+            startLevelTestBtn.style.display = 'none';
+        }
+    }
 }
 
 // Peupler le sélecteur de compétences
@@ -378,6 +392,32 @@ function init() {
     // Peupler le menu déroulant de navigation
     populateQuestionSelect();
     
+    showQuestion();
+}
+
+// Démarrer un test complet du niveau (20 questions aléatoires)
+function startLevelTest() {
+    isLevelTestMode = true;
+    
+    // Récupérer toutes les questions du niveau
+    const levelQuestions = quizData.filter(q => q.level === selectedLevel);
+    
+    // Sélectionner 20 questions aléatoires
+    filteredQuizData = shuffleArray(levelQuestions).slice(0, 20);
+    
+    // Masquer la sélection et afficher le quiz
+    selectionContainer.style.display = 'none';
+    quizContainer.style.display = 'block';
+    
+    // Initialiser le quiz
+    currentQuestion = 0;
+    score = 0;
+    userAnswers = new Array(20).fill(null);
+    shuffledAnswers = new Array(20).fill(null);
+    totalDisplay.textContent = 20;
+    scoreDisplay.textContent = score;
+    
+    populateQuestionSelect();
     showQuestion();
 }
 
