@@ -22,24 +22,25 @@ header {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 header h1 {
     color: #667eea;
     font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .header-actions {
     display: flex;
-    gap: 15px;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
 
 .btn-icon {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 12px 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
@@ -48,6 +49,9 @@ header h1 {
     font-weight: bold;
     font-size: 0.9em;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
 }
 
 .btn-icon:hover {
@@ -56,11 +60,15 @@ header h1 {
 }
 
 .score-container {
+    width: 100%;
     background: #f0f4ff;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 20px;
     font-weight: bold;
     color: #667eea;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
 }
 
 .selection-container,
@@ -852,40 +860,11 @@ header h1 {
     }
     
     header {
-        flex-direction: column;
-        gap: 15px;
         padding: 15px;
-        align-items: stretch;
     }
     
     header h1 {
         font-size: 1.5em;
-        text-align: center;
-        width: 100%;
-        margin: 0;
-    }
-    
-    .header-actions {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        align-items: stretch;
-    }
-    
-    .btn-icon {
-        width: 100%;
-        padding: 12px 20px;
-        font-size: 0.95em;
-        text-align: center;
-        display: block;
-    }
-    
-    .score-container {
-        width: 100%;
-        text-align: center;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        display: block;
     }
     
     .quiz-container,
