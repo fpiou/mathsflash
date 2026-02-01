@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- KaTeX pour les formules mathématiques -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <!-- Chart.js pour les graphiques -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz Mathématiques</h1>
+            <div class="header-actions">
+                <button id="header-skills-btn" class="btn-icon" title="Voir mes compétences">📊 Compétences</button>
+                <div class="score-container">
+                    <span>Score: <span id="score">0</span>/<span id="total">0</span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sélection de niveau et thème -->
+        <div class="selection-container" id="selection-container">
+            <h2>Choisir un quiz</h2>
+            <div class="selection-grid">
+                <div class="selection-group">
+                    <label for="level-select">Niveau:</label>
+                    <select id="level-select">
+                        <option value="">-- Sélectionner un niveau --</option>
+                    </select>
+                </div>
+                <div class="selection-group">
+                    <label for="theme-select">Thème:</label>
+                    <select id="theme-select" disabled>
+                        <option value="">-- Sélectionner un thème --</option>
+                    </select>
+                </div>
+                <div class="selection-group">
+                    <label for="competence-select">Compétence:</label>
+                    <select id="competence-select" disabled>
+                        <option value="">-- Toutes les compétences --</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quiz-options">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="shuffle-questions">
+                    <span>Mélanger les questions</span>
+                </label>
+            </div>
+            <button id="start-quiz-btn" class="btn btn-primary" disabled>Démarrer le quiz</button>
+        </div>
+
+        <div class="quiz-container" style="display: none;">
+            <div class="quiz-header">
+                <div class="question-header-top">
+                    <h2 id="question-number">Question 1</h2>
+                    <div class="question-navigation-select">
+                        <label for="question-select">Aller à :</label>
+                        <select id="question-select">
+                            <option value="0">Question 1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress"></div>
+                </div>
+            </div>
+
+            <div class="question-content">
+                <div class="question-text" id="question-text"></div>
+                
+                <!-- Zone pour afficher les formules mathématiques -->
+                <div class="math-formula" id="math-formula"></div>
+                
+                <!-- Zone pour afficher les graphiques -->
+                <div class="graph-container" id="graph-container">
+                    <canvas id="graph-canvas"></canvas>
+                </div>
+            </div>
+
+            <div class="answers-container" id="answers-container">
+                <!-- Les réponses seront générées dynamiquement -->
+            </div>
+
+            <div class="feedback" id="feedback"></div>
+
+            <div class="navigation">
+                <button id="prev-btn" class="btn btn-secondary" disabled>Précédent</button>
+                <button id="next-btn" class="btn btn-primary">Question suivante</button>
+                <button id="submit-btn" class="btn btn-success" style="display: none;">Voir les résultats</button>
+            </div>
+        </div>
+
+        <div class="results-container" id="results-container" style="display: none;">
+            <h2>Résultats du Quiz</h2>
+            <div class="final-score">
+                <p>Votre score: <span id="final-score"></span></p>
+                <div class="score-percentage" id="score-percentage"></div>
+            </div>
+            <div class="results-details" id="results-details"></div>
+            <button id="restart-btn" class="btn btn-primary">Recommencer le quiz</button>
+            <button id="view-skills-btn" class="btn btn-secondary">Voir mes compétences</button>
+        </div>
+
+        <!-- Panneau de suivi des compétences -->
+        <div class="skills-container" id="skills-container" style="display: none;">
+            <h2>📊 Suivi des Compétences</h2>
+            <div class="skills-stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-skills">0</div>
+                    <div class="stat-label">Compétences au total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="mastered-skills">0</div>
+                    <div class="stat-label">Compétences maîtrisées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="progress-percentage">0%</div>
+                    <div class="stat-label">Progression globale</div>
+                </div>
+            </div>
+            
+            <div class="skills-filters">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="mastered">Maîtrisées</button>
+                <button class="filter-btn" data-filter="in-progress">En cours</button>
+                <button class="filter-btn" data-filter="not-started">Non commencées</button>
+            </div>
+
+            <div class="skills-list" id="skills-list"></div>
+            
+            <div class="skills-actions">
+                <button id="reset-skills-btn" class="btn btn-danger">Réinitialiser toutes les compétences</button>
+                <button id="close-skills-btn" class="btn btn-primary">Retour</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

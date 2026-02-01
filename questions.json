@@ -1,0 +1,2325 @@
+[
+    {
+        "question": "Quelle est la dérivée de la fonction suivante ?",
+        "formula": "f(x) = x^2 + 3x + 2",
+        "level": "1reSpécialité",
+        "theme": "Dérivées",
+        "competence": "Calculer la dérivée d'un polynôme",
+        "answers": [
+            { "formula": "f'(x) = 2x + 3", "correct": true },
+            { "formula": "f'(x) = x + 3", "correct": false },
+            { "formula": "f'(x) = 2x^2 + 3", "correct": false },
+            { "formula": "f'(x) = x^2 + 3", "correct": false }
+        ],
+        "explanation": "La dérivée de $x^2$ est $2x$, la dérivée de $3x$ est $3$, et la dérivée d'une constante est $0$."
+    },
+    {
+        "question": "Quelle est la dérivée de la fonction suivante ?",
+        "formula": "f(x) = 5x^3 - 2x",
+        "level": "1reSpécialité",
+        "theme": "Dérivées",
+        "competence": "Calculer la dérivée d'un polynôme",
+        "answers": [
+            { "formula": "f'(x) = 15x^2 - 2", "correct": true },
+            { "formula": "f'(x) = 5x^2 - 2", "correct": false },
+            { "formula": "f'(x) = 15x^2 - 2x", "correct": false },
+            { "formula": "f'(x) = 5x^3 - 2", "correct": false }
+        ],
+        "explanation": "La dérivée de $5x^3$ est $15x^2$ (on multiplie par l'exposant et on diminue l'exposant de 1), la dérivée de $-2x$ est $-2$."
+    },
+    {
+        "question": "Quelle est la dérivée de la fonction suivante ?",
+        "formula": "f(x) = 4x^2 - 6x + 1",
+        "level": "1reSpécialité",
+        "theme": "Dérivées",
+        "competence": "Calculer la dérivée d'un polynôme",
+        "answers": [
+            { "formula": "f'(x) = 8x - 6", "correct": true },
+            { "formula": "f'(x) = 4x - 6", "correct": false },
+            { "formula": "f'(x) = 8x - 6x + 1", "correct": false },
+            { "formula": "f'(x) = 4x^2 - 6", "correct": false }
+        ],
+        "explanation": "La dérivée de $4x^2$ est $8x$, la dérivée de $-6x$ est $-6$, et la dérivée de $1$ est $0$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "2x + 5 = 13",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation du premier degré",
+        "answers": [
+            { "text": "$x = 4$", "correct": true },
+            { "text": "$x = 9$", "correct": false },
+            { "text": "$x = 8$", "correct": false },
+            { "text": "$x = 6{,}5$", "correct": false }
+        ],
+        "explanation": "$2x = 13 - 5$, donc $2x = 8$, donc $x = 4$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "3x - 7 = 11",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation du premier degré",
+        "answers": [
+            { "text": "$x = 6$", "correct": true },
+            { "text": "$x = 4$", "correct": false },
+            { "text": "$x = 18$", "correct": false },
+            { "text": "$x = 3$", "correct": false }
+        ],
+        "explanation": "$3x = 11 + 7$, donc $3x = 18$, donc $x = 6$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "6x + 8 = 2",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation du premier degré",
+        "answers": [
+            { "text": "$x = -1$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = -\\frac{5}{3}$", "correct": false },
+            { "text": "$x = \\frac{5}{3}$", "correct": false }
+        ],
+        "explanation": "$6x = 2 - 8$, donc $6x = -6$, donc $x = -1$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "5x + 2 = 3x + 10",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec l'inconnue des deux côtés",
+        "answers": [
+            { "text": "$x = 4$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 6$", "correct": false },
+            { "text": "$x = 8$", "correct": false }
+        ],
+        "explanation": "$5x - 3x = 10 - 2$, donc $2x = 8$, donc $x = 4$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "4(x - 2) = 12",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec parenthèses",
+        "answers": [
+            { "text": "$x = 5$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 4$", "correct": false },
+            { "text": "$x = 6$", "correct": false }
+        ],
+        "explanation": "On divise par 4 : $x - 2 = 3$, donc $x = 5$. Ou bien on développe : $4x - 8 = 12$, donc $4x = 20$, donc $x = 5$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "\\frac{x}{3} = 6",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec fractions",
+        "answers": [
+            { "text": "$x = 18$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 9$", "correct": false },
+            { "text": "$x = 3$", "correct": false }
+        ],
+        "explanation": "On multiplie les deux côtés par 3 : $x = 6 \\times 3 = 18$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "2(x + 3) = 5x - 9",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation en développant et réduisant",
+        "answers": [
+            { "text": "$x = 5$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "$x = 7$", "correct": false }
+        ],
+        "explanation": "On développe : $2x + 6 = 5x - 9$, donc $6 + 9 = 5x - 2x$, donc $15 = 3x$, donc $x = 5$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "-3x + 4 = 13",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec coefficient négatif",
+        "answers": [
+            { "text": "$x = -3$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = -\\frac{17}{3}$", "correct": false },
+            { "text": "$x = \\frac{17}{3}$", "correct": false }
+        ],
+        "explanation": "$-3x = 13 - 4$, donc $-3x = 9$, donc $x = -3$"
+    },
+    {
+        "question": "Quelle est la solution de l'équation suivante ?",
+        "formula": "x(x - 5) = 0",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation produit nul",
+        "answers": [
+            { "text": "$x = 0$ ou $x = 5$", "correct": true },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = 0$", "correct": false },
+            { "text": "$x = -5$ ou $x = 0$", "correct": false }
+        ],
+        "explanation": "Un produit est nul si et seulement si l'un des facteurs est nul. Donc $x = 0$ ou $x - 5 = 0$, soit $x = 0$ ou $x = 5$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "7 - 2x = 1",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation du premier degré",
+        "answers": [
+            { "text": "$x = 3$", "correct": true },
+            { "text": "$x = -3$", "correct": false },
+            { "text": "$x = 4$", "correct": false },
+            { "text": "$x = 6$", "correct": false }
+        ],
+        "explanation": "$-2x = 1 - 7$, donc $-2x = -6$, donc $x = 3$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "\\frac{2x + 1}{3} = 5",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec fractions",
+        "answers": [
+            { "text": "$x = 7$", "correct": true },
+            { "text": "$x = 14$", "correct": false },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = 8$", "correct": false }
+        ],
+        "explanation": "On multiplie par 3 : $2x + 1 = 15$, donc $2x = 14$, donc $x = 7$"
+    },
+    {
+        "question": "Quelle est la valeur de l'intégrale suivante ?",
+        "formula": "\\int_{0}^{2} x \\, dx",
+        "level": "TleSpécialité",
+        "theme": "Intégrales",
+        "competence": "Calculer une intégrale définie",
+        "answers": [
+            { "text": "$2$", "correct": true },
+            { "text": "$4$", "correct": false },
+            { "text": "$1$", "correct": false },
+            { "text": "$0$", "correct": false }
+        ],
+        "explanation": "L'intégrale de $x$ est $\\frac{x^2}{2}$. En évaluant de 0 à 2 : $[\\frac{2^2}{2}] - [\\frac{0^2}{2}] = 2 - 0 = 2$"
+    },
+    {
+        "question": "En observant le graphique de la fonction quadratique ci-dessous, quelle est l'ordonnée du sommet ?",
+        "level": "1re",
+        "theme": "Fonctions",
+        "competence": "Déterminer les coordonnées du sommet d'une parabole",
+        "graphFunction": "x * x - 4 * x + 3",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 8,
+            "label": "y = x² - 4x + 3"
+        },
+        "answers": [
+            { "text": "$y = -1$", "correct": true },
+            { "text": "$y = 0$", "correct": false },
+            { "text": "$y = 3$", "correct": false },
+            { "text": "$y = 2$", "correct": false }
+        ],
+        "explanation": "Le sommet est à $x = 2$ (= $-b/2a = 4/2$). En substituant : $y = 2^2 - 4(2) + 3 = 4 - 8 + 3 = -1$"
+    },
+    {
+        "question": "Quelle est la solution de cette équation du second degré ?",
+        "formula": "x^2 - 5x + 6 = 0",
+        "level": "1re",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation du second degré",
+        "answers": [
+            { "text": "$x = 2$ ou $x = 3$", "correct": true },
+            { "text": "$x = 1$ ou $x = 6$", "correct": false },
+            { "text": "$x = -2$ ou $x = -3$", "correct": false },
+            { "text": "$x = 5$ ou $x = 1$", "correct": false }
+        ],
+        "explanation": "On peut factoriser : $(x - 2)(x - 3) = 0$, donc $x = 2$ ou $x = 3$"
+    },
+    {
+        "question": "En observant le graphique de la fonction sinus, quelle est sa période ?",
+        "level": "1reSpécialité",
+        "theme": "Trigonométrie",
+        "competence": "Reconnaître la période d'une fonction trigonométrique",
+        "graphFunction": "Math.sin(x)",
+        "graphParams": {
+            "xMin": -6.283185307179586,
+            "xMax": 6.283185307179586,
+            "yMin": -1.5,
+            "yMax": 1.5,
+            "label": "y = sin(x)"
+        },
+        "answers": [
+            { "text": "$2\\pi$", "correct": true },
+            { "text": "$\\pi$", "correct": false },
+            { "text": "$\\frac{\\pi}{2}$", "correct": false },
+            { "text": "$4\\pi$", "correct": false }
+        ],
+        "explanation": "La fonction sinus se répète après un intervalle de $2\\pi$ radians."
+    },
+    {
+        "question": "Quelle intégrale est égale à la formule suivante ?",
+        "formula": "\\frac{x^2}{2} + C",
+        "level": "TleSpécialité",
+        "theme": "Intégrales",
+        "competence": "Reconnaître une primitive",
+        "answers": [
+            { "formula": "\\int x \\, dx", "correct": true },
+            { "formula": "\\int x^2 \\, dx", "correct": false },
+            { "formula": "\\int 2x \\, dx", "correct": false },
+            { "formula": "\\int \\frac{1}{x} \\, dx", "correct": false }
+        ],
+        "explanation": "L'intégrale de $x$ est $\\frac{x^2}{2} + C$"
+    },
+    {
+        "question": "Laquelle de ces fonctions correspond à une parabole tournée vers le bas ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Identifier le sens de variation d'une parabole",
+        "answers": [
+            { 
+                "graphFunction": "-x * x + 4",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -2,
+                    "yMax": 5,
+                    "label": "A"
+                },
+                "correct": true 
+            },
+            { 
+                "graphFunction": "x * x",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -1,
+                    "yMax": 9,
+                    "label": "B"
+                },
+                "correct": false 
+            },
+            { 
+                "graphFunction": "2 * x",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -7,
+                    "yMax": 7,
+                    "label": "C"
+                },
+                "correct": false 
+            },
+            { 
+                "graphFunction": "Math.abs(x)",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -1,
+                    "yMax": 4,
+                    "label": "D"
+                },
+                "correct": false 
+            }
+        ],
+        "explanation": "Une parabole tournée vers le bas a un coefficient négatif devant $x^2$. La fonction $y = -x^2 + 4$ a cette propriété."
+    },
+    {
+        "question": "Quelle est l'équation de la droite représentée par le graphique suivant ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer l'équation d'une droite à partir de son graphique",
+        "graphFunction": "2 * x + 3",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 3,
+            "yMin": -4,
+            "yMax": 10,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$y = 2x + 3$", "correct": true },
+            { "text": "$y = 3x + 2$", "correct": false },
+            { "text": "$y = -2x + 3$", "correct": false },
+            { "text": "$y = 2x - 3$", "correct": false }
+        ],
+        "explanation": "La droite passe par le point $(0, 3)$ donc l'ordonnée à l'origine est $3$. Le coefficient directeur est $2$ (la droite monte de 2 unités quand on avance de 1 unité)."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation suivante ?",
+        "formula": "y = -3x + 5",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître le coefficient directeur",
+        "answers": [
+            { "text": "$-3$", "correct": true },
+            { "text": "$3$", "correct": false },
+            { "text": "$5$", "correct": false },
+            { "text": "$-5$", "correct": false }
+        ],
+        "explanation": "Dans une équation de la forme $y = mx + p$, le coefficient directeur est $m$. Ici $m = -3$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite d'équation suivante ?",
+        "formula": "y = 4x - 7",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître l'ordonnée à l'origine",
+        "answers": [
+            { "text": "$-7$", "correct": true },
+            { "text": "$7$", "correct": false },
+            { "text": "$4$", "correct": false },
+            { "text": "$-4$", "correct": false }
+        ],
+        "explanation": "Dans une équation de la forme $y = mx + p$, l'ordonnée à l'origine est $p$. Ici $p = -7$. C'est le point où la droite coupe l'axe des ordonnées."
+    },
+    {
+        "question": "Le point $A(2, 7)$ appartient-il à la droite d'équation $y = 3x + 1$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Savoir si un point appartient à une droite",
+        "answers": [
+            { "text": "Oui", "correct": true },
+            { "text": "Non", "correct": false }
+        ],
+        "explanation": "On remplace $x$ par $2$ : $y = 3 \\times 2 + 1 = 6 + 1 = 7$. On obtient bien l'ordonnée du point $A$, donc $A$ appartient à la droite."
+    },
+    {
+        "question": "Deux droites sont parallèles si et seulement si elles ont :",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Connaître la condition de parallélisme de deux droites",
+        "answers": [
+            { "text": "Le même coefficient directeur", "correct": true },
+            { "text": "La même ordonnée à l'origine", "correct": false },
+            { "text": "Des coefficients directeurs opposés", "correct": false },
+            { "text": "Le même coefficient directeur et la même ordonnée à l'origine", "correct": false }
+        ],
+        "explanation": "Deux droites sont parallèles si elles ont le même coefficient directeur. Par exemple, $y = 2x + 3$ et $y = 2x - 5$ sont parallèles."
+    },
+    {
+        "question": "Parmi ces droites, laquelle est parallèle à la droite $y = 5x - 2$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Identifier des droites parallèles",
+        "answers": [
+            { "text": "$y = 5x + 8$", "correct": true },
+            { "text": "$y = -5x - 2$", "correct": false },
+            { "text": "$y = 2x - 2$", "correct": false },
+            { "text": "$y = 5x - 2$", "correct": false }
+        ],
+        "explanation": "Une droite parallèle doit avoir le même coefficient directeur ($5$) mais une ordonnée à l'origine différente. Seule $y = 5x + 8$ convient."
+    },
+    {
+        "question": "Quelle droite passe par l'origine du repère ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître une droite passant par l'origine",
+        "answers": [
+            { "text": "$y = 3x$", "correct": true },
+            { "text": "$y = 3x + 1$", "correct": false },
+            { "text": "$y = x - 1$", "correct": false },
+            { "text": "$y = -2x + 5$", "correct": false }
+        ],
+        "explanation": "Une droite passe par l'origine si son ordonnée à l'origine est $0$. L'équation est donc de la forme $y = mx$. Ici, seule $y = 3x$ convient."
+    },
+    {
+        "question": "Convertir l'équation $2x + y - 4 = 0$ sous la forme $y = mx + p$.",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Convertir une équation de droite sous forme réduite",
+        "answers": [
+            { "text": "$y = -2x + 4$", "correct": true },
+            { "text": "$y = 2x + 4$", "correct": false },
+            { "text": "$y = -2x - 4$", "correct": false },
+            { "text": "$y = 2x - 4$", "correct": false }
+        ],
+        "explanation": "On isole $y$ : $y = -2x + 4$. On a donc $m = -2$ et $p = 4$."
+    },
+    {
+        "question": "Quelle est l'équation de la droite de coefficient directeur $m = -1$ qui passe par le point $B(0, 4)$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer l'équation d'une droite à partir de caractéristiques",
+        "answers": [
+            { "text": "$y = -x + 4$", "correct": true },
+            { "text": "$y = x + 4$", "correct": false },
+            { "text": "$y = -x - 4$", "correct": false },
+            { "text": "$y = -4x + 1$", "correct": false }
+        ],
+        "explanation": "Le point $B(0, 4)$ a pour abscisse $0$, c'est donc l'ordonnée à l'origine : $p = 4$. Avec $m = -1$, l'équation est $y = -x + 4$."
+    },
+    {
+        "question": "Une droite de coefficient directeur négatif :",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "Est décroissante", "correct": true },
+            { "text": "Est croissante", "correct": false },
+            { "text": "Est horizontale", "correct": false },
+            { "text": "Passe par l'origine", "correct": false }
+        ],
+        "explanation": "Un coefficient directeur négatif signifie que la droite descend de gauche à droite, elle est donc décroissante."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "7x - 3 = 4x + 9",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec l'inconnue des deux côtés",
+        "answers": [
+            { "text": "$x = 4$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 6$", "correct": false },
+            { "text": "$x = 3$", "correct": false }
+        ],
+        "explanation": "$7x - 4x = 9 + 3$, donc $3x = 12$, donc $x = 4$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "8x + 1 = 2x - 11",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec l'inconnue des deux côtés",
+        "answers": [
+            { "text": "$x = -2$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = -\\frac{5}{3}$", "correct": false },
+            { "text": "$x = \\frac{5}{3}$", "correct": false }
+        ],
+        "explanation": "$8x - 2x = -11 - 1$, donc $6x = -12$, donc $x = -2$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "3(x + 4) = 21",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec parenthèses",
+        "answers": [
+            { "text": "$x = 3$", "correct": true },
+            { "text": "$x = 7$", "correct": false },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = 9$", "correct": false }
+        ],
+        "explanation": "On divise par 3 : $x + 4 = 7$, donc $x = 3$. Ou bien on développe : $3x + 12 = 21$, donc $3x = 9$, donc $x = 3$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "5(2x - 1) = 15",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec parenthèses",
+        "answers": [
+            { "text": "$x = 2$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 4$", "correct": false }
+        ],
+        "explanation": "On divise par 5 : $2x - 1 = 3$, donc $2x = 4$, donc $x = 2$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "\\frac{2x}{5} = 4",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec fractions",
+        "answers": [
+            { "text": "$x = 10$", "correct": true },
+            { "text": "$x = \\frac{8}{5}$", "correct": false },
+            { "text": "$x = 20$", "correct": false },
+            { "text": "$x = \\frac{20}{2}$", "correct": false }
+        ],
+        "explanation": "On multiplie les deux côtés par 5 : $2x = 20$, donc $x = 10$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "3(x - 2) = 2x + 5",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation en développant et réduisant",
+        "answers": [
+            { "text": "$x = 11$", "correct": true },
+            { "text": "$x = 7$", "correct": false },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "$x = 1$", "correct": false }
+        ],
+        "explanation": "On développe : $3x - 6 = 2x + 5$, donc $3x - 2x = 5 + 6$, donc $x = 11$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "4(x + 1) = 3(x + 3)",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation en développant et réduisant",
+        "answers": [
+            { "text": "$x = 5$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 7$", "correct": false }
+        ],
+        "explanation": "On développe : $4x + 4 = 3x + 9$, donc $4x - 3x = 9 - 4$, donc $x = 5$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "-5x + 7 = 22",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec coefficient négatif",
+        "answers": [
+            { "text": "$x = -3$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = -\\frac{29}{5}$", "correct": false },
+            { "text": "$x = \\frac{29}{5}$", "correct": false }
+        ],
+        "explanation": "$-5x = 22 - 7$, donc $-5x = 15$, donc $x = -3$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "-2x - 3 = 9",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation avec coefficient négatif",
+        "answers": [
+            { "text": "$x = -6$", "correct": true },
+            { "text": "$x = 6$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = -3$", "correct": false }
+        ],
+        "explanation": "$-2x = 9 + 3$, donc $-2x = 12$, donc $x = -6$"
+    },
+    {
+        "question": "Quelle est la solution de l'équation suivante ?",
+        "formula": "(2x + 3)(x - 1) = 0",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation produit nul",
+        "answers": [
+            { "text": "$x = -\\frac{3}{2}$ ou $x = 1$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = -\\frac{3}{2}$", "correct": false },
+            { "text": "$x = \\frac{3}{2}$ ou $x = -1$", "correct": false }
+        ],
+        "explanation": "Un produit est nul si et seulement si l'un des facteurs est nul. Donc $2x + 3 = 0$ ou $x - 1 = 0$, soit $x = -\\frac{3}{2}$ ou $x = 1$"
+    },
+    {
+        "question": "Quelle est la solution de l'équation suivante ?",
+        "formula": "x(3x + 6) = 0",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation produit nul",
+        "answers": [
+            { "text": "$x = 0$ ou $x = -2$", "correct": true },
+            { "text": "$x = 0$ ou $x = 2$", "correct": false },
+            { "text": "$x = -2$", "correct": false },
+            { "text": "$x = 0$", "correct": false }
+        ],
+        "explanation": "Un produit est nul si et seulement si l'un des facteurs est nul. Donc $x = 0$ ou $3x + 6 = 0$, soit $x = 0$ ou $x = -2$"
+    },
+    {
+        "question": "Quelle est la valeur de l'intégrale suivante ?",
+        "formula": "\\int_{1}^{3} 2x \\, dx",
+        "level": "TleSpécialité",
+        "theme": "Intégrales",
+        "competence": "Calculer une intégrale définie",
+        "answers": [
+            { "text": "$8$", "correct": true },
+            { "text": "$4$", "correct": false },
+            { "text": "$6$", "correct": false },
+            { "text": "$10$", "correct": false }
+        ],
+        "explanation": "L'intégrale de $2x$ est $x^2$. En évaluant de 1 à 3 : $[3^2] - [1^2] = 9 - 1 = 8$"
+    },
+    {
+        "question": "Quelle est la valeur de l'intégrale suivante ?",
+        "formula": "\\int_{0}^{4} 3 \\, dx",
+        "level": "TleSpécialité",
+        "theme": "Intégrales",
+        "competence": "Calculer une intégrale définie",
+        "answers": [
+            { "text": "$12$", "correct": true },
+            { "text": "$3$", "correct": false },
+            { "text": "$4$", "correct": false },
+            { "text": "$7$", "correct": false }
+        ],
+        "explanation": "L'intégrale d'une constante $3$ est $3x$. En évaluant de 0 à 4 : $[3 \\times 4] - [3 \\times 0] = 12 - 0 = 12$"
+    },
+    {
+        "question": "En observant le graphique de la fonction quadratique ci-dessous, quelle est l'abscisse du sommet ?",
+        "level": "1re",
+        "theme": "Fonctions",
+        "competence": "Déterminer les coordonnées du sommet d'une parabole",
+        "graphFunction": "2 * x * x - 8 * x + 6",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 5,
+            "yMin": -4,
+            "yMax": 10,
+            "label": "y = 2x² - 8x + 6"
+        },
+        "answers": [
+            { "text": "$x = 2$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 4$", "correct": false }
+        ],
+        "explanation": "L'abscisse du sommet est $x = -b/2a = 8/4 = 2$"
+    },
+    {
+        "question": "En observant le graphique de la fonction quadratique ci-dessous, quelles sont les coordonnées du sommet ?",
+        "level": "1re",
+        "theme": "Fonctions",
+        "competence": "Déterminer les coordonnées du sommet d'une parabole",
+        "graphFunction": "-x * x + 2 * x + 3",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 4,
+            "yMin": -2,
+            "yMax": 5,
+            "label": "y = -x² + 2x + 3"
+        },
+        "answers": [
+            { "text": "$(1, 4)$", "correct": true },
+            { "text": "$(2, 3)$", "correct": false },
+            { "text": "$(0, 3)$", "correct": false },
+            { "text": "$(-1, 0)$", "correct": false }
+        ],
+        "explanation": "L'abscisse du sommet est $x = -b/2a = -2/-2 = 1$. En substituant : $y = -1 + 2 + 3 = 4$. Le sommet est donc $(1, 4)$"
+    },
+    {
+        "question": "Quelle est la solution de cette équation du second degré ?",
+        "formula": "x^2 - 7x + 12 = 0",
+        "level": "1re",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation du second degré",
+        "answers": [
+            { "text": "$x = 3$ ou $x = 4$", "correct": true },
+            { "text": "$x = 2$ ou $x = 6$", "correct": false },
+            { "text": "$x = -3$ ou $x = -4$", "correct": false },
+            { "text": "$x = 1$ ou $x = 12$", "correct": false }
+        ],
+        "explanation": "On peut factoriser : $(x - 3)(x - 4) = 0$, donc $x = 3$ ou $x = 4$"
+    },
+    {
+        "question": "Quelle est la solution de cette équation du second degré ?",
+        "formula": "x^2 + 5x + 6 = 0",
+        "level": "1re",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation du second degré",
+        "answers": [
+            { "text": "$x = -2$ ou $x = -3$", "correct": true },
+            { "text": "$x = 2$ ou $x = 3$", "correct": false },
+            { "text": "$x = -1$ ou $x = -6$", "correct": false },
+            { "text": "$x = 1$ ou $x = 6$", "correct": false }
+        ],
+        "explanation": "On peut factoriser : $(x + 2)(x + 3) = 0$, donc $x = -2$ ou $x = -3$"
+    },
+    {
+        "question": "En observant le graphique de la fonction cosinus, quelle est sa période ?",
+        "level": "1reSpécialité",
+        "theme": "Trigonométrie",
+        "competence": "Reconnaître la période d'une fonction trigonométrique",
+        "graphFunction": "Math.cos(x)",
+        "graphParams": {
+            "xMin": -6.283185307179586,
+            "xMax": 6.283185307179586,
+            "yMin": -1.5,
+            "yMax": 1.5,
+            "label": "y = cos(x)"
+        },
+        "answers": [
+            { "text": "$2\\pi$", "correct": true },
+            { "text": "$\\pi$", "correct": false },
+            { "text": "$\\frac{\\pi}{2}$", "correct": false },
+            { "text": "$4\\pi$", "correct": false }
+        ],
+        "explanation": "La fonction cosinus se répète après un intervalle de $2\\pi$ radians, tout comme le sinus."
+    },
+    {
+        "question": "En observant le graphique de la fonction tangente, quelle est sa période ?",
+        "level": "1reSpécialité",
+        "theme": "Trigonométrie",
+        "competence": "Reconnaître la période d'une fonction trigonométrique",
+        "graphFunction": "Math.tan(x)",
+        "graphParams": {
+            "xMin": -3.14,
+            "xMax": 3.14,
+            "yMin": -5,
+            "yMax": 5,
+            "label": "y = tan(x)"
+        },
+        "answers": [
+            { "text": "$\\pi$", "correct": true },
+            { "text": "$2\\pi$", "correct": false },
+            { "text": "$\\frac{\\pi}{2}$", "correct": false },
+            { "text": "$4\\pi$", "correct": false }
+        ],
+        "explanation": "La fonction tangente se répète après un intervalle de $\\pi$ radians, contrairement au sinus et cosinus qui ont une période de $2\\pi$."
+    },
+    {
+        "question": "Quelle intégrale est égale à la formule suivante ?",
+        "formula": "x^3 + C",
+        "level": "TleSpécialité",
+        "theme": "Intégrales",
+        "competence": "Reconnaître une primitive",
+        "answers": [
+            { "formula": "\\int 3x^2 \\, dx", "correct": true },
+            { "formula": "\\int x^3 \\, dx", "correct": false },
+            { "formula": "\\int \\frac{x^4}{4} \\, dx", "correct": false },
+            { "formula": "\\int 3x \\, dx", "correct": false }
+        ],
+        "explanation": "L'intégrale de $3x^2$ est $x^3 + C$"
+    },
+    {
+        "question": "Quelle intégrale est égale à la formule suivante ?",
+        "formula": "2x^3 + C",
+        "level": "TleSpécialité",
+        "theme": "Intégrales",
+        "competence": "Reconnaître une primitive",
+        "answers": [
+            { "formula": "\\int 6x^2 \\, dx", "correct": true },
+            { "formula": "\\int 2x^2 \\, dx", "correct": false },
+            { "formula": "\\int x^3 \\, dx", "correct": false },
+            { "formula": "\\int 6x^3 \\, dx", "correct": false }
+        ],
+        "explanation": "L'intégrale de $6x^2$ est $2x^3 + C$"
+    },
+    {
+        "question": "Laquelle de ces fonctions correspond à une parabole tournée vers le haut ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Identifier le sens de variation d'une parabole",
+        "answers": [
+            { 
+                "graphFunction": "x * x - 2",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -3,
+                    "yMax": 7,
+                    "label": "A"
+                },
+                "correct": true 
+            },
+            { 
+                "graphFunction": "-2 * x * x + 4",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -14,
+                    "yMax": 5,
+                    "label": "B"
+                },
+                "correct": false 
+            },
+            { 
+                "graphFunction": "-x",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -4,
+                    "yMax": 4,
+                    "label": "C"
+                },
+                "correct": false 
+            },
+            { 
+                "graphFunction": "-0.5 * x * x + 3",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -2,
+                    "yMax": 4,
+                    "label": "D"
+                },
+                "correct": false 
+            }
+        ],
+        "explanation": "Une parabole tournée vers le haut a un coefficient positif devant $x^2$. La fonction $y = x^2 - 2$ a cette propriété."
+    },
+    {
+        "question": "Parmi ces fonctions, laquelle a le sommet le plus haut ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Identifier le sens de variation d'une parabole",
+        "answers": [
+            { 
+                "graphFunction": "-x * x + 5",
+                "graphParams": {
+                    "xMin": -4,
+                    "xMax": 4,
+                    "yMin": -12,
+                    "yMax": 6,
+                    "label": "A"
+                },
+                "correct": true 
+            },
+            { 
+                "graphFunction": "-x * x + 2",
+                "graphParams": {
+                    "xMin": -4,
+                    "xMax": 4,
+                    "yMin": -15,
+                    "yMax": 3,
+                    "label": "B"
+                },
+                "correct": false 
+            },
+            { 
+                "graphFunction": "x * x - 1",
+                "graphParams": {
+                    "xMin": -4,
+                    "xMax": 4,
+                    "yMin": -2,
+                    "yMax": 16,
+                    "label": "C"
+                },
+                "correct": false 
+            },
+            { 
+                "graphFunction": "-2 * x * x + 3",
+                "graphParams": {
+                    "xMin": -3,
+                    "xMax": 3,
+                    "yMin": -15,
+                    "yMax": 4,
+                    "label": "D"
+                },
+                "correct": false 
+            }
+        ],
+        "explanation": "La fonction $y = -x^2 + 5$ a son sommet à $y = 5$, qui est le plus haut parmi les paraboles tournées vers le bas."
+    },
+    {
+        "question": "Quelle est l'équation de la droite représentée par le graphique suivant ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer l'équation d'une droite à partir de son graphique",
+        "graphFunction": "-x + 4",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -3,
+            "yMax": 7,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$y = -x + 4$", "correct": true },
+            { "text": "$y = x + 4$", "correct": false },
+            { "text": "$y = -x - 4$", "correct": false },
+            { "text": "$y = -2x + 4$", "correct": false }
+        ],
+        "explanation": "La droite passe par le point $(0, 4)$ donc l'ordonnée à l'origine est $4$. Le coefficient directeur est $-1$ (la droite descend d'1 unité quand on avance d'1 unité)."
+    },
+    {
+        "question": "Quelle est l'équation de la droite représentée par le graphique suivant ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer l'équation d'une droite à partir de son graphique",
+        "graphFunction": "0.5 * x + 1",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 4,
+            "yMin": -2,
+            "yMax": 4,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$y = \\frac{1}{2}x + 1$", "correct": true },
+            { "text": "$y = 2x + 1$", "correct": false },
+            { "text": "$y = \\frac{1}{2}x - 1$", "correct": false },
+            { "text": "$y = x + \\frac{1}{2}$", "correct": false }
+        ],
+        "explanation": "La droite passe par le point $(0, 1)$ donc l'ordonnée à l'origine est $1$. Le coefficient directeur est $\\frac{1}{2}$ (la droite monte d'1 unité quand on avance de 2 unités)."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation suivante ?",
+        "formula": "y = 7x - 2",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître le coefficient directeur",
+        "answers": [
+            { "text": "$7$", "correct": true },
+            { "text": "$-2$", "correct": false },
+            { "text": "$-7$", "correct": false },
+            { "text": "$2$", "correct": false }
+        ],
+        "explanation": "Dans une équation de la forme $y = mx + p$, le coefficient directeur est $m$. Ici $m = 7$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation suivante ?",
+        "formula": "y = -\\frac{2}{3}x + 4",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître le coefficient directeur",
+        "answers": [
+            { "text": "$-\\frac{2}{3}$", "correct": true },
+            { "text": "$\\frac{2}{3}$", "correct": false },
+            { "text": "$4$", "correct": false },
+            { "text": "$-4$", "correct": false }
+        ],
+        "explanation": "Dans une équation de la forme $y = mx + p$, le coefficient directeur est $m$. Ici $m = -\\frac{2}{3}$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite d'équation suivante ?",
+        "formula": "y = -2x + 9",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître l'ordonnée à l'origine",
+        "answers": [
+            { "text": "$9$", "correct": true },
+            { "text": "$-9$", "correct": false },
+            { "text": "$-2$", "correct": false },
+            { "text": "$2$", "correct": false }
+        ],
+        "explanation": "Dans une équation de la forme $y = mx + p$, l'ordonnée à l'origine est $p$. Ici $p = 9$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite d'équation suivante ?",
+        "formula": "y = x - \\frac{5}{2}",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître l'ordonnée à l'origine",
+        "answers": [
+            { "text": "$-\\frac{5}{2}$", "correct": true },
+            { "text": "$\\frac{5}{2}$", "correct": false },
+            { "text": "$1$", "correct": false },
+            { "text": "$-1$", "correct": false }
+        ],
+        "explanation": "Dans une équation de la forme $y = mx + p$, l'ordonnée à l'origine est $p$. Ici $p = -\\frac{5}{2}$."
+    },
+    {
+        "question": "Le point $B(3, 11)$ appartient-il à la droite d'équation $y = 4x - 1$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Savoir si un point appartient à une droite",
+        "answers": [
+            { "text": "Oui", "correct": true },
+            { "text": "Non", "correct": false }
+        ],
+        "explanation": "On remplace $x$ par $3$ : $y = 4 \\times 3 - 1 = 12 - 1 = 11$. On obtient bien l'ordonnée du point $B$, donc $B$ appartient à la droite."
+    },
+    {
+        "question": "Le point $C(-2, 5)$ appartient-il à la droite d'équation $y = -2x + 3$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Savoir si un point appartient à une droite",
+        "answers": [
+            { "text": "Non", "correct": true },
+            { "text": "Oui", "correct": false }
+        ],
+        "explanation": "On remplace $x$ par $-2$ : $y = -2 \\times (-2) + 3 = 4 + 3 = 7$. On n'obtient pas l'ordonnée du point $C$ (qui est 5), donc $C$ n'appartient pas à la droite."
+    },
+    {
+        "question": "Deux droites perpendiculaires ont des coefficients directeurs dont le produit est :",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Connaître la condition de parallélisme de deux droites",
+        "answers": [
+            { "text": "$-1$", "correct": true },
+            { "text": "$0$", "correct": false },
+            { "text": "$1$", "correct": false },
+            { "text": "Il n'y a pas de relation", "correct": false }
+        ],
+        "explanation": "Deux droites perpendiculaires (non verticales/horizontales) ont des coefficients directeurs $m$ et $m'$ tels que $m \\times m' = -1$. Par exemple, $y = 2x + 1$ et $y = -\\frac{1}{2}x + 3$ sont perpendiculaires car $2 \\times (-\\frac{1}{2}) = -1$."
+    },
+    {
+        "question": "Quelle condition doivent vérifier deux droites pour être parallèles ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Connaître la condition de parallélisme de deux droites",
+        "answers": [
+            { "text": "Avoir le même coefficient directeur", "correct": true },
+            { "text": "Avoir des coefficients directeurs opposés", "correct": false },
+            { "text": "Avoir la même ordonnée à l'origine", "correct": false },
+            { "text": "Avoir des coefficients directeurs dont le produit est -1", "correct": false }
+        ],
+        "explanation": "Deux droites sont parallèles si et seulement si elles ont le même coefficient directeur. Par exemple, $y = 3x + 2$ et $y = 3x - 5$ sont parallèles."
+    },
+    {
+        "question": "Parmi ces droites, laquelle est parallèle à la droite $y = -2x + 1$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Identifier des droites parallèles",
+        "answers": [
+            { "text": "$y = -2x + 7$", "correct": true },
+            { "text": "$y = 2x + 1$", "correct": false },
+            { "text": "$y = -2x + 1$", "correct": false },
+            { "text": "$y = \\frac{1}{2}x + 1$", "correct": false }
+        ],
+        "explanation": "Une droite parallèle doit avoir le même coefficient directeur ($-2$) mais une ordonnée à l'origine différente. Seule $y = -2x + 7$ convient."
+    },
+    {
+        "question": "Parmi ces droites, laquelle est parallèle à la droite $y = \\frac{3}{4}x - 2$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Identifier des droites parallèles",
+        "answers": [
+            { "text": "$y = \\frac{3}{4}x + 5$", "correct": true },
+            { "text": "$y = -\\frac{3}{4}x - 2$", "correct": false },
+            { "text": "$y = \\frac{4}{3}x - 2$", "correct": false },
+            { "text": "$y = 3x + 4$", "correct": false }
+        ],
+        "explanation": "Une droite parallèle doit avoir le même coefficient directeur ($\\frac{3}{4}$). Seule $y = \\frac{3}{4}x + 5$ a ce coefficient."
+    },
+    {
+        "question": "Quelle droite passe par l'origine du repère ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître une droite passant par l'origine",
+        "answers": [
+            { "text": "$y = -2x$", "correct": true },
+            { "text": "$y = -2x + 0{,}1$", "correct": false },
+            { "text": "$y = x + 1$", "correct": false },
+            { "text": "$y = 5$", "correct": false }
+        ],
+        "explanation": "Une droite passe par l'origine si son ordonnée à l'origine est $0$. L'équation est donc de la forme $y = mx$. Seule $y = -2x$ convient."
+    },
+    {
+        "question": "Laquelle de ces droites ne passe pas par l'origine ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Reconnaître une droite passant par l'origine",
+        "answers": [
+            { "text": "$y = 5x + 1$", "correct": true },
+            { "text": "$y = 5x$", "correct": false },
+            { "text": "$y = -x$", "correct": false },
+            { "text": "$y = \\frac{2}{3}x$", "correct": false }
+        ],
+        "explanation": "Une droite passe par l'origine si son ordonnée à l'origine est $0$. La droite $y = 5x + 1$ a une ordonnée à l'origine de $1$, donc elle ne passe pas par l'origine."
+    },
+    {
+        "question": "Convertir l'équation $3x - y + 6 = 0$ sous la forme $y = mx + p$.",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Convertir une équation de droite sous forme réduite",
+        "answers": [
+            { "text": "$y = 3x + 6$", "correct": true },
+            { "text": "$y = -3x + 6$", "correct": false },
+            { "text": "$y = 3x - 6$", "correct": false },
+            { "text": "$y = -3x - 6$", "correct": false }
+        ],
+        "explanation": "On isole $y$ : $-y = -3x - 6$, donc $y = 3x + 6$."
+    },
+    {
+        "question": "Convertir l'équation $x + 2y - 8 = 0$ sous la forme $y = mx + p$.",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Convertir une équation de droite sous forme réduite",
+        "answers": [
+            { "text": "$y = -\\frac{1}{2}x + 4$", "correct": true },
+            { "text": "$y = \\frac{1}{2}x + 4$", "correct": false },
+            { "text": "$y = -2x + 8$", "correct": false },
+            { "text": "$y = 2x - 8$", "correct": false }
+        ],
+        "explanation": "On isole $y$ : $2y = -x + 8$, donc $y = -\\frac{1}{2}x + 4$."
+    },
+    {
+        "question": "Quelle est l'équation de la droite de coefficient directeur $m = 3$ qui passe par le point $C(0, -2)$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer l'équation d'une droite à partir de caractéristiques",
+        "answers": [
+            { "text": "$y = 3x - 2$", "correct": true },
+            { "text": "$y = -2x + 3$", "correct": false },
+            { "text": "$y = 3x + 2$", "correct": false },
+            { "text": "$y = -3x - 2$", "correct": false }
+        ],
+        "explanation": "Le point $C(0, -2)$ a pour abscisse $0$, c'est donc l'ordonnée à l'origine : $p = -2$. Avec $m = 3$, l'équation est $y = 3x - 2$."
+    },
+    {
+        "question": "Quelle est l'équation de la droite de coefficient directeur $m = -\\frac{1}{2}$ qui passe par le point $D(0, 5)$ ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer l'équation d'une droite à partir de caractéristiques",
+        "answers": [
+            { "text": "$y = -\\frac{1}{2}x + 5$", "correct": true },
+            { "text": "$y = \\frac{1}{2}x + 5$", "correct": false },
+            { "text": "$y = -\\frac{1}{2}x - 5$", "correct": false },
+            { "text": "$y = 5x - \\frac{1}{2}$", "correct": false }
+        ],
+        "explanation": "Le point $D(0, 5)$ donne l'ordonnée à l'origine : $p = 5$. Avec $m = -\\frac{1}{2}$, l'équation est $y = -\\frac{1}{2}x + 5$."
+    },
+    {
+        "question": "Une droite de coefficient directeur positif :",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "Est croissante", "correct": true },
+            { "text": "Est décroissante", "correct": false },
+            { "text": "Est horizontale", "correct": false },
+            { "text": "Passe par l'origine", "correct": false }
+        ],
+        "explanation": "Un coefficient directeur positif signifie que la droite monte de gauche à droite, elle est donc croissante."
+    },
+    {
+        "question": "Si le coefficient directeur d'une droite est nul, alors la droite est :",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "Horizontale", "correct": true },
+            { "text": "Verticale", "correct": false },
+            { "text": "Croissante", "correct": false },
+            { "text": "Décroissante", "correct": false }
+        ],
+        "explanation": "Un coefficient directeur nul ($m = 0$) signifie que la droite ne monte ni ne descend, elle est donc horizontale. Son équation est de la forme $y = p$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation cartésienne suivante ?",
+        "formula": "2x + y - 5 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un coefficient directeur à partir d'une équation cartésienne",
+        "answers": [
+            { "text": "$-2$", "correct": true },
+            { "text": "$2$", "correct": false },
+            { "text": "$-5$", "correct": false },
+            { "text": "$\\frac{1}{2}$", "correct": false }
+        ],
+        "explanation": "On transforme l'équation sous la forme $y = mx + p$ : $y = -2x + 5$. Le coefficient directeur est donc $m = -2$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation cartésienne suivante ?",
+        "formula": "3x - 4y + 12 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un coefficient directeur à partir d'une équation cartésienne",
+        "answers": [
+            { "text": "$\\frac{3}{4}$", "correct": true },
+            { "text": "$-\\frac{3}{4}$", "correct": false },
+            { "text": "$3$", "correct": false },
+            { "text": "$-4$", "correct": false }
+        ],
+        "explanation": "On isole $y$ : $-4y = -3x - 12$, donc $y = \\frac{3}{4}x + 3$. Le coefficient directeur est $m = \\frac{3}{4}$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation cartésienne suivante ?",
+        "formula": "-x + 2y - 6 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un coefficient directeur à partir d'une équation cartésienne",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$-\\frac{1}{2}$", "correct": false },
+            { "text": "$2$", "correct": false },
+            { "text": "$-1$", "correct": false }
+        ],
+        "explanation": "On isole $y$ : $2y = x + 6$, donc $y = \\frac{1}{2}x + 3$. Le coefficient directeur est $m = \\frac{1}{2}$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation cartésienne suivante ?",
+        "formula": "5x + 3y - 9 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un coefficient directeur à partir d'une équation cartésienne",
+        "answers": [
+            { "text": "$-\\frac{5}{3}$", "correct": true },
+            { "text": "$\\frac{5}{3}$", "correct": false },
+            { "text": "$5$", "correct": false },
+            { "text": "$3$", "correct": false }
+        ],
+        "explanation": "On isole $y$ : $3y = -5x + 9$, donc $y = -\\frac{5}{3}x + 3$. Le coefficient directeur est $m = -\\frac{5}{3}$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation cartésienne suivante ?",
+        "formula": "6x - 2y + 8 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un coefficient directeur à partir d'une équation cartésienne",
+        "answers": [
+            { "text": "$3$", "correct": true },
+            { "text": "$-3$", "correct": false },
+            { "text": "$6$", "correct": false },
+            { "text": "$\\frac{1}{3}$", "correct": false }
+        ],
+        "explanation": "On isole $y$ : $-2y = -6x - 8$, donc $y = 3x + 4$. Le coefficient directeur est $m = 3$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite d'équation cartésienne suivante ?",
+        "formula": "-4x - y + 7 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un coefficient directeur à partir d'une équation cartésienne",
+        "answers": [
+            { "text": "$-4$", "correct": true },
+            { "text": "$4$", "correct": false },
+            { "text": "$-1$", "correct": false },
+            { "text": "$7$", "correct": false }
+        ],
+        "explanation": "On isole $y$ : $-y = 4x - 7$, donc $y = -4x + 7$. Le coefficient directeur est $m = -4$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "2x + 3y - 6 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation cartésienne",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-3\\\\2\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}2\\\\3\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}3\\\\-2\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-2\\\\-3\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour une équation de la forme $ax + by + c = 0$, un vecteur directeur a pour coordonnées $\\overrightarrow{u}\\begin{pmatrix}-b\\\\a\\end{pmatrix}$ (ou son opposé). Ici $a = 2$ et $b = 3$, donc $\\overrightarrow{u}\\begin{pmatrix}-3\\\\2\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "3x - 4y + 1 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation cartésienne",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}4\\\\3\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}4\\\\-3\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-4\\\\3\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}3\\\\4\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $ax + by + c = 0$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}-b\\\\a\\end{pmatrix}$. Avec $a = 3$ et $b = -4$, on obtient $\\overrightarrow{u}\\begin{pmatrix}4\\\\3\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "-x + 2y - 5 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation cartésienne",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-2\\\\-1\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}2\\\\1\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-1\\\\-2\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\2\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $ax + by + c = 0$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}-b\\\\a\\end{pmatrix}$ (ou son opposé). Avec $a = -1$ et $b = 2$, on obtient $\\overrightarrow{u}\\begin{pmatrix}-2\\\\-1\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "5x + y - 3 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation cartésienne",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-1\\\\5\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\-5\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\5\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-5\\\\-1\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $ax + by + c = 0$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}-b\\\\a\\end{pmatrix}$ (ou son opposé). Avec $a = 5$ et $b = 1$, on obtient $\\overrightarrow{u}\\begin{pmatrix}-1\\\\5\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "4x - 2y + 7 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation cartésienne",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}2\\\\4\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}4\\\\2\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-2\\\\4\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-4\\\\-2\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $ax + by + c = 0$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}-b\\\\a\\end{pmatrix}$. Avec $a = 4$ et $b = -2$, on obtient $\\overrightarrow{u}\\begin{pmatrix}2\\\\4\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "-3x - 6y + 9 = 0",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation cartésienne",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}6\\\\-3\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}3\\\\-6\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}3\\\\6\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-6\\\\3\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $ax + by + c = 0$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}-b\\\\a\\end{pmatrix}$ (ou son opposé). Avec $a = -3$ et $b = -6$, on obtient $\\overrightarrow{u}\\begin{pmatrix}6\\\\-3\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "formula": "A(1; 2) \\text{ et } B(3; 4)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne de droite passant par deux points",
+        "answers": [
+            { "text": "$x - y + 1 = 0$", "correct": true },
+            { "text": "$x + y - 3 = 0$", "correct": false },
+            { "text": "$2x - y = 0$", "correct": false },
+            { "text": "$x - 2y + 3 = 0$", "correct": false }
+        ],
+        "explanation": "Un point $M(x; y)$ est sur la droite si $\\overrightarrow{AB}$ et $\\overrightarrow{AM}$ sont colinéaires. Avec $\\overrightarrow{AB}\\begin{pmatrix}2\\\\2\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-1\\\\y-2\\end{pmatrix}$, on a $\\begin{vmatrix}2 & x-1\\\\2 & y-2\\end{vmatrix} = 0$ soit $2(y-2) - 2(x-1) = 0$, ce qui donne $x - y + 1 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "formula": "A(2; 1) \\text{ et } B(4; 5)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne de droite passant par deux points",
+        "answers": [
+            { "text": "$2x - y - 3 = 0$", "correct": true },
+            { "text": "$x - 2y = 0$", "correct": false },
+            { "text": "$2x + y - 5 = 0$", "correct": false },
+            { "text": "$x - y + 1 = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}2\\\\4\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-2\\\\y-1\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}2 & x-2\\\\4 & y-1\\end{vmatrix} = 0$ soit $2(y-1) - 4(x-2) = 0$, ce qui simplifie en $2x - y - 3 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "formula": "A(-1; 3) \\text{ et } B(2; -3)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne de droite passant par deux points",
+        "answers": [
+            { "text": "$2x + y - 1 = 0$", "correct": true },
+            { "text": "$2x - y + 5 = 0$", "correct": false },
+            { "text": "$x + 2y - 5 = 0$", "correct": false },
+            { "text": "$x - y + 4 = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}3\\\\-6\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x+1\\\\y-3\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x+1\\\\-6 & y-3\\end{vmatrix} = 0$ soit $3(y-3) + 6(x+1) = 0$, ce qui donne $2x + y - 1 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "formula": "A(0; 2) \\text{ et } B(3; 5)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne de droite passant par deux points",
+        "answers": [
+            { "text": "$x - y + 2 = 0$", "correct": true },
+            { "text": "$x + y - 2 = 0$", "correct": false },
+            { "text": "$3x - y + 2 = 0$", "correct": false },
+            { "text": "$x - 3y + 6 = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}3\\\\3\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x\\\\y-2\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x\\\\3 & y-2\\end{vmatrix} = 0$ soit $3(y-2) - 3x = 0$, ce qui simplifie en $x - y + 2 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "formula": "A(-2; -1) \\text{ et } B(1; 2)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne de droite passant par deux points",
+        "answers": [
+            { "text": "$x - y + 1 = 0$", "correct": true },
+            { "text": "$x + y + 3 = 0$", "correct": false },
+            { "text": "$2x - y + 3 = 0$", "correct": false },
+            { "text": "$x - 2y = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}3\\\\3\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x+2\\\\y+1\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x+2\\\\3 & y+1\\end{vmatrix} = 0$ soit $3(y+1) - 3(x+2) = 0$, ce qui donne $x - y + 1 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "formula": "A(1; 1) \\text{ et } B(4; 3)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne de droite passant par deux points",
+        "answers": [
+            { "text": "$2x - 3y + 1 = 0$", "correct": true },
+            { "text": "$3x - 2y - 1 = 0$", "correct": false },
+            { "text": "$x - y = 0$", "correct": false },
+            { "text": "$2x + 3y - 5 = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}3\\\\2\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-1\\\\y-1\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x-1\\\\2 & y-1\\end{vmatrix} = 0$ soit $3(y-1) - 2(x-1) = 0$, ce qui donne $2x - 3y + 1 = 0$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "y = 2x + 3",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation réduite",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\2\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}2\\\\1\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\3\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}3\\\\2\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour une équation réduite $y = mx + p$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}1\\\\m\\end{pmatrix}$. Ici $m = 2$, donc $\\overrightarrow{u}\\begin{pmatrix}1\\\\2\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "y = -3x + 1",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation réduite",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\-3\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-3\\\\1\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\1\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}3\\\\-1\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $y = mx + p$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}1\\\\m\\end{pmatrix}$. Avec $m = -3$, on obtient $\\overrightarrow{u}\\begin{pmatrix}1\\\\-3\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "y = \\frac{1}{2}x - 4",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation réduite",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\\\frac{1}{2}\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}2\\\\1\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\-4\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}\\frac{1}{2}\\\\1\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $y = mx + p$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}1\\\\m\\end{pmatrix}$. Avec $m = \\frac{1}{2}$, on a $\\overrightarrow{u}\\begin{pmatrix}1\\\\\\frac{1}{2}\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "y = -\\frac{2}{3}x + 5",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation réduite",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\-\\frac{2}{3}\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}3\\\\-2\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-2\\\\3\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\5\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $y = mx + p$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}1\\\\m\\end{pmatrix}$. Avec $m = -\\frac{2}{3}$, on obtient $\\overrightarrow{u}\\begin{pmatrix}1\\\\-\\frac{2}{3}\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "y = x - 2",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation réduite",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\1\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\-2\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}2\\\\1\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-2\\\\1\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $y = mx + p$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}1\\\\m\\end{pmatrix}$. Ici $m = 1$, donc $\\overrightarrow{u}\\begin{pmatrix}1\\\\1\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelles sont les coordonnées d'un vecteur directeur de la droite d'équation suivante ?",
+        "formula": "y = -x + 7",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer un vecteur directeur à partir de l'équation réduite",
+        "answers": [
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\-1\\end{pmatrix}$", "correct": true },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}-1\\\\1\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\7\\end{pmatrix}$", "correct": false },
+            { "text": "$\\overrightarrow{u}\\begin{pmatrix}7\\\\-1\\end{pmatrix}$", "correct": false }
+        ],
+        "explanation": "Pour $y = mx + p$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}1\\\\m\\end{pmatrix}$. Avec $m = -1$, on obtient $\\overrightarrow{u}\\begin{pmatrix}1\\\\-1\\end{pmatrix}$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "formula": "A(2; 3) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}1\\\\2\\end{pmatrix}",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne connaissant un point et un vecteur directeur",
+        "answers": [
+            { "text": "$2x - y - 1 = 0$", "correct": true },
+            { "text": "$x - 2y + 4 = 0$", "correct": false },
+            { "text": "$2x + y - 7 = 0$", "correct": false },
+            { "text": "$x + 2y - 8 = 0$", "correct": false }
+        ],
+        "explanation": "Un point $M(x; y)$ est sur la droite si $\\overrightarrow{u}$ et $\\overrightarrow{AM}$ sont colinéaires. Avec $\\overrightarrow{u}\\begin{pmatrix}1\\\\2\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-2\\\\y-3\\end{pmatrix}$, on a $\\begin{vmatrix}1 & x-2\\\\2 & y-3\\end{vmatrix} = 0$ soit $1(y-3) - 2(x-2) = 0$, ce qui donne $2x - y - 1 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "formula": "A(-1; 2) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}3\\\\-1\\end{pmatrix}",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne connaissant un point et un vecteur directeur",
+        "answers": [
+            { "text": "$x + 3y - 5 = 0$", "correct": true },
+            { "text": "$3x - y + 5 = 0$", "correct": false },
+            { "text": "$x - 3y + 7 = 0$", "correct": false },
+            { "text": "$3x + y = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}3\\\\-1\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x+1\\\\y-2\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x+1\\\\-1 & y-2\\end{vmatrix} = 0$ soit $3(y-2) + 1(x+1) = 0$, ce qui donne $x + 3y - 5 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "formula": "A(0; 4) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}2\\\\1\\end{pmatrix}",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne connaissant un point et un vecteur directeur",
+        "answers": [
+            { "text": "$x - 2y + 8 = 0$", "correct": true },
+            { "text": "$2x - y + 4 = 0$", "correct": false },
+            { "text": "$x + 2y - 8 = 0$", "correct": false },
+            { "text": "$2x + y - 4 = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}2\\\\1\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x\\\\y-4\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}2 & x\\\\1 & y-4\\end{vmatrix} = 0$ soit $2(y-4) - x = 0$, ce qui donne $x - 2y + 8 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "formula": "A(1; -2) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}-2\\\\3\\end{pmatrix}",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne connaissant un point et un vecteur directeur",
+        "answers": [
+            { "text": "$3x + 2y + 1 = 0$", "correct": true },
+            { "text": "$2x - 3y - 8 = 0$", "correct": false },
+            { "text": "$3x - 2y - 7 = 0$", "correct": false },
+            { "text": "$2x + 3y + 4 = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}-2\\\\3\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-1\\\\y+2\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}-2 & x-1\\\\3 & y+2\\end{vmatrix} = 0$ soit $-2(y+2) - 3(x-1) = 0$, ce qui donne $3x + 2y + 1 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "formula": "A(3; 1) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}1\\\\1\\end{pmatrix}",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne connaissant un point et un vecteur directeur",
+        "answers": [
+            { "text": "$x - y - 2 = 0$", "correct": true },
+            { "text": "$x + y - 4 = 0$", "correct": false },
+            { "text": "$x - y + 2 = 0$", "correct": false },
+            { "text": "$x + y - 2 = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}1\\\\1\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-3\\\\y-1\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}1 & x-3\\\\1 & y-1\\end{vmatrix} = 0$ soit $1(y-1) - 1(x-3) = 0$, ce qui donne $x - y - 2 = 0$."
+    },
+    {
+        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "formula": "A(-2; -3) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}4\\\\-2\\end{pmatrix}",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer une équation cartésienne connaissant un point et un vecteur directeur",
+        "answers": [
+            { "text": "$x + 2y + 8 = 0$", "correct": true },
+            { "text": "$2x - y - 1 = 0$", "correct": false },
+            { "text": "$x - 2y - 4 = 0$", "correct": false },
+            { "text": "$4x - 2y + 2 = 0$", "correct": false }
+        ],
+        "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}4\\\\-2\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x+2\\\\y+3\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}4 & x+2\\\\-2 & y+3\\end{vmatrix} = 0$ soit $4(y+3) + 2(x+2) = 0$, ce qui donne $x + 2y + 8 = 0$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite passant par les points suivants ?",
+        "formula": "A(1; 2) \\text{ et } B(3; 6)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer le coefficient directeur d'une droite passant par deux points",
+        "answers": [
+            { "text": "$2$", "correct": true },
+            { "text": "$\\frac{1}{2}$", "correct": false },
+            { "text": "$4$", "correct": false },
+            { "text": "$3$", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = \\frac{y_B - y_A}{x_B - x_A} = \\frac{6 - 2}{3 - 1} = \\frac{4}{2} = 2$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite passant par les points suivants ?",
+        "formula": "A(2; 5) \\text{ et } B(4; 1)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer le coefficient directeur d'une droite passant par deux points",
+        "answers": [
+            { "text": "$-2$", "correct": true },
+            { "text": "$2$", "correct": false },
+            { "text": "$-\\frac{1}{2}$", "correct": false },
+            { "text": "$\\frac{1}{2}$", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = \\frac{y_B - y_A}{x_B - x_A} = \\frac{1 - 5}{4 - 2} = \\frac{-4}{2} = -2$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite passant par les points suivants ?",
+        "formula": "A(-1; 3) \\text{ et } B(2; -3)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer le coefficient directeur d'une droite passant par deux points",
+        "answers": [
+            { "text": "$-2$", "correct": true },
+            { "text": "$2$", "correct": false },
+            { "text": "$-\\frac{1}{2}$", "correct": false },
+            { "text": "$3$", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = \\frac{y_B - y_A}{x_B - x_A} = \\frac{-3 - 3}{2 - (-1)} = \\frac{-6}{3} = -2$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite passant par les points suivants ?",
+        "formula": "A(0; 1) \\text{ et } B(4; 5)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer le coefficient directeur d'une droite passant par deux points",
+        "answers": [
+            { "text": "$1$", "correct": true },
+            { "text": "$-1$", "correct": false },
+            { "text": "$\\frac{1}{4}$", "correct": false },
+            { "text": "$4$", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = \\frac{y_B - y_A}{x_B - x_A} = \\frac{5 - 1}{4 - 0} = \\frac{4}{4} = 1$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite passant par les points suivants ?",
+        "formula": "A(-2; -1) \\text{ et } B(4; 2)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer le coefficient directeur d'une droite passant par deux points",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$2$", "correct": false },
+            { "text": "$-\\frac{1}{2}$", "correct": false },
+            { "text": "$\\frac{1}{3}$", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = \\frac{y_B - y_A}{x_B - x_A} = \\frac{2 - (-1)}{4 - (-2)} = \\frac{3}{6} = \\frac{1}{2}$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite passant par les points suivants ?",
+        "formula": "A(1; 4) \\text{ et } B(5; 1)",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Déterminer le coefficient directeur d'une droite passant par deux points",
+        "answers": [
+            { "text": "$-\\frac{3}{4}$", "correct": true },
+            { "text": "$\\frac{3}{4}$", "correct": false },
+            { "text": "$-\\frac{4}{3}$", "correct": false },
+            { "text": "$\\frac{4}{3}$", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = \\frac{y_B - y_A}{x_B - x_A} = \\frac{1 - 4}{5 - 1} = \\frac{-3}{4} = -\\frac{3}{4}$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire un coefficient directeur sur un graphique",
+        "graphFunction": "2 * x + 1",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 3,
+            "yMin": -5,
+            "yMax": 7,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$2$", "correct": true },
+            { "text": "$1$", "correct": false },
+            { "text": "$\\frac{1}{2}$", "correct": false },
+            { "text": "$-2$", "correct": false }
+        ],
+        "explanation": "Pour lire le coefficient directeur, on observe que quand $x$ augmente de 1, $y$ augmente de 2. Donc $m = 2$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire un coefficient directeur sur un graphique",
+        "graphFunction": "-3 * x + 2",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 3,
+            "yMin": -8,
+            "yMax": 8,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$-3$", "correct": true },
+            { "text": "$3$", "correct": false },
+            { "text": "$2$", "correct": false },
+            { "text": "$-\\frac{1}{3}$", "correct": false }
+        ],
+        "explanation": "La droite descend de 3 unités quand on avance de 1 unité vers la droite. Le coefficient directeur est donc $m = -3$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire un coefficient directeur sur un graphique",
+        "graphFunction": "0.5 * x - 1",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -4,
+            "yMax": 4,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$2$", "correct": false },
+            { "text": "$-1$", "correct": false },
+            { "text": "$-\\frac{1}{2}$", "correct": false }
+        ],
+        "explanation": "Quand $x$ augmente de 2, $y$ augmente de 1. Le coefficient directeur est $m = \\frac{1}{2}$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire un coefficient directeur sur un graphique",
+        "graphFunction": "-0.75 * x + 3",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -3,
+            "yMax": 6,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$-\\frac{3}{4}$", "correct": true },
+            { "text": "$\\frac{3}{4}$", "correct": false },
+            { "text": "$-\\frac{4}{3}$", "correct": false },
+            { "text": "$3$", "correct": false }
+        ],
+        "explanation": "Quand $x$ augmente de 4, $y$ diminue de 3. Le coefficient directeur est $m = \\frac{-3}{4} = -\\frac{3}{4}$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire un coefficient directeur sur un graphique",
+        "graphFunction": "x + 2",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 4,
+            "yMin": -3,
+            "yMax": 7,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$1$", "correct": true },
+            { "text": "$2$", "correct": false },
+            { "text": "$-1$", "correct": false },
+            { "text": "$\\frac{1}{2}$", "correct": false }
+        ],
+        "explanation": "La droite monte de 1 unité quand on avance de 1 unité. Le coefficient directeur est $m = 1$."
+    },
+    {
+        "question": "Quel est le coefficient directeur de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire un coefficient directeur sur un graphique",
+        "graphFunction": "-x + 4",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -3,
+            "yMax": 7,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$-1$", "correct": true },
+            { "text": "$1$", "correct": false },
+            { "text": "$4$", "correct": false },
+            { "text": "$-4$", "correct": false }
+        ],
+        "explanation": "La droite descend de 1 unité quand on avance de 1 unité. Le coefficient directeur est $m = -1$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire l'ordonnée à l'origine sur un graphique",
+        "graphFunction": "2 * x + 3",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 3,
+            "yMin": -4,
+            "yMax": 10,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$3$", "correct": true },
+            { "text": "$2$", "correct": false },
+            { "text": "$-3$", "correct": false },
+            { "text": "$0$", "correct": false }
+        ],
+        "explanation": "L'ordonnée à l'origine est la valeur de $y$ lorsque $x = 0$. On lit sur le graphique que la droite coupe l'axe des ordonnées en $y = 3$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire l'ordonnée à l'origine sur un graphique",
+        "graphFunction": "-3 * x - 2",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 2,
+            "yMin": -6,
+            "yMax": 8,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$-2$", "correct": true },
+            { "text": "$2$", "correct": false },
+            { "text": "$-3$", "correct": false },
+            { "text": "$3$", "correct": false }
+        ],
+        "explanation": "L'ordonnée à l'origine est la valeur de $y$ quand $x = 0$. La droite coupe l'axe des ordonnées en $y = -2$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire l'ordonnée à l'origine sur un graphique",
+        "graphFunction": "0.5 * x + 4",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -2,
+            "yMax": 8,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$4$", "correct": true },
+            { "text": "$\\frac{1}{2}$", "correct": false },
+            { "text": "$-4$", "correct": false },
+            { "text": "$2$", "correct": false }
+        ],
+        "explanation": "L'ordonnée à l'origine correspond au point d'intersection avec l'axe des ordonnées. Ici, la droite coupe l'axe en $y = 4$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire l'ordonnée à l'origine sur un graphique",
+        "graphFunction": "x - 1",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$-1$", "correct": true },
+            { "text": "$1$", "correct": false },
+            { "text": "$0$", "correct": false },
+            { "text": "$-2$", "correct": false }
+        ],
+        "explanation": "L'ordonnée à l'origine est le point où la droite coupe l'axe des ordonnées, c'est-à-dire en $y = -1$ lorsque $x = 0$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire l'ordonnée à l'origine sur un graphique",
+        "graphFunction": "-2 * x + 5",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 5,
+            "yMin": -6,
+            "yMax": 10,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$5$", "correct": true },
+            { "text": "$-2$", "correct": false },
+            { "text": "$2$", "correct": false },
+            { "text": "$-5$", "correct": false }
+        ],
+        "explanation": "Sur le graphique, on observe que la droite coupe l'axe des ordonnées au point de coordonnées $(0; 5)$. L'ordonnée à l'origine est donc $5$."
+    },
+    {
+        "question": "Quelle est l'ordonnée à l'origine de la droite représentée sur le graphique ?",
+        "level": "2de",
+        "theme": "Géométrie",
+        "competence": "Lire l'ordonnée à l'origine sur un graphique",
+        "graphFunction": "0.5 * x",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -3,
+            "yMax": 4,
+            "label": "Droite"
+        },
+        "answers": [
+            { "text": "$0$", "correct": true },
+            { "text": "$\\frac{1}{2}$", "correct": false },
+            { "text": "$1$", "correct": false },
+            { "text": "$-1$", "correct": false }
+        ],
+        "explanation": "La droite passe par l'origine du repère, donc l'ordonnée à l'origine est $0$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "x^2 = 9",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme x² = a",
+        "answers": [
+            { "text": "$x = 3$ ou $x = -3$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = -3$", "correct": false },
+            { "text": "$x = \\pm 9$", "correct": false }
+        ],
+        "explanation": "L'équation $x^2 = 9$ a deux solutions : $x = \\sqrt{9} = 3$ et $x = -\\sqrt{9} = -3$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "x^2 = 16",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme x² = a",
+        "answers": [
+            { "text": "$x = 4$ ou $x = -4$", "correct": true },
+            { "text": "$x = 4$", "correct": false },
+            { "text": "$x = -4$", "correct": false },
+            { "text": "$x = 8$", "correct": false }
+        ],
+        "explanation": "L'équation $x^2 = 16$ admet deux solutions : $x = 4$ et $x = -4$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "x^2 = 25",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme x² = a",
+        "answers": [
+            { "text": "$x = 5$ ou $x = -5$", "correct": true },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = \\pm 12{,}5$", "correct": false },
+            { "text": "$x = 25$", "correct": false }
+        ],
+        "explanation": "Les solutions de $x^2 = 25$ sont $x = \\sqrt{25} = 5$ et $x = -\\sqrt{25} = -5$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "x^2 = 1",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme x² = a",
+        "answers": [
+            { "text": "$x = 1$ ou $x = -1$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 0$ ou $x = 1$", "correct": false },
+            { "text": "$x = 0$", "correct": false }
+        ],
+        "explanation": "L'équation $x^2 = 1$ a deux solutions : $x = 1$ et $x = -1$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "x^2 = -4",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme x² = a",
+        "answers": [
+            { "text": "Pas de solution dans $\\mathbb{R}$", "correct": true },
+            { "text": "$x = 2$ ou $x = -2$", "correct": false },
+            { "text": "$x = 2i$", "correct": false },
+            { "text": "$x = -2$", "correct": false }
+        ],
+        "explanation": "Un carré est toujours positif ou nul. L'équation $x^2 = -4$ n'admet donc pas de solution dans $\\mathbb{R}$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "x^2 = 0",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme x² = a",
+        "answers": [
+            { "text": "$x = 0$", "correct": true },
+            { "text": "$x = 0$ ou $x = 1$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x = \\pm 0$", "correct": false }
+        ],
+        "explanation": "L'équation $x^2 = 0$ admet une unique solution : $x = 0$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "2x + 5 > 13",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation du premier degré",
+        "answers": [
+            { "text": "$x > 4$", "correct": true },
+            { "text": "$x < 4$", "correct": false },
+            { "text": "$x \\geqslant 4$", "correct": false },
+            { "text": "$x > 9$", "correct": false }
+        ],
+        "explanation": "$2x > 13 - 5$, donc $2x > 8$, donc $x > 4$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "3x - 7 \\leqslant 11",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation du premier degré",
+        "answers": [
+            { "text": "$x \\leqslant 6$", "correct": true },
+            { "text": "$x \\geqslant 6$", "correct": false },
+            { "text": "$x < 6$", "correct": false },
+            { "text": "$x \\leqslant 4$", "correct": false }
+        ],
+        "explanation": "$3x \\leqslant 11 + 7$, donc $3x \\leqslant 18$, donc $x \\leqslant 6$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "-2x + 4 < 10",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation du premier degré",
+        "answers": [
+            { "text": "$x > -3$", "correct": true },
+            { "text": "$x < -3$", "correct": false },
+            { "text": "$x > 3$", "correct": false },
+            { "text": "$x < 3$", "correct": false }
+        ],
+        "explanation": "$-2x < 10 - 4$, donc $-2x < 6$. En divisant par $-2$, on change le sens de l'inégalité : $x > -3$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "5x + 3 \\geqslant 2x + 12",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation du premier degré",
+        "answers": [
+            { "text": "$x \\geqslant 3$", "correct": true },
+            { "text": "$x \\leqslant 3$", "correct": false },
+            { "text": "$x > 3$", "correct": false },
+            { "text": "$x \\geqslant 5$", "correct": false }
+        ],
+        "explanation": "$5x - 2x \\geqslant 12 - 3$, donc $3x \\geqslant 9$, donc $x \\geqslant 3$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "-4x \\geqslant 12",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation du premier degré",
+        "answers": [
+            { "text": "$x \\leqslant -3$", "correct": true },
+            { "text": "$x \\geqslant -3$", "correct": false },
+            { "text": "$x \\leqslant 3$", "correct": false },
+            { "text": "$x \\geqslant 3$", "correct": false }
+        ],
+        "explanation": "En divisant par $-4$ (nombre négatif), on change le sens de l'inégalité : $x \\leqslant \\frac{12}{-4} = -3$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "7 - 3x < 1",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation du premier degré",
+        "answers": [
+            { "text": "$x > 2$", "correct": true },
+            { "text": "$x < 2$", "correct": false },
+            { "text": "$x > -2$", "correct": false },
+            { "text": "$x \\geqslant 2$", "correct": false }
+        ],
+        "explanation": "$-3x < 1 - 7$, donc $-3x < -6$. En divisant par $-3$, on change le sens : $x > 2$."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "x > 3",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$]3; +\\infty[$", "correct": true },
+            { "text": "$[3; +\\infty[$", "correct": false },
+            { "text": "$]-\\infty; 3[$", "correct": false },
+            { "text": "$]3; +\\infty]$", "correct": false }
+        ],
+        "explanation": "$x > 3$ signifie que $x$ est strictement supérieur à 3, donc l'intervalle est $]3; +\\infty[$ (crochet ouvert à gauche car 3 n'est pas inclus)."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "x \\leqslant -2",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$]-\\infty; -2]$", "correct": true },
+            { "text": "$]-\\infty; -2[$", "correct": false },
+            { "text": "$[-2; +\\infty[$", "correct": false },
+            { "text": "$[-2; +\\infty]$", "correct": false }
+        ],
+        "explanation": "$x \\leqslant -2$ signifie que $x$ est inférieur ou égal à -2, donc l'intervalle est $]-\\infty; -2]$ (crochet fermé car -2 est inclus)."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "x \\geqslant 5",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$[5; +\\infty[$", "correct": true },
+            { "text": "$]5; +\\infty[$", "correct": false },
+            { "text": "$]-\\infty; 5]$", "correct": false },
+            { "text": "$[5; +\\infty]$", "correct": false }
+        ],
+        "explanation": "$x \\geqslant 5$ signifie que $x$ est supérieur ou égal à 5, donc l'intervalle est $[5; +\\infty[$ (crochet fermé car 5 est inclus)."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "x < 0",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$]-\\infty; 0[$", "correct": true },
+            { "text": "$]-\\infty; 0]$", "correct": false },
+            { "text": "$]0; +\\infty[$", "correct": false },
+            { "text": "$[0; +\\infty[$", "correct": false }
+        ],
+        "explanation": "$x < 0$ signifie que $x$ est strictement négatif, donc l'intervalle est $]-\\infty; 0[$ (crochet ouvert car 0 n'est pas inclus)."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "-1 \\leqslant x < 4",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$[-1; 4[$", "correct": true },
+            { "text": "$]-1; 4[$", "correct": false },
+            { "text": "$[-1; 4]$", "correct": false },
+            { "text": "$]-1; 4]$", "correct": false }
+        ],
+        "explanation": "$-1 \\leqslant x < 4$ signifie que $x$ est compris entre -1 (inclus) et 4 (exclu), donc l'intervalle est $[-1; 4[$."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "2 < x \\leqslant 7",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$]2; 7]$", "correct": true },
+            { "text": "$[2; 7]$", "correct": false },
+            { "text": "$]2; 7[$", "correct": false },
+            { "text": "$[2; 7[$", "correct": false }
+        ],
+        "explanation": "$2 < x \\leqslant 7$ signifie que $x$ est compris entre 2 (exclu) et 7 (inclus), donc l'intervalle est $]2; 7]$."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "-3 < x",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$]-3; +\\infty[$", "correct": true },
+            { "text": "$[-3; +\\infty[$", "correct": false },
+            { "text": "$]-\\infty; -3[$", "correct": false },
+            { "text": "$]-\\infty; -3]$", "correct": false }
+        ],
+        "explanation": "$-3 < x$ est équivalent à $x > -3$, donc l'intervalle est $]-3; +\\infty[$ (crochet ouvert car -3 n'est pas inclus)."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "4 \\geqslant x",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$]-\\infty; 4]$", "correct": true },
+            { "text": "$]-\\infty; 4[$", "correct": false },
+            { "text": "$[4; +\\infty[$", "correct": false },
+            { "text": "$]4; +\\infty[$", "correct": false }
+        ],
+        "explanation": "$4 \\geqslant x$ est équivalent à $x \\leqslant 4$, donc l'intervalle est $]-\\infty; 4]$ (crochet fermé car 4 est inclus)."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "1 \\leqslant x",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$[1; +\\infty[$", "correct": true },
+            { "text": "$]1; +\\infty[$", "correct": false },
+            { "text": "$]-\\infty; 1]$", "correct": false },
+            { "text": "$]-\\infty; 1[$", "correct": false }
+        ],
+        "explanation": "$1 \\leqslant x$ est équivalent à $x \\geqslant 1$, donc l'intervalle est $[1; +\\infty[$ (crochet fermé car 1 est inclus)."
+    },
+    {
+        "question": "Convertir l'inégalité suivante en un intervalle :",
+        "formula": "-5 > x",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Convertir une inégalité en un intervalle",
+        "answers": [
+            { "text": "$]-\\infty; -5[$", "correct": true },
+            { "text": "$]-\\infty; -5]$", "correct": false },
+            { "text": "$]-5; +\\infty[$", "correct": false },
+            { "text": "$[-5; +\\infty[$", "correct": false }
+        ],
+        "explanation": "$-5 > x$ est équivalent à $x < -5$, donc l'intervalle est $]-\\infty; -5[$ (crochet ouvert car -5 n'est pas inclus)."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "x^2 < 9",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
+        "answers": [
+            { "text": "$x \\in ]-3; 3[$", "correct": true },
+            { "text": "$x \\in ]-\\infty; -3[ \\cup ]3; +\\infty[$", "correct": false },
+            { "text": "$x \\in [-3; 3]$", "correct": false },
+            { "text": "$x \\in ]-9; 9[$", "correct": false }
+        ],
+        "explanation": "$x^2 < 9$ équivaut à $x^2 < 3^2$, soit $-3 < x < 3$. L'ensemble des solutions est $]-3; 3[$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "x^2 > 16",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
+        "answers": [
+            { "text": "$x \\in ]-\\infty; -4[ \\cup ]4; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-4; 4[$", "correct": false },
+            { "text": "$x \\in ]-\\infty; -16[ \\cup ]16; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "$x^2 > 16$ équivaut à $x < -4$ ou $x > 4$. L'ensemble des solutions est $]-\\infty; -4[ \\cup ]4; +\\infty[$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "x^2 \\leqslant 25",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
+        "answers": [
+            { "text": "$x \\in [-5; 5]$", "correct": true },
+            { "text": "$x \\in ]-5; 5[$", "correct": false },
+            { "text": "$x \\in ]-\\infty; -5] \\cup [5; +\\infty[$", "correct": false },
+            { "text": "$x \\in [-25; 25]$", "correct": false }
+        ],
+        "explanation": "$x^2 \\leqslant 25$ équivaut à $-5 \\leqslant x \\leqslant 5$. L'ensemble des solutions est $[-5; 5]$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "x^2 \\geqslant 4",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
+        "answers": [
+            { "text": "$x \\in ]-\\infty; -2] \\cup [2; +\\infty[$", "correct": true },
+            { "text": "$x \\in [-2; 2]$", "correct": false },
+            { "text": "$x \\in ]-\\infty; -2[ \\cup ]2; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "$x^2 \\geqslant 4$ équivaut à $x \\leqslant -2$ ou $x \\geqslant 2$. L'ensemble des solutions est $]-\\infty; -2] \\cup [2; +\\infty[$."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "x^2 > 0",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}^*$ (ou $x \\in ]-\\infty; 0[ \\cup ]0; +\\infty[$)", "correct": true },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "$x \\in ]0; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "$x^2 > 0$ pour tout $x \\neq 0$. L'ensemble des solutions est $\\mathbb{R}^*$ (tous les réels sauf 0)."
+    },
+    {
+        "question": "Résoudre l'inéquation suivante :",
+        "formula": "x^2 < -1",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
+        "answers": [
+            { "text": "Pas de solution dans $\\mathbb{R}$", "correct": true },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "$x \\in ]-1; 1[$", "correct": false },
+            { "text": "$x = 0$", "correct": false }
+        ],
+        "explanation": "Un carré est toujours positif ou nul. Il est impossible d'avoir $x^2 < -1$. L'inéquation n'a pas de solution dans $\\mathbb{R}$."
+    }
+]
