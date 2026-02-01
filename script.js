@@ -1215,10 +1215,10 @@ window.addEventListener('load', () => {
             if (graphContainer) {
                 graphContainer.classList.toggle('fullscreen');
                 
-                // Redimensionner le graphique après le changement
+                // Redimensionner le graphique sans réinitialiser le zoom
                 if (chartInstance) {
                     setTimeout(() => {
-                        chartInstance.resize();
+                        chartInstance.resize('none');
                     }, 100);
                 }
             }
@@ -1234,10 +1234,10 @@ window.addEventListener('load', () => {
             if (graphContainer) {
                 graphContainer.classList.toggle('fullscreen');
                 
-                // Redimensionner le graphique après le changement
+                // Redimensionner le graphique sans réinitialiser le zoom
                 if (chartInstance) {
                     setTimeout(() => {
-                        chartInstance.resize();
+                        chartInstance.resize('none');
                     }, 100);
                 }
             }
@@ -1251,7 +1251,7 @@ window.addEventListener('load', () => {
             graphContainer.classList.remove('fullscreen');
             if (chartInstance) {
                 setTimeout(() => {
-                    chartInstance.resize();
+                    chartInstance.resize('none');
                 }, 100);
             }
         }
