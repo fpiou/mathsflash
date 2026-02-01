@@ -238,9 +238,12 @@ const masteredSkillsDisplay = document.getElementById('mastered-skills');
 const progressPercentageDisplay = document.getElementById('progress-percentage');
 const headerSkillsBtn = document.getElementById('header-skills-btn');
 const startLevelTestBtn = document.getElementById('start-level-test-btn');
+const startThemeTestBtn = document.getElementById('start-theme-test-btn');
+const showAnswersBtn = document.getElementById('show-answers-btn');
 
 // Variables pour le mode test complet
 let isLevelTestMode = false;
+let isThemeTestMode = false;
 
 // Charger les questions depuis le fichier JSON
 async function loadQuestions() {
@@ -351,6 +354,16 @@ function populateCompetenceSelect() {
         competenceSelect.appendChild(option);
     });
     competenceSelect.disabled = false;
+    
+    // Afficher le bouton de test complet du thème si un thème est sélectionné
+    if (selectedTheme) {
+        const themeQuestions = quizData.filter(q => q.level === selectedLevel && q.theme === selectedTheme);
+        if (themeQuestions.length >= 20) {
+            startThemeTestBtn.style.display = 'block';
+        } else {
+            startThemeTestBtn.style.display = 'none';
+        }
+    }
 }
 
 // Filtrer les questions disponibles
@@ -404,6 +417,33 @@ function startLevelTest() {
     
     // Sélectionner 20 questions aléatoires
     filteredQuizData = shuffleArray(levelQuestions).slice(0, 20);
+    
+    // Masquer la sélection et afficher le quiz
+    selectionContainer.style.display = 'none';
+    quizContainer.style.display = 'block';
+    
+    // Initialiser le quiz
+    currentQuestion = 0;
+    score = 0;
+    userAnswers = new Array(20).fill(null);
+    shuffledAnswers = new Array(20).fill(null);
+    totalDisplay.textContent = 20;
+    scoreDisplay.textContent = score;
+    
+    populateQuestionSelect();
+    showQuestion();
+}
+
+// Démarrer un test complet du thème (20 questions aléatoires)
+function startThemeTest() {
+    isLevelTestMode = false;
+    isThemeTestMode = true;
+    
+    // Récupérer toutes les questions du thème
+    const themeQuestions = quizData.filter(q => q.level === selectedLevel && q.theme === selectedTheme);
+    
+    // Sélectionner 20 questions aléatoires
+    filteredQuizData = shuffleArray(themeQuestions).slice(0, 20);
     
     // Masquer la sélection et afficher le quiz
     selectionContainer.style.display = 'none';
@@ -494,11 +534,22 @@ function showQuestion() {
         }
     }
     
-    // Afficher les réponses
+    // Préparer les réponses mais ne pas les afficher automatiquement
     displayAnswers();
     
     // Cacher le feedback
     feedback.classList.remove('show');
+    
+    // Gérer l'affichage du bouton et des réponses
+    if (userAnswers[currentQuestion] !== null) {
+        // Question déjà répondue : afficher les réponses directement
+        answersContainer.style.display = 'block';
+        showAnswersBtn.style.display = 'none';
+    } else {
+        // Question non répondue : cacher les réponses et afficher le bouton
+        answersContainer.style.display = 'none';
+        showAnswersBtn.style.display = 'block';
+    }
     
     // Gérer les boutons de navigation
     prevBtn.disabled = currentQuestion === 0;
@@ -601,6 +652,9 @@ function selectAnswer(index) {
     const shuffled = shuffledAnswers[currentQuestion];
     const answer = shuffled[index];
     userAnswers[currentQuestion] = index;
+    
+    // Cacher le bouton d'affichage des propositions
+    showAnswersBtn.style.display = 'none';
     
     const isCorrect = answer.correct;
     const currentCompetence = filteredQuizData[currentQuestion].competence;
@@ -927,6 +981,12 @@ function drawGraph(graphData) {
     });
 }
 
+// Afficher les propositions de réponse
+showAnswersBtn.addEventListener('click', () => {
+    answersContainer.style.display = 'block';
+    showAnswersBtn.style.display = 'none';
+});
+
 // Navigation
 prevBtn.addEventListener('click', () => {
     if (currentQuestion > 0) {
@@ -952,6 +1012,8 @@ restartBtn.addEventListener('click', () => {
     // Si on était en mode test complet, relancer un nouveau test
     if (isLevelTestMode) {
         startLevelTest();
+    } else if (isThemeTestMode) {
+        startThemeTest();
     } else {
         selectionContainer.style.display = 'block';
         levelSelect.value = '';
@@ -1006,6 +1068,8 @@ levelSelect.addEventListener('change', (e) => {
         competenceSelect.innerHTML = '<option value="">-- Toutes les compétences --</option>';
         startQuizBtn.disabled = true;
         startQuizBtn.textContent = 'Démarrer le quiz';
+        startLevelTestBtn.style.display = 'none';
+        startThemeTestBtn.style.display = 'none';
     }
 });
 
@@ -1020,6 +1084,7 @@ themeSelect.addEventListener('change', (e) => {
         competenceSelect.innerHTML = '<option value="">-- Toutes les compétences --</option>';
         startQuizBtn.disabled = true;
         startQuizBtn.textContent = 'Démarrer le quiz';
+        startThemeTestBtn.style.display = 'none';
     }
 });
 
@@ -1030,6 +1095,7 @@ competenceSelect.addEventListener('change', (e) => {
 
 startQuizBtn.addEventListener('click', () => {
     isLevelTestMode = false;
+    isThemeTestMode = false;
     selectionContainer.style.display = 'none';
     quizContainer.style.display = 'block';
     init();
@@ -1038,6 +1104,11 @@ startQuizBtn.addEventListener('click', () => {
 // Démarrer un test complet du niveau
 startLevelTestBtn.addEventListener('click', () => {
     startLevelTest();
+});
+
+// Démarrer un test complet du thème
+startThemeTestBtn.addEventListener('click', () => {
+    startThemeTest();
 });
 
 // Navigation via le menu déroulant
@@ -1061,11 +1132,12 @@ function showResults() {
     finalScore.textContent = `${score}/${filteredQuizData.length}`;
     
     // Afficher un message spécial pour le mode test complet
+    const resultsHeader = resultsContainer.querySelector('h2');
     if (isLevelTestMode) {
-        const resultsHeader = resultsContainer.querySelector('h2');
         resultsHeader.textContent = `🎯 Résultats du Test Complet - ${selectedLevel}`;
+    } else if (isThemeTestMode) {
+        resultsHeader.textContent = `🎯 Résultats du Test Complet - ${selectedTheme}`;
     } else {
-        const resultsHeader = resultsContainer.querySelector('h2');
         resultsHeader.textContent = 'Résultats du Quiz';
     }
     

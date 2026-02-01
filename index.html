@@ -57,6 +57,7 @@
             </div>
             <button id="start-quiz-btn" class="btn btn-primary" disabled>Démarrer le quiz</button>
             <button id="start-level-test-btn" class="btn btn-success" style="display: none; margin-top: 10px;">🎯 Test complet du niveau (20 questions)</button>
+            <button id="start-theme-test-btn" class="btn btn-success" style="display: none; margin-top: 10px;">🎯 Test complet du thème (20 questions)</button>
         </div>
 
         <div class="quiz-container" style="display: none;">
@@ -88,7 +89,9 @@
                 </div>
             </div>
 
-            <div class="answers-container" id="answers-container">
+            <button id="show-answers-btn" class="btn btn-primary" style="display: none; margin: 20px auto; width: auto;">💡 Afficher les propositions</button>
+
+            <div class="answers-container" id="answers-container" style="display: none;">
                 <!-- Les réponses seront générées dynamiquement -->
             </div>
 
