@@ -88,6 +88,16 @@ header h1 {
     grid-column: 1 / -1;
 }
 
+@media (max-width: 900px) {
+    .selection-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .selection-grid .selection-group:last-child {
+        grid-column: auto;
+    }
+}
+
 .selection-group {
     display: flex;
     flex-direction: column;
@@ -896,7 +906,10 @@ header h1 {
     .selection-container {
         padding: 15px;
     }
-}
+    
+    .selection-grid {
+        grid-template-columns: 1fr;
+    }
     
     .question-header-top {
         flex-direction: column;
@@ -925,10 +938,6 @@ header h1 {
     }
     
     .skill-stats-detail {
-        grid-template-columns: 1fr;
-    }
-    
-    .selection-grid {
         grid-template-columns: 1fr;
     }
 }
