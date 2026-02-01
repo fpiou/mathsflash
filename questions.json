@@ -3345,7 +3345,7 @@
         "explanation": "$1 = \\frac{7}{7}$, donc $1 - \\frac{2}{7} = \\frac{7}{7} - \\frac{2}{7} = \\frac{5}{7}$"
     },
     {
-        "question": "Calculer le produit suivant :",
+        "question": "Quel est le résultat simplifié du calcul suivant :",
         "formula": "\\frac{2}{3} \\times \\frac{5}{7}",
         "level": "2de",
         "theme": "Calcul littéral",
@@ -3359,7 +3359,7 @@
         "explanation": "On multiplie les numérateurs et les dénominateurs : $\\frac{2}{3} \\times \\frac{5}{7} = \\frac{2 \\times 5}{3 \\times 7} = \\frac{10}{21}$"
     },
     {
-        "question": "Calculer le produit suivant :",
+        "question": "Quel est le résultat simplifié du calcul suivant :",
         "formula": "\\frac{3}{4} \\times \\frac{2}{5}",
         "level": "2de",
         "theme": "Calcul littéral",
@@ -3373,7 +3373,7 @@
         "explanation": "$\\frac{3}{4} \\times \\frac{2}{5} = \\frac{3 \\times 2}{4 \\times 5} = \\frac{6}{20} = \\frac{3}{10}$ (simplifiée)"
     },
     {
-        "question": "Calculer le produit suivant :",
+        "question": "Quel est le résultat simplifié du calcul suivant :",
         "formula": "\\frac{5}{6} \\times \\frac{3}{10}",
         "level": "2de",
         "theme": "Calcul littéral",
@@ -3387,7 +3387,7 @@
         "explanation": "$\\frac{5}{6} \\times \\frac{3}{10} = \\frac{15}{60} = \\frac{1}{4}$ (simplifiée)"
     },
     {
-        "question": "Calculer le produit suivant :",
+        "question": "Quel est le résultat simplifié du calcul suivant :",
         "formula": "\\frac{4}{9} \\times \\frac{3}{8}",
         "level": "2de",
         "theme": "Calcul littéral",
@@ -3401,7 +3401,7 @@
         "explanation": "$\\frac{4}{9} \\times \\frac{3}{8} = \\frac{12}{72} = \\frac{1}{6}$ (simplifiée)"
     },
     {
-        "question": "Calculer le produit suivant :",
+        "question": "Quel est le résultat simplifié du calcul suivant :",
         "formula": "\\frac{7}{5} \\times \\frac{10}{21}",
         "level": "2de",
         "theme": "Calcul littéral",
@@ -3415,7 +3415,7 @@
         "explanation": "$\\frac{7}{5} \\times \\frac{10}{21} = \\frac{70}{105} = \\frac{2}{3}$ (simplifiée)"
     },
     {
-        "question": "Calculer le produit suivant :",
+        "question": "Quel est le résultat simplifié du calcul suivant :",
         "formula": "\\frac{2}{3} \\times 6",
         "level": "2de",
         "theme": "Calcul littéral",
