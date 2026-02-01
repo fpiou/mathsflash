@@ -804,8 +804,9 @@ function drawGraph(graphData) {
             datasets: datasets
         },
         options: {
-            responsive: false,
-            maintainAspectRatio: false,
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 2,
             scales: {
                 x: {
                     type: 'linear',
