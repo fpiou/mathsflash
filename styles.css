@@ -905,4 +905,14 @@ header h1 {
     .skill-stats-detail {
         grid-template-columns: 1fr;
     }
+    
+    .graph-container {
+        max-width: 100%;
+        margin: 15px 0;
+        padding: 15px;
+    }
+    
+    .graph-container canvas {
+        height: 300px !important;
+    }
 }
