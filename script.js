@@ -151,11 +151,20 @@ function processQuizData(data) {
         
         // Traiter le graphique de la question si présent
         if (question.graphFunction) {
-            processedQuestion.graph = {
-                type: 'line',
-                function: parseFunction(question.graphFunction),
-                ...question.graphParams
-            };
+            // Gérer le cas où graphFunction est un tableau (plusieurs fonctions)
+            if (Array.isArray(question.graphFunction)) {
+                processedQuestion.graph = {
+                    type: 'line',
+                    functions: question.graphFunction.map(f => parseFunction(f)),
+                    ...question.graphParams
+                };
+            } else {
+                processedQuestion.graph = {
+                    type: 'line',
+                    function: parseFunction(question.graphFunction),
+                    ...question.graphParams
+                };
+            }
             delete processedQuestion.graphFunction;
             delete processedQuestion.graphParams;
         }
@@ -730,14 +739,54 @@ function drawGraph(graphData) {
         chartInstance.destroy();
     }
     
-    // Générer les points de données
-    const step = (graphData.xMax - graphData.xMin) / 100;
-    const dataPoints = [];
+    // Générer les datasets (un ou plusieurs selon si functions ou function)
+    const datasets = [];
+    const colors = ['#667eea', '#f093fb', '#4facfe', '#43e97b', '#fa709a'];
     
-    for (let x = graphData.xMin; x <= graphData.xMax; x += step) {
-        dataPoints.push({
-            x: x,
-            y: graphData.function(x)
+    if (graphData.functions) {
+        // Plusieurs fonctions
+        const functionLabels = ['f', 'g', 'h', 'i', 'j'];
+        graphData.functions.forEach((func, index) => {
+            const step = (graphData.xMax - graphData.xMin) / 100;
+            const dataPoints = [];
+            
+            for (let x = graphData.xMin; x <= graphData.xMax; x += step) {
+                dataPoints.push({
+                    x: x,
+                    y: func(x)
+                });
+            }
+            
+            datasets.push({
+                label: functionLabels[index] || `Fonction ${index + 1}`,
+                data: dataPoints,
+                borderColor: colors[index % colors.length],
+                backgroundColor: `${colors[index % colors.length]}20`,
+                borderWidth: 2,
+                pointRadius: 0,
+                tension: 0.4
+            });
+        });
+    } else {
+        // Une seule fonction
+        const step = (graphData.xMax - graphData.xMin) / 100;
+        const dataPoints = [];
+        
+        for (let x = graphData.xMin; x <= graphData.xMax; x += step) {
+            dataPoints.push({
+                x: x,
+                y: graphData.function(x)
+            });
+        }
+        
+        datasets.push({
+            label: graphData.label,
+            data: dataPoints,
+            borderColor: '#667eea',
+            backgroundColor: 'rgba(102, 126, 234, 0.1)',
+            borderWidth: 2,
+            pointRadius: 0,
+            tension: 0.4
         });
     }
     
@@ -746,15 +795,7 @@ function drawGraph(graphData) {
     chartInstance = new Chart(ctx, {
         type: 'line',
         data: {
-            datasets: [{
-                label: graphData.label,
-                data: dataPoints,
-                borderColor: '#667eea',
-                backgroundColor: 'rgba(102, 126, 234, 0.1)',
-                borderWidth: 2,
-                pointRadius: 0,
-                tension: 0.4
-            }]
+            datasets: datasets
         },
         options: {
             responsive: true,

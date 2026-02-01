@@ -2321,5 +2321,3478 @@
             { "text": "$x = 0$", "correct": false }
         ],
         "explanation": "Un carré est toujours positif ou nul. Il est impossible d'avoir $x^2 < -1$. L'inéquation n'a pas de solution dans $\\mathbb{R}$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "(x+3)^2 = 16",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme (x+a)² = b",
+        "answers": [
+            { "text": "$x = 1$ ou $x = -7$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = -7$", "correct": false },
+            { "text": "$x = 13$ ou $x = -19$", "correct": false }
+        ],
+        "explanation": "$(x+3)^2 = 16 \\Rightarrow x+3 = 4$ ou $x+3 = -4 \\Rightarrow x = 1$ ou $x = -7$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "(x-2)^2 = 9",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme (x+a)² = b",
+        "answers": [
+            { "text": "$x = 5$ ou $x = -1$", "correct": true },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "$x = 11$ ou $x = -7$", "correct": false }
+        ],
+        "explanation": "$(x-2)^2 = 9 \\Rightarrow x-2 = 3$ ou $x-2 = -3 \\Rightarrow x = 5$ ou $x = -1$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "(x+1)^2 = 0",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme (x+a)² = b",
+        "answers": [
+            { "text": "$x = -1$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 0$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "$(x+1)^2 = 0 \\Rightarrow x+1 = 0 \\Rightarrow x = -1$ (solution unique car le second membre est nul)"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "(x-5)^2 = -4",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme (x+a)² = b",
+        "answers": [
+            { "text": "Pas de solution dans $\\mathbb{R}$", "correct": true },
+            { "text": "$x = 3$ ou $x = 7$", "correct": false },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = 1$ ou $x = 9$", "correct": false }
+        ],
+        "explanation": "Un carré est toujours positif ou nul. L'équation $(x-5)^2 = -4$ n'a pas de solution dans $\\mathbb{R}$."
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "(x+4)^2 = 25",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme (x+a)² = b",
+        "answers": [
+            { "text": "$x = 1$ ou $x = -9$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = -9$", "correct": false },
+            { "text": "$x = 21$ ou $x = -29$", "correct": false }
+        ],
+        "explanation": "$(x+4)^2 = 25 \\Rightarrow x+4 = 5$ ou $x+4 = -5 \\Rightarrow x = 1$ ou $x = -9$"
+    },
+    {
+        "question": "Résoudre l'équation suivante :",
+        "formula": "(x-1)^2 = 4",
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "competence": "Résoudre une équation de la forme (x+a)² = b",
+        "answers": [
+            { "text": "$x = 3$ ou $x = -1$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "$x = 5$ ou $x = -3$", "correct": false }
+        ],
+        "explanation": "$(x-1)^2 = 4 \\Rightarrow x-1 = 2$ ou $x-1 = -2 \\Rightarrow x = 3$ ou $x = -1$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "3(2x + 5)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer une expression avec k(a+b)",
+        "answers": [
+            { "text": "$6x + 15$", "correct": true },
+            { "text": "$5x + 8$", "correct": false },
+            { "text": "$6x + 5$", "correct": false },
+            { "text": "$5x + 15$", "correct": false }
+        ],
+        "explanation": "On distribue le 3 : $3 \\times 2x + 3 \\times 5 = 6x + 15$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "-2(x - 4)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer une expression avec k(a+b)",
+        "answers": [
+            { "text": "$-2x + 8$", "correct": true },
+            { "text": "$-2x - 8$", "correct": false },
+            { "text": "$2x + 8$", "correct": false },
+            { "text": "$-2x - 4$", "correct": false }
+        ],
+        "explanation": "On distribue le $-2$ : $-2 \\times x - 2 \\times (-4) = -2x + 8$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "5(3x - 1)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer une expression avec k(a+b)",
+        "answers": [
+            { "text": "$15x - 5$", "correct": true },
+            { "text": "$15x - 1$", "correct": false },
+            { "text": "$8x - 5$", "correct": false },
+            { "text": "$5x - 5$", "correct": false }
+        ],
+        "explanation": "On distribue le 5 : $5 \\times 3x + 5 \\times (-1) = 15x - 5$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "-3(2x + 7)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer une expression avec k(a+b)",
+        "answers": [
+            { "text": "$-6x - 21$", "correct": true },
+            { "text": "$-6x + 21$", "correct": false },
+            { "text": "$-5x - 4$", "correct": false },
+            { "text": "$6x - 21$", "correct": false }
+        ],
+        "explanation": "On distribue le $-3$ : $-3 \\times 2x + (-3) \\times 7 = -6x - 21$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "4(x + 3)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer une expression avec k(a+b)",
+        "answers": [
+            { "text": "$4x + 12$", "correct": true },
+            { "text": "$4x + 3$", "correct": false },
+            { "text": "$x + 12$", "correct": false },
+            { "text": "$4x + 7$", "correct": false }
+        ],
+        "explanation": "On distribue le 4 : $4 \\times x + 4 \\times 3 = 4x + 12$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "x(5 - 2x)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer une expression avec k(a+b)",
+        "answers": [
+            { "text": "$5x - 2x^2$", "correct": true },
+            { "text": "$5 - 2x^2$", "correct": false },
+            { "text": "$5x - 2x$", "correct": false },
+            { "text": "$3x^2$", "correct": false }
+        ],
+        "explanation": "On distribue le $x$ : $x \\times 5 + x \\times (-2x) = 5x - 2x^2$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "(x + 3)(x + 2)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec la double distributivité",
+        "answers": [
+            { "text": "$x^2 + 5x + 6$", "correct": true },
+            { "text": "$x^2 + 6$", "correct": false },
+            { "text": "$x^2 + 5x$", "correct": false },
+            { "text": "$2x + 5$", "correct": false }
+        ],
+        "explanation": "$(x+3)(x+2) = x \\times x + x \\times 2 + 3 \\times x + 3 \\times 2 = x^2 + 2x + 3x + 6 = x^2 + 5x + 6$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "(2x - 1)(x + 4)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec la double distributivité",
+        "answers": [
+            { "text": "$2x^2 + 7x - 4$", "correct": true },
+            { "text": "$2x^2 + 8x - 4$", "correct": false },
+            { "text": "$2x^2 - 4$", "correct": false },
+            { "text": "$2x^2 + 7x + 4$", "correct": false }
+        ],
+        "explanation": "$(2x-1)(x+4) = 2x \\times x + 2x \\times 4 - 1 \\times x - 1 \\times 4 = 2x^2 + 8x - x - 4 = 2x^2 + 7x - 4$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "(x - 5)(x + 1)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec la double distributivité",
+        "answers": [
+            { "text": "$x^2 - 4x - 5$", "correct": true },
+            { "text": "$x^2 - 5x + 1$", "correct": false },
+            { "text": "$x^2 + x - 5$", "correct": false },
+            { "text": "$x^2 - 5$", "correct": false }
+        ],
+        "explanation": "$(x-5)(x+1) = x \\times x + x \\times 1 - 5 \\times x - 5 \\times 1 = x^2 + x - 5x - 5 = x^2 - 4x - 5$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "(3x + 2)(x - 3)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec la double distributivité",
+        "answers": [
+            { "text": "$3x^2 - 7x - 6$", "correct": true },
+            { "text": "$3x^2 - 9x - 6$", "correct": false },
+            { "text": "$3x^2 - 6$", "correct": false },
+            { "text": "$3x^2 + 7x - 6$", "correct": false }
+        ],
+        "explanation": "$(3x+2)(x-3) = 3x \\times x + 3x \\times (-3) + 2 \\times x + 2 \\times (-3) = 3x^2 - 9x + 2x - 6 = 3x^2 - 7x - 6$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "(x + 6)(2x - 1)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec la double distributivité",
+        "answers": [
+            { "text": "$2x^2 + 11x - 6$", "correct": true },
+            { "text": "$2x^2 - 6$", "correct": false },
+            { "text": "$2x^2 + 12x - 1$", "correct": false },
+            { "text": "$2x^2 - x - 6$", "correct": false }
+        ],
+        "explanation": "$(x+6)(2x-1) = x \\times 2x + x \\times (-1) + 6 \\times 2x + 6 \\times (-1) = 2x^2 - x + 12x - 6 = 2x^2 + 11x - 6$"
+    },
+    {
+        "question": "Développer l'expression suivante :",
+        "formula": "(x - 2)(x - 3)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec la double distributivité",
+        "answers": [
+            { "text": "$x^2 - 5x + 6$", "correct": true },
+            { "text": "$x^2 - 6$", "correct": false },
+            { "text": "$x^2 + 5x + 6$", "correct": false },
+            { "text": "$x^2 - x + 6$", "correct": false }
+        ],
+        "explanation": "$(x-2)(x-3) = x \\times x + x \\times (-3) + (-2) \\times x + (-2) \\times (-3) = x^2 - 3x - 2x + 6 = x^2 - 5x + 6$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x + 5)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)²",
+        "answers": [
+            { "text": "$x^2 + 10x + 25$", "correct": true },
+            { "text": "$x^2 + 25$", "correct": false },
+            { "text": "$x^2 + 5x + 25$", "correct": false },
+            { "text": "$x^2 + 10x + 5$", "correct": false }
+        ],
+        "explanation": "$(a+b)^2 = a^2 + 2ab + b^2$. Ici : $(x+5)^2 = x^2 + 2 \\times x \\times 5 + 5^2 = x^2 + 10x + 25$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x + 2)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)²",
+        "answers": [
+            { "text": "$x^2 + 4x + 4$", "correct": true },
+            { "text": "$x^2 + 4$", "correct": false },
+            { "text": "$x^2 + 2x + 4$", "correct": false },
+            { "text": "$x^2 + 2x + 2$", "correct": false }
+        ],
+        "explanation": "$(a+b)^2 = a^2 + 2ab + b^2$. Ici : $(x+2)^2 = x^2 + 2 \\times x \\times 2 + 2^2 = x^2 + 4x + 4$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(3x + 1)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)²",
+        "answers": [
+            { "text": "$9x^2 + 6x + 1$", "correct": true },
+            { "text": "$9x^2 + 1$", "correct": false },
+            { "text": "$3x^2 + 6x + 1$", "correct": false },
+            { "text": "$9x^2 + 3x + 1$", "correct": false }
+        ],
+        "explanation": "$(a+b)^2 = a^2 + 2ab + b^2$. Ici : $(3x+1)^2 = (3x)^2 + 2 \\times 3x \\times 1 + 1^2 = 9x^2 + 6x + 1$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x + 1)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)²",
+        "answers": [
+            { "text": "$x^2 + 2x + 1$", "correct": true },
+            { "text": "$x^2 + 1$", "correct": false },
+            { "text": "$x^2 + x + 1$", "correct": false },
+            { "text": "$2x^2 + 2x + 1$", "correct": false }
+        ],
+        "explanation": "$(a+b)^2 = a^2 + 2ab + b^2$. Ici : $(x+1)^2 = x^2 + 2 \\times x \\times 1 + 1^2 = x^2 + 2x + 1$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x - 3)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a-b)²",
+        "answers": [
+            { "text": "$x^2 - 6x + 9$", "correct": true },
+            { "text": "$x^2 + 9$", "correct": false },
+            { "text": "$x^2 - 3x + 9$", "correct": false },
+            { "text": "$x^2 - 6x - 9$", "correct": false }
+        ],
+        "explanation": "$(a-b)^2 = a^2 - 2ab + b^2$. Ici : $(x-3)^2 = x^2 - 2 \\times x \\times 3 + 3^2 = x^2 - 6x + 9$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x - 1)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a-b)²",
+        "answers": [
+            { "text": "$x^2 - 2x + 1$", "correct": true },
+            { "text": "$x^2 + 1$", "correct": false },
+            { "text": "$x^2 - x + 1$", "correct": false },
+            { "text": "$x^2 - 2x - 1$", "correct": false }
+        ],
+        "explanation": "$(a-b)^2 = a^2 - 2ab + b^2$. Ici : $(x-1)^2 = x^2 - 2 \\times x \\times 1 + 1^2 = x^2 - 2x + 1$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(2x - 3)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a-b)²",
+        "answers": [
+            { "text": "$4x^2 - 12x + 9$", "correct": true },
+            { "text": "$4x^2 + 9$", "correct": false },
+            { "text": "$4x^2 - 6x + 9$", "correct": false },
+            { "text": "$2x^2 - 12x + 9$", "correct": false }
+        ],
+        "explanation": "$(a-b)^2 = a^2 - 2ab + b^2$. Ici : $(2x-3)^2 = (2x)^2 - 2 \\times 2x \\times 3 + 3^2 = 4x^2 - 12x + 9$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x - 5)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a-b)²",
+        "answers": [
+            { "text": "$x^2 - 10x + 25$", "correct": true },
+            { "text": "$x^2 + 25$", "correct": false },
+            { "text": "$x^2 - 5x + 25$", "correct": false },
+            { "text": "$x^2 - 10x - 25$", "correct": false }
+        ],
+        "explanation": "$(a-b)^2 = a^2 - 2ab + b^2$. Ici : $(x-5)^2 = x^2 - 2 \\times x \\times 5 + 5^2 = x^2 - 10x + 25$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(3x - 1)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a-b)²",
+        "answers": [
+            { "text": "$9x^2 - 6x + 1$", "correct": true },
+            { "text": "$9x^2 + 1$", "correct": false },
+            { "text": "$9x^2 - 3x + 1$", "correct": false },
+            { "text": "$3x^2 - 6x + 1$", "correct": false }
+        ],
+        "explanation": "$(a-b)^2 = a^2 - 2ab + b^2$. Ici : $(3x-1)^2 = (3x)^2 - 2 \\times 3x \\times 1 + 1^2 = 9x^2 - 6x + 1$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x - 7)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a-b)²",
+        "answers": [
+            { "text": "$x^2 - 14x + 49$", "correct": true },
+            { "text": "$x^2 + 49$", "correct": false },
+            { "text": "$x^2 - 7x + 49$", "correct": false },
+            { "text": "$x^2 - 14x - 49$", "correct": false }
+        ],
+        "explanation": "$(a-b)^2 = a^2 - 2ab + b^2$. Ici : $(x-7)^2 = x^2 - 2 \\times x \\times 7 + 7^2 = x^2 - 14x + 49$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(2x + 1)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)²",
+        "answers": [
+            { "text": "$4x^2 + 4x + 1$", "correct": true },
+            { "text": "$4x^2 + 1$", "correct": false },
+            { "text": "$4x^2 + 2x + 1$", "correct": false },
+            { "text": "$2x^2 + 4x + 1$", "correct": false }
+        ],
+        "explanation": "$(a+b)^2 = a^2 + 2ab + b^2$. Ici : $(2x+1)^2 = (2x)^2 + 2 \\times 2x \\times 1 + 1^2 = 4x^2 + 4x + 1$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x + 6)^2",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)²",
+        "answers": [
+            { "text": "$x^2 + 12x + 36$", "correct": true },
+            { "text": "$x^2 + 36$", "correct": false },
+            { "text": "$x^2 + 6x + 36$", "correct": false },
+            { "text": "$x^2 + 12x + 6$", "correct": false }
+        ],
+        "explanation": "$(a+b)^2 = a^2 + 2ab + b^2$. Ici : $(x+6)^2 = x^2 + 2 \\times x \\times 6 + 6^2 = x^2 + 12x + 36$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x + 4)(x - 4)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)(a-b)",
+        "answers": [
+            { "text": "$x^2 - 16$", "correct": true },
+            { "text": "$x^2 + 16$", "correct": false },
+            { "text": "$x^2 - 8x - 16$", "correct": false },
+            { "text": "$2x - 16$", "correct": false }
+        ],
+        "explanation": "$(a+b)(a-b) = a^2 - b^2$. Ici : $(x+4)(x-4) = x^2 - 4^2 = x^2 - 16$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(3x - 2)(3x + 2)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)(a-b)",
+        "answers": [
+            { "text": "$9x^2 - 4$", "correct": true },
+            { "text": "$9x^2 + 4$", "correct": false },
+            { "text": "$3x^2 - 4$", "correct": false },
+            { "text": "$6x^2 - 4$", "correct": false }
+        ],
+        "explanation": "$(a+b)(a-b) = a^2 - b^2$. Ici : $(3x-2)(3x+2) = (3x)^2 - 2^2 = 9x^2 - 4$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x + 7)(x - 7)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)(a-b)",
+        "answers": [
+            { "text": "$x^2 - 49$", "correct": true },
+            { "text": "$x^2 + 49$", "correct": false },
+            { "text": "$2x - 49$", "correct": false },
+            { "text": "$x^2 - 14x - 49$", "correct": false }
+        ],
+        "explanation": "$(a+b)(a-b) = a^2 - b^2$. Ici : $(x+7)(x-7) = x^2 - 7^2 = x^2 - 49$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(2x - 5)(2x + 5)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)(a-b)",
+        "answers": [
+            { "text": "$4x^2 - 25$", "correct": true },
+            { "text": "$4x^2 + 25$", "correct": false },
+            { "text": "$2x^2 - 25$", "correct": false },
+            { "text": "$4x - 25$", "correct": false }
+        ],
+        "explanation": "$(a+b)(a-b) = a^2 - b^2$. Ici : $(2x-5)(2x+5) = (2x)^2 - 5^2 = 4x^2 - 25$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(x + 1)(x - 1)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)(a-b)",
+        "answers": [
+            { "text": "$x^2 - 1$", "correct": true },
+            { "text": "$x^2 + 1$", "correct": false },
+            { "text": "$2x - 1$", "correct": false },
+            { "text": "$x^2 - 2x - 1$", "correct": false }
+        ],
+        "explanation": "$(a+b)(a-b) = a^2 - b^2$. Ici : $(x+1)(x-1) = x^2 - 1^2 = x^2 - 1$"
+    },
+    {
+        "question": "Développer l'expression suivante en utilisant l'identité remarquable :",
+        "formula": "(5x - 3)(5x + 3)",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Développer avec (a+b)(a-b)",
+        "answers": [
+            { "text": "$25x^2 - 9$", "correct": true },
+            { "text": "$25x^2 + 9$", "correct": false },
+            { "text": "$5x^2 - 9$", "correct": false },
+            { "text": "$10x - 9$", "correct": false }
+        ],
+        "explanation": "$(a+b)(a-b) = a^2 - b^2$. Ici : $(5x-3)(5x+3) = (5x)^2 - 3^2 = 25x^2 - 9$"
+    },
+    {
+        "question": "Factoriser l'expression suivante :",
+        "formula": "6x + 9",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec un facteur commun",
+        "answers": [
+            { "text": "$3(2x + 3)$", "correct": true },
+            { "text": "$6(x + 9)$", "correct": false },
+            { "text": "$3(2x + 9)$", "correct": false },
+            { "text": "$2(3x + 9)$", "correct": false }
+        ],
+        "explanation": "Le facteur commun est 3 : $6x + 9 = 3 \\times 2x + 3 \\times 3 = 3(2x + 3)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante :",
+        "formula": "x^2 - 5x",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec un facteur commun",
+        "answers": [
+            { "text": "$x(x - 5)$", "correct": true },
+            { "text": "$x(x + 5)$", "correct": false },
+            { "text": "$5(x^2 - x)$", "correct": false },
+            { "text": "$(x - 5)(x)$", "correct": false }
+        ],
+        "explanation": "Le facteur commun est $x$ : $x^2 - 5x = x \\times x - x \\times 5 = x(x - 5)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante :",
+        "formula": "4x^2 + 8x",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec un facteur commun",
+        "answers": [
+            { "text": "$4x(x + 2)$", "correct": true },
+            { "text": "$4(x^2 + 8x)$", "correct": false },
+            { "text": "$x(4x + 8)$", "correct": false },
+            { "text": "$2x(2x + 4)$", "correct": false }
+        ],
+        "explanation": "Le facteur commun est $4x$ : $4x^2 + 8x = 4x \\times x + 4x \\times 2 = 4x(x + 2)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante :",
+        "formula": "3x^2 - 6x",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec un facteur commun",
+        "answers": [
+            { "text": "$3x(x - 2)$", "correct": true },
+            { "text": "$3(x^2 - 6x)$", "correct": false },
+            { "text": "$x(3x - 6)$", "correct": false },
+            { "text": "$6x(x - 1)$", "correct": false }
+        ],
+        "explanation": "Le facteur commun est $3x$ : $3x^2 - 6x = 3x \\times x - 3x \\times 2 = 3x(x - 2)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante :",
+        "formula": "5x + 10",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec un facteur commun",
+        "answers": [
+            { "text": "$5(x + 2)$", "correct": true },
+            { "text": "$5(x + 10)$", "correct": false },
+            { "text": "$x(5 + 10)$", "correct": false },
+            { "text": "$10(x + 1)$", "correct": false }
+        ],
+        "explanation": "Le facteur commun est 5 : $5x + 10 = 5 \\times x + 5 \\times 2 = 5(x + 2)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante :",
+        "formula": "2x^2 + 4x",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec un facteur commun",
+        "answers": [
+            { "text": "$2x(x + 2)$", "correct": true },
+            { "text": "$2(x^2 + 4x)$", "correct": false },
+            { "text": "$x(2x + 4)$", "correct": false },
+            { "text": "$4x(x + 1)$", "correct": false }
+        ],
+        "explanation": "Le facteur commun est $2x$ : $2x^2 + 4x = 2x \\times x + 2x \\times 2 = 2x(x + 2)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 - 9",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-b²",
+        "answers": [
+            { "text": "$(x - 3)(x + 3)$", "correct": true },
+            { "text": "$(x - 9)(x + 1)$", "correct": false },
+            { "text": "$x(x - 9)$", "correct": false },
+            { "text": "$(x - 3)^2$", "correct": false }
+        ],
+        "explanation": "$a^2 - b^2 = (a-b)(a+b)$. Ici : $x^2 - 9 = x^2 - 3^2 = (x-3)(x+3)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "4x^2 - 25",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-b²",
+        "answers": [
+            { "text": "$(2x - 5)(2x + 5)$", "correct": true },
+            { "text": "$(4x - 5)(x + 5)$", "correct": false },
+            { "text": "$(2x - 25)(2x + 1)$", "correct": false },
+            { "text": "$4(x - 5)(x + 5)$", "correct": false }
+        ],
+        "explanation": "$a^2 - b^2 = (a-b)(a+b)$. Ici : $4x^2 - 25 = (2x)^2 - 5^2 = (2x-5)(2x+5)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 - 1",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-b²",
+        "answers": [
+            { "text": "$(x - 1)(x + 1)$", "correct": true },
+            { "text": "$(x - 1)^2$", "correct": false },
+            { "text": "$x(x - 1)$", "correct": false },
+            { "text": "$(x + 1)^2$", "correct": false }
+        ],
+        "explanation": "$a^2 - b^2 = (a-b)(a+b)$. Ici : $x^2 - 1 = x^2 - 1^2 = (x-1)(x+1)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "9x^2 - 16",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-b²",
+        "answers": [
+            { "text": "$(3x - 4)(3x + 4)$", "correct": true },
+            { "text": "$(9x - 4)(x + 4)$", "correct": false },
+            { "text": "$(3x - 16)(3x + 1)$", "correct": false },
+            { "text": "$9(x - 4)(x + 4)$", "correct": false }
+        ],
+        "explanation": "$a^2 - b^2 = (a-b)(a+b)$. Ici : $9x^2 - 16 = (3x)^2 - 4^2 = (3x-4)(3x+4)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 - 4",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-b²",
+        "answers": [
+            { "text": "$(x - 2)(x + 2)$", "correct": true },
+            { "text": "$(x - 4)(x + 1)$", "correct": false },
+            { "text": "$x(x - 4)$", "correct": false },
+            { "text": "$(x - 2)^2$", "correct": false }
+        ],
+        "explanation": "$a^2 - b^2 = (a-b)(a+b)$. Ici : $x^2 - 4 = x^2 - 2^2 = (x-2)(x+2)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "25x^2 - 1",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-b²",
+        "answers": [
+            { "text": "$(5x - 1)(5x + 1)$", "correct": true },
+            { "text": "$(25x - 1)(x + 1)$", "correct": false },
+            { "text": "$(5x - 1)^2$", "correct": false },
+            { "text": "$25(x - 1)(x + 1)$", "correct": false }
+        ],
+        "explanation": "$a^2 - b^2 = (a-b)(a+b)$. Ici : $25x^2 - 1 = (5x)^2 - 1^2 = (5x-1)(5x+1)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "16x^2 - 49",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-b²",
+        "answers": [
+            { "text": "$(4x - 7)(4x + 7)$", "correct": true },
+            { "text": "$(16x - 7)(x + 7)$", "correct": false },
+            { "text": "$(4x - 49)(4x + 1)$", "correct": false },
+            { "text": "$16(x - 7)(x + 7)$", "correct": false }
+        ],
+        "explanation": "$a^2 - b^2 = (a-b)(a+b)$. Ici : $16x^2 - 49 = (4x)^2 - 7^2 = (4x-7)(4x+7)$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 + 6x + 9",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²+2ab+b²",
+        "answers": [
+            { "text": "$(x + 3)^2$", "correct": true },
+            { "text": "$(x + 9)(x + 1)$", "correct": false },
+            { "text": "$(x + 6)(x + 3)$", "correct": false },
+            { "text": "$x(x + 6) + 9$", "correct": false }
+        ],
+        "explanation": "$a^2 + 2ab + b^2 = (a+b)^2$. Ici : $x^2 + 6x + 9 = x^2 + 2 \\times x \\times 3 + 3^2 = (x+3)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 + 4x + 4",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²+2ab+b²",
+        "answers": [
+            { "text": "$(x + 2)^2$", "correct": true },
+            { "text": "$(x + 4)(x + 1)$", "correct": false },
+            { "text": "$x(x + 4) + 4$", "correct": false },
+            { "text": "$(x + 2)(x + 2x)$", "correct": false }
+        ],
+        "explanation": "$a^2 + 2ab + b^2 = (a+b)^2$. Ici : $x^2 + 4x + 4 = x^2 + 2 \\times x \\times 2 + 2^2 = (x+2)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "4x^2 + 12x + 9",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²+2ab+b²",
+        "answers": [
+            { "text": "$(2x + 3)^2$", "correct": true },
+            { "text": "$(4x + 3)(x + 3)$", "correct": false },
+            { "text": "$(2x + 9)(2x + 1)$", "correct": false },
+            { "text": "$4(x + 3)^2$", "correct": false }
+        ],
+        "explanation": "$a^2 + 2ab + b^2 = (a+b)^2$. Ici : $4x^2 + 12x + 9 = (2x)^2 + 2 \\times 2x \\times 3 + 3^2 = (2x+3)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 + 2x + 1",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²+2ab+b²",
+        "answers": [
+            { "text": "$(x + 1)^2$", "correct": true },
+            { "text": "$(x + 2)(x + 1)$", "correct": false },
+            { "text": "$x(x + 2) + 1$", "correct": false },
+            { "text": "$(x - 1)^2$", "correct": false }
+        ],
+        "explanation": "$a^2 + 2ab + b^2 = (a+b)^2$. Ici : $x^2 + 2x + 1 = x^2 + 2 \\times x \\times 1 + 1^2 = (x+1)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 + 10x + 25",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²+2ab+b²",
+        "answers": [
+            { "text": "$(x + 5)^2$", "correct": true },
+            { "text": "$(x + 10)(x + 2{,}5)$", "correct": false },
+            { "text": "$(x + 5)(x + 2)$", "correct": false },
+            { "text": "$x(x + 10) + 25$", "correct": false }
+        ],
+        "explanation": "$a^2 + 2ab + b^2 = (a+b)^2$. Ici : $x^2 + 10x + 25 = x^2 + 2 \\times x \\times 5 + 5^2 = (x+5)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 - 8x + 16",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-2ab+b²",
+        "answers": [
+            { "text": "$(x - 4)^2$", "correct": true },
+            { "text": "$(x - 8)(x + 2)$", "correct": false },
+            { "text": "$(x - 2)(x - 8)$", "correct": false },
+            { "text": "$x(x - 8) + 16$", "correct": false }
+        ],
+        "explanation": "$a^2 - 2ab + b^2 = (a-b)^2$. Ici : $x^2 - 8x + 16 = x^2 - 2 \\times x \\times 4 + 4^2 = (x-4)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 - 2x + 1",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-2ab+b²",
+        "answers": [
+            { "text": "$(x - 1)^2$", "correct": true },
+            { "text": "$(x - 2)(x + 1)$", "correct": false },
+            { "text": "$x(x - 2) + 1$", "correct": false },
+            { "text": "$(x + 1)^2$", "correct": false }
+        ],
+        "explanation": "$a^2 - 2ab + b^2 = (a-b)^2$. Ici : $x^2 - 2x + 1 = x^2 - 2 \\times x \\times 1 + 1^2 = (x-1)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 - 10x + 25",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-2ab+b²",
+        "answers": [
+            { "text": "$(x - 5)^2$", "correct": true },
+            { "text": "$(x - 10)(x + 2{,}5)$", "correct": false },
+            { "text": "$(x - 5)(x - 2)$", "correct": false },
+            { "text": "$x(x - 10) + 25$", "correct": false }
+        ],
+        "explanation": "$a^2 - 2ab + b^2 = (a-b)^2$. Ici : $x^2 - 10x + 25 = x^2 - 2 \\times x \\times 5 + 5^2 = (x-5)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "4x^2 - 4x + 1",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-2ab+b²",
+        "answers": [
+            { "text": "$(2x - 1)^2$", "correct": true },
+            { "text": "$(4x - 1)(x - 1)$", "correct": false },
+            { "text": "$(2x - 2)(2x - 1)$", "correct": false },
+            { "text": "$4(x - 1)^2$", "correct": false }
+        ],
+        "explanation": "$a^2 - 2ab + b^2 = (a-b)^2$. Ici : $4x^2 - 4x + 1 = (2x)^2 - 2 \\times 2x \\times 1 + 1^2 = (2x-1)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "9x^2 - 6x + 1",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-2ab+b²",
+        "answers": [
+            { "text": "$(3x - 1)^2$", "correct": true },
+            { "text": "$(9x - 1)(x - 1)$", "correct": false },
+            { "text": "$(3x - 3)(3x - 1)$", "correct": false },
+            { "text": "$9(x - 1)^2$", "correct": false }
+        ],
+        "explanation": "$a^2 - 2ab + b^2 = (a-b)^2$. Ici : $9x^2 - 6x + 1 = (3x)^2 - 2 \\times 3x \\times 1 + 1^2 = (3x-1)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "x^2 - 6x + 9",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²-2ab+b²",
+        "answers": [
+            { "text": "$(x - 3)^2$", "correct": true },
+            { "text": "$(x - 6)(x + 1{,}5)$", "correct": false },
+            { "text": "$(x - 3)(x - 2)$", "correct": false },
+            { "text": "$x(x - 6) + 9$", "correct": false }
+        ],
+        "explanation": "$a^2 - 2ab + b^2 = (a-b)^2$. Ici : $x^2 - 6x + 9 = x^2 - 2 \\times x \\times 3 + 3^2 = (x-3)^2$"
+    },
+    {
+        "question": "Factoriser l'expression suivante en utilisant une identité remarquable :",
+        "formula": "9x^2 + 12x + 4",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Factoriser avec a²+2ab+b²",
+        "answers": [
+            { "text": "$(3x + 2)^2$", "correct": true },
+            { "text": "$(9x + 2)(x + 2)$", "correct": false },
+            { "text": "$(3x + 4)(3x + 1)$", "correct": false },
+            { "text": "$3(3x^2 + 4x) + 4$", "correct": false }
+        ],
+        "explanation": "$a^2 + 2ab + b^2 = (a+b)^2$. Ici : $9x^2 + 12x + 4 = (3x)^2 + 2 \\times 3x \\times 2 + 2^2 = (3x+2)^2$"
+    },
+    {
+        "question": "Calculer la somme suivante :",
+        "formula": "\\frac{2}{5} + \\frac{3}{5}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Additionner des fractions",
+        "answers": [
+            { "text": "$\\frac{5}{5} = 1$", "correct": true },
+            { "text": "$\\frac{5}{10}$", "correct": false },
+            { "text": "$\\frac{6}{5}$", "correct": false },
+            { "text": "$\\frac{2}{3}$", "correct": false }
+        ],
+        "explanation": "Même dénominateur : $\\frac{2}{5} + \\frac{3}{5} = \\frac{2+3}{5} = \\frac{5}{5} = 1$"
+    },
+    {
+        "question": "Calculer la somme suivante :",
+        "formula": "\\frac{1}{3} + \\frac{1}{6}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Additionner des fractions",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$\\frac{2}{9}$", "correct": false },
+            { "text": "$\\frac{2}{6}$", "correct": false },
+            { "text": "$\\frac{1}{9}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 6 : $\\frac{1}{3} + \\frac{1}{6} = \\frac{2}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}$"
+    },
+    {
+        "question": "Calculer la somme suivante :",
+        "formula": "\\frac{2}{3} + \\frac{1}{4}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Additionner des fractions",
+        "answers": [
+            { "text": "$\\frac{11}{12}$", "correct": true },
+            { "text": "$\\frac{3}{7}$", "correct": false },
+            { "text": "$\\frac{3}{12}$", "correct": false },
+            { "text": "$\\frac{8}{12}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 12 : $\\frac{2}{3} + \\frac{1}{4} = \\frac{8}{12} + \\frac{3}{12} = \\frac{11}{12}$"
+    },
+    {
+        "question": "Calculer la somme suivante :",
+        "formula": "\\frac{3}{4} + \\frac{5}{6}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Additionner des fractions",
+        "answers": [
+            { "text": "$\\frac{19}{12}$", "correct": true },
+            { "text": "$\\frac{8}{10}$", "correct": false },
+            { "text": "$\\frac{15}{24}$", "correct": false },
+            { "text": "$\\frac{8}{12}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 12 : $\\frac{3}{4} + \\frac{5}{6} = \\frac{9}{12} + \\frac{10}{12} = \\frac{19}{12}$"
+    },
+    {
+        "question": "Calculer la somme suivante :",
+        "formula": "\\frac{1}{2} + \\frac{2}{5}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Additionner des fractions",
+        "answers": [
+            { "text": "$\\frac{9}{10}$", "correct": true },
+            { "text": "$\\frac{3}{7}$", "correct": false },
+            { "text": "$\\frac{3}{10}$", "correct": false },
+            { "text": "$\\frac{4}{10}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 10 : $\\frac{1}{2} + \\frac{2}{5} = \\frac{5}{10} + \\frac{4}{10} = \\frac{9}{10}$"
+    },
+    {
+        "question": "Calculer la somme suivante :",
+        "formula": "\\frac{5}{8} + \\frac{3}{4}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Additionner des fractions",
+        "answers": [
+            { "text": "$\\frac{11}{8}$", "correct": true },
+            { "text": "$\\frac{8}{12}$", "correct": false },
+            { "text": "$\\frac{8}{8}$", "correct": false },
+            { "text": "$\\frac{15}{32}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 8 : $\\frac{5}{8} + \\frac{3}{4} = \\frac{5}{8} + \\frac{6}{8} = \\frac{11}{8}$"
+    },
+    {
+        "question": "Calculer la différence suivante :",
+        "formula": "\\frac{7}{9} - \\frac{2}{9}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Soustraire des fractions",
+        "answers": [
+            { "text": "$\\frac{5}{9}$", "correct": true },
+            { "text": "$\\frac{5}{0}$", "correct": false },
+            { "text": "$\\frac{9}{9}$", "correct": false },
+            { "text": "$\\frac{5}{18}$", "correct": false }
+        ],
+        "explanation": "Même dénominateur : $\\frac{7}{9} - \\frac{2}{9} = \\frac{7-2}{9} = \\frac{5}{9}$"
+    },
+    {
+        "question": "Calculer la différence suivante :",
+        "formula": "\\frac{5}{6} - \\frac{1}{3}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Soustraire des fractions",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$\\frac{4}{3}$", "correct": false },
+            { "text": "$\\frac{2}{3}$", "correct": false },
+            { "text": "$\\frac{4}{9}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 6 : $\\frac{5}{6} - \\frac{1}{3} = \\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2}$"
+    },
+    {
+        "question": "Calculer la différence suivante :",
+        "formula": "\\frac{3}{4} - \\frac{1}{6}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Soustraire des fractions",
+        "answers": [
+            { "text": "$\\frac{7}{12}$", "correct": true },
+            { "text": "$\\frac{2}{2}$", "correct": false },
+            { "text": "$\\frac{1}{2}$", "correct": false },
+            { "text": "$\\frac{2}{10}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 12 : $\\frac{3}{4} - \\frac{1}{6} = \\frac{9}{12} - \\frac{2}{12} = \\frac{7}{12}$"
+    },
+    {
+        "question": "Calculer la différence suivante :",
+        "formula": "\\frac{7}{8} - \\frac{1}{4}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Soustraire des fractions",
+        "answers": [
+            { "text": "$\\frac{5}{8}$", "correct": true },
+            { "text": "$\\frac{6}{4}$", "correct": false },
+            { "text": "$\\frac{3}{4}$", "correct": false },
+            { "text": "$\\frac{6}{12}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 8 : $\\frac{7}{8} - \\frac{1}{4} = \\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}$"
+    },
+    {
+        "question": "Calculer la différence suivante :",
+        "formula": "\\frac{2}{3} - \\frac{1}{5}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Soustraire des fractions",
+        "answers": [
+            { "text": "$\\frac{7}{15}$", "correct": true },
+            { "text": "$\\frac{1}{2}$", "correct": false },
+            { "text": "$\\frac{3}{15}$", "correct": false },
+            { "text": "$\\frac{1}{8}$", "correct": false }
+        ],
+        "explanation": "Dénominateur commun 15 : $\\frac{2}{3} - \\frac{1}{5} = \\frac{10}{15} - \\frac{3}{15} = \\frac{7}{15}$"
+    },
+    {
+        "question": "Calculer la différence suivante :",
+        "formula": "1 - \\frac{2}{7}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Soustraire des fractions",
+        "answers": [
+            { "text": "$\\frac{5}{7}$", "correct": true },
+            { "text": "$\\frac{2}{7}$", "correct": false },
+            { "text": "$\\frac{7}{7}$", "correct": false },
+            { "text": "$-\\frac{1}{7}$", "correct": false }
+        ],
+        "explanation": "$1 = \\frac{7}{7}$, donc $1 - \\frac{2}{7} = \\frac{7}{7} - \\frac{2}{7} = \\frac{5}{7}$"
+    },
+    {
+        "question": "Calculer le produit suivant :",
+        "formula": "\\frac{2}{3} \\times \\frac{5}{7}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Multiplier des fractions",
+        "answers": [
+            { "text": "$\\frac{10}{21}$", "correct": true },
+            { "text": "$\\frac{7}{10}$", "correct": false },
+            { "text": "$\\frac{10}{10}$", "correct": false },
+            { "text": "$\\frac{7}{21}$", "correct": false }
+        ],
+        "explanation": "On multiplie les numérateurs et les dénominateurs : $\\frac{2}{3} \\times \\frac{5}{7} = \\frac{2 \\times 5}{3 \\times 7} = \\frac{10}{21}$"
+    },
+    {
+        "question": "Calculer le produit suivant :",
+        "formula": "\\frac{3}{4} \\times \\frac{2}{5}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Multiplier des fractions",
+        "answers": [
+            { "text": "$\\frac{3}{10}$", "correct": true },
+            { "text": "$\\frac{6}{20}$", "correct": false },
+            { "text": "$\\frac{5}{9}$", "correct": false },
+            { "text": "$\\frac{8}{20}$", "correct": false }
+        ],
+        "explanation": "$\\frac{3}{4} \\times \\frac{2}{5} = \\frac{3 \\times 2}{4 \\times 5} = \\frac{6}{20} = \\frac{3}{10}$ (simplifiée)"
+    },
+    {
+        "question": "Calculer le produit suivant :",
+        "formula": "\\frac{5}{6} \\times \\frac{3}{10}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Multiplier des fractions",
+        "answers": [
+            { "text": "$\\frac{1}{4}$", "correct": true },
+            { "text": "$\\frac{15}{60}$", "correct": false },
+            { "text": "$\\frac{8}{16}$", "correct": false },
+            { "text": "$\\frac{5}{10}$", "correct": false }
+        ],
+        "explanation": "$\\frac{5}{6} \\times \\frac{3}{10} = \\frac{15}{60} = \\frac{1}{4}$ (simplifiée)"
+    },
+    {
+        "question": "Calculer le produit suivant :",
+        "formula": "\\frac{4}{9} \\times \\frac{3}{8}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Multiplier des fractions",
+        "answers": [
+            { "text": "$\\frac{1}{6}$", "correct": true },
+            { "text": "$\\frac{12}{72}$", "correct": false },
+            { "text": "$\\frac{7}{17}$", "correct": false },
+            { "text": "$\\frac{12}{17}$", "correct": false }
+        ],
+        "explanation": "$\\frac{4}{9} \\times \\frac{3}{8} = \\frac{12}{72} = \\frac{1}{6}$ (simplifiée)"
+    },
+    {
+        "question": "Calculer le produit suivant :",
+        "formula": "\\frac{7}{5} \\times \\frac{10}{21}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Multiplier des fractions",
+        "answers": [
+            { "text": "$\\frac{2}{3}$", "correct": true },
+            { "text": "$\\frac{70}{105}$", "correct": false },
+            { "text": "$\\frac{17}{26}$", "correct": false },
+            { "text": "$\\frac{3}{2}$", "correct": false }
+        ],
+        "explanation": "$\\frac{7}{5} \\times \\frac{10}{21} = \\frac{70}{105} = \\frac{2}{3}$ (simplifiée)"
+    },
+    {
+        "question": "Calculer le produit suivant :",
+        "formula": "\\frac{2}{3} \\times 6",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Multiplier des fractions",
+        "answers": [
+            { "text": "$4$", "correct": true },
+            { "text": "$\\frac{12}{3}$", "correct": false },
+            { "text": "$\\frac{8}{3}$", "correct": false },
+            { "text": "$\\frac{2}{18}$", "correct": false }
+        ],
+        "explanation": "$\\frac{2}{3} \\times 6 = \\frac{2 \\times 6}{3} = \\frac{12}{3} = 4$"
+    },
+    {
+        "question": "Calculer le quotient suivant :",
+        "formula": "\\frac{2}{3} \\div \\frac{5}{7}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Diviser des fractions",
+        "answers": [
+            { "text": "$\\frac{14}{15}$", "correct": true },
+            { "text": "$\\frac{10}{21}$", "correct": false },
+            { "text": "$\\frac{7}{15}$", "correct": false },
+            { "text": "$\\frac{5}{3}$", "correct": false }
+        ],
+        "explanation": "Diviser par une fraction = multiplier par son inverse : $\\frac{2}{3} \\div \\frac{5}{7} = \\frac{2}{3} \\times \\frac{7}{5} = \\frac{14}{15}$"
+    },
+    {
+        "question": "Calculer le quotient suivant :",
+        "formula": "\\frac{4}{5} \\div \\frac{2}{3}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Diviser des fractions",
+        "answers": [
+            { "text": "$\\frac{6}{5}$", "correct": true },
+            { "text": "$\\frac{8}{15}$", "correct": false },
+            { "text": "$\\frac{2}{15}$", "correct": false },
+            { "text": "$\\frac{5}{6}$", "correct": false }
+        ],
+        "explanation": "$\\frac{4}{5} \\div \\frac{2}{3} = \\frac{4}{5} \\times \\frac{3}{2} = \\frac{12}{10} = \\frac{6}{5}$"
+    },
+    {
+        "question": "Calculer le quotient suivant :",
+        "formula": "\\frac{3}{8} \\div \\frac{9}{4}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Diviser des fractions",
+        "answers": [
+            { "text": "$\\frac{1}{6}$", "correct": true },
+            { "text": "$\\frac{27}{32}$", "correct": false },
+            { "text": "$\\frac{12}{72}$", "correct": false },
+            { "text": "$\\frac{3}{2}$", "correct": false }
+        ],
+        "explanation": "$\\frac{3}{8} \\div \\frac{9}{4} = \\frac{3}{8} \\times \\frac{4}{9} = \\frac{12}{72} = \\frac{1}{6}$"
+    },
+    {
+        "question": "Calculer le quotient suivant :",
+        "formula": "\\frac{5}{6} \\div \\frac{5}{12}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Diviser des fractions",
+        "answers": [
+            { "text": "$2$", "correct": true },
+            { "text": "$\\frac{25}{72}$", "correct": false },
+            { "text": "$\\frac{1}{2}$", "correct": false },
+            { "text": "$\\frac{10}{18}$", "correct": false }
+        ],
+        "explanation": "$\\frac{5}{6} \\div \\frac{5}{12} = \\frac{5}{6} \\times \\frac{12}{5} = \\frac{60}{30} = 2$"
+    },
+    {
+        "question": "Calculer le quotient suivant :",
+        "formula": "\\frac{7}{10} \\div \\frac{14}{5}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Diviser des fractions",
+        "answers": [
+            { "text": "$\\frac{1}{4}$", "correct": true },
+            { "text": "$\\frac{98}{50}$", "correct": false },
+            { "text": "$\\frac{7}{28}$", "correct": false },
+            { "text": "$4$", "correct": false }
+        ],
+        "explanation": "$\\frac{7}{10} \\div \\frac{14}{5} = \\frac{7}{10} \\times \\frac{5}{14} = \\frac{35}{140} = \\frac{1}{4}$"
+    },
+    {
+        "question": "Calculer le quotient suivant :",
+        "formula": "3 \\div \\frac{2}{5}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Diviser des fractions",
+        "answers": [
+            { "text": "$\\frac{15}{2}$", "correct": true },
+            { "text": "$\\frac{6}{5}$", "correct": false },
+            { "text": "$\\frac{3}{10}$", "correct": false },
+            { "text": "$\\frac{5}{6}$", "correct": false }
+        ],
+        "explanation": "$3 \\div \\frac{2}{5} = 3 \\times \\frac{5}{2} = \\frac{15}{2}$"
+    },
+    {
+        "question": "Simplifier le radical suivant :",
+        "formula": "\\sqrt{18}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Simplifier des radicaux",
+        "answers": [
+            { "text": "$3\\sqrt{2}$", "correct": true },
+            { "text": "$2\\sqrt{3}$", "correct": false },
+            { "text": "$9\\sqrt{2}$", "correct": false },
+            { "text": "$\\sqrt{9}$", "correct": false }
+        ],
+        "explanation": "$\\sqrt{18} = \\sqrt{9 \\times 2} = \\sqrt{9} \\times \\sqrt{2} = 3\\sqrt{2}$"
+    },
+    {
+        "question": "Simplifier le radical suivant :",
+        "formula": "\\sqrt{50}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Simplifier des radicaux",
+        "answers": [
+            { "text": "$5\\sqrt{2}$", "correct": true },
+            { "text": "$2\\sqrt{5}$", "correct": false },
+            { "text": "$25\\sqrt{2}$", "correct": false },
+            { "text": "$10\\sqrt{5}$", "correct": false }
+        ],
+        "explanation": "$\\sqrt{50} = \\sqrt{25 \\times 2} = \\sqrt{25} \\times \\sqrt{2} = 5\\sqrt{2}$"
+    },
+    {
+        "question": "Simplifier le radical suivant :",
+        "formula": "\\sqrt{72}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Simplifier des radicaux",
+        "answers": [
+            { "text": "$6\\sqrt{2}$", "correct": true },
+            { "text": "$2\\sqrt{6}$", "correct": false },
+            { "text": "$8\\sqrt{9}$", "correct": false },
+            { "text": "$36\\sqrt{2}$", "correct": false }
+        ],
+        "explanation": "$\\sqrt{72} = \\sqrt{36 \\times 2} = \\sqrt{36} \\times \\sqrt{2} = 6\\sqrt{2}$"
+    },
+    {
+        "question": "Simplifier le radical suivant :",
+        "formula": "\\sqrt{48}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Simplifier des radicaux",
+        "answers": [
+            { "text": "$4\\sqrt{3}$", "correct": true },
+            { "text": "$3\\sqrt{4}$", "correct": false },
+            { "text": "$12\\sqrt{4}$", "correct": false },
+            { "text": "$16\\sqrt{3}$", "correct": false }
+        ],
+        "explanation": "$\\sqrt{48} = \\sqrt{16 \\times 3} = \\sqrt{16} \\times \\sqrt{3} = 4\\sqrt{3}$"
+    },
+    {
+        "question": "Simplifier le radical suivant :",
+        "formula": "\\sqrt{32}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Simplifier des radicaux",
+        "answers": [
+            { "text": "$4\\sqrt{2}$", "correct": true },
+            { "text": "$2\\sqrt{4}$", "correct": false },
+            { "text": "$8\\sqrt{4}$", "correct": false },
+            { "text": "$16\\sqrt{2}$", "correct": false }
+        ],
+        "explanation": "$\\sqrt{32} = \\sqrt{16 \\times 2} = \\sqrt{16} \\times \\sqrt{2} = 4\\sqrt{2}$"
+    },
+    {
+        "question": "Simplifier le radical suivant :",
+        "formula": "\\sqrt{75}",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Simplifier des radicaux",
+        "answers": [
+            { "text": "$5\\sqrt{3}$", "correct": true },
+            { "text": "$3\\sqrt{5}$", "correct": false },
+            { "text": "$25\\sqrt{3}$", "correct": false },
+            { "text": "$15\\sqrt{5}$", "correct": false }
+        ],
+        "explanation": "$\\sqrt{75} = \\sqrt{25 \\times 3} = \\sqrt{25} \\times \\sqrt{3} = 5\\sqrt{3}$"
+    },
+    {
+        "question": "Une fonction $f$ est croissante sur $[-3; 2]$ et décroissante sur $[2; 5]$. Quelle affirmation est vraie ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Utiliser le sens de variation d'une fonction",
+        "answers": [
+            { "text": "$f(1) < f(2)$", "correct": true },
+            { "text": "$f(2) < f(3)$", "correct": false },
+            { "text": "$f(4) < f(3)$", "correct": false },
+            { "text": "$f(-2) < f(-3)$", "correct": false }
+        ],
+        "explanation": "$f$ est croissante sur $[-3; 2]$ donc $1 < 2$ implique $f(1) < f(2)$"
+    },
+    {
+        "question": "Une fonction $f$ est décroissante sur $[-2; 4]$. Quelle affirmation est vraie ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Utiliser le sens de variation d'une fonction",
+        "answers": [
+            { "text": "$f(3) < f(1)$", "correct": true },
+            { "text": "$f(0) < f(2)$", "correct": false },
+            { "text": "$f(3) > f(1)$", "correct": false },
+            { "text": "$f(-1) < f(0)$", "correct": false }
+        ],
+        "explanation": "$f$ est décroissante sur $[-2; 4]$ donc $1 < 3$ implique $f(1) > f(3)$, autrement dit $f(3) < f(1)$"
+    },
+    {
+        "question": "Une fonction $f$ est croissante sur $[0; 5]$ et décroissante sur $[5; 10]$. Quelle affirmation est vraie ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Utiliser le sens de variation d'une fonction",
+        "answers": [
+            { "text": "$f(5) > f(7)$", "correct": true },
+            { "text": "$f(6) > f(5)$", "correct": false },
+            { "text": "$f(3) > f(4)$", "correct": false },
+            { "text": "$f(9) > f(8)$", "correct": false }
+        ],
+        "explanation": "$f$ est décroissante sur $[5; 10]$ donc $5 < 7$ implique $f(5) > f(7)$"
+    },
+    {
+        "question": "Une fonction $f$ est croissante sur $[-4; 1]$. Quelle affirmation est vraie ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Utiliser le sens de variation d'une fonction",
+        "answers": [
+            { "text": "$f(-2) > f(-3)$", "correct": true },
+            { "text": "$f(-1) < f(-2)$", "correct": false },
+            { "text": "$f(0) < f(-1)$", "correct": false },
+            { "text": "$f(-4) > f(-3)$", "correct": false }
+        ],
+        "explanation": "$f$ est croissante sur $[-4; 1]$ donc $-3 < -2$ implique $f(-3) < f(-2)$, autrement dit $f(-2) > f(-3)$"
+    },
+    {
+        "question": "Une fonction $f$ est décroissante sur $[-5; -1]$ et croissante sur $[-1; 3]$. Quelle affirmation est vraie ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Utiliser le sens de variation d'une fonction",
+        "answers": [
+            { "text": "$f(-1) < f(2)$", "correct": true },
+            { "text": "$f(-2) < f(-3)$", "correct": false },
+            { "text": "$f(1) < f(0)$", "correct": false },
+            { "text": "$f(-1) > f(0)$", "correct": false }
+        ],
+        "explanation": "$f$ est croissante sur $[-1; 3]$ donc $-1 < 2$ implique $f(-1) < f(2)$"
+    },
+    {
+        "question": "Une fonction $f$ est croissante sur $[-3; 0]$ et décroissante sur $[0; 4]$. Quelle affirmation est vraie ?",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Utiliser le sens de variation d'une fonction",
+        "answers": [
+            { "text": "$f(0) > f(3)$", "correct": true },
+            { "text": "$f(1) > f(0)$", "correct": false },
+            { "text": "$f(-2) > f(-1)$", "correct": false },
+            { "text": "$f(3) > f(2)$", "correct": false }
+        ],
+        "explanation": "$f$ est décroissante sur $[0; 4]$ donc $0 < 3$ implique $f(0) > f(3)$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x - 1) * (x + 3) + 2",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 3,
+            "yMin": -3,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -3$ ou $x = 1$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la courbe et la droite $y=2$. On trouve $x=-3$ et $x=1$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x - 2) * (x + 2) + 4",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -2$ ou $x = 2$", "correct": true },
+            { "text": "$x = 0$", "correct": false },
+            { "text": "$x = -4$ ou $x = 4$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la courbe et la droite $y=4$. On trouve $x=-2$ et $x=2$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = -3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 5) - 3",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -8,
+            "yMax": 4,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 1$ ou $x = 5$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = -3$", "correct": false },
+            { "text": "$x = 0$ ou $x = 6$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=-3$. On trouve $x=1$ et $x=5$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x + 1) * (x - 3) + 2",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -4,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -1$ ou $x = 3$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = -2$ ou $x = 4$", "correct": false },
+            { "text": "$x = 1$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=2$. On trouve $x=-1$ et $x=3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x - 2) * (x - 4) + 3",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$ ou $x = 4$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 0$ ou $x = 6$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=3$. On trouve $x=2$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = -4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x + 2) * (x - 2) - 4",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -9,
+            "yMax": 3,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -2$ ou $x = 2$", "correct": true },
+            { "text": "$x = -4$", "correct": false },
+            { "text": "$x = 0$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=-4$. On trouve $x=-2$ et $x=2$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(2 - x) * (x - 4) + 3",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$ ou $x = 4$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 1$ ou $x = 5$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=3$. On trouve $x=2$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 5$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(1 - x) * (x + 3) + 5",
+        "graphParams": {
+            "xMin": -6,
+            "xMax": 4,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -3$ ou $x = 1$", "correct": true },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "$x = 0$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=5$. On trouve $x=-3$ et $x=1$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = -2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(-1 - x) * (x - 5) - 2",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 8,
+            "yMin": -8,
+            "yMax": 4,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -1$ ou $x = 5$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = -2$", "correct": false },
+            { "text": "$x = 0$ ou $x = 4$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=-2$. On trouve $x=-1$ et $x=5$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 6$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(3 - x) * (x + 1) + 6",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 12,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -1$ ou $x = 3$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 6$", "correct": false },
+            { "text": "$x = 0$ ou $x = 2$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=6$. On trouve $x=-1$ et $x=3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(-2 - x) * (x - 4) + 1",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 7,
+            "yMin": -4,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -2$ ou $x = 4$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 0$ ou $x = 2$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=1$. On trouve $x=-2$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 0$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(1 - x) * (x - 5) + 0",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -6,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 1$ ou $x = 5$", "correct": true },
+            { "text": "$x = 0$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points où la courbe coupe l'axe des abscisses. On trouve $x=1$ et $x=5$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = -3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x - 2) * (x - 2) - 3",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -5,
+            "yMax": 5,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$", "correct": true },
+            { "text": "$x = -3$", "correct": false },
+            { "text": "$x = 0$ ou $x = 4$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=-3$. La parabole admet un minimum en $x=2$, il n'y a qu'une seule solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 5$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "-(x + 1) * (x + 1) + 5",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 3,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -1$", "correct": true },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = -3$ ou $x = 1$", "correct": false },
+            { "text": "$x = 0$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=5$. La parabole admet un maximum en $x=-1$, il n'y a qu'une seule solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 0$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x - 3) * (x - 3) + 0",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 3$", "correct": true },
+            { "text": "$x = 0$", "correct": false },
+            { "text": "$x = 1$ ou $x = 5$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points où la courbe coupe l'axe des abscisses. La parabole touche l'axe en un seul point : $x=3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "-(x - 1) * (x - 1) + 4",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 1$", "correct": true },
+            { "text": "$x = 4$", "correct": false },
+            { "text": "$x = -1$ ou $x = 3$", "correct": false },
+            { "text": "$x = 0$ ou $x = 2$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=4$. La parabole admet un maximum en $x=1$, il n'y a qu'une seule solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = -1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x + 2) * (x + 2) - 1",
+        "graphParams": {
+            "xMin": -6,
+            "xMax": 2,
+            "yMin": -3,
+            "yMax": 7,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -2$", "correct": true },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "$x = -4$ ou $x = 0$", "correct": false },
+            { "text": "$x = 2$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=-1$. La parabole admet un minimum en $x=-2$, il n'y a qu'une seule solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 7$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "-(x - 4) * (x - 4) + 7",
+        "graphParams": {
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 4$", "correct": true },
+            { "text": "$x = 7$", "correct": false },
+            { "text": "$x = 2$ ou $x = 6$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=7$. La parabole admet un maximum en $x=4$, il n'y a qu'une seule solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 1) + 3",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 0$ ou $x = 2$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=2$. La parabole admet un minimum de $3$ en $x=1$, donc la droite $y=2$ ne coupe jamais la courbe"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 5$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "-(x + 2) * (x + 2) + 4",
+        "graphParams": {
+            "xMin": -6,
+            "xMax": 2,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = -2$", "correct": false },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = -4$ ou $x = 0$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=5$. La parabole admet un maximum de $4$ en $x=-2$, donc la droite $y=5$ ne coupe jamais la courbe"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = -1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x - 3) * (x - 3) + 0",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -3,
+            "yMax": 7,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 2$ ou $x = 4$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=-1$. La parabole admet un minimum de $0$ en $x=3$, donc la droite $y=-1$ ne coupe jamais la courbe"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 8$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "-(x - 2) * (x - 2) + 7",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 8$", "correct": false },
+            { "text": "$x = 1$ ou $x = 3$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=8$. La parabole admet un maximum de $7$ en $x=2$, donc la droite $y=8$ ne coupe jamais la courbe"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "(x + 1) * (x + 1) + 2",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 3,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "$x = -2$ ou $x = 0$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=1$. La parabole admet un minimum de $2$ en $x=-1$, donc la droite $y=1$ ne coupe jamais la courbe"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = 10$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=k par lecture graphique",
+        "graphFunction": "-(x - 4) * (x - 4) + 9",
+        "graphParams": {
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 2,
+            "yMax": 12,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = 4$", "correct": false },
+            { "text": "$x = 10$", "correct": false },
+            { "text": "$x = 3$ ou $x = 5$", "correct": false }
+        ],
+        "explanation": "On cherche les points d'intersection avec $y=10$. La parabole admet un maximum de $9$ en $x=4$, donc la droite $y=10$ ne coupe jamais la courbe"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 5) + 3",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]1 ; 5[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [1 ; 5]$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous de la droite $y=3$ entre les abscisses $1$ et $5$ (valeurs exclues car on cherche strictement inférieur)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(2 - x) * (x + 2) + 2",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-2 ; 2[$", "correct": false },
+            { "text": "$x \\in [-2 ; 2]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est en dessous de la droite $y=2$ à l'extérieur de l'intervalle $[-2 ; 2]$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < -1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 3) * (x - 3) - 1",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -3,
+            "yMax": 7,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x \\in ]2 ; 4[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $-1$ en $x=3$, elle est donc toujours supérieure ou égale à $-1$. L'inéquation $f(x) < -1$ n'a pas de solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 6$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x + 1) * (x + 1) + 6",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 3,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]-1 ; +\\infty[$", "correct": true },
+            { "text": "$x = -1$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole admet un maximum de $6$ en $x=-1$, elle est donc toujours inférieure ou égale à $6$. L'inéquation $f(x) < 6$ est vraie pour tout $x \\neq -1$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 0$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 2) * (x - 4) + 0",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 7,
+            "yMin": -8,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-2 ; 4[$", "correct": true },
+            { "text": "$x \\in [-2 ; 4]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous de l'axe des abscisses (donc $f(x) < 0$) entre $x=-2$ et $x=4$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 5$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 2) * (x - 2) + 1",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -1,
+            "yMax": 9,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]0 ; 4[$", "correct": true },
+            { "text": "$x \\in [0 ; 4]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 0[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "Pour trouver où $f(x) < 5$, on cherche où la courbe est en dessous de $y=5$. En résolvant $(x-2)^2+1=5$, on trouve $x=0$ ou $x=4$. La solution est $]0 ; 4[$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < -2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 3) - 2",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -4,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]1 ; 3[$", "correct": true },
+            { "text": "$x \\in [1 ; 3]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous de $y=-2$ entre les racines $x=1$ et $x=3$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(3 - x) * (x + 1) + 4",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-1 ; 3[$", "correct": false },
+            { "text": "$x \\in [-1 ; 3]$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est en dessous de $y=4$ à l'extérieur de l'intervalle $[-1 ; 3]$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 3) * (x + 3) + 1",
+        "graphParams": {
+            "xMin": -7,
+            "xMax": 1,
+            "yMin": -1,
+            "yMax": 9,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x \\in ]-\\infty ; -3[$", "correct": false },
+            { "text": "$x \\in ]-3 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $1$ en $x=-3$, donc $f(x) \\geqslant 1$ pour tout $x$. L'inéquation $f(x) < 1$ n'a pas de solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 8$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x - 2) * (x - 2) + 8",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole admet un maximum de $8$ en $x=2$, donc $f(x) \\leqslant 8$ pour tout $x$. L'inéquation $f(x) < 8$ est vraie pour tout $x \\neq 2$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(-1 - x) * (x - 3) + 3",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-1 ; 3[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est en dessous de $y=3$ à l'extérieur de l'intervalle $[-1 ; 3]$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 1) + 0",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-1 ; 3[$", "correct": true },
+            { "text": "$x \\in [-1 ; 3]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "Pour $f(x) < 4$, on résout $(x-1)^2 < 4$, soit $(x-1)^2+0=4$ qui donne $x=-1$ ou $x=3$. La parabole est en dessous de $y=4$ sur $]-1 ; 3[$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < -4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 1) * (x - 5) - 4",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 8,
+            "yMin": -10,
+            "yMax": 4,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-1 ; 5[$", "correct": true },
+            { "text": "$x \\in [-1 ; 5]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous de $y=-4$ entre les racines $x=-1$ et $x=5$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 6$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(4 - x) * (x - 2) + 6",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]2 ; 4[$", "correct": false },
+            { "text": "$x \\in [2 ; 4]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est en dessous de $y=6$ à l'extérieur de l'intervalle $[2 ; 4]$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 0$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 4) * (x - 4) + 2",
+        "graphParams": {
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": -1,
+            "yMax": 9,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x \\in ]2 ; 6[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 4[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $2$ en $x=4$, donc $f(x) \\geqslant 2 > 0$ pour tout $x$. L'inéquation $f(x) < 0$ n'a pas de solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 5$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x + 3) * (x + 3) + 5",
+        "graphParams": {
+            "xMin": -7,
+            "xMax": 1,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -3[ \\cup ]-3 ; +\\infty[$", "correct": true },
+            { "text": "$x = -3$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole admet un maximum de $5$ en $x=-3$, donc $f(x) \\leqslant 5$ pour tout $x$. L'inéquation $f(x) < 5$ est vraie pour tout $x \\neq -3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < 1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 2) * (x - 6) + 1",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 9,
+            "yMin": -4,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]2 ; 6[$", "correct": true },
+            { "text": "$x \\in [2 ; 6]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]6 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous de $y=1$ entre les racines $x=2$ et $x=6$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 5) + 4",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in [1 ; 5]$", "correct": true },
+            { "text": "$x \\in ]1 ; 5[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous ou sur la droite $y=4$ entre les abscisses $1$ et $5$ (valeurs incluses car inégalité large)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(3 - x) * (x + 1) + 3",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [-1 ; 3]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est en dessous ou sur $y=3$ à l'extérieur de l'intervalle $]-1 ; 3[$, donc sur $]-\\infty ; -1] \\cup [3 ; +\\infty[$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant -2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 2) * (x - 2) - 2",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -4,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$", "correct": true },
+            { "text": "$x \\in ]1 ; 3[$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $-2$ en $x=2$. L'inéquation $f(x) \\leqslant -2$ n'est vraie que pour $x=2$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 7$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x - 1) * (x - 1) + 7",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole admet un maximum de $7$ en $x=1$, donc $f(x) \\leqslant 7$ pour tout $x$. La solution est $\\mathbb{R}$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 0$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 3) * (x - 3) + 0",
+        "graphParams": {
+            "xMin": -6,
+            "xMax": 6,
+            "yMin": -10,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in [-3 ; 3]$", "correct": true },
+            { "text": "$x \\in ]-3 ; 3[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -3] \\cup [3 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous ou sur l'axe des abscisses (donc $f(x) \\leqslant 0$) entre $x=-3$ et $x=3$ (valeurs incluses)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 6$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 3) * (x - 3) + 2",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in [1 ; 5]$", "correct": true },
+            { "text": "$x \\in ]1 ; 5[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "Pour $f(x) \\leqslant 6$, on résout $(x-3)^2+2 \\leqslant 6$, soit $(x-3)^2 \\leqslant 4$. Les racines sont $x=1$ et $x=5$, la solution est $[1 ; 5]$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant -3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 2) * (x - 4) - 3",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 7,
+            "yMin": -10,
+            "yMax": 4,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in [-2 ; 4]$", "correct": true },
+            { "text": "$x \\in ]-2 ; 4[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous ou sur $y=-3$ entre les racines $x=-2$ et $x=4$ (valeurs incluses)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 5$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(2 - x) * (x + 2) + 5",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -2] \\cup [2 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [-2 ; 2]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est en dessous ou sur $y=5$ à l'extérieur de l'intervalle $]-2 ; 2[$, donc sur $]-\\infty ; -2] \\cup [2 ; +\\infty[$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 1) * (x + 1) + 1",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 3,
+            "yMin": -1,
+            "yMax": 9,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -1$", "correct": true },
+            { "text": "$x \\in [-2 ; 0]$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $1$ en $x=-1$. L'inéquation $f(x) \\leqslant 1$ n'est vraie que pour $x=-1$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 9$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x - 3) * (x - 3) + 9",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": 0,
+            "yMax": 12,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole admet un maximum de $9$ en $x=3$, donc $f(x) \\leqslant 9$ pour tout $x$. La solution est $\\mathbb{R}$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 5) + 2",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -4,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in [1 ; 5]$", "correct": true },
+            { "text": "$x \\in ]1 ; 5[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous ou sur $y=2$ entre les racines $x=1$ et $x=5$ (valeurs incluses)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant 0$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 2) * (x - 2) + 3",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "$x \\in [0 ; 4]$", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $3$ en $x=2$, donc $f(x) \\geqslant 3 > 0$ pour tout $x$. L'inéquation $f(x) \\leqslant 0$ n'a pas de solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > 3$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 2) * (x - 4) + 3",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]2 ; 4[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est au-dessus de $y=3$ à l'extérieur de l'intervalle $[2 ; 4]$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > 5$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x + 1) * (x - 3) + 5",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-1 ; 3[$", "correct": true },
+            { "text": "$x \\in [-1 ; 3]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est au-dessus de $y=5$ entre les racines $x=-1$ et $x=3$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > 2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 3) * (x - 3) + 2",
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $2$ en $x=3$, donc $f(x) > 2$ pour tout $x \\neq 3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > 6$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x - 2) * (x - 2) + 6",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole admet un maximum de $6$ en $x=2$, donc $f(x) \\leqslant 6$ pour tout $x$. L'inéquation $f(x) > 6$ n'a pas de solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > 1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 2) * (x - 2) + 1",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-2 ; 2[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -2] \\cup [2 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole est au-dessus de $y=1$ à l'extérieur de l'intervalle $[-2 ; 2]$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > -4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 1) - 4",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -6,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $-4$ en $x=1$, donc $f(x) > -4$ pour tout $x \\neq 1$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant 4$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 1) * (x - 5) + 4",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [1 ; 5]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est au-dessus ou sur $y=4$ à l'extérieur de l'intervalle $]1 ; 5[$ (valeurs incluses)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant 2$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x + 1) * (x - 5) + 2",
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 8,
+            "yMin": -4,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in [-1 ; 5]$", "correct": true },
+            { "text": "$x \\in ]-1 ; 5[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -1] \\cup [5 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est au-dessus ou sur $y=2$ entre les racines $x=-1$ et $x=5$ (valeurs incluses)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant 0$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 3) * (x - 3) + 0",
+        "graphParams": {
+            "xMin": -6,
+            "xMax": 6,
+            "yMin": -10,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -3] \\cup [3 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; -3[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [-3 ; 3]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est au-dessus ou sur l'axe des abscisses à l'extérieur de l'intervalle $]-3 ; 3[$ (valeurs incluses)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant 5$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x - 2) * (x - 2) + 5",
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": 2,
+            "yMax": 12,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole admet un minimum de $5$ en $x=2$, donc $f(x) \\geqslant 5$ pour tout $x$. La solution est $\\mathbb{R}$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant 8$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "-(x - 1) * (x - 1) + 8",
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 1$", "correct": true },
+            { "text": "$x \\in [0 ; 2]$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole admet un maximum de $8$ en $x=1$. L'inéquation $f(x) \\geqslant 8$ n'est vraie que pour $x=1$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant -1$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<k par lecture graphique",
+        "graphFunction": "(x + 2) * (x - 4) - 1",
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 7,
+            "yMin": -10,
+            "yMax": 4,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [-2 ; 4]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est au-dessus ou sur $y=-1$ à l'extérieur de l'intervalle $]-2 ; 4[$ (valeurs incluses)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["(x - 2)*(x - 4) - 0.5*(x - 2) + (-1)", "-0.5*(x - 2) + (-1)"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -4,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$ ou $x = 4$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 1$ ou $x = 5$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=2$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["-(x + 1)*(x - 3) + (x - (-1)) + 1", "(x - (-1)) + 1"],
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -1$ ou $x = 3$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 0$ ou $x = 2$", "correct": false },
+            { "text": "$x = 2$", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=-1$ et $x=3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["0.5*(x - 3)*(x - 3) + 2*3 + 1", "2*x + 1"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 3$", "correct": true },
+            { "text": "$x = 1$ ou $x = 3$", "correct": false },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole et la droite ne se coupent qu'en un seul point d'abscisse $x=3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["(x - 2)*(x - 2) + 3", "-x + 4"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 1$ ou $x = 3$", "correct": false },
+            { "text": "$x = 0$", "correct": false }
+        ],
+        "explanation": "La parabole et la droite ne se coupent pas, il n'y a pas de solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["(x + 2)*(x - 4) - 0.5*(x - (-2)) + 3", "-0.5*(x - (-2)) + 3"],
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 7,
+            "yMin": -10,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -2$ ou $x = 4$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 0$ ou $x = 2$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=-2$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["2*x + 1", "-x + 7"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$", "correct": true },
+            { "text": "$x = 5$", "correct": false },
+            { "text": "$x = 0$ ou $x = 4$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "Les deux droites se coupent en un seul point d'abscisse $x=2$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["-(x - 1)*(x - 5) + 0.5*(x - 1) + 3.5", "0.5*(x - 1) + 3.5"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 1$ ou $x = 5$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 0$ ou $x = 6$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=1$ et $x=5$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["0.5*(x - 2)*(x - 2) - 0.5*2 + 4", "-0.5*x + 4"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -1,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 1$ ou $x = 5$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole et la droite ne se coupent qu'en un seul point d'abscisse $x=2$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["(x + 1)*(x - 3) + (x - (-1)) - 2", "(x - (-1)) - 2"],
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -6,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -1$ ou $x = 3$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "$x = 0$ ou $x = 2$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=-1$ et $x=3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["-0.5*(x - 0)*(x - 4) + (x - 0) + 1", "(x - 0) + 1"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -1,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 0$ ou $x = 4$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 1$ ou $x = 3$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=0$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["0.5*(x - 2)*(x - 4) - (x - 2) + 7", "-(x - 2) + 7"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -2,
+            "yMax": 12,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$ ou $x = 4$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 1$ ou $x = 5$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=2$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["(x + 2)*(x + 2) + 1", "3"],
+        "graphParams": {
+            "xMin": -6,
+            "xMax": 2,
+            "yMin": -1,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = -4$ ou $x = 0$", "correct": true },
+            { "text": "$x = -2$", "correct": false },
+            { "text": "$x = -3$ ou $x = -1$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite horizontale $y=3$. On trouve $x=-4$ et $x=0$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 1)*(x - 5) - 0.5*(x - 1) + 2", "-0.5*(x - 1) + 2"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -4,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]1 ; 5[$", "correct": true },
+            { "text": "$x \\in [1 ; 5]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous de la droite entre $x=1$ et $x=5$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["-(x + 1)*(x - 3) + (x - (-1)) + 2", "(x - (-1)) + 2"],
+        "graphParams": {
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-1 ; 3[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est en dessous de la droite à l'extérieur de l'intervalle $[-1 ; 3]$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 2)*(x - 4) - 0.5*(x - 2) + 3", "-0.5*(x - 2) + 3"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in [2 ; 4]$", "correct": true },
+            { "text": "$x \\in ]2 ; 4[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est en dessous ou sur la droite entre $x=2$ et $x=4$ (valeurs incluses car inégalité large)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 1)*(x - 1) + 2", "x + 4"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x \\in ]1 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x \\in [-1 ; 3]$", "correct": false }
+        ],
+        "explanation": "La parabole est toujours en dessous ou sur la droite, la solution est $\\mathbb{R}$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x + 2)*(x - 4) - 0.5*(x - (-2)) - 1", "-0.5*(x - (-2)) - 1"],
+        "graphParams": {
+            "xMin": -5,
+            "xMax": 7,
+            "yMin": -10,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]4 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-2 ; 4[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est au-dessus de la droite à l'extérieur de l'intervalle $[-2 ; 4]$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["-(x - 1)*(x - 5) + 0.5*(x - 1) + 3", "0.5*(x - 1) + 3"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]1 ; 5[$", "correct": true },
+            { "text": "$x \\in [1 ; 5]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est au-dessus de la droite entre $x=1$ et $x=5$ (valeurs exclues)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 3)*(x - 3) + 2*3 + 1", "2*x + 1"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -1,
+            "yMax": 16,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole touche la droite en $x=3$ mais est au-dessus partout ailleurs"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x + 1)*(x - 3) - (x - (-1)) + 1", "-(x - (-1)) + 1"],
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -6,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [-1 ; 3]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole est au-dessus ou sur la droite à l'extérieur de l'intervalle $]-1 ; 3[$ (valeurs incluses)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 2)*(x - 2) + 4", "x + 3"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 12,
+            "label": ""
+        },
+        "answers": [
+            { "text": "Pas de solution", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 2[$", "correct": false },
+            { "text": "$x \\in ]2 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole est toujours au-dessus de la droite, l'inéquation $f(x) < g(x)$ n'a pas de solution"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["-(x - 0)*(x - 4) + 0.5*0 + 4", "0.5*x + 4"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 0] \\cup [4 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 0[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [0 ; 4]$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole tournée vers le bas est en dessous ou sur la droite à l'extérieur de l'intervalle $]0 ; 4[$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["2*x + 1", "-x + 7"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -2,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]2 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in [2 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 2[$", "correct": false },
+            { "text": "$x = 2$", "correct": false }
+        ],
+        "explanation": "La droite $f$ est au-dessus de la droite $g$ pour $x > 2$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["-(x - 1)*(x - 1) + 5", "5"],
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 1$", "correct": true },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole admet un maximum de 5 en $x=1$, elle est au-dessus ou sur la droite uniquement en $x=1$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["(x - 1)*(x - 5) + 2", "-(x - 1)*(x - 5) + 2"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -3,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 1$ ou $x = 5$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 2$ ou $x = 4$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "Les deux paraboles se coupent en $x=1$ et $x=5$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["0.5*(x - 1)*(x - 3) + 1", "-(x - 1)*(x - 3) + 1"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 1$ ou $x = 3$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 0$ ou $x = 4$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole montante et la parabole descendante se coupent en $x=1$ et $x=3$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["(x - 2)*(x - 4) + 3", "-(x - 2)*(x - 4) + 3"],
+        "graphParams": {
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 2$ ou $x = 4$", "correct": true },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "$x = 1$ ou $x = 5$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "Les deux paraboles se coupent en $x=2$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 1)*(x - 5) + 2", "-(x - 1)*(x - 5) + 2"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -3,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]1 ; 5[$", "correct": true },
+            { "text": "$x \\in [1 ; 5]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole montante est en dessous de la parabole descendante entre $x=1$ et $x=5$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leq g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["0.5*(x - 1)*(x - 3) + 1", "-(x - 1)*(x - 3) + 1"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 6,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in [1 ; 3]$", "correct": true },
+            { "text": "$x \\in ]1 ; 3[$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1] \\cup [3 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole montante est en dessous ou sur la parabole descendante entre $x=1$ et $x=3$ (inclus)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["-(x - 2)*(x - 4) + 1", "(x - 2)*(x - 4) + 1"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -6,
+            "yMax": 4,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]2 ; 4[$", "correct": true },
+            { "text": "$x \\in [2 ; 4]$", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+        ],
+        "explanation": "La parabole descendante est au-dessus de la parabole montante entre $x=2$ et $x=4$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geq g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 2)*(x - 4) + 3", "-(x - 2)*(x - 4) + 3"],
+        "graphParams": {
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in ]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$x \\in [2 ; 4]$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole montante est au-dessus ou sur la parabole descendante à l'extérieur de l'intervalle $]2 ; 4[$"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) < g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 1)*(x - 1) + 2", "(x - 1)*(x - 1) + 5"],
+        "graphParams": {
+            "xMin": -2,
+            "xMax": 4,
+            "yMin": 0,
+            "yMax": 12,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x = 1$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false }
+        ],
+        "explanation": "La première parabole est toujours strictement en dessous de la seconde (même sommet mais ordonnées différentes)"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leq g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x + 1)*(x - 3) + 1", "(x + 1)*(x - 3) + 4"],
+        "graphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 10,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x \\in [-1 ; 3]$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x = 1$", "correct": false }
+        ],
+        "explanation": "Les deux paraboles ont la même forme mais la première est toujours en dessous de la seconde"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) > g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["-(x - 2)*(x - 2) + 6", "-(x - 2)*(x - 2) + 3"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "Pas de solution", "correct": false },
+            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false }
+        ],
+        "explanation": "Les deux paraboles descendantes ont même sommet mais la première est toujours strictement au-dessus"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geq g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)<g(x) par lecture graphique",
+        "graphFunction": ["(x - 2)*(x - 4) + 1", "(x - 2)*(x - 4) - 2"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -5,
+            "yMax": 8,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x \\in [2 ; 4]$", "correct": false },
+            { "text": "$x = 3$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "Les deux paraboles ont la même forme mais la première est toujours au-dessus ou égale à la seconde"
+    },
+    {
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) = g(x)$",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Résoudre f(x)=g(x) par lecture graphique",
+        "graphFunction": ["(x - 0)*(x - 4) + 3", "-(x - 0)*(x - 4) + 3"],
+        "graphParams": {
+            "xMin": -1,
+            "xMax": 5,
+            "yMin": -2,
+            "yMax": 7,
+            "label": ""
+        },
+        "answers": [
+            { "text": "$x = 0$ ou $x = 4$", "correct": true },
+            { "text": "$x = 2$", "correct": false },
+            { "text": "$x = 1$ ou $x = 3$", "correct": false },
+            { "text": "Pas de solution", "correct": false }
+        ],
+        "explanation": "La parabole montante et la parabole descendante se coupent en $x=0$ et $x=4$"
     }
 ]
