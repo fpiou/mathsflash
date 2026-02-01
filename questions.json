@@ -5794,5 +5794,1344 @@
             { "text": "Pas de solution", "correct": false }
         ],
         "explanation": "La parabole montante et la parabole descendante se coupent en $x=0$ et $x=4$"
+    },
+    {
+        "question": "Dans une classe de 30 élèves, $\\frac{2}{5}$ des élèves pratiquent un sport. Combien d'élèves pratiquent un sport ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$12$ élèves", "correct": true },
+            { "text": "$15$ élèves", "correct": false },
+            { "text": "$10$ élèves", "correct": false },
+            { "text": "$6$ élèves", "correct": false }
+        ],
+        "explanation": "$\\frac{2}{5}$ de $30 = \\frac{2}{5} \\times 30 = \\frac{60}{5} = 12$ élèves"
+    },
+    {
+        "question": "Un magasin propose une réduction de $\\frac{1}{4}$ sur un article à $80$ €. Quel est le montant de la réduction ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$20$ €", "correct": true },
+            { "text": "$60$ €", "correct": false },
+            { "text": "$40$ €", "correct": false },
+            { "text": "$10$ €", "correct": false }
+        ],
+        "explanation": "$\\frac{1}{4}$ de $80 = \\frac{1}{4} \\times 80 = \\frac{80}{4} = 20$ €"
+    },
+    {
+        "question": "Une bouteille contient $2$ litres d'eau. On en boit $\\frac{3}{8}$. Quelle quantité d'eau a-t-on bu ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$0{,}75$ L", "correct": true },
+            { "text": "$0{,}5$ L", "correct": false },
+            { "text": "$1$ L", "correct": false },
+            { "text": "$1{,}25$ L", "correct": false }
+        ],
+        "explanation": "$\\frac{3}{8}$ de $2 = \\frac{3}{8} \\times 2 = \\frac{6}{8} = \\frac{3}{4} = 0{,}75$ L"
+    },
+    {
+        "question": "Sur $120$ personnes interrogées, $\\frac{2}{3}$ préfèrent le chocolat. Combien de personnes préfèrent le chocolat ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$80$ personnes", "correct": true },
+            { "text": "$60$ personnes", "correct": false },
+            { "text": "$40$ personnes", "correct": false },
+            { "text": "$90$ personnes", "correct": false }
+        ],
+        "explanation": "$\\frac{2}{3}$ de $120 = \\frac{2}{3} \\times 120 = \\frac{240}{3} = 80$ personnes"
+    },
+    {
+        "question": "Un terrain de $450$ m² est divisé en trois parties égales. Quelle est l'aire d'une partie ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$150$ m²", "correct": true },
+            { "text": "$225$ m²", "correct": false },
+            { "text": "$100$ m²", "correct": false },
+            { "text": "$135$ m²", "correct": false }
+        ],
+        "explanation": "$\\frac{1}{3}$ de $450 = \\frac{1}{3} \\times 450 = \\frac{450}{3} = 150$ m²"
+    },
+    {
+        "question": "Dans un lycée de $840$ élèves, $\\frac{5}{7}$ sont demi-pensionnaires. Combien d'élèves sont demi-pensionnaires ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$600$ élèves", "correct": true },
+            { "text": "$700$ élèves", "correct": false },
+            { "text": "$420$ élèves", "correct": false },
+            { "text": "$500$ élèves", "correct": false }
+        ],
+        "explanation": "$\\frac{5}{7}$ de $840 = \\frac{5}{7} \\times 840 = \\frac{4200}{7} = 600$ élèves"
+    },
+    {
+        "question": "Un livre de $240$ pages est lu aux $\\frac{3}{5}$. Combien de pages ont été lues ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$144$ pages", "correct": true },
+            { "text": "$120$ pages", "correct": false },
+            { "text": "$160$ pages", "correct": false },
+            { "text": "$96$ pages", "correct": false }
+        ],
+        "explanation": "$\\frac{3}{5}$ de $240 = \\frac{3}{5} \\times 240 = \\frac{720}{5} = 144$ pages"
+    },
+    {
+        "question": "Une somme de $350$ € est partagée entre trois personnes. La première reçoit $\\frac{2}{7}$ de la somme. Combien reçoit-elle ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$100$ €", "correct": true },
+            { "text": "$50$ €", "correct": false },
+            { "text": "$150$ €", "correct": false },
+            { "text": "$175$ €", "correct": false }
+        ],
+        "explanation": "$\\frac{2}{7}$ de $350 = \\frac{2}{7} \\times 350 = \\frac{700}{7} = 100$ €"
+    },
+    {
+        "question": "Dans un réservoir de $60$ litres, on a utilisé $\\frac{7}{12}$ de l'essence. Quelle quantité d'essence a été utilisée ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$35$ L", "correct": true },
+            { "text": "$30$ L", "correct": false },
+            { "text": "$42$ L", "correct": false },
+            { "text": "$25$ L", "correct": false }
+        ],
+        "explanation": "$\\frac{7}{12}$ de $60 = \\frac{7}{12} \\times 60 = \\frac{420}{12} = 35$ L"
+    },
+    {
+        "question": "Un sac contient $180$ billes. Les $\\frac{4}{9}$ sont rouges. Combien y a-t-il de billes rouges ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$80$ billes", "correct": true },
+            { "text": "$60$ billes", "correct": false },
+            { "text": "$100$ billes", "correct": false },
+            { "text": "$90$ billes", "correct": false }
+        ],
+        "explanation": "$\\frac{4}{9}$ de $180 = \\frac{4}{9} \\times 180 = \\frac{720}{9} = 80$ billes"
+    },
+    {
+        "question": "Une ville de $25\\,000$ habitants compte $\\frac{3}{10}$ de jeunes de moins de 20 ans. Combien y a-t-il de jeunes ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$7\\,500$ jeunes", "correct": true },
+            { "text": "$2\\,500$ jeunes", "correct": false },
+            { "text": "$5\\,000$ jeunes", "correct": false },
+            { "text": "$10\\,000$ jeunes", "correct": false }
+        ],
+        "explanation": "$\\frac{3}{10}$ de $25\\,000 = \\frac{3}{10} \\times 25\\,000 = \\frac{75\\,000}{10} = 7\\,500$ jeunes"
+    },
+    {
+        "question": "Un collège organise une sortie pour $150$ élèves. Seuls $\\frac{4}{5}$ peuvent y participer. Combien d'élèves participent ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une fraction d'une quantité",
+        "answers": [
+            { "text": "$120$ élèves", "correct": true },
+            { "text": "$100$ élèves", "correct": false },
+            { "text": "$125$ élèves", "correct": false },
+            { "text": "$130$ élèves", "correct": false }
+        ],
+        "explanation": "$\\frac{4}{5}$ de $150 = \\frac{4}{5} \\times 150 = \\frac{600}{5} = 120$ élèves"
+    },
+    {
+        "question": "Calculer $25\\%$ de $200$ €.",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$50$ €", "correct": true },
+            { "text": "$25$ €", "correct": false },
+            { "text": "$75$ €", "correct": false },
+            { "text": "$100$ €", "correct": false }
+        ],
+        "explanation": "$25\\% = \\frac{25}{100} = 0{,}25$, donc $25\\%$ de $200 = 0{,}25 \\times 200 = 50$ €"
+    },
+    {
+        "question": "Dans une classe de $30$ élèves, $60\\%$ sont des filles. Combien y a-t-il de filles ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$18$ filles", "correct": true },
+            { "text": "$12$ filles", "correct": false },
+            { "text": "$20$ filles", "correct": false },
+            { "text": "$15$ filles", "correct": false }
+        ],
+        "explanation": "$60\\% = \\frac{60}{100} = 0{,}6$, donc $60\\%$ de $30 = 0{,}6 \\times 30 = 18$ filles"
+    },
+    {
+        "question": "Un article coûte $80$ € et bénéficie d'une remise de $15\\%$. Quel est le montant de la remise ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$12$ €", "correct": true },
+            { "text": "$15$ €", "correct": false },
+            { "text": "$10$ €", "correct": false },
+            { "text": "$8$ €", "correct": false }
+        ],
+        "explanation": "$15\\% = \\frac{15}{100} = 0{,}15$, donc $15\\%$ de $80 = 0{,}15 \\times 80 = 12$ €"
+    },
+    {
+        "question": "Une ville compte $45\\,000$ habitants. $35\\%$ ont moins de $25$ ans. Combien de personnes ont moins de $25$ ans ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$15\\,750$ personnes", "correct": true },
+            { "text": "$15\\,000$ personnes", "correct": false },
+            { "text": "$16\\,000$ personnes", "correct": false },
+            { "text": "$14\\,500$ personnes", "correct": false }
+        ],
+        "explanation": "$35\\% = \\frac{35}{100} = 0{,}35$, donc $35\\%$ de $45\\,000 = 0{,}35 \\times 45\\,000 = 15\\,750$ personnes"
+    },
+    {
+        "question": "Calculer $12{,}5\\%$ de $400$ kg.",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$50$ kg", "correct": true },
+            { "text": "$40$ kg", "correct": false },
+            { "text": "$60$ kg", "correct": false },
+            { "text": "$45$ kg", "correct": false }
+        ],
+        "explanation": "$12{,}5\\% = \\frac{12{,}5}{100} = 0{,}125$, donc $12{,}5\\%$ de $400 = 0{,}125 \\times 400 = 50$ kg"
+    },
+    {
+        "question": "Un livre de $250$ pages est lu à $72\\%$. Combien de pages ont été lues ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$180$ pages", "correct": true },
+            { "text": "$170$ pages", "correct": false },
+            { "text": "$190$ pages", "correct": false },
+            { "text": "$200$ pages", "correct": false }
+        ],
+        "explanation": "$72\\% = \\frac{72}{100} = 0{,}72$, donc $72\\%$ de $250 = 0{,}72 \\times 250 = 180$ pages"
+    },
+    {
+        "question": "Dans un lycée de $800$ élèves, $85\\%$ sont demi-pensionnaires. Combien d'élèves sont demi-pensionnaires ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$680$ élèves", "correct": true },
+            { "text": "$700$ élèves", "correct": false },
+            { "text": "$650$ élèves", "correct": false },
+            { "text": "$600$ élèves", "correct": false }
+        ],
+        "explanation": "$85\\% = \\frac{85}{100} = 0{,}85$, donc $85\\%$ de $800 = 0{,}85 \\times 800 = 680$ élèves"
+    },
+    {
+        "question": "Un terrain de $1\\,200$ m² est constructible à $45\\%$. Quelle est la surface constructible ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$540$ m²", "correct": true },
+            { "text": "$600$ m²", "correct": false },
+            { "text": "$500$ m²", "correct": false },
+            { "text": "$480$ m²", "correct": false }
+        ],
+        "explanation": "$45\\% = \\frac{45}{100} = 0{,}45$, donc $45\\%$ de $1\\,200 = 0{,}45 \\times 1\\,200 = 540$ m²"
+    },
+    {
+        "question": "Une entreprise compte $350$ employés. $28\\%$ travaillent à temps partiel. Combien d'employés sont à temps partiel ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$98$ employés", "correct": true },
+            { "text": "$100$ employés", "correct": false },
+            { "text": "$90$ employés", "correct": false },
+            { "text": "$105$ employés", "correct": false }
+        ],
+        "explanation": "$28\\% = \\frac{28}{100} = 0{,}28$, donc $28\\%$ de $350 = 0{,}28 \\times 350 = 98$ employés"
+    },
+    {
+        "question": "Calculer $5\\%$ de $2\\,000$ €.",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$100$ €", "correct": true },
+            { "text": "$50$ €", "correct": false },
+            { "text": "$200$ €", "correct": false },
+            { "text": "$150$ €", "correct": false }
+        ],
+        "explanation": "$5\\% = \\frac{5}{100} = 0{,}05$, donc $5\\%$ de $2\\,000 = 0{,}05 \\times 2\\,000 = 100$ €"
+    },
+    {
+        "question": "Un réservoir de $60$ litres est rempli à $75\\%$. Quelle quantité d'eau contient-il ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$45$ L", "correct": true },
+            { "text": "$40$ L", "correct": false },
+            { "text": "$50$ L", "correct": false },
+            { "text": "$55$ L", "correct": false }
+        ],
+        "explanation": "$75\\% = \\frac{75}{100} = 0{,}75$, donc $75\\%$ de $60 = 0{,}75 \\times 60 = 45$ L"
+    },
+    {
+        "question": "Sur $500$ personnes interrogées, $64\\%$ sont satisfaites. Combien de personnes sont satisfaites ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$320$ personnes", "correct": true },
+            { "text": "$300$ personnes", "correct": false },
+            { "text": "$350$ personnes", "correct": false },
+            { "text": "$280$ personnes", "correct": false }
+        ],
+        "explanation": "$64\\% = \\frac{64}{100} = 0{,}64$, donc $64\\%$ de $500 = 0{,}64 \\times 500 = 320$ personnes"
+    },
+    {
+        "question": "Un produit de $150$ € subit une hausse de $8\\%$. Quel est le montant de la hausse ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le pourcentage d'une quantité",
+        "answers": [
+            { "text": "$12$ €", "correct": true },
+            { "text": "$10$ €", "correct": false },
+            { "text": "$15$ €", "correct": false },
+            { "text": "$8$ €", "correct": false }
+        ],
+        "explanation": "$8\\% = \\frac{8}{100} = 0{,}08$, donc $8\\%$ de $150 = 0{,}08 \\times 150 = 12$ €"
+    },
+    {
+        "question": "Calculer $\\frac{2}{3}$ de $\\frac{3}{4}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$\\frac{5}{7}$", "correct": false },
+            { "text": "$\\frac{6}{12}$", "correct": false },
+            { "text": "$\\frac{2}{4}$", "correct": false }
+        ],
+        "explanation": "$\\frac{2}{3} \\times \\frac{3}{4} = \\frac{2 \\times 3}{3 \\times 4} = \\frac{6}{12} = \\frac{1}{2}$"
+    },
+    {
+        "question": "Calculer $\\frac{3}{5}$ de $\\frac{2}{7}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{6}{35}$", "correct": true },
+            { "text": "$\\frac{5}{12}$", "correct": false },
+            { "text": "$\\frac{1}{2}$", "correct": false },
+            { "text": "$\\frac{3}{7}$", "correct": false }
+        ],
+        "explanation": "$\\frac{3}{5} \\times \\frac{2}{7} = \\frac{3 \\times 2}{5 \\times 7} = \\frac{6}{35}$"
+    },
+    {
+        "question": "Calculer $\\frac{4}{9}$ de $\\frac{3}{8}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{6}$", "correct": true },
+            { "text": "$\\frac{12}{72}$", "correct": false },
+            { "text": "$\\frac{7}{17}$", "correct": false },
+            { "text": "$\\frac{4}{8}$", "correct": false }
+        ],
+        "explanation": "$\\frac{4}{9} \\times \\frac{3}{8} = \\frac{4 \\times 3}{9 \\times 8} = \\frac{12}{72} = \\frac{1}{6}$"
+    },
+    {
+        "question": "Calculer $\\frac{5}{6}$ de $\\frac{2}{5}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{3}$", "correct": true },
+            { "text": "$\\frac{10}{30}$", "correct": false },
+            { "text": "$\\frac{7}{11}$", "correct": false },
+            { "text": "$\\frac{2}{6}$", "correct": false }
+        ],
+        "explanation": "$\\frac{5}{6} \\times \\frac{2}{5} = \\frac{5 \\times 2}{6 \\times 5} = \\frac{10}{30} = \\frac{1}{3}$"
+    },
+    {
+        "question": "Calculer $\\frac{7}{8}$ de $\\frac{4}{7}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$\\frac{28}{56}$", "correct": false },
+            { "text": "$\\frac{11}{15}$", "correct": false },
+            { "text": "$\\frac{4}{8}$", "correct": false }
+        ],
+        "explanation": "$\\frac{7}{8} \\times \\frac{4}{7} = \\frac{7 \\times 4}{8 \\times 7} = \\frac{28}{56} = \\frac{1}{2}$"
+    },
+    {
+        "question": "Calculer $\\frac{2}{5}$ de $\\frac{5}{6}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{3}$", "correct": true },
+            { "text": "$\\frac{10}{30}$", "correct": false },
+            { "text": "$\\frac{7}{11}$", "correct": false },
+            { "text": "$\\frac{2}{6}$", "correct": false }
+        ],
+        "explanation": "$\\frac{2}{5} \\times \\frac{5}{6} = \\frac{2 \\times 5}{5 \\times 6} = \\frac{10}{30} = \\frac{1}{3}$"
+    },
+    {
+        "question": "Calculer $\\frac{3}{4}$ de $\\frac{8}{9}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{2}{3}$", "correct": true },
+            { "text": "$\\frac{24}{36}$", "correct": false },
+            { "text": "$\\frac{11}{13}$", "correct": false },
+            { "text": "$\\frac{8}{12}$", "correct": false }
+        ],
+        "explanation": "$\\frac{3}{4} \\times \\frac{8}{9} = \\frac{3 \\times 8}{4 \\times 9} = \\frac{24}{36} = \\frac{2}{3}$"
+    },
+    {
+        "question": "Calculer $\\frac{6}{7}$ de $\\frac{7}{12}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$\\frac{42}{84}$", "correct": false },
+            { "text": "$\\frac{13}{19}$", "correct": false },
+            { "text": "$\\frac{6}{12}$", "correct": false }
+        ],
+        "explanation": "$\\frac{6}{7} \\times \\frac{7}{12} = \\frac{6 \\times 7}{7 \\times 12} = \\frac{42}{84} = \\frac{1}{2}$"
+    },
+    {
+        "question": "Calculer $\\frac{5}{8}$ de $\\frac{4}{5}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$\\frac{20}{40}$", "correct": false },
+            { "text": "$\\frac{9}{13}$", "correct": false },
+            { "text": "$\\frac{4}{8}$", "correct": false }
+        ],
+        "explanation": "$\\frac{5}{8} \\times \\frac{4}{5} = \\frac{5 \\times 4}{8 \\times 5} = \\frac{20}{40} = \\frac{1}{2}$"
+    },
+    {
+        "question": "Calculer $\\frac{9}{10}$ de $\\frac{5}{9}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{2}$", "correct": true },
+            { "text": "$\\frac{45}{90}$", "correct": false },
+            { "text": "$\\frac{14}{19}$", "correct": false },
+            { "text": "$\\frac{5}{10}$", "correct": false }
+        ],
+        "explanation": "$\\frac{9}{10} \\times \\frac{5}{9} = \\frac{9 \\times 5}{10 \\times 9} = \\frac{45}{90} = \\frac{1}{2}$"
+    },
+    {
+        "question": "Calculer $\\frac{3}{7}$ de $\\frac{7}{15}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{5}$", "correct": true },
+            { "text": "$\\frac{21}{105}$", "correct": false },
+            { "text": "$\\frac{10}{22}$", "correct": false },
+            { "text": "$\\frac{3}{15}$", "correct": false }
+        ],
+        "explanation": "$\\frac{3}{7} \\times \\frac{7}{15} = \\frac{3 \\times 7}{7 \\times 15} = \\frac{21}{105} = \\frac{1}{5}$"
+    },
+    {
+        "question": "Calculer $\\frac{8}{9}$ de $\\frac{3}{4}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{2}{3}$", "correct": true },
+            { "text": "$\\frac{24}{36}$", "correct": false },
+            { "text": "$\\frac{11}{13}$", "correct": false },
+            { "text": "$\\frac{8}{12}$", "correct": false }
+        ],
+        "explanation": "$\\frac{8}{9} \\times \\frac{3}{4} = \\frac{8 \\times 3}{9 \\times 4} = \\frac{24}{36} = \\frac{2}{3}$"
+    },
+    {
+        "question": "Calculer $\\frac{4}{11}$ de $\\frac{11}{16}$.",
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "competence": "Calculer une fraction de fraction",
+        "answers": [
+            { "text": "$\\frac{1}{4}$", "correct": true },
+            { "text": "$\\frac{44}{176}$", "correct": false },
+            { "text": "$\\frac{15}{27}$", "correct": false },
+            { "text": "$\\frac{4}{16}$", "correct": false }
+        ],
+        "explanation": "$\\frac{4}{11} \\times \\frac{11}{16} = \\frac{4 \\times 11}{11 \\times 16} = \\frac{44}{176} = \\frac{1}{4}$"
+    },
+    {
+        "question": "Dans une classe, $60\\%$ sont des filles. Parmi les filles, $25\\%$ portent des lunettes. Quel pourcentage de la classe totale représentent les filles portant des lunettes ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$15\\%$", "correct": true },
+            { "text": "$85\\%$", "correct": false },
+            { "text": "$25\\%$", "correct": false },
+            { "text": "$35\\%$", "correct": false }
+        ],
+        "explanation": "$60\\%$ des élèves sont des filles, et $25\\%$ des filles portent des lunettes. Donc $0{,}6 \\times 0{,}25 = 0{,}15 = 15\\%$ de la classe totale"
+    },
+    {
+        "question": "Un magasin propose $20\\%$ de réduction, puis une remise supplémentaire de $10\\%$ sur le prix déjà réduit. Quel pourcentage du prix initial représente le prix final ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$72\\%$", "correct": true },
+            { "text": "$70\\%$", "correct": false },
+            { "text": "$80\\%$", "correct": false },
+            { "text": "$90\\%$", "correct": false }
+        ],
+        "explanation": "Après $20\\%$ de réduction, il reste $80\\%$ du prix. Puis $10\\%$ de réduction : il reste $90\\%$ de ce prix. Donc $0{,}8 \\times 0{,}9 = 0{,}72 = 72\\%$ du prix initial"
+    },
+    {
+        "question": "Dans une ville, $40\\%$ des habitants ont moins de $30$ ans. Parmi eux, $30\\%$ sont étudiants. Quel pourcentage de la population totale représentent les étudiants ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$12\\%$", "correct": true },
+            { "text": "$70\\%$", "correct": false },
+            { "text": "$30\\%$", "correct": false },
+            { "text": "$40\\%$", "correct": false }
+        ],
+        "explanation": "$40\\%$ ont moins de $30$ ans, et $30\\%$ d'entre eux sont étudiants. Donc $0{,}4 \\times 0{,}3 = 0{,}12 = 12\\%$ de la population totale"
+    },
+    {
+        "question": "Une entreprise compte $75\\%$ de salariés en CDI. Parmi eux, $20\\%$ travaillent à temps partiel. Quel pourcentage de l'entreprise représentent les salariés en CDI à temps partiel ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$15\\%$", "correct": true },
+            { "text": "$95\\%$", "correct": false },
+            { "text": "$20\\%$", "correct": false },
+            { "text": "$55\\%$", "correct": false }
+        ],
+        "explanation": "$75\\%$ sont en CDI, et $20\\%$ d'entre eux sont à temps partiel. Donc $0{,}75 \\times 0{,}2 = 0{,}15 = 15\\%$ de l'entreprise"
+    },
+    {
+        "question": "Un produit subit une hausse de $15\\%$, puis une réduction de $10\\%$ sur le nouveau prix. Quel pourcentage du prix initial représente le prix final ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$103{,}5\\%$", "correct": true },
+            { "text": "$105\\%$", "correct": false },
+            { "text": "$100\\%$", "correct": false },
+            { "text": "$95\\%$", "correct": false }
+        ],
+        "explanation": "Après $15\\%$ de hausse : $115\\%$ du prix initial. Puis $10\\%$ de réduction : $90\\%$ de ce nouveau prix. Donc $1{,}15 \\times 0{,}9 = 1{,}035 = 103{,}5\\%$ du prix initial"
+    },
+    {
+        "question": "Dans un lycée, $55\\%$ sont des garçons. Parmi les garçons, $40\\%$ pratiquent un sport en club. Quel pourcentage du lycée représentent les garçons pratiquant un sport en club ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$22\\%$", "correct": true },
+            { "text": "$95\\%$", "correct": false },
+            { "text": "$40\\%$", "correct": false },
+            { "text": "$15\\%$", "correct": false }
+        ],
+        "explanation": "$55\\%$ sont des garçons, et $40\\%$ d'entre eux pratiquent un sport. Donc $0{,}55 \\times 0{,}4 = 0{,}22 = 22\\%$ du lycée"
+    },
+    {
+        "question": "Un terrain est constructible à $60\\%$. Sur la zone constructible, seuls $50\\%$ peuvent être bâtis. Quel pourcentage du terrain total peut être bâti ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$30\\%$", "correct": true },
+            { "text": "$110\\%$", "correct": false },
+            { "text": "$50\\%$", "correct": false },
+            { "text": "$10\\%$", "correct": false }
+        ],
+        "explanation": "$60\\%$ du terrain est constructible, et $50\\%$ de cette zone peut être bâtie. Donc $0{,}6 \\times 0{,}5 = 0{,}3 = 30\\%$ du terrain total"
+    },
+    {
+        "question": "Dans une enquête, $80\\%$ des personnes regardent la télévision. Parmi elles, $35\\%$ regardent les infos. Quel pourcentage du total regardent les infos ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$28\\%$", "correct": true },
+            { "text": "$115\\%$", "correct": false },
+            { "text": "$35\\%$", "correct": false },
+            { "text": "$45\\%$", "correct": false }
+        ],
+        "explanation": "$80\\%$ regardent la TV, et $35\\%$ d'entre eux regardent les infos. Donc $0{,}8 \\times 0{,}35 = 0{,}28 = 28\\%$ du total"
+    },
+    {
+        "question": "Un article bénéficie d'une première remise de $30\\%$, puis d'une seconde remise de $20\\%$ sur le prix déjà réduit. Quel pourcentage du prix initial représente le prix final ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$56\\%$", "correct": true },
+            { "text": "$50\\%$", "correct": false },
+            { "text": "$70\\%$", "correct": false },
+            { "text": "$80\\%$", "correct": false }
+        ],
+        "explanation": "Après $30\\%$ de remise : il reste $70\\%$. Puis $20\\%$ de remise : il reste $80\\%$ de ce prix. Donc $0{,}7 \\times 0{,}8 = 0{,}56 = 56\\%$ du prix initial"
+    },
+    {
+        "question": "Dans une bibliothèque, $45\\%$ des livres sont des romans. Parmi les romans, $60\\%$ sont en français. Quel pourcentage de la bibliothèque représentent les romans en français ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$27\\%$", "correct": true },
+            { "text": "$105\\%$", "correct": false },
+            { "text": "$60\\%$", "correct": false },
+            { "text": "$15\\%$", "correct": false }
+        ],
+        "explanation": "$45\\%$ sont des romans, et $60\\%$ des romans sont en français. Donc $0{,}45 \\times 0{,}6 = 0{,}27 = 27\\%$ de la bibliothèque"
+    },
+    {
+        "question": "Une population comprend $48\\%$ de femmes. Parmi les femmes, $25\\%$ ont plus de $60$ ans. Quel pourcentage de la population totale représentent les femmes de plus de $60$ ans ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$12\\%$", "correct": true },
+            { "text": "$73\\%$", "correct": false },
+            { "text": "$25\\%$", "correct": false },
+            { "text": "$48\\%$", "correct": false }
+        ],
+        "explanation": "$48\\%$ sont des femmes, et $25\\%$ des femmes ont plus de $60$ ans. Donc $0{,}48 \\times 0{,}25 = 0{,}12 = 12\\%$ de la population totale"
+    },
+    {
+        "question": "Un budget est alloué à $70\\%$ pour les salaires. Sur cette somme, $15\\%$ sont destinés aux cotisations sociales. Quel pourcentage du budget total représentent les cotisations ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$10{,}5\\%$", "correct": true },
+            { "text": "$85\\%$", "correct": false },
+            { "text": "$15\\%$", "correct": false },
+            { "text": "$55\\%$", "correct": false }
+        ],
+        "explanation": "$70\\%$ du budget vont aux salaires, et $15\\%$ de cette somme vont aux cotisations. Donc $0{,}7 \\times 0{,}15 = 0{,}105 = 10{,}5\\%$ du budget total"
+    },
+    {
+        "question": "Un réservoir est rempli à $90\\%$. On utilise $40\\%$ du contenu. Quel pourcentage de la capacité totale du réservoir a été utilisé ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un pourcentage de pourcentage",
+        "answers": [
+            { "text": "$36\\%$", "correct": true },
+            { "text": "$130\\%$", "correct": false },
+            { "text": "$50\\%$", "correct": false },
+            { "text": "$40\\%$", "correct": false }
+        ],
+        "explanation": "Le réservoir contient $90\\%$ de sa capacité, et on utilise $40\\%$ de ce contenu. Donc $0{,}9 \\times 0{,}4 = 0{,}36 = 36\\%$ de la capacité totale"
+    },
+    {
+        "question": "Dans une classe de $30$ élèves, $18$ sont des filles. Quel pourcentage de filles y a-t-il ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$60\\%$", "correct": true },
+            { "text": "$50\\%$", "correct": false },
+            { "text": "$18\\%$", "correct": false },
+            { "text": "$12\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{18}{30} = \\frac{3}{5} = 0{,}6 = 60\\%$"
+    },
+    {
+        "question": "Sur $200$ personnes interrogées, $50$ préfèrent le chocolat. Quel pourcentage de personnes préfèrent le chocolat ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$25\\%$", "correct": true },
+            { "text": "$50\\%$", "correct": false },
+            { "text": "$20\\%$", "correct": false },
+            { "text": "$40\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{50}{200} = \\frac{1}{4} = 0{,}25 = 25\\%$"
+    },
+    {
+        "question": "Un lycée compte $800$ élèves dont $200$ sont en seconde. Quel pourcentage d'élèves de seconde y a-t-il ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$25\\%$", "correct": true },
+            { "text": "$20\\%$", "correct": false },
+            { "text": "$200\\%$", "correct": false },
+            { "text": "$40\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{200}{800} = \\frac{1}{4} = 0{,}25 = 25\\%$"
+    },
+    {
+        "question": "Sur $150$ participants, $90$ ont réussi l'examen. Quel est le taux de réussite en pourcentage ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$60\\%$", "correct": true },
+            { "text": "$90\\%$", "correct": false },
+            { "text": "$50\\%$", "correct": false },
+            { "text": "$40\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{90}{150} = \\frac{3}{5} = 0{,}6 = 60\\%$"
+    },
+    {
+        "question": "Une ville de $25\\,000$ habitants compte $5\\,000$ jeunes de moins de $20$ ans. Quel pourcentage de jeunes y a-t-il ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$20\\%$", "correct": true },
+            { "text": "$25\\%$", "correct": false },
+            { "text": "$5\\%$", "correct": false },
+            { "text": "$50\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{5\\,000}{25\\,000} = \\frac{1}{5} = 0{,}2 = 20\\%$"
+    },
+    {
+        "question": "Une entreprise de $400$ salariés emploie $120$ femmes. Quel est le pourcentage de femmes ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$30\\%$", "correct": true },
+            { "text": "$25\\%$", "correct": false },
+            { "text": "$120\\%$", "correct": false },
+            { "text": "$40\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{120}{400} = \\frac{3}{10} = 0{,}3 = 30\\%$"
+    },
+    {
+        "question": "Sur $80$ questions d'un QCM, un élève en a réussi $64$. Quel est son pourcentage de réussite ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$80\\%$", "correct": true },
+            { "text": "$64\\%$", "correct": false },
+            { "text": "$75\\%$", "correct": false },
+            { "text": "$20\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{64}{80} = \\frac{4}{5} = 0{,}8 = 80\\%$"
+    },
+    {
+        "question": "Dans un parking de $250$ places, $175$ sont occupées. Quel est le taux d'occupation en pourcentage ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$70\\%$", "correct": true },
+            { "text": "$75\\%$", "correct": false },
+            { "text": "$175\\%$", "correct": false },
+            { "text": "$30\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{175}{250} = \\frac{7}{10} = 0{,}7 = 70\\%$"
+    },
+    {
+        "question": "Une bibliothèque contient $12\\,000$ livres dont $3\\,000$ sont des romans. Quel pourcentage de romans y a-t-il ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$25\\%$", "correct": true },
+            { "text": "$30\\%$", "correct": false },
+            { "text": "$3\\%$", "correct": false },
+            { "text": "$75\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{3\\,000}{12\\,000} = \\frac{1}{4} = 0{,}25 = 25\\%$"
+    },
+    {
+        "question": "Sur $60$ élèves inscrits à une activité, $45$ sont présents. Quel est le taux de présence en pourcentage ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$75\\%$", "correct": true },
+            { "text": "$45\\%$", "correct": false },
+            { "text": "$60\\%$", "correct": false },
+            { "text": "$25\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{45}{60} = \\frac{3}{4} = 0{,}75 = 75\\%$"
+    },
+    {
+        "question": "Un terrain de $2\\,000$ m² comprend $800$ m² de jardin. Quelle est la proportion de jardin en pourcentage ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$40\\%$", "correct": true },
+            { "text": "$20\\%$", "correct": false },
+            { "text": "$80\\%$", "correct": false },
+            { "text": "$60\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{800}{2\\,000} = \\frac{2}{5} = 0{,}4 = 40\\%$"
+    },
+    {
+        "question": "Dans un sondage de $500$ personnes, $350$ ont répondu favorablement. Quel est le taux d'approbation en pourcentage ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$70\\%$", "correct": true },
+            { "text": "$350\\%$", "correct": false },
+            { "text": "$50\\%$", "correct": false },
+            { "text": "$30\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{350}{500} = \\frac{7}{10} = 0{,}7 = 70\\%$"
+    },
+    {
+        "question": "Un collège de $600$ élèves compte $180$ demi-pensionnaires. Quel pourcentage d'élèves sont demi-pensionnaires ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer une proportion en pourcentage",
+        "answers": [
+            { "text": "$30\\%$", "correct": true },
+            { "text": "$180\\%$", "correct": false },
+            { "text": "$60\\%$", "correct": false },
+            { "text": "$20\\%$", "correct": false }
+        ],
+        "explanation": "$\\frac{180}{600} = \\frac{3}{10} = 0{,}3 = 30\\%$"
+    },
+    {
+        "question": "Le prix d'un article passe de $50$ € à $60$ €. Quel est le taux d'évolution en pourcentage ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↗20\\%$", "correct": true },
+            { "text": "$↗10\\%$", "correct": false },
+            { "text": "$↘20\\%$", "correct": false },
+            { "text": "$↗25\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{60 - 50}{50} \\times 100 = \\frac{10}{50} \\times 100 = 0{,}2 \\times 100 = ↗20\\%$"
+    },
+    {
+        "question": "Le nombre d'élèves d'un lycée passe de $800$ à $720$. Quel est le taux d'évolution en pourcentage ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↘10\\%$", "correct": true },
+            { "text": "$↗10\\%$", "correct": false },
+            { "text": "$↘20\\%$", "correct": false },
+            { "text": "$↘80\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{720 - 800}{800} \\times 100 = \\frac{-80}{800} \\times 100 = -0{,}1 \\times 100 = ↘10\\%$"
+    },
+    {
+        "question": "Une population passe de $25\\,000$ à $30\\,000$ habitants. Quel est le taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↗20\\%$", "correct": true },
+            { "text": "$↗25\\%$", "correct": false },
+            { "text": "$↗5\\%$", "correct": false },
+            { "text": "$↗50\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{30\\,000 - 25\\,000}{25\\,000} \\times 100 = \\frac{5\\,000}{25\\,000} \\times 100 = 0{,}2 \\times 100 = ↗20\\%$"
+    },
+    {
+        "question": "Un salaire passe de $2\\,000$ € à $2\\,100$ €. Quel est le taux d'augmentation ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↗5\\%$", "correct": true },
+            { "text": "$↗10\\%$", "correct": false },
+            { "text": "$↗100\\%$", "correct": false },
+            { "text": "$↗2{,}5\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{2\\,100 - 2\\,000}{2\\,000} \\times 100 = \\frac{100}{2\\,000} \\times 100 = 0{,}05 \\times 100 = ↗5\\%$"
+    },
+    {
+        "question": "Le chiffre d'affaires d'une entreprise passe de $150\\,000$ € à $120\\,000$ €. Quel est le taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↘20\\%$", "correct": true },
+            { "text": "$↘30\\%$", "correct": false },
+            { "text": "$↗20\\%$", "correct": false },
+            { "text": "$↘25\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{120\\,000 - 150\\,000}{150\\,000} \\times 100 = \\frac{-30\\,000}{150\\,000} \\times 100 = -0{,}2 \\times 100 = ↘20\\%$"
+    },
+    {
+        "question": "Un produit passe de $40$ € à $50$ €. Quel est le taux d'augmentation ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↗25\\%$", "correct": true },
+            { "text": "$↗20\\%$", "correct": false },
+            { "text": "$↗10\\%$", "correct": false },
+            { "text": "$↗50\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{50 - 40}{40} \\times 100 = \\frac{10}{40} \\times 100 = 0{,}25 \\times 100 = ↗25\\%$"
+    },
+    {
+        "question": "Une surface forestière passe de $500$ hectares à $400$ hectares. Quel est le taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↘20\\%$", "correct": true },
+            { "text": "$↘25\\%$", "correct": false },
+            { "text": "$↗20\\%$", "correct": false },
+            { "text": "$↘100\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{400 - 500}{500} \\times 100 = \\frac{-100}{500} \\times 100 = -0{,}2 \\times 100 = ↘20\\%$"
+    },
+    {
+        "question": "Le nombre de voitures vendues passe de $1\\,200$ à $1\\,500$ unités. Quel est le taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↗25\\%$", "correct": true },
+            { "text": "$↗20\\%$", "correct": false },
+            { "text": "$↗30\\%$", "correct": false },
+            { "text": "$↗300\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{1\\,500 - 1\\,200}{1\\,200} \\times 100 = \\frac{300}{1\\,200} \\times 100 = 0{,}25 \\times 100 = ↗25\\%$"
+    },
+    {
+        "question": "Un loyer passe de $600$ € à $540$ €. Quel est le taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↘10\\%$", "correct": true },
+            { "text": "$↘60\\%$", "correct": false },
+            { "text": "$↗10\\%$", "correct": false },
+            { "text": "$↘20\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{540 - 600}{600} \\times 100 = \\frac{-60}{600} \\times 100 = -0{,}1 \\times 100 = ↘10\\%$"
+    },
+    {
+        "question": "Le prix de l'essence passe de $1{,}50$ € à $1{,}80$ € le litre. Quel est le taux d'augmentation ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↗20\\%$", "correct": true },
+            { "text": "$↗30\\%$", "correct": false },
+            { "text": "$↗25\\%$", "correct": false },
+            { "text": "$↗15\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{1{,}80 - 1{,}50}{1{,}50} \\times 100 = \\frac{0{,}30}{1{,}50} \\times 100 = 0{,}2 \\times 100 = ↗20\\%$"
+    },
+    {
+        "question": "Une entreprise compte $250$ employés puis $200$ employés l'année suivante. Quel est le taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↘20\\%$", "correct": true },
+            { "text": "$↘25\\%$", "correct": false },
+            { "text": "$↗20\\%$", "correct": false },
+            { "text": "$↘50\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{200 - 250}{250} \\times 100 = \\frac{-50}{250} \\times 100 = -0{,}2 \\times 100 = ↘20\\%$"
+    },
+    {
+        "question": "Un article à $80$ € est soldé à $64$ €. Quel est le taux de réduction ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↘20\\%$", "correct": true },
+            { "text": "$↘16\\%$", "correct": false },
+            { "text": "$↘25\\%$", "correct": false },
+            { "text": "$↘80\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{64 - 80}{80} \\times 100 = \\frac{-16}{80} \\times 100 = -0{,}2 \\times 100 = ↘20\\%$"
+    },
+    {
+        "question": "La production d'une usine passe de $10\\,000$ à $12\\,000$ unités. Quel est le taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer un taux d'évolution en pourcentage",
+        "answers": [
+            { "text": "$↗20\\%$", "correct": true },
+            { "text": "$↗2\\%$", "correct": false },
+            { "text": "$↗25\\%$", "correct": false },
+            { "text": "$↗200\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= \\frac{12\\,000 - 10\\,000}{10\\,000} \\times 100 = \\frac{2\\,000}{10\\,000} \\times 100 = 0{,}2 \\times 100 = ↗20\\%$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une hausse de $20\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$1{,}2$", "correct": true },
+            { "text": "$0{,}2$", "correct": false },
+            { "text": "$20$", "correct": false },
+            { "text": "$0{,}8$", "correct": false }
+        ],
+        "explanation": "Une hausse de $20\\%$ correspond au coefficient $1 + \\frac{20}{100} = 1 + 0{,}2 = 1{,}2$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une baisse de $15\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$0{,}85$", "correct": true },
+            { "text": "$1{,}15$", "correct": false },
+            { "text": "$0{,}15$", "correct": false },
+            { "text": "$15$", "correct": false }
+        ],
+        "explanation": "Une baisse de $15\\%$ correspond au coefficient $1 - \\frac{15}{100} = 1 - 0{,}15 = 0{,}85$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une augmentation de $25\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$1{,}25$", "correct": true },
+            { "text": "$0{,}75$", "correct": false },
+            { "text": "$0{,}25$", "correct": false },
+            { "text": "$25$", "correct": false }
+        ],
+        "explanation": "Une augmentation de $25\\%$ correspond au coefficient $1 + \\frac{25}{100} = 1 + 0{,}25 = 1{,}25$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une réduction de $30\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$0{,}7$", "correct": true },
+            { "text": "$1{,}3$", "correct": false },
+            { "text": "$0{,}3$", "correct": false },
+            { "text": "$30$", "correct": false }
+        ],
+        "explanation": "Une réduction de $30\\%$ correspond au coefficient $1 - \\frac{30}{100} = 1 - 0{,}3 = 0{,}7$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une hausse de $5\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$1{,}05$", "correct": true },
+            { "text": "$0{,}95$", "correct": false },
+            { "text": "$0{,}05$", "correct": false },
+            { "text": "$5$", "correct": false }
+        ],
+        "explanation": "Une hausse de $5\\%$ correspond au coefficient $1 + \\frac{5}{100} = 1 + 0{,}05 = 1{,}05$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une diminution de $10\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$0{,}9$", "correct": true },
+            { "text": "$1{,}1$", "correct": false },
+            { "text": "$0{,}1$", "correct": false },
+            { "text": "$10$", "correct": false }
+        ],
+        "explanation": "Une diminution de $10\\%$ correspond au coefficient $1 - \\frac{10}{100} = 1 - 0{,}1 = 0{,}9$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une augmentation de $50\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$1{,}5$", "correct": true },
+            { "text": "$0{,}5$", "correct": false },
+            { "text": "$50$", "correct": false },
+            { "text": "$2$", "correct": false }
+        ],
+        "explanation": "Une augmentation de $50\\%$ correspond au coefficient $1 + \\frac{50}{100} = 1 + 0{,}5 = 1{,}5$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une baisse de $40\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$0{,}6$", "correct": true },
+            { "text": "$1{,}4$", "correct": false },
+            { "text": "$0{,}4$", "correct": false },
+            { "text": "$40$", "correct": false }
+        ],
+        "explanation": "Une baisse de $40\\%$ correspond au coefficient $1 - \\frac{40}{100} = 1 - 0{,}4 = 0{,}6$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une hausse de $8\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$1{,}08$", "correct": true },
+            { "text": "$0{,}92$", "correct": false },
+            { "text": "$0{,}08$", "correct": false },
+            { "text": "$8$", "correct": false }
+        ],
+        "explanation": "Une hausse de $8\\%$ correspond au coefficient $1 + \\frac{8}{100} = 1 + 0{,}08 = 1{,}08$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une réduction de $35\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$0{,}65$", "correct": true },
+            { "text": "$1{,}35$", "correct": false },
+            { "text": "$0{,}35$", "correct": false },
+            { "text": "$35$", "correct": false }
+        ],
+        "explanation": "Une réduction de $35\\%$ correspond au coefficient $1 - \\frac{35}{100} = 1 - 0{,}35 = 0{,}65$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une augmentation de $12{,}5\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$1{,}125$", "correct": true },
+            { "text": "$0{,}875$", "correct": false },
+            { "text": "$0{,}125$", "correct": false },
+            { "text": "$12{,}5$", "correct": false }
+        ],
+        "explanation": "Une augmentation de $12{,}5\\%$ correspond au coefficient $1 + \\frac{12{,}5}{100} = 1 + 0{,}125 = 1{,}125$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une baisse de $22\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$0{,}78$", "correct": true },
+            { "text": "$1{,}22$", "correct": false },
+            { "text": "$0{,}22$", "correct": false },
+            { "text": "$22$", "correct": false }
+        ],
+        "explanation": "Une baisse de $22\\%$ correspond au coefficient $1 - \\frac{22}{100} = 1 - 0{,}22 = 0{,}78$"
+    },
+    {
+        "question": "Quel est le coefficient multiplicateur associé à une hausse de $100\\%$ ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le coefficient multiplicateur à partir d'un taux d'évolution",
+        "answers": [
+            { "text": "$2$", "correct": true },
+            { "text": "$1$", "correct": false },
+            { "text": "$100$", "correct": false },
+            { "text": "$0{,}5$", "correct": false }
+        ],
+        "explanation": "Une hausse de $100\\%$ correspond au coefficient $1 + \\frac{100}{100} = 1 + 1 = 2$ (doublement)"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $1{,}2$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↗20\\%$", "correct": true },
+            { "text": "$↘20\\%$", "correct": false },
+            { "text": "$↗1{,}2\\%$", "correct": false },
+            { "text": "$↗120\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (1{,}2 - 1) \\times 100 = 0{,}2 \\times 100 = 20\\%$ de hausse"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $0{,}85$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↘15\\%$", "correct": true },
+            { "text": "$↗15\\%$", "correct": false },
+            { "text": "$↘85\\%$", "correct": false },
+            { "text": "$↗85\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (0{,}85 - 1) \\times 100 = -0{,}15 \\times 100 = -15\\%$ soit une baisse de $15\\%$"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $1{,}5$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↗50\\%$", "correct": true },
+            { "text": "$↘50\\%$", "correct": false },
+            { "text": "$↗1{,}5\\%$", "correct": false },
+            { "text": "$↗150\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (1{,}5 - 1) \\times 100 = 0{,}5 \\times 100 = 50\\%$ de hausse"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $0{,}7$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↘30\\%$", "correct": true },
+            { "text": "$↗30\\%$", "correct": false },
+            { "text": "$↘70\\%$", "correct": false },
+            { "text": "$↗70\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (0{,}7 - 1) \\times 100 = -0{,}3 \\times 100 = -30\\%$ soit une baisse de $30\\%$"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $1{,}25$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↗25\\%$", "correct": true },
+            { "text": "$↘25\\%$", "correct": false },
+            { "text": "$↗1{,}25\\%$", "correct": false },
+            { "text": "$↗125\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (1{,}25 - 1) \\times 100 = 0{,}25 \\times 100 = 25\\%$ de hausse"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $0{,}9$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↘10\\%$", "correct": true },
+            { "text": "$↗10\\%$", "correct": false },
+            { "text": "$↘90\\%$", "correct": false },
+            { "text": "$↗90\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (0{,}9 - 1) \\times 100 = -0{,}1 \\times 100 = -10\\%$ soit une baisse de $10\\%$"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $1{,}08$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↗8\\%$", "correct": true },
+            { "text": "$↘8\\%$", "correct": false },
+            { "text": "$↗1{,}08\\%$", "correct": false },
+            { "text": "$↗108\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (1{,}08 - 1) \\times 100 = 0{,}08 \\times 100 = 8\\%$ de hausse"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $0{,}6$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↘40\\%$", "correct": true },
+            { "text": "$↗40\\%$", "correct": false },
+            { "text": "$↘60\\%$", "correct": false },
+            { "text": "$↗60\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (0{,}6 - 1) \\times 100 = -0{,}4 \\times 100 = -40\\%$ soit une baisse de $40\\%$"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $2$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↗100\\%$", "correct": true },
+            { "text": "$↘100\\%$", "correct": false },
+            { "text": "$↗2\\%$", "correct": false },
+            { "text": "$↗200\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (2 - 1) \\times 100 = 1 \\times 100 = 100\\%$ de hausse (doublement)"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $0{,}95$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↘5\\%$", "correct": true },
+            { "text": "$↗5\\%$", "correct": false },
+            { "text": "$↘95\\%$", "correct": false },
+            { "text": "$↗95\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (0{,}95 - 1) \\times 100 = -0{,}05 \\times 100 = -5\\%$ soit une baisse de $5\\%$"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $1{,}15$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↗15\\%$", "correct": true },
+            { "text": "$↘15\\%$", "correct": false },
+            { "text": "$↗1{,}15\\%$", "correct": false },
+            { "text": "$↗115\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (1{,}15 - 1) \\times 100 = 0{,}15 \\times 100 = 15\\%$ de hausse"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $0{,}8$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↘20\\%$", "correct": true },
+            { "text": "$↗20\\%$", "correct": false },
+            { "text": "$↘80\\%$", "correct": false },
+            { "text": "$↗80\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (0{,}8 - 1) \\times 100 = -0{,}2 \\times 100 = -20\\%$ soit une baisse de $20\\%$"
+    },
+    {
+        "question": "Un coefficient multiplicateur de $1{,}35$ correspond à quel taux d'évolution ?",
+        "level": "2de",
+        "theme": "Statistiques",
+        "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
+        "answers": [
+            { "text": "$↗35\\%$", "correct": true },
+            { "text": "$↘35\\%$", "correct": false },
+            { "text": "$↗1{,}35\\%$", "correct": false },
+            { "text": "$↗135\\%$", "correct": false }
+        ],
+        "explanation": "Taux d'évolution $= (1{,}35 - 1) \\times 100 = 0{,}35 \\times 100 = 35\\%$ de hausse"
     }
 ]
