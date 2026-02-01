@@ -799,7 +799,8 @@ function drawGraph(graphData) {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
+            resizeDelay: 0,
             scales: {
                 x: {
                     type: 'linear',
