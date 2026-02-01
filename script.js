@@ -721,11 +721,17 @@ function drawAnswerGraph(canvas, graphData) {
                         pinch: {
                             enabled: true
                         },
-                        mode: 'xy'
+                        mode: 'xy',
+                        onZoomComplete: function({chart}) {
+                            chart.update('none');
+                        }
                     },
                     pan: {
                         enabled: true,
-                        mode: 'xy'
+                        mode: 'xy',
+                        onPanComplete: function({chart}) {
+                            chart.update('none');
+                        }
                     }
                 }
             }
@@ -798,9 +804,8 @@ function drawGraph(graphData) {
             datasets: datasets
         },
         options: {
-            responsive: true,
+            responsive: false,
             maintainAspectRatio: false,
-            resizeDelay: 0,
             scales: {
                 x: {
                     type: 'linear',
@@ -863,11 +868,17 @@ function drawGraph(graphData) {
                         pinch: {
                             enabled: true
                         },
-                        mode: 'xy'
+                        mode: 'xy',
+                        onZoomComplete: function({chart}) {
+                            chart.update('none');
+                        }
                     },
                     pan: {
                         enabled: true,
-                        mode: 'xy'
+                        mode: 'xy',
+                        onPanComplete: function({chart}) {
+                            chart.update('none');
+                        }
                     }
                 }
             }
