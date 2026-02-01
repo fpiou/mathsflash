@@ -948,14 +948,20 @@ submitBtn.addEventListener('click', () => {
 
 restartBtn.addEventListener('click', () => {
     resultsContainer.style.display = 'none';
-    selectionContainer.style.display = 'block';
-    levelSelect.value = '';
-    themeSelect.value = '';
-    themeSelect.disabled = true;
-    competenceSelect.value = '';
-    competenceSelect.disabled = true;
-    startQuizBtn.disabled = true;
-    startQuizBtn.textContent = 'Démarrer le quiz';
+    
+    // Si on était en mode test complet, relancer un nouveau test
+    if (isLevelTestMode) {
+        startLevelTest();
+    } else {
+        selectionContainer.style.display = 'block';
+        levelSelect.value = '';
+        themeSelect.value = '';
+        themeSelect.disabled = true;
+        competenceSelect.value = '';
+        competenceSelect.disabled = true;
+        startQuizBtn.disabled = true;
+        startQuizBtn.textContent = 'Démarrer le quiz';
+    }
 });
 
 // Bouton pour voir les compétences
@@ -1023,9 +1029,15 @@ competenceSelect.addEventListener('change', (e) => {
 });
 
 startQuizBtn.addEventListener('click', () => {
+    isLevelTestMode = false;
     selectionContainer.style.display = 'none';
     quizContainer.style.display = 'block';
     init();
+});
+
+// Démarrer un test complet du niveau
+startLevelTestBtn.addEventListener('click', () => {
+    startLevelTest();
 });
 
 // Navigation via le menu déroulant
@@ -1047,6 +1059,15 @@ function showResults() {
     const resultsDetails = document.getElementById('results-details');
     
     finalScore.textContent = `${score}/${filteredQuizData.length}`;
+    
+    // Afficher un message spécial pour le mode test complet
+    if (isLevelTestMode) {
+        const resultsHeader = resultsContainer.querySelector('h2');
+        resultsHeader.textContent = `🎯 Résultats du Test Complet - ${selectedLevel}`;
+    } else {
+        const resultsHeader = resultsContainer.querySelector('h2');
+        resultsHeader.textContent = 'Résultats du Quiz';
+    }
     
     const percentage = (score / filteredQuizData.length) * 100;
     scorePercentage.style.setProperty('--score-width', `${percentage}%`);
