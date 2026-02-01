@@ -714,10 +714,6 @@ function drawAnswerGraph(canvas, graphData) {
                     enabled: false
                 },
                 zoom: {
-                    limits: {
-                        x: {min: 'original', max: 'original'},
-                        y: {min: 'original', max: 'original'}
-                    },
                     zoom: {
                         wheel: {
                             enabled: true
@@ -859,10 +855,6 @@ function drawGraph(graphData) {
                     }
                 },
                 zoom: {
-                    limits: {
-                        x: {min: 'original', max: 'original'},
-                        y: {min: 'original', max: 'original'}
-                    },
                     zoom: {
                         wheel: {
                             enabled: true
