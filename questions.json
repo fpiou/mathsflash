@@ -333,7 +333,7 @@
         "explanation": "Une parabole tournée vers le bas a un coefficient négatif devant $x^2$. La fonction $y = -x^2 + 4$ a cette propriété."
     },
     {
-        "question": "Quelle est l'équation de la droite représentée par le graphique suivant ?",
+        "question": "Quelle est l'équation réduite de la droite représentée par le graphique suivant ?",
         "level": "2de",
         "theme": "Géométrie",
         "competence": "Déterminer l'équation d'une droite à partir de son graphique",
@@ -445,7 +445,7 @@
         "explanation": "On isole $y$ : $y = -2x + 4$. On a donc $m = -2$ et $p = 4$."
     },
     {
-        "question": "Quelle est l'équation de la droite de coefficient directeur $m = -1$ qui passe par le point $B(0, 4)$ ?",
+        "question": "Quelle est l'équation réduite de la droite de coefficient directeur $m = -1$ qui passe par le point $B(0, 4)$ ?",
         "level": "2de",
         "theme": "Géométrie",
         "competence": "Déterminer l'équation d'une droite à partir de caractéristiques",
@@ -458,9 +458,9 @@
         "explanation": "Le point $B(0, 4)$ a pour abscisse $0$, c'est donc l'ordonnée à l'origine : $p = 4$. Avec $m = -1$, l'équation est $y = -x + 4$."
     },
     {
-        "question": "Une droite de coefficient directeur négatif :",
+        "question": "Une fonction affine de coefficient directeur négatif :",
         "level": "2de",
-        "theme": "Géométrie",
+        "theme": "Fonctions",
         "competence": "Interpréter le coefficient directeur",
         "answers": [
             { "text": "Est décroissante", "correct": true },
@@ -468,7 +468,7 @@
             { "text": "Est horizontale", "correct": false },
             { "text": "Passe par l'origine", "correct": false }
         ],
-        "explanation": "Un coefficient directeur négatif signifie que la droite descend de gauche à droite, elle est donc décroissante."
+        "explanation": "Un coefficient directeur négatif signifie que la fonction est décroissante : lorsque $x$ augmente, $y$ diminue."
     },
     {
         "question": "Calculer les coordonnées du vecteur $\\overrightarrow{AB}$ avec $A(2; 3)$ et $B(5; 7)$.",
@@ -1835,7 +1835,7 @@
         "explanation": "La fonction $y = -x^2 + 5$ a son sommet à $y = 5$, qui est le plus haut parmi les paraboles tournées vers le bas."
     },
     {
-        "question": "Quelle est l'équation de la droite représentée par le graphique suivant ?",
+        "question": "Quelle est l'équation réduite de la droite représentée par le graphique suivant ?",
         "level": "2de",
         "theme": "Géométrie",
         "competence": "Déterminer l'équation d'une droite à partir de son graphique",
@@ -1856,7 +1856,7 @@
         "explanation": "La droite passe par le point $(0, 4)$ donc l'ordonnée à l'origine est $4$. Le coefficient directeur est $-1$ (la droite descend d'1 unité quand on avance d'1 unité)."
     },
     {
-        "question": "Quelle est l'équation de la droite représentée par le graphique suivant ?",
+        "question": "Quelle est l'équation réduite de la droite représentée par le graphique suivant ?",
         "level": "2de",
         "theme": "Géométrie",
         "competence": "Déterminer l'équation d'une droite à partir de son graphique",
@@ -2059,7 +2059,7 @@
         "explanation": "On isole $y$ : $2y = -x + 8$, donc $y = -\\frac{1}{2}x + 4$."
     },
     {
-        "question": "Quelle est l'équation de la droite de coefficient directeur $m = 3$ qui passe par le point $C(0, -2)$ ?",
+        "question": "Quelle est l'équation réduite de la droite de coefficient directeur $m = 3$ qui passe par le point $C(0, -2)$ ?",
         "level": "2de",
         "theme": "Géométrie",
         "competence": "Déterminer l'équation d'une droite à partir de caractéristiques",
@@ -2072,7 +2072,7 @@
         "explanation": "Le point $C(0, -2)$ a pour abscisse $0$, c'est donc l'ordonnée à l'origine : $p = -2$. Avec $m = 3$, l'équation est $y = 3x - 2$."
     },
     {
-        "question": "Quelle est l'équation de la droite de coefficient directeur $m = -\\frac{1}{2}$ qui passe par le point $D(0, 5)$ ?",
+        "question": "Quelle est l'équation réduite de la droite de coefficient directeur $m = -\\frac{1}{2}$ qui passe par le point $D(0, 5)$ ?",
         "level": "2de",
         "theme": "Géométrie",
         "competence": "Déterminer l'équation d'une droite à partir de caractéristiques",
@@ -2085,9 +2085,9 @@
         "explanation": "Le point $D(0, 5)$ donne l'ordonnée à l'origine : $p = 5$. Avec $m = -\\frac{1}{2}$, l'équation est $y = -\\frac{1}{2}x + 5$."
     },
     {
-        "question": "Une droite de coefficient directeur positif :",
+        "question": "Une fonction affine de coefficient directeur positif :",
         "level": "2de",
-        "theme": "Géométrie",
+        "theme": "Fonctions",
         "competence": "Interpréter le coefficient directeur",
         "answers": [
             { "text": "Est croissante", "correct": true },
@@ -2095,12 +2095,12 @@
             { "text": "Est horizontale", "correct": false },
             { "text": "Passe par l'origine", "correct": false }
         ],
-        "explanation": "Un coefficient directeur positif signifie que la droite monte de gauche à droite, elle est donc croissante."
+        "explanation": "Un coefficient directeur positif signifie que la fonction est croissante : lorsque $x$ augmente, $y$ augmente."
     },
     {
-        "question": "Si le coefficient directeur d'une droite est nul, alors la droite est :",
+        "question": "Si le coefficient directeur d'une fonction affine est nul, alors la droite représentative est :",
         "level": "2de",
-        "theme": "Géométrie",
+        "theme": "Fonctions",
         "competence": "Interpréter le coefficient directeur",
         "answers": [
             { "text": "Horizontale", "correct": true },
@@ -2108,7 +2108,105 @@
             { "text": "Croissante", "correct": false },
             { "text": "Décroissante", "correct": false }
         ],
-        "explanation": "Un coefficient directeur nul ($m = 0$) signifie que la droite ne monte ni ne descend, elle est donc horizontale. Son équation est de la forme $y = p$."
+        "explanation": "Un coefficient directeur nul ($m = 0$) signifie que la fonction est constante : elle ne monte ni ne descend, elle est donc horizontale. Son équation est de la forme $y = p$."
+    },
+    {
+        "question": "Quelle affirmation est vraie pour la fonction suivante ?",
+        "formula": "f(x) = 3x + 2",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "La fonction est croissante", "correct": true },
+            { "text": "La fonction est décroissante", "correct": false },
+            { "text": "La représentation graphique est une droite horizontale", "correct": false },
+            { "text": "La représentation graphique est une droite verticale", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = 3$ qui est positif, donc la fonction est croissante."
+    },
+    {
+        "question": "Quelle affirmation est vraie pour la fonction suivante ?",
+        "formula": "f(x) = -2x + 5",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "La fonction est décroissante", "correct": true },
+            { "text": "La fonction est croissante", "correct": false },
+            { "text": "La représentation graphique est une droite horizontale", "correct": false },
+            { "text": "La représentation graphique passe par l'origine", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = -2$ qui est négatif, donc la fonction est décroissante."
+    },
+    {
+        "question": "Quelle affirmation est vraie pour la fonction suivante ?",
+        "formula": "f(x) = \\frac{1}{2}x - 3",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "La fonction est croissante", "correct": true },
+            { "text": "La fonction est décroissante", "correct": false },
+            { "text": "La représentation graphique est une droite horizontale", "correct": false },
+            { "text": "Le coefficient directeur est négatif", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = \\frac{1}{2}$ qui est positif, donc la fonction est croissante."
+    },
+    {
+        "question": "Quelle affirmation est vraie pour la fonction suivante ?",
+        "formula": "f(x) = -\\frac{3}{4}x + 1",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "La fonction est décroissante", "correct": true },
+            { "text": "La fonction est croissante", "correct": false },
+            { "text": "Le coefficient directeur est positif", "correct": false },
+            { "text": "La représentation graphique est une droite horizontale", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = -\\frac{3}{4}$ qui est négatif, donc la fonction est décroissante."
+    },
+    {
+        "question": "Quelle affirmation est vraie pour la fonction suivante ?",
+        "formula": "f(x) = 7",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "La représentation graphique est une droite horizontale", "correct": true },
+            { "text": "La fonction est croissante", "correct": false },
+            { "text": "La fonction est décroissante", "correct": false },
+            { "text": "Le coefficient directeur est $7$", "correct": false }
+        ],
+        "explanation": "Cette équation peut s'écrire $y = 0x + 7$, donc le coefficient directeur est $m = 0$, la représentation graphique est une droite horizontale."
+    },
+    {
+        "question": "Quelle affirmation est vraie pour la fonction suivante ?",
+        "formula": "f(x) = 5x",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "La fonction est croissante et passe par l'origine", "correct": true },
+            { "text": "La fonction est décroissante et passe par l'origine", "correct": false },
+            { "text": "La fonction est croissante mais ne passe pas par l'origine", "correct": false },
+            { "text": "La représentation graphique est une droite horizontale", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = 5$ qui est positif (donc croissante), et l'ordonnée à l'origine est $p = 0$ (donc passe par l'origine)."
+    },
+    {
+        "question": "Quelle affirmation est vraie pour la fonction suivante ?",
+        "formula": "f(x) = -x + 4",
+        "level": "2de",
+        "theme": "Fonctions",
+        "competence": "Interpréter le coefficient directeur",
+        "answers": [
+            { "text": "La fonction est décroissante", "correct": true },
+            { "text": "La fonction est croissante", "correct": false },
+            { "text": "Le coefficient directeur est $4$", "correct": false },
+            { "text": "La fonction passe par l'origine", "correct": false }
+        ],
+        "explanation": "Le coefficient directeur est $m = -1$ qui est négatif, donc la droite est décroissante."
     },
     {
         "question": "Quel est le coefficient directeur de la droite d'équation cartésienne suivante ?",
@@ -2279,7 +2377,7 @@
         "explanation": "Pour $ax + by + c = 0$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}-b\\\\a\\end{pmatrix}$ (ou son opposé). Avec $a = -3$ et $b = -6$, on obtient $\\overrightarrow{u}\\begin{pmatrix}6\\\\-3\\end{pmatrix}$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par les points suivants ?",
         "formula": "A(1; 2) \\text{ et } B(3; 4)",
         "level": "2de",
         "theme": "Géométrie",
@@ -2293,7 +2391,7 @@
         "explanation": "Un point $M(x; y)$ est sur la droite si $\\overrightarrow{AB}$ et $\\overrightarrow{AM}$ sont colinéaires. Avec $\\overrightarrow{AB}\\begin{pmatrix}2\\\\2\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-1\\\\y-2\\end{pmatrix}$, on a $\\begin{vmatrix}2 & x-1\\\\2 & y-2\\end{vmatrix} = 0$ soit $2(y-2) - 2(x-1) = 0$, ce qui donne $x - y + 1 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par les points suivants ?",
         "formula": "A(2; 1) \\text{ et } B(4; 5)",
         "level": "2de",
         "theme": "Géométrie",
@@ -2307,7 +2405,7 @@
         "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}2\\\\4\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-2\\\\y-1\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}2 & x-2\\\\4 & y-1\\end{vmatrix} = 0$ soit $2(y-1) - 4(x-2) = 0$, ce qui simplifie en $2x - y - 3 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par les points suivants ?",
         "formula": "A(-1; 3) \\text{ et } B(2; -3)",
         "level": "2de",
         "theme": "Géométrie",
@@ -2321,7 +2419,7 @@
         "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}3\\\\-6\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x+1\\\\y-3\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x+1\\\\-6 & y-3\\end{vmatrix} = 0$ soit $3(y-3) + 6(x+1) = 0$, ce qui donne $2x + y - 1 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par les points suivants ?",
         "formula": "A(0; 2) \\text{ et } B(3; 5)",
         "level": "2de",
         "theme": "Géométrie",
@@ -2335,7 +2433,7 @@
         "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}3\\\\3\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x\\\\y-2\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x\\\\3 & y-2\\end{vmatrix} = 0$ soit $3(y-2) - 3x = 0$, ce qui simplifie en $x - y + 2 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par les points suivants ?",
         "formula": "A(-2; -1) \\text{ et } B(1; 2)",
         "level": "2de",
         "theme": "Géométrie",
@@ -2349,7 +2447,7 @@
         "explanation": "Avec $\\overrightarrow{AB}\\begin{pmatrix}3\\\\3\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x+2\\\\y+1\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x+2\\\\3 & y+1\\end{vmatrix} = 0$ soit $3(y+1) - 3(x+2) = 0$, ce qui donne $x - y + 1 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par les points suivants ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par les points suivants ?",
         "formula": "A(1; 1) \\text{ et } B(4; 3)",
         "level": "2de",
         "theme": "Géométrie",
@@ -2447,7 +2545,7 @@
         "explanation": "Pour $y = mx + p$, un vecteur directeur est $\\overrightarrow{u}\\begin{pmatrix}1\\\\m\\end{pmatrix}$. Avec $m = -1$, on obtient $\\overrightarrow{u}\\begin{pmatrix}1\\\\-1\\end{pmatrix}$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
         "formula": "A(2; 3) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}1\\\\2\\end{pmatrix}",
         "level": "2de",
         "theme": "Géométrie",
@@ -2461,7 +2559,7 @@
         "explanation": "Un point $M(x; y)$ est sur la droite si $\\overrightarrow{u}$ et $\\overrightarrow{AM}$ sont colinéaires. Avec $\\overrightarrow{u}\\begin{pmatrix}1\\\\2\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-2\\\\y-3\\end{pmatrix}$, on a $\\begin{vmatrix}1 & x-2\\\\2 & y-3\\end{vmatrix} = 0$ soit $1(y-3) - 2(x-2) = 0$, ce qui donne $2x - y - 1 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
         "formula": "A(-1; 2) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}3\\\\-1\\end{pmatrix}",
         "level": "2de",
         "theme": "Géométrie",
@@ -2475,7 +2573,7 @@
         "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}3\\\\-1\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x+1\\\\y-2\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}3 & x+1\\\\-1 & y-2\\end{vmatrix} = 0$ soit $3(y-2) + 1(x+1) = 0$, ce qui donne $x + 3y - 5 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
         "formula": "A(0; 4) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}2\\\\1\\end{pmatrix}",
         "level": "2de",
         "theme": "Géométrie",
@@ -2489,7 +2587,7 @@
         "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}2\\\\1\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x\\\\y-4\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}2 & x\\\\1 & y-4\\end{vmatrix} = 0$ soit $2(y-4) - x = 0$, ce qui donne $x - 2y + 8 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
         "formula": "A(1; -2) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}-2\\\\3\\end{pmatrix}",
         "level": "2de",
         "theme": "Géométrie",
@@ -2503,7 +2601,7 @@
         "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}-2\\\\3\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-1\\\\y+2\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}-2 & x-1\\\\3 & y+2\\end{vmatrix} = 0$ soit $-2(y+2) - 3(x-1) = 0$, ce qui donne $3x + 2y + 1 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
         "formula": "A(3; 1) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}1\\\\1\\end{pmatrix}",
         "level": "2de",
         "theme": "Géométrie",
@@ -2517,7 +2615,7 @@
         "explanation": "Avec $\\overrightarrow{u}\\begin{pmatrix}1\\\\1\\end{pmatrix}$ et $\\overrightarrow{AM}\\begin{pmatrix}x-3\\\\y-1\\end{pmatrix}$, le déterminant nul donne $\\begin{vmatrix}1 & x-3\\\\1 & y-1\\end{vmatrix} = 0$ soit $1(y-1) - 1(x-3) = 0$, ce qui donne $x - y - 2 = 0$."
     },
     {
-        "question": "Quelle est l'équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
+        "question": "Quelle est une équation cartésienne de la droite passant par le point $A$ et de vecteur directeur $\\overrightarrow{u}$ ?",
         "formula": "A(-2; -3) \\text{ et } \\overrightarrow{u}\\begin{pmatrix}4\\\\-2\\end{pmatrix}",
         "level": "2de",
         "theme": "Géométrie",

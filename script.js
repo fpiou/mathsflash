@@ -1,5 +1,6 @@
 // Niveaux et thèmes disponibles
-const levels = ['2de', '1re', '1reSpécialité', 'TleSpécialité'];
+// const levels = ['2de', '1re', '1reSpécialité', 'TleSpécialité'];
+const levels = ['2de'];
 const themes = ['Fonctions', 'Dérivées', 'Intégrales', 'Équations-Inéquations', 'Géométrie', 'Trigonométrie', 'Calcul littéral', 'Probabilités', 'Statistiques'];
 
 // Système de suivi des compétences
