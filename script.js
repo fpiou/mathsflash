@@ -662,8 +662,9 @@ function selectAnswer(index) {
     const questionId = filteredQuizData[currentQuestion].id;
     
     // Enregistrer la tentative pour la compétence et obtenir si c'est une nouvelle validation
+    // UNIQUEMENT en mode test par niveau (pas pour les tests par thème ou compétence)
     let isNewValidation = false;
-    if (currentCompetence && questionId) {
+    if (currentCompetence && questionId && isLevelTestMode) {
         isNewValidation = skillsTracker.recordAttempt(currentCompetence, questionId, isCorrect);
     }
     
@@ -673,8 +674,8 @@ function selectAnswer(index) {
         feedback.className = 'feedback show correct';
         feedback.innerHTML = `<strong>✓ Correct !</strong><br>${filteredQuizData[currentQuestion].explanation}`;
         
-        // Afficher si la compétence est maîtrisée
-        if (currentCompetence) {
+        // Afficher si la compétence est maîtrisée (uniquement en mode test par niveau)
+        if (currentCompetence && isLevelTestMode) {
             const skill = skillsTracker.getSkill(currentCompetence);
             const validatedCount = skillsTracker.getValidatedQuestionsCount(currentCompetence);
             const totalCount = skillsTracker.getTotalQuestionsCount(currentCompetence);
