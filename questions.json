@@ -6295,7 +6295,7 @@
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
-        "graphFunction": ["(x - 1)*(x - 1) + 2", "x + 4"],
+        "graphFunction": ["-(x - 1)*(x - 1) + x+4", "x + 4"],
         "graphParams": {
             "xMin": -2,
             "xMax": 5,
@@ -6358,7 +6358,7 @@
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
-        "graphFunction": ["(x - 3)*(x - 3) + 2*3 + 1", "2*x + 1"],
+        "graphFunction": ["(x - 3)*(x - 5) + 2*x + 1", "2*x + 1"],
         "graphParams": {
             "xMin": -1,
             "xMax": 7,
@@ -6367,7 +6367,7 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$x \\in ]-\\infty ; 3] \\cup [5 ; +\\infty[$", "correct": true },
             { "text": "$x \\in \\mathbb{R}$", "correct": false },
             { "text": "$x = 3$", "correct": false },
             { "text": "Pas de solution", "correct": false }
@@ -6400,7 +6400,7 @@
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
-        "graphFunction": ["(x - 2)*(x - 2) + 4", "x + 3"],
+        "graphFunction": ["(x - 2)*(x - 2) + 4", "x + 1"],
         "graphParams": {
             "xMin": -2,
             "xMax": 6,
@@ -6421,7 +6421,7 @@
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
-        "graphFunction": ["-(x - 0)*(x - 4) + 0.5*0 + 4", "0.5*x + 4"],
+        "graphFunction": ["-(x - 0)*(x - 4) + 0.5*x + 4", "0.5*x + 4"],
         "graphParams": {
             "xMin": -2,
             "xMax": 6,
@@ -6547,7 +6547,7 @@
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
-        "graphFunction": ["(x - 1)*(x - 5) + 2", "-(x - 1)*(x - 5) + 2"],
+        "graphFunction": ["(x - 1)*(x - 5) + 2*(x-1)/(5-1)+3*(x-5)/(1-5)", "-(x - 1)*(x - 5) + 2*(x-1)/(5-1)+3*(x-5)/(1-5)"],
         "graphParams": {
             "xMin": -1,
             "xMax": 7,
@@ -6564,11 +6564,11 @@
         "explanation": "La parabole montante est en dessous de la parabole descendante entre $x=1$ et $x=5$"
     },
     {
-        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leq g(x)$",
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leqslant g(x)$",
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
-        "graphFunction": ["0.5*(x - 1)*(x - 3) + 1", "-(x - 1)*(x - 3) + 1"],
+        "graphFunction": ["0.5*(x - 1)*(x - 3) + 1*(x-1)/(3-1)-1*(x-3)/(1-3)", "-(x - 1)*(x - 3) + 1*(x-1)/(3-1)-1*(x-3)/(1-3)"],
         "graphParams": {
             "xMin": -1,
             "xMax": 5,
@@ -6589,7 +6589,7 @@
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
-        "graphFunction": ["-(x - 2)*(x - 4) + 1", "(x - 2)*(x - 4) + 1"],
+        "graphFunction": ["-(x - 2)*(x - 4) + 1*(x-2)/(4-2)+2*(x-4)/(2-4)", "(x - 2)*(x - 4) + 1*(x-2)/(4-2)+2*(x-4)/(2-4)"],
         "graphParams": {
             "xMin": -1,
             "xMax": 7,
@@ -6606,11 +6606,11 @@
         "explanation": "La parabole descendante est au-dessus de la parabole montante entre $x=2$ et $x=4$"
     },
     {
-        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geq g(x)$",
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant g(x)$",
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
-        "graphFunction": ["(x - 2)*(x - 4) + 3", "-(x - 2)*(x - 4) + 3"],
+        "graphFunction": ["(x - 2)*(x - 4) + 3*(x-2)/(4-2)+2*(x-4)/(2-4)", "-(x - 2)*(x - 4) + 3*(x-2)/(4-2)+2*(x-4)/(2-4)"],
         "graphParams": {
             "xMin": 0,
             "xMax": 6,
@@ -6648,7 +6648,7 @@
         "explanation": "La première parabole est toujours strictement en dessous de la seconde (même sommet mais ordonnées différentes)"
     },
     {
-        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\leq g(x)$",
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant g(x)$",
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
@@ -6661,9 +6661,9 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": true },
+            { "text": "$x \\in \\mathbb{R}$", "correct": false },
             { "text": "$x \\in [-1 ; 3]$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
+            { "text": "Pas de solution", "correct": true },
             { "text": "$x = 1$", "correct": false }
         ],
         "explanation": "Les deux paraboles ont la même forme mais la première est toujours en dessous de la seconde"
@@ -6690,7 +6690,7 @@
         "explanation": "Les deux paraboles descendantes ont même sommet mais la première est toujours strictement au-dessus"
     },
     {
-        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geq g(x)$",
+        "question": "D'après le graphique ci-dessous, résoudre $f(x) \\geqslant g(x)$",
         "level": "2de",
         "theme": "Fonctions",
         "competence": "Résoudre f(x)<g(x) par lecture graphique",
