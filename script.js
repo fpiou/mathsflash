@@ -121,6 +121,14 @@ class SkillsTracker {
     getTotalQuestionsCount(competence) {
         return this.questionsBySkill[competence] || 0;
     }
+
+    // Vérifier si une question a déjà été validée
+    isQuestionValidated(questionId, competence) {
+        if (!competence || !questionId) return false;
+        const skill = this.skills[competence];
+        if (!skill || !skill.validatedQuestions) return false;
+        return skill.validatedQuestions.includes(questionId);
+    }
 }
 
 const skillsTracker = new SkillsTracker();
@@ -373,6 +381,15 @@ function filterQuestions() {
         const matchLevel = q.level === selectedLevel;
         const matchTheme = q.theme === selectedTheme;
         const matchCompetence = !selectedCompetence || q.competence === selectedCompetence;
+        
+        // Exclure les questions déjà validées (uniquement si on filtre sans thème spécifique ni compétence)
+        // car cela signifie qu'on est en mode "par niveau"
+        if (matchLevel && !selectedTheme && !selectedCompetence) {
+            if (q.competence && q.id && skillsTracker.isQuestionValidated(q.id, q.competence)) {
+                return false;
+            }
+        }
+        
         return matchLevel && matchTheme && matchCompetence;
     });
     
@@ -413,11 +430,26 @@ function init() {
 function startLevelTest() {
     isLevelTestMode = true;
     
-    // Récupérer toutes les questions du niveau
-    const levelQuestions = quizData.filter(q => q.level === selectedLevel);
+    // Récupérer toutes les questions du niveau, en excluant celles déjà validées
+    const levelQuestions = quizData.filter(q => {
+        if (q.level !== selectedLevel) return false;
+        // Exclure les questions déjà validées
+        if (q.competence && q.id && skillsTracker.isQuestionValidated(q.id, q.competence)) {
+            return false;
+        }
+        return true;
+    });
     
-    // Sélectionner 20 questions aléatoires
-    filteredQuizData = shuffleArray(levelQuestions).slice(0, 20);
+    // Vérifier s'il reste des questions non validées
+    if (levelQuestions.length === 0) {
+        alert('🎉 Félicitations ! Vous avez déjà validé toutes les questions de ce niveau !');
+        return;
+    }
+    
+    // Sélectionner jusqu'à 20 questions aléatoires (ou moins s'il en reste moins)
+    // Les questions sont TOUJOURS mélangées pour les tests par niveau
+    const questionsToUse = Math.min(20, levelQuestions.length);
+    filteredQuizData = shuffleArray(levelQuestions).slice(0, questionsToUse);
     
     // Masquer la sélection et afficher le quiz
     selectionContainer.style.display = 'none';
@@ -426,9 +458,9 @@ function startLevelTest() {
     // Initialiser le quiz
     currentQuestion = 0;
     score = 0;
-    userAnswers = new Array(20).fill(null);
-    shuffledAnswers = new Array(20).fill(null);
-    totalDisplay.textContent = 20;
+    userAnswers = new Array(filteredQuizData.length).fill(null);
+    shuffledAnswers = new Array(filteredQuizData.length).fill(null);
+    totalDisplay.textContent = filteredQuizData.length;
     scoreDisplay.textContent = score;
     
     populateQuestionSelect();
