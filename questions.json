@@ -1934,19 +1934,6 @@
         "explanation": "On remplace $x$ par $-2$ : $y = -2 \\times (-2) + 3 = 4 + 3 = 7$. On n'obtient pas l'ordonnée du point $C$ (qui est 5), donc $C$ n'appartient pas à la droite."
     },
     {
-        "question": "Deux droites perpendiculaires ont des coefficients directeurs dont le produit est :",
-        "level": "2de",
-        "theme": "Géométrie",
-        "competence": "Connaître la condition de parallélisme de deux droites",
-        "answers": [
-            { "text": "$-1$", "correct": true },
-            { "text": "$0$", "correct": false },
-            { "text": "$1$", "correct": false },
-            { "text": "Il n'y a pas de relation", "correct": false }
-        ],
-        "explanation": "Deux droites perpendiculaires (non verticales/horizontales) ont des coefficients directeurs $m$ et $m'$ tels que $m \\times m' = -1$. Par exemple, $y = 2x + 1$ et $y = -\\frac{1}{2}x + 3$ sont perpendiculaires car $2 \\times (-\\frac{1}{2}) = -1$."
-    },
-    {
         "question": "Quelle condition doivent vérifier deux droites pour être parallèles ?",
         "level": "2de",
         "theme": "Géométrie",
