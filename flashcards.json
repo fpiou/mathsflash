@@ -217,6 +217,14 @@
     },
     {
         "level": "2de",
+        "theme": "Géométrie",
+        "type": "méthode",
+        "front": "Condition pour que deux droites soient parallèles",
+        "back": "Deux droites $y = m_1x + p_1$ et $y = m_2x + p_2$ sont parallèles si et seulement si $m_1 = m_2$",
+        "explanation": "Les droites parallèles ont le même coefficient directeur. Si les coefficients et ordonnées à l'origine sont égaux, les droites sont confondues."
+    },
+    {
+        "level": "2de",
         "theme": "Calcul littéral",
         "type": "définition",
         "front": "Définition de la valeur absolue",
