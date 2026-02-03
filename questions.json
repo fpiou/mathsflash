@@ -650,7 +650,7 @@
             { "text": "$11$", "correct": false },
             { "text": "$5$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 3 \\times 4 - 2 \\times 1 = 12 - 2 = 10$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 3 \\times 4 - 2 \\times 1 = 12 - 2 = 10$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}$.",
@@ -663,7 +663,7 @@
             { "text": "$9$", "correct": false },
             { "text": "$1$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 5 \\times 1 - (-2) \\times 3 = 5 + 6 = 11$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 5 \\times 1 - (-2) \\times 3 = 5 + 6 = 11$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} -2 \\\\ 4 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix}$.",
@@ -676,7 +676,7 @@
             { "text": "$-14$", "correct": false },
             { "text": "$2$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = (-2) \\times (-1) - 4 \\times 3 = 2 - 12 = -10$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = (-2) \\times (-1) - 4 \\times 3 = 2 - 12 = -10$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 2 \\\\ 6 \\end{pmatrix}$.",
@@ -689,7 +689,7 @@
             { "text": "$30$", "correct": false },
             { "text": "$0$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 4 \\times 6 - 3 \\times 2 = 24 - 6 = 18$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 4 \\times 6 - 3 \\times 2 = 24 - 6 = 18$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 6 \\\\ -3 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} -2 \\\\ 1 \\end{pmatrix}$.",
@@ -702,7 +702,7 @@
             { "text": "$9$", "correct": false },
             { "text": "$3$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 6 \\times 1 - (-3) \\times (-2) = 6 - 6 = 0$. Les vecteurs sont colinéaires."
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 6 \\times 1 - (-3) \\times (-2) = 6 - 6 = 0$. Les vecteurs sont colinéaires."
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 1 \\\\ 5 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} -3 \\\\ 2 \\end{pmatrix}$.",
@@ -715,7 +715,7 @@
             { "text": "$13$", "correct": false },
             { "text": "$7$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 1 \\times 2 - 5 \\times (-3) = 2 + 15 = 17$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 1 \\times 2 - 5 \\times (-3) = 2 + 15 = 17$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} -4 \\\\ -2 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 3 \\\\ -5 \\end{pmatrix}$.",
@@ -728,7 +728,7 @@
             { "text": "$14$", "correct": false },
             { "text": "$22$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = (-4) \\times (-5) - (-2) \\times 3 = 20 + 6 = 26$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = (-4) \\times (-5) - (-2) \\times 3 = 20 + 6 = 26$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 7 \\\\ 1 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$.",
@@ -741,7 +741,7 @@
             { "text": "$-19$", "correct": false },
             { "text": "$-21$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 7 \\times (-3) - 1 \\times 2 = -21 - 2 = -23$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 7 \\times (-3) - 1 \\times 2 = -21 - 2 = -23$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 0 \\\\ 4 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 5 \\\\ 0 \\end{pmatrix}$.",
@@ -754,7 +754,7 @@
             { "text": "$0$", "correct": false },
             { "text": "$9$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 0 \\times 0 - 4 \\times 5 = 0 - 20 = -20$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 0 \\times 0 - 4 \\times 5 = 0 - 20 = -20$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 8 \\\\ -1 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$.",
@@ -767,7 +767,7 @@
             { "text": "$20$", "correct": false },
             { "text": "$24$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 8 \\times 3 - (-1) \\times 4 = 24 + 4 = 28$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 8 \\times 3 - (-1) \\times 4 = 24 + 4 = 28$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} -5 \\\\ 6 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} -1 \\\\ -2 \\end{pmatrix}$.",
@@ -780,7 +780,7 @@
             { "text": "$4$", "correct": false },
             { "text": "$-4$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = (-5) \\times (-2) - 6 \\times (-1) = 10 + 6 = 16$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = (-5) \\times (-2) - 6 \\times (-1) = 10 + 6 = 16$"
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 9 \\\\ 3 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 6 \\\\ 2 \\end{pmatrix}$.",
@@ -793,7 +793,7 @@
             { "text": "$6$", "correct": false },
             { "text": "$3$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 9 \\times 2 - 3 \\times 6 = 18 - 18 = 0$. Les vecteurs sont colinéaires."
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 9 \\times 2 - 3 \\times 6 = 18 - 18 = 0$. Les vecteurs sont colinéaires."
     },
     {
         "question": "Calculer le déterminant des vecteurs $\\overrightarrow{u}\\begin{pmatrix} 2{,}5 \\\\ -1{,}5 \\end{pmatrix}$ et $\\overrightarrow{v}\\begin{pmatrix} 4 \\\\ 2 \\end{pmatrix}$.",
@@ -806,7 +806,7 @@
             { "text": "$5$", "correct": false },
             { "text": "$-5$", "correct": false }
         ],
-        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x_u \\times y_v - y_u \\times x_v = 2{,}5 \\times 2 - (-1{,}5) \\times 4 = 5 + 6 = 11$"
+        "explanation": "$\\det(\\overrightarrow{u}, \\overrightarrow{v}) = x \\times y' - y \\times x' = 2{,}5 \\times 2 - (-1{,}5) \\times 4 = 5 + 6 = 11$"
     },
     {
         "question": "Les points $A(1; 2)$, $B(3; 5)$ et $C(5; 8)$ sont-ils alignés ?",
@@ -2012,10 +2012,10 @@
         "explanation": "Une droite passe par l'origine si son ordonnée à l'origine est $0$. La droite $y = 5x + 1$ a une ordonnée à l'origine de $1$, donc elle ne passe pas par l'origine."
     },
     {
-        "question": "Convertir l'équation $3x - y + 6 = 0$ sous la forme $y = mx + p$.",
+        "question": "Donner l'équation réduite de la droite d'équation $3x - y + 6 = 0$.",
         "level": "2de",
         "theme": "Géométrie",
-        "competence": "Convertir une équation de droite sous forme réduite",
+        "competence": "Transformer une équation de droite sous forme réduite",
         "answers": [
             { "text": "$y = 3x + 6$", "correct": true },
             { "text": "$y = -3x + 6$", "correct": false },
@@ -2025,10 +2025,10 @@
         "explanation": "On isole $y$ : $-y = -3x - 6$, donc $y = 3x + 6$."
     },
     {
-        "question": "Convertir l'équation $x + 2y - 8 = 0$ sous la forme $y = mx + p$.",
+        "question": "Donner l'équation réduite de la droite d'équation $x + 2y - 8 = 0$.",
         "level": "2de",
         "theme": "Géométrie",
-        "competence": "Convertir une équation de droite sous forme réduite",
+        "competence": "Transformer une équation de droite sous forme réduite",
         "answers": [
             { "text": "$y = -\\frac{1}{2}x + 4$", "correct": true },
             { "text": "$y = \\frac{1}{2}x + 4$", "correct": false },
@@ -10952,6 +10952,76 @@
         "explanation": "$P(A) \\times P(B) = \\frac{1}{3} \\times \\frac{1}{2} = \\frac{1}{6} = P(A \\cap B)$. Donc $A$ et $B$ sont indépendants."
     },
     {
+        "question": "Un test médical est positif dans 95% des cas chez les personnes malades et dans 10% des cas chez les personnes saines. On sait que 2% de la population est malade. Quelle est la probabilité qu'une personne choisie au hasard ait un test positif ?",
+        "formula": "P(T^+)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule des probabilités totales",
+        "answers": [
+            { "formula": "P(T^+) = 0,117", "correct": true },
+            { "formula": "P(T^+) = 0,95", "correct": false },
+            { "formula": "P(T^+) = 0,10", "correct": false },
+            { "formula": "P(T^+) = 0,02", "correct": false }
+        ],
+        "explanation": "Soit $M$ \"être malade\" et $\\overline{M}$ \"être sain\". $P(M) = 0,02$ et $P(\\overline{M}) = 0,98$. $P_M(T^+) = 0,95$ et $P_{\\overline{M}}(T^+) = 0,10$. Par la formule des probabilités totales : $P(T^+) = P(M) \\times P_M(T^+) + P(\\overline{M}) \\times P_{\\overline{M}}(T^+) = 0,02 \\times 0,95 + 0,98 \\times 0,10 = 0,019 + 0,098 = 0,117$."
+    },
+    {
+        "question": "Dans une usine, 30% des pièces sont fabriquées par la machine A et 70% par la machine B. La machine A produit 5% de pièces défectueuses et la machine B produit 2% de pièces défectueuses. Quelle est la probabilité qu'une pièce choisie au hasard soit défectueuse ?",
+        "formula": "P(D)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule des probabilités totales",
+        "answers": [
+            { "formula": "P(D) = 0,029", "correct": true },
+            { "formula": "P(D) = 0,05", "correct": false },
+            { "formula": "P(D) = 0,02", "correct": false },
+            { "formula": "P(D) = 0,035", "correct": false }
+        ],
+        "explanation": "$P(A) = 0,3$ et $P(B) = 0,7$. $P_A(D) = 0,05$ et $P_B(D) = 0,02$. Formule des probabilités totales : $P(D) = P(A) \\times P_A(D) + P(B) \\times P_B(D) = 0,3 \\times 0,05 + 0,7 \\times 0,02 = 0,015 + 0,014 = 0,029$."
+    },
+    {
+        "question": "Un étudiant révise pour un examen. S'il révise, il a 80% de chances de réussir. S'il ne révise pas, il n'a que 30% de chances de réussir. On estime qu'il a 60% de chances de réviser. Quelle est la probabilité qu'il réussisse l'examen ?",
+        "formula": "P(R)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule des probabilités totales",
+        "answers": [
+            { "formula": "P(R) = 0,60", "correct": true },
+            { "formula": "P(R) = 0,80", "correct": false },
+            { "formula": "P(R) = 0,30", "correct": false },
+            { "formula": "P(R) = 0,55", "correct": false }
+        ],
+        "explanation": "Soit $T$ \"réviser\". $P(T) = 0,6$ et $P(\\overline{T}) = 0,4$. $P_T(R) = 0,8$ et $P_{\\overline{T}}(R) = 0,3$. $P(R) = P(T) \\times P_T(R) + P(\\overline{T}) \\times P_{\\overline{T}}(R) = 0,6 \\times 0,8 + 0,4 \\times 0,3 = 0,48 + 0,12 = 0,60$."
+    },
+    {
+        "question": "Dans une classe, 40% des élèves sont des filles. Parmi les filles, 70% aiment les maths. Parmi les garçons, 50% aiment les maths. Quelle est la probabilité qu'un élève choisi au hasard aime les maths ?",
+        "formula": "P(M)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule des probabilités totales",
+        "answers": [
+            { "formula": "P(M) = 0,58", "correct": true },
+            { "formula": "P(M) = 0,70", "correct": false },
+            { "formula": "P(M) = 0,50", "correct": false },
+            { "formula": "P(M) = 0,60", "correct": false }
+        ],
+        "explanation": "Soit $F$ \"fille\" et $G$ \"garçon\". $P(F) = 0,4$ et $P(G) = 0,6$. $P_F(M) = 0,7$ et $P_G(M) = 0,5$. $P(M) = P(F) \\times P_F(M) + P(G) \\times P_G(M) = 0,4 \\times 0,7 + 0,6 \\times 0,5 = 0,28 + 0,30 = 0,58$."
+    },
+    {
+        "question": "Une alarme se déclenche dans 98% des cas en cas d'intrusion et dans 5% des cas sans intrusion. On estime que la probabilité d'une intrusion est de 1%. Quelle est la probabilité que l'alarme se déclenche ?",
+        "formula": "P(A)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule des probabilités totales",
+        "answers": [
+            { "formula": "P(A) = 0,0593", "correct": true },
+            { "formula": "P(A) = 0,98", "correct": false },
+            { "formula": "P(A) = 0,05", "correct": false },
+            { "formula": "P(A) = 0,01", "correct": false }
+        ],
+        "explanation": "Soit $I$ \"intrusion\". $P(I) = 0,01$ et $P(\\overline{I}) = 0,99$. $P_I(A) = 0,98$ et $P_{\\overline{I}}(A) = 0,05$. $P(A) = P(I) \\times P_I(A) + P(\\overline{I}) \\times P_{\\overline{I}}(A) = 0,01 \\times 0,98 + 0,99 \\times 0,05 = 0,0098 + 0,0495 = 0,0593$."
+    },
+    {
         "question": "Quelle est la valeur de $\\cos(0)$ ?",
         "formula": "\\cos(0)",
         "level": "1reS",
@@ -13117,5 +13187,75 @@
             { "formula": "EF = 3", "correct": false }
         ],
         "explanation": "La distance entre deux points est égale à la norme du vecteur : $EF = \\|\\overrightarrow{EF}\\|$. Les coordonnées de $\\overrightarrow{EF}$ sont $\\begin{pmatrix}x_F - x_E\\\\ y_F - y_E\\end{pmatrix} = \\begin{pmatrix}4-0\\\\0-3\\end{pmatrix} = \\begin{pmatrix}4\\\\-3\\end{pmatrix}$. Donc $EF = \\sqrt{4^2 + (-3)^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$."
+    },
+    {
+        "question": "On sait que $P(A) = 0,6$, $P(B) = 0,5$ et $P(A \\cap B) = 0,2$. Calculer $P(A \\cup B)$ en utilisant la formule de Poincaré.",
+        "formula": "P(A \\cup B)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule de Poincaré",
+        "answers": [
+            { "formula": "P(A \\cup B) = 0,9", "correct": true },
+            { "formula": "P(A \\cup B) = 1,1", "correct": false },
+            { "formula": "P(A \\cup B) = 0,7", "correct": false },
+            { "formula": "P(A \\cup B) = 0,3", "correct": false }
+        ],
+        "explanation": "Par la formule de Poincaré : $P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = 0,6 + 0,5 - 0,2 = 0,9$."
+    },
+    {
+        "question": "Dans un groupe de 100 personnes, 60 aiment le chocolat, 50 aiment la vanille et 30 aiment les deux. Quelle est la probabilité qu'une personne choisie au hasard aime le chocolat ou la vanille ?",
+        "formula": "P(C \\cup V)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule de Poincaré",
+        "answers": [
+            { "formula": "P(C \\cup V) = 0,8", "correct": true },
+            { "formula": "P(C \\cup V) = 1,1", "correct": false },
+            { "formula": "P(C \\cup V) = 0,6", "correct": false },
+            { "formula": "P(C \\cup V) = 0,5", "correct": false }
+        ],
+        "explanation": "$P(C) = \\frac{60}{100} = 0,6$, $P(V) = \\frac{50}{100} = 0,5$, $P(C \\cap V) = \\frac{30}{100} = 0,3$. Formule de Poincaré : $P(C \\cup V) = 0,6 + 0,5 - 0,3 = 0,8$."
+    },
+    {
+        "question": "On lance un dé équilibré. Soit $A$ \"obtenir un nombre pair\" et $B$ \"obtenir un nombre supérieur à 4\". Calculer $P(A \\cup B)$.",
+        "formula": "P(A \\cup B)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule de Poincaré",
+        "answers": [
+            { "formula": "P(A \\cup B) = \\frac{2}{3}", "correct": true },
+            { "formula": "P(A \\cup B) = \\frac{1}{2}", "correct": false },
+            { "formula": "P(A \\cup B) = \\frac{5}{6}", "correct": false },
+            { "formula": "P(A \\cup B) = \\frac{1}{3}", "correct": false }
+        ],
+        "explanation": "$A = \\{2, 4, 6\\}$ donc $P(A) = \\frac{3}{6} = \\frac{1}{2}$. $B = \\{5, 6\\}$ donc $P(B) = \\frac{2}{6} = \\frac{1}{3}$. $A \\cap B = \\{6\\}$ donc $P(A \\cap B) = \\frac{1}{6}$. $P(A \\cup B) = \\frac{1}{2} + \\frac{1}{3} - \\frac{1}{6} = \\frac{3}{6} + \\frac{2}{6} - \\frac{1}{6} = \\frac{4}{6} = \\frac{2}{3}$."
+    },
+    {
+        "question": "Sachant que $P(A \\cup B) = 0,85$, $P(A) = 0,5$ et $P(B) = 0,6$, calculer $P(A \\cap B)$ en utilisant la formule de Poincaré.",
+        "formula": "P(A \\cap B)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule de Poincaré",
+        "answers": [
+            { "formula": "P(A \\cap B) = 0,25", "correct": true },
+            { "formula": "P(A \\cap B) = 0,35", "correct": false },
+            { "formula": "P(A \\cap B) = 0,15", "correct": false },
+            { "formula": "P(A \\cap B) = 0,95", "correct": false }
+        ],
+        "explanation": "Formule de Poincaré : $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$. Donc $P(A \\cap B) = P(A) + P(B) - P(A \\cup B) = 0,5 + 0,6 - 0,85 = 0,25$."
+    },
+    {
+        "question": "Dans une classe de 30 élèves, 18 pratiquent le football, 15 pratiquent le basket et 8 pratiquent les deux sports. Combien d'élèves pratiquent au moins un de ces deux sports ?",
+        "formula": "n(F \\cup B)",
+        "level": "1reS",
+        "theme": "Probabilités",
+        "competence": "Utiliser la formule de Poincaré",
+        "answers": [
+            { "formula": "25 \\text{ élèves}", "correct": true },
+            { "formula": "33 \\text{ élèves}", "correct": false },
+            { "formula": "23 \\text{ élèves}", "correct": false },
+            { "formula": "10 \\text{ élèves}", "correct": false }
+        ],
+        "explanation": "Par la formule de Poincaré : $n(F \\cup B) = n(F) + n(B) - n(F \\cap B) = 18 + 15 - 8 = 25$ élèves."
     }
 ]
