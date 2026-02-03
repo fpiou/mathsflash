@@ -49,6 +49,78 @@
     },
     {
         "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels compris entre $a$ et $b$ (bornes incluses)",
+        "back": "$[a; b] = \\{x \\in \\mathbb{R} \\mid a \\leq x \\leq b\\}$",
+        "explanation": "Tous les réels entre $a$ et $b$, bornes **incluses**. Les crochets fermés indiquent l'inclusion."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels compris entre $a$ et $b$ (bornes exclues)",
+        "back": "$]a; b[ = \\{x \\in \\mathbb{R} \\mid a < x < b\\}$",
+        "explanation": "Tous les réels entre $a$ et $b$, bornes **exclues**. Les crochets ouverts indiquent l'exclusion."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels supérieurs ou égaux à $a$ et inférieurs à $b$ (borne $a$ incluse, borne $b$ exclue)",
+        "back": "$[a; b[ = \\{x \\in \\mathbb{R} \\mid a \\leq x < b\\}$",
+        "explanation": "Tous les réels entre $a$ et $b$, borne $a$ **incluse**, borne $b$ **exclue**."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels compris entre $a$ (exclu) et $b$ (inclus)",
+        "back": "$]a; b] = \\{x \\in \\mathbb{R} \\mid a < x \\leq b\\}$",
+        "explanation": "Tous les réels entre $a$ et $b$, borne $a$ **exclue**, borne $b$ **incluse**."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels supérieurs ou égaux à $a$",
+        "back": "$[a; +\\infty[ = \\{x \\in \\mathbb{R} \\mid x \\geq a\\}$",
+        "explanation": "Tous les réels supérieurs ou égaux à $a$. L'infini est toujours avec un crochet ouvert."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels inférieurs ou égaux à $b$",
+        "back": "$]-\\infty; b] = \\{x \\in \\mathbb{R} \\mid x \\leq b\\}$",
+        "explanation": "Tous les réels inférieurs ou égaux à $b$. L'infini est toujours avec un crochet ouvert."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "méthode",
+        "front": "Comment déterminer si un nombre rationnel est décimal ?",
+        "back": "Écrire la fraction sous forme irréductible $\\frac{a}{b}$. Elle est décimale si et seulement si la décomposition en facteurs premiers de $b$ ne contient que des facteurs 2 et/ou 5.",
+        "explanation": "Le dénominateur de la fraction irréductible ne doit contenir que des facteurs 2 et/ou 5. Exemple : $\\frac{7}{20} = \\frac{7}{2^2 \\times 5}$ est décimal, mais $\\frac{1}{3}$ ne l'est pas."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "méthode",
+        "front": "Comment trouver le centre d'un intervalle $[a; b]$ ?",
+        "back": "$c = \\frac{a + b}{2}$",
+        "explanation": "Le centre est la moyenne des deux bornes. C'est le point équidistant de $a$ et de $b$."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "méthode",
+        "front": "L'ensemble des nombres $x$ qui vérifient $|x - a| < r$ sous forme d'intervalle",
+        "back": "$|x - a| < r \\Leftrightarrow x \\in ]a - r; a + r[$",
+        "explanation": "$|x - a| < r$ signifie que $x$ est à une distance inférieure à $r$ de $a$. L'intervalle a pour centre $a$ et pour rayon $r$."
+    },
+    {
+        "level": "2de",
         "theme": "Calcul littéral",
         "type": "méthode",
         "front": "Addition de fractions de même dénominateur",
@@ -60,7 +132,7 @@
         "theme": "Calcul littéral",
         "type": "méthode",
         "front": "Addition de fractions de dénominateurs différents",
-        "back": "Réduire au même dénominateur puis additionner",
+        "back": "Réduire au même dénominateur puis additionner les numérateurs tout en gardant le dénominateur commun.",
         "explanation": "On peut utiliser le produit des dénominateurs comme dénominateur commun ou chercher un plus petit multiple commun."
     },
     {
