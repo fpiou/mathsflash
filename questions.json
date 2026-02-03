@@ -7633,12 +7633,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↗20\\%$", "correct": true },
-            { "text": "$↗10\\%$", "correct": false },
-            { "text": "$↘20\\%$", "correct": false },
-            { "text": "$↗25\\%$", "correct": false }
+            { "text": "Hausse de $20\\%$", "correct": true },
+            { "text": "Hausse de $10\\%$", "correct": false },
+            { "text": "Baisse de $20\\%$", "correct": false },
+            { "text": "Hausse de $25\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{60 - 50}{50} \\times 100 = \\frac{10}{50} \\times 100 = 0{,}2 \\times 100 = ↗20\\%$"
+        "explanation": "Taux d'évolution $= \\frac{60 - 50}{50} \\times 100 = \\frac{10}{50} \\times 100 = 0{,}2 \\times 100$ d'où hausse de $20\\%$"
     },
     {
         "question": "Le nombre d'élèves d'un lycée passe de $800$ à $720$. Quel est le taux d'évolution en pourcentage ?",
@@ -7646,12 +7646,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↘10\\%$", "correct": true },
-            { "text": "$↗10\\%$", "correct": false },
-            { "text": "$↘20\\%$", "correct": false },
-            { "text": "$↘80\\%$", "correct": false }
+            { "text": "Baisse de $10\\%$", "correct": true },
+            { "text": "Hausse de $10\\%$", "correct": false },
+            { "text": "Baisse de $20\\%$", "correct": false },
+            { "text": "Baisse de $80\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{720 - 800}{800} \\times 100 = \\frac{-80}{800} \\times 100 = -0{,}1 \\times 100 = ↘10\\%$"
+        "explanation": "Taux d'évolution $= \\frac{720 - 800}{800} \\times 100 = \\frac{-80}{800} \\times 100 = -0{,}1 \\times 100$ d'où baisse de $10\\%$"
     },
     {
         "question": "Une population passe de $25\\,000$ à $30\\,000$ habitants. Quel est le taux d'évolution ?",
@@ -7659,12 +7659,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↗20\\%$", "correct": true },
-            { "text": "$↗25\\%$", "correct": false },
-            { "text": "$↗5\\%$", "correct": false },
-            { "text": "$↗50\\%$", "correct": false }
+            { "text": "Hausse de $20\\%$", "correct": true },
+            { "text": "Hausse de $25\\%$", "correct": false },
+            { "text": "Hausse de $5\\%$", "correct": false },
+            { "text": "Hausse de $50\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{30\\,000 - 25\\,000}{25\\,000} \\times 100 = \\frac{5\\,000}{25\\,000} \\times 100 = 0{,}2 \\times 100 = ↗20\\%$"
+        "explanation": "Taux d'évolution $= \\frac{30\\,000 - 25\\,000}{25\\,000} \\times 100 = \\frac{5\\,000}{25\\,000} \\times 100 = 0{,}2 \\times 100$ d'où hausse de $20\\%$"
     },
     {
         "question": "Un salaire passe de $2\\,000$ € à $2\\,100$ €. Quel est le taux d'augmentation ?",
@@ -7672,12 +7672,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↗5\\%$", "correct": true },
-            { "text": "$↗10\\%$", "correct": false },
-            { "text": "$↗100\\%$", "correct": false },
-            { "text": "$↗2{,}5\\%$", "correct": false }
+            { "text": "Hausse de $5\\%$", "correct": true },
+            { "text": "Hausse de $10\\%$", "correct": false },
+            { "text": "Hausse de $100\\%$", "correct": false },
+            { "text": "Hausse de $2{,}5\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{2\\,100 - 2\\,000}{2\\,000} \\times 100 = \\frac{100}{2\\,000} \\times 100 = 0{,}05 \\times 100 = ↗5\\%$"
+        "explanation": "Taux d'évolution $= \\frac{2\\,100 - 2\\,000}{2\\,000} \\times 100 = \\frac{100}{2\\,000} \\times 100 = 0{,}05 \\times 100$ d'où hausse de $5\\%$"
     },
     {
         "question": "Le chiffre d'affaires d'une entreprise passe de $150\\,000$ € à $120\\,000$ €. Quel est le taux d'évolution ?",
@@ -7685,12 +7685,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↘20\\%$", "correct": true },
-            { "text": "$↘30\\%$", "correct": false },
-            { "text": "$↗20\\%$", "correct": false },
-            { "text": "$↘25\\%$", "correct": false }
+            { "text": "Baisse de $20\\%$", "correct": true },
+            { "text": "Baisse de $30\\%$", "correct": false },
+            { "text": "Hausse de $20\\%$", "correct": false },
+            { "text": "Baisse de $25\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{120\\,000 - 150\\,000}{150\\,000} \\times 100 = \\frac{-30\\,000}{150\\,000} \\times 100 = -0{,}2 \\times 100 = ↘20\\%$"
+        "explanation": "Taux d'évolution $= \\frac{120\\,000 - 150\\,000}{150\\,000} \\times 100 = \\frac{-30\\,000}{150\\,000} \\times 100 = -0{,}2 \\times 100$ d'où baisse de $ 20\\%$"
     },
     {
         "question": "Un produit passe de $40$ € à $50$ €. Quel est le taux d'augmentation ?",
@@ -7698,12 +7698,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↗25\\%$", "correct": true },
-            { "text": "$↗20\\%$", "correct": false },
-            { "text": "$↗10\\%$", "correct": false },
-            { "text": "$↗50\\%$", "correct": false }
+            { "text": "Hausse de $25\\%$", "correct": true },
+            { "text": "Hausse de $20\\%$", "correct": false },
+            { "text": "Hausse de $10\\%$", "correct": false },
+            { "text": "Hausse de $50\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{50 - 40}{40} \\times 100 = \\frac{10}{40} \\times 100 = 0{,}25 \\times 100 = ↗25\\%$"
+        "explanation": "Taux d'évolution $= \\frac{50 - 40}{40} \\times 100 = \\frac{10}{40} \\times 100 = 0{,}25 \\times 100$ d'où hausse de $25\\%$"
     },
     {
         "question": "Une surface forestière passe de $500$ hectares à $400$ hectares. Quel est le taux d'évolution ?",
@@ -7711,12 +7711,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↘20\\%$", "correct": true },
-            { "text": "$↘25\\%$", "correct": false },
-            { "text": "$↗20\\%$", "correct": false },
-            { "text": "$↘100\\%$", "correct": false }
+            { "text": "Baisse de $20\\%$", "correct": true },
+            { "text": "Baisse de $25\\%$", "correct": false },
+            { "text": "Hausse de $20\\%$", "correct": false },
+            { "text": "Baisse de $100\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{400 - 500}{500} \\times 100 = \\frac{-100}{500} \\times 100 = -0{,}2 \\times 100 = ↘20\\%$"
+        "explanation": "Taux d'évolution $= \\frac{400 - 500}{500} \\times 100 = \\frac{-100}{500} \\times 100 = -0{,}2 \\times 100$ d'où baisse de $20\\%$"
     },
     {
         "question": "Le nombre de voitures vendues passe de $1\\,200$ à $1\\,500$ unités. Quel est le taux d'évolution ?",
@@ -7724,12 +7724,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↗25\\%$", "correct": true },
-            { "text": "$↗20\\%$", "correct": false },
-            { "text": "$↗30\\%$", "correct": false },
-            { "text": "$↗300\\%$", "correct": false }
+            { "text": "Hausse de $25\\%$", "correct": true },
+            { "text": "Hausse de $20\\%$", "correct": false },
+            { "text": "Hausse de $30\\%$", "correct": false },
+            { "text": "Hausse de $300\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{1\\,500 - 1\\,200}{1\\,200} \\times 100 = \\frac{300}{1\\,200} \\times 100 = 0{,}25 \\times 100 = ↗25\\%$"
+        "explanation": "Taux d'évolution $= \\frac{1\\,500 - 1\\,200}{1\\,200} \\times 100 = \\frac{300}{1\\,200} \\times 100 = 0{,}25 \\times 100$ d'où hausse de $25\\%$"
     },
     {
         "question": "Un loyer passe de $600$ € à $540$ €. Quel est le taux d'évolution ?",
@@ -7737,12 +7737,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↘10\\%$", "correct": true },
-            { "text": "$↘60\\%$", "correct": false },
-            { "text": "$↗10\\%$", "correct": false },
-            { "text": "$↘20\\%$", "correct": false }
+            { "text": "Baisse de $10\\%$", "correct": true },
+            { "text": "Baisse de $60\\%$", "correct": false },
+            { "text": "Hausse de $10\\%$", "correct": false },
+            { "text": "Baisse de $20\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{540 - 600}{600} \\times 100 = \\frac{-60}{600} \\times 100 = -0{,}1 \\times 100 = ↘10\\%$"
+        "explanation": "Taux d'évolution $= \\frac{540 - 600}{600} \\times 100 = \\frac{-60}{600} \\times 100 = -0{,}1 \\times 100$ d'où baisse de $10\\%$"
     },
     {
         "question": "Le prix de l'essence passe de $1{,}50$ € à $1{,}80$ € le litre. Quel est le taux d'augmentation ?",
@@ -7750,12 +7750,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↗20\\%$", "correct": true },
-            { "text": "$↗30\\%$", "correct": false },
-            { "text": "$↗25\\%$", "correct": false },
-            { "text": "$↗15\\%$", "correct": false }
+            { "text": "Hausse de $20\\%$", "correct": true },
+            { "text": "Hausse de $30\\%$", "correct": false },
+            { "text": "Hausse de $25\\%$", "correct": false },
+            { "text": "Hausse de $15\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{1{,}80 - 1{,}50}{1{,}50} \\times 100 = \\frac{0{,}30}{1{,}50} \\times 100 = 0{,}2 \\times 100 = ↗20\\%$"
+        "explanation": "Taux d'évolution $= \\frac{1{,}80 - 1{,}50}{1{,}50} \\times 100 = \\frac{0{,}30}{1{,}50} \\times 100 = 0{,}2 \\times 100$ d'où hausse de $20\\%$"
     },
     {
         "question": "Une entreprise compte $250$ employés puis $200$ employés l'année suivante. Quel est le taux d'évolution ?",
@@ -7763,12 +7763,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↘20\\%$", "correct": true },
-            { "text": "$↘25\\%$", "correct": false },
-            { "text": "$↗20\\%$", "correct": false },
-            { "text": "$↘50\\%$", "correct": false }
+            { "text": "Baisse de $20\\%$", "correct": true },
+            { "text": "Baisse de $25\\%$", "correct": false },
+            { "text": "Hausse de $20\\%$", "correct": false },
+            { "text": "Baisse de $50\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{200 - 250}{250} \\times 100 = \\frac{-50}{250} \\times 100 = -0{,}2 \\times 100 = ↘20\\%$"
+        "explanation": "Taux d'évolution $= \\frac{200 - 250}{250} \\times 100 = \\frac{-50}{250} \\times 100 = -0{,}2 \\times 100$ d'où baisse de $20\\%$"
     },
     {
         "question": "Un article à $80$ € est soldé à $64$ €. Quel est le taux de réduction ?",
@@ -7776,12 +7776,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↘20\\%$", "correct": true },
-            { "text": "$↘16\\%$", "correct": false },
-            { "text": "$↘25\\%$", "correct": false },
-            { "text": "$↘80\\%$", "correct": false }
+            { "text": "Baisse de $20\\%$", "correct": true },
+            { "text": "Baisse de $16\\%$", "correct": false },
+            { "text": "Baisse de $25\\%$", "correct": false },
+            { "text": "Baisse de $80\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{64 - 80}{80} \\times 100 = \\frac{-16}{80} \\times 100 = -0{,}2 \\times 100 = ↘20\\%$"
+        "explanation": "Taux d'évolution $= \\frac{64 - 80}{80} \\times 100 = \\frac{-16}{80} \\times 100 = -0{,}2 \\times 100$ d'où baisse de $20\\%$"
     },
     {
         "question": "La production d'une usine passe de $10\\,000$ à $12\\,000$ unités. Quel est le taux d'évolution ?",
@@ -7789,12 +7789,12 @@
         "theme": "Statistiques",
         "competence": "Calculer un taux d'évolution en pourcentage",
         "answers": [
-            { "text": "$↗20\\%$", "correct": true },
-            { "text": "$↗2\\%$", "correct": false },
-            { "text": "$↗25\\%$", "correct": false },
-            { "text": "$↗200\\%$", "correct": false }
+            { "text": "Hausse de $20\\%$", "correct": true },
+            { "text": "Hausse de $2\\%$", "correct": false },
+            { "text": "Hausse de $25\\%$", "correct": false },
+            { "text": "Hausse de $200\\%$", "correct": false }
         ],
-        "explanation": "Taux d'évolution $= \\frac{12\\,000 - 10\\,000}{10\\,000} \\times 100 = \\frac{2\\,000}{10\\,000} \\times 100 = 0{,}2 \\times 100 = ↗20\\%$"
+        "explanation": "Taux d'évolution $= \\frac{12\\,000 - 10\\,000}{10\\,000} \\times 100 = \\frac{2\\,000}{10\\,000} \\times 100 = 0{,}2 \\times 100$ d'où hausse de $20\\%$"
     },
     {
         "question": "Quel est le coefficient multiplicateur associé à une hausse de $20\\%$ ?",
@@ -7971,10 +7971,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↗20\\%$", "correct": true },
-            { "text": "$↘20\\%$", "correct": false },
-            { "text": "$↗1{,}2\\%$", "correct": false },
-            { "text": "$↗120\\%$", "correct": false }
+            { "text": "Hausse de $20\\%$", "correct": true },
+            { "text": "Baisse de $20\\%$", "correct": false },
+            { "text": "Hausse de $1{,}2\\%$", "correct": false },
+            { "text": "Hausse de $120\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (1{,}2 - 1) \\times 100 = 0{,}2 \\times 100 = 20\\%$ de hausse"
     },
@@ -7984,10 +7984,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↘15\\%$", "correct": true },
-            { "text": "$↗15\\%$", "correct": false },
-            { "text": "$↘85\\%$", "correct": false },
-            { "text": "$↗85\\%$", "correct": false }
+            { "text": "Baisse de $15\\%$", "correct": true },
+            { "text": "Hausse de $15\\%$", "correct": false },
+            { "text": "Baisse de $85\\%$", "correct": false },
+            { "text": "Hausse de $85\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (0{,}85 - 1) \\times 100 = -0{,}15 \\times 100 = -15\\%$ soit une baisse de $15\\%$"
     },
@@ -7997,10 +7997,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↗50\\%$", "correct": true },
-            { "text": "$↘50\\%$", "correct": false },
-            { "text": "$↗1{,}5\\%$", "correct": false },
-            { "text": "$↗150\\%$", "correct": false }
+            { "text": "Hausse de $50\\%$", "correct": true },
+            { "text": "Baisse de $50\\%$", "correct": false },
+            { "text": "Hausse de $1{,}5\\%$", "correct": false },
+            { "text": "Hausse de $150\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (1{,}5 - 1) \\times 100 = 0{,}5 \\times 100 = 50\\%$ de hausse"
     },
@@ -8010,10 +8010,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↘30\\%$", "correct": true },
-            { "text": "$↗30\\%$", "correct": false },
-            { "text": "$↘70\\%$", "correct": false },
-            { "text": "$↗70\\%$", "correct": false }
+            { "text": "Baisse de $30\\%$", "correct": true },
+            { "text": "Hausse de $30\\%$", "correct": false },
+            { "text": "Baisse de $70\\%$", "correct": false },
+            { "text": "Hausse de $70\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (0{,}7 - 1) \\times 100 = -0{,}3 \\times 100 = -30\\%$ soit une baisse de $30\\%$"
     },
@@ -8023,10 +8023,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↗25\\%$", "correct": true },
-            { "text": "$↘25\\%$", "correct": false },
-            { "text": "$↗1{,}25\\%$", "correct": false },
-            { "text": "$↗125\\%$", "correct": false }
+            { "text": "Hausse de $25\\%$", "correct": true },
+            { "text": "Baisse de $25\\%$", "correct": false },
+            { "text": "Hausse de $1{,}25\\%$", "correct": false },
+            { "text": "Hausse de $125\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (1{,}25 - 1) \\times 100 = 0{,}25 \\times 100 = 25\\%$ de hausse"
     },
@@ -8036,10 +8036,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↘10\\%$", "correct": true },
-            { "text": "$↗10\\%$", "correct": false },
-            { "text": "$↘90\\%$", "correct": false },
-            { "text": "$↗90\\%$", "correct": false }
+            { "text": "Baisse de $10\\%$", "correct": true },
+            { "text": "Hausse de $10\\%$", "correct": false },
+            { "text": "Baisse de $90\\%$", "correct": false },
+            { "text": "Hausse de $90\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (0{,}9 - 1) \\times 100 = -0{,}1 \\times 100 = -10\\%$ soit une baisse de $10\\%$"
     },
@@ -8049,10 +8049,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↗8\\%$", "correct": true },
-            { "text": "$↘8\\%$", "correct": false },
-            { "text": "$↗1{,}08\\%$", "correct": false },
-            { "text": "$↗108\\%$", "correct": false }
+            { "text": "Hausse de $8\\%$", "correct": true },
+            { "text": "Baisse de $8\\%$", "correct": false },
+            { "text": "Hausse de $1{,}08\\%$", "correct": false },
+            { "text": "Hausse de $108\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (1{,}08 - 1) \\times 100 = 0{,}08 \\times 100 = 8\\%$ de hausse"
     },
@@ -8062,10 +8062,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↘40\\%$", "correct": true },
-            { "text": "$↗40\\%$", "correct": false },
-            { "text": "$↘60\\%$", "correct": false },
-            { "text": "$↗60\\%$", "correct": false }
+            { "text": "Baisse de $40\\%$", "correct": true },
+            { "text": "Hausse de $40\\%$", "correct": false },
+            { "text": "Baisse de $60\\%$", "correct": false },
+            { "text": "Hausse de $60\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (0{,}6 - 1) \\times 100 = -0{,}4 \\times 100 = -40\\%$ soit une baisse de $40\\%$"
     },
@@ -8075,10 +8075,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↗100\\%$", "correct": true },
-            { "text": "$↘100\\%$", "correct": false },
-            { "text": "$↗2\\%$", "correct": false },
-            { "text": "$↗200\\%$", "correct": false }
+            { "text": "Hausse de $100\\%$", "correct": true },
+            { "text": "Baisse de $100\\%$", "correct": false },
+            { "text": "Hausse de $2\\%$", "correct": false },
+            { "text": "Hausse de $200\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (2 - 1) \\times 100 = 1 \\times 100 = 100\\%$ de hausse (doublement)"
     },
@@ -8088,10 +8088,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↘5\\%$", "correct": true },
-            { "text": "$↗5\\%$", "correct": false },
-            { "text": "$↘95\\%$", "correct": false },
-            { "text": "$↗95\\%$", "correct": false }
+            { "text": "Baisse de $5\\%$", "correct": true },
+            { "text": "Hausse de $5\\%$", "correct": false },
+            { "text": "Baisse de $95\\%$", "correct": false },
+            { "text": "Hausse de $95\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (0{,}95 - 1) \\times 100 = -0{,}05 \\times 100 = -5\\%$ soit une baisse de $5\\%$"
     },
@@ -8101,10 +8101,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↗15\\%$", "correct": true },
-            { "text": "$↘15\\%$", "correct": false },
-            { "text": "$↗1{,}15\\%$", "correct": false },
-            { "text": "$↗115\\%$", "correct": false }
+            { "text": "Hausse de $15\\%$", "correct": true },
+            { "text": "Baisse de $15\\%$", "correct": false },
+            { "text": "Hausse de $1{,}15\\%$", "correct": false },
+            { "text": "Hausse de $115\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (1{,}15 - 1) \\times 100 = 0{,}15 \\times 100 = 15\\%$ de hausse"
     },
@@ -8114,10 +8114,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↘20\\%$", "correct": true },
-            { "text": "$↗20\\%$", "correct": false },
-            { "text": "$↘80\\%$", "correct": false },
-            { "text": "$↗80\\%$", "correct": false }
+            { "text": "Baisse de $20\\%$", "correct": true },
+            { "text": "Hausse de $20\\%$", "correct": false },
+            { "text": "Baisse de $80\\%$", "correct": false },
+            { "text": "Hausse de $80\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (0{,}8 - 1) \\times 100 = -0{,}2 \\times 100 = -20\\%$ soit une baisse de $20\\%$"
     },
@@ -8127,10 +8127,10 @@
         "theme": "Statistiques",
         "competence": "Calculer le taux d'évolution à partir d'un coefficient multiplicateur",
         "answers": [
-            { "text": "$↗35\\%$", "correct": true },
-            { "text": "$↘35\\%$", "correct": false },
-            { "text": "$↗1{,}35\\%$", "correct": false },
-            { "text": "$↗135\\%$", "correct": false }
+            { "text": "Hausse de $35\\%$", "correct": true },
+            { "text": "Baisse de $35\\%$", "correct": false },
+            { "text": "Hausse de $1{,}35\\%$", "correct": false },
+            { "text": "Hausse de $135\\%$", "correct": false }
         ],
         "explanation": "Taux d'évolution $= (1{,}35 - 1) \\times 100 = 0{,}35 \\times 100 = 35\\%$ de hausse"
     },
