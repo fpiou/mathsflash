@@ -432,10 +432,10 @@
         "explanation": "Une droite passe par l'origine si son ordonnée à l'origine est $0$. L'équation est donc de la forme $y = mx$. Ici, seule $y = 3x$ convient."
     },
     {
-        "question": "Convertir l'équation $2x + y - 4 = 0$ sous la forme $y = mx + p$.",
+        "question": "Donner l'équation réduite de la droite d'équation $2x + y - 4 = 0$ sous la forme $y = mx + p$.",
         "level": "2de",
         "theme": "Géométrie",
-        "competence": "Convertir une équation de droite sous forme réduite",
+        "competence": "Transformer une équation de droite sous forme réduite",
         "answers": [
             { "text": "$y = -2x + 4$", "correct": true },
             { "text": "$y = 2x + 4$", "correct": false },
