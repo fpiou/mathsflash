@@ -282,10 +282,23 @@ function displayQuestions() {
         return;
     }
 
-    const html = filteredQuestions.map((q, index) => `
-        <div class="question-card" data-index="${index}">
+    const html = filteredQuestions.map((q, index) => {
+        // Trouver l'index original dans allQuestions
+        const originalIndex = allQuestions.indexOf(q);
+        const jsonLine = `Ligne ~${originalIndex * 14 + 2}`; // Estimation de la ligne dans JSON (14 lignes par question en moyenne)
+        
+        return `
+        <div class="question-card" data-index="${index}" data-original-index="${originalIndex}">
             <div class="question-header">
-                <div class="question-id">Question #${index + 1}</div>
+                <div class="question-id-group">
+                    <div class="question-id">Question #${index + 1}</div>
+                    <div class="json-location">
+                        <span class="json-index" title="Index dans questions.json (${jsonLine})">JSON[${originalIndex}]</span>
+                        <button class="copy-search-btn" onclick="copySearchString(${originalIndex}, event)" title="Copier une recherche pour retrouver cette question">
+                            📋
+                        </button>
+                    </div>
+                </div>
                 <div class="question-badges">
                     <span class="badge badge-level">${escapeHtml(levelNames[q.level] || q.level)}</span>
                     <span class="badge badge-theme">${escapeHtml(q.theme)}</span>
@@ -295,6 +308,7 @@ function displayQuestions() {
             <div class="question-text">
                 ${escapeHtml(q.question)}
                 ${q.formula ? `<div class="question-formula">$${q.formula}$</div>` : ''}
+                ${q.graphFunction ? `<div class="graph-container"><canvas id="graph-${index}" width="400" height="200"></canvas></div>` : ''}
             </div>
             <button class="question-expand" onclick="toggleQuestionDetails(${index})">
                 Voir les détails ▼
@@ -302,11 +316,15 @@ function displayQuestions() {
             <div class="question-full-details" id="details-${index}">
                 <h4>Choix de réponses:</h4>
                 <ul class="choices">
-                    ${q.answers.map((answer, i) => `
+                    ${q.answers.map((answer, i) => {
+                        const hasGraph = answer.graphFunction;
+                        return `
                         <li class="${answer.correct ? 'correct' : ''}">
-                            ${answer.text || ''}${answer.formula ? `$${answer.formula}$` : ''} ${answer.correct ? '✓ Bonne réponse' : ''}
+                            ${answer.text || ''}${answer.formula ? `$${answer.formula}$` : ''}
+                            ${hasGraph ? `<div class="answer-graph"><canvas id="graph-${index}-answer-${i}" width="300" height="150"></canvas></div>` : ''}
+                            ${answer.correct ? '✓ Bonne réponse' : ''}
                         </li>
-                    `).join('')}
+                    `}).join('')}
                 </ul>
                 ${q.explanation ? `
                     <div class="explanation">
@@ -316,10 +334,40 @@ function displayQuestions() {
                 ` : ''}
             </div>
         </div>
-    `).join('');
+    `}).join('');
 
     container.innerHTML = html;
     renderKaTeX();
+    renderGraphs();
+}
+
+// Copier une chaîne de recherche pour retrouver la question dans questions.json
+function copySearchString(originalIndex, event) {
+    const question = allQuestions[originalIndex];
+    
+    // Créer une chaîne de recherche unique basée sur la question complète
+    const searchString = `"question": "${question.question}"`;
+    
+    // Copier dans le presse-papier
+    navigator.clipboard.writeText(searchString).then(() => {
+        // Afficher un feedback visuel
+        const btn = event.target;
+        const originalText = btn.textContent;
+        btn.textContent = '✓';
+        btn.style.background = '#28a745';
+        
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+        }, 1500);
+        
+        // Afficher un message
+        console.log(`Recherche copiée pour la question JSON[${originalIndex}]`);
+        alert(`Chaîne de recherche copiée !\n\nUtilisez Ctrl+F dans questions.json et collez pour trouver:\nIndex JSON: ${originalIndex}\n\nLa question complète a été copiée dans le presse-papier.`);
+    }).catch(err => {
+        console.error('Erreur lors de la copie:', err);
+        alert(`Impossible de copier. Recherchez manuellement:\n"${searchString}"`);
+    });
 }
 
 // Basculer l'affichage des détails d'une question
@@ -334,6 +382,18 @@ function toggleQuestionDetails(index) {
         details.classList.add('show');
         button.textContent = 'Masquer les détails ▲';
         renderKaTeX();
+        // Re-render les graphiques des réponses quand on ouvre les détails
+        const question = filteredQuestions[index];
+        question.answers.forEach((answer, i) => {
+            if (answer.graphFunction) {
+                const canvas = document.getElementById(`graph-${index}-answer-${i}`);
+                if (canvas && !canvas.dataset.rendered) {
+                    const graphData = prepareGraphData(answer.graphFunction, answer.graphParams);
+                    drawGraph(canvas, graphData);
+                    canvas.dataset.rendered = 'true';
+                }
+            }
+        });
     }
 }
 
@@ -421,6 +481,193 @@ function renderKaTeX() {
                 ],
                 throwOnError: false
             });
-        }, 100);
+        }, 10);
     }
+}
+
+// Rendre les graphiques avec Chart.js
+function renderGraphs() {
+    filteredQuestions.forEach((q, index) => {
+        // Graphique de la question
+        if (q.graphFunction) {
+            const canvas = document.getElementById(`graph-${index}`);
+            if (canvas) {
+                const graphData = prepareGraphData(q.graphFunction, q.graphParams);
+                drawGraph(canvas, graphData);
+            }
+        }
+        
+        // Graphiques dans les réponses
+        q.answers.forEach((answer, i) => {
+            if (answer.graphFunction) {
+                const canvas = document.getElementById(`graph-${index}-answer-${i}`);
+                if (canvas) {
+                    const graphData = prepareGraphData(answer.graphFunction, answer.graphParams);
+                    drawGraph(canvas, graphData);
+                }
+            }
+        });
+    });
+}
+
+// Préparer les données du graphique
+function prepareGraphData(functionString, params) {
+    const parseFunction = (funcString) => new Function('x', `return ${funcString}`);
+    
+    // Gérer le cas où c'est un tableau de fonctions
+    if (Array.isArray(functionString)) {
+        return {
+            type: 'line',
+            functions: functionString.map(f => parseFunction(f)),
+            xMin: params?.xMin ?? -10,
+            xMax: params?.xMax ?? 10,
+            yMin: params?.yMin ?? -10,
+            yMax: params?.yMax ?? 10,
+            label: params?.label ?? 'f(x)'
+        };
+    } else {
+        return {
+            type: 'line',
+            function: parseFunction(functionString),
+            xMin: params?.xMin ?? -10,
+            xMax: params?.xMax ?? 10,
+            yMin: params?.yMin ?? -10,
+            yMax: params?.yMax ?? 10,
+            label: params?.label ?? 'f(x)'
+        };
+    }
+}
+
+// Dessiner un graphique avec Chart.js (même logique que script.js)
+function drawGraph(canvas, graphData) {
+    if (!canvas || !graphData) return;
+    
+    const ctx = canvas.getContext('2d');
+    
+    // Générer les datasets (un ou plusieurs selon si functions ou function)
+    const datasets = [];
+    const colors = ['#667eea', '#f093fb', '#4facfe', '#43e97b', '#fa709a'];
+    
+    if (graphData.functions) {
+        // Plusieurs fonctions
+        const functionLabels = ['f', 'g', 'h', 'i', 'j'];
+        graphData.functions.forEach((func, index) => {
+            const step = (graphData.xMax - graphData.xMin) / 100;
+            const dataPoints = [];
+            
+            for (let x = graphData.xMin; x <= graphData.xMax; x += step) {
+                try {
+                    const y = func(x);
+                    if (isFinite(y)) {
+                        dataPoints.push({ x: x, y: y });
+                    }
+                } catch (e) {
+                    // Ignorer les erreurs de calcul
+                }
+            }
+            
+            datasets.push({
+                label: functionLabels[index] || `Fonction ${index + 1}`,
+                data: dataPoints,
+                borderColor: colors[index % colors.length],
+                backgroundColor: `${colors[index % colors.length]}20`,
+                borderWidth: 2,
+                pointRadius: 0,
+                tension: 0.4
+            });
+        });
+    } else {
+        // Une seule fonction
+        const step = (graphData.xMax - graphData.xMin) / 100;
+        const dataPoints = [];
+        
+        for (let x = graphData.xMin; x <= graphData.xMax; x += step) {
+            try {
+                const y = graphData.function(x);
+                if (isFinite(y)) {
+                    dataPoints.push({ x: x, y: y });
+                }
+            } catch (e) {
+                // Ignorer les erreurs de calcul
+            }
+        }
+        
+        datasets.push({
+            label: graphData.label,
+            data: dataPoints,
+            borderColor: '#667eea',
+            backgroundColor: 'rgba(102, 126, 234, 0.1)',
+            borderWidth: 2,
+            pointRadius: 0,
+            tension: 0.4
+        });
+    }
+    
+    // Créer le graphique
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 2,
+            scales: {
+                x: {
+                    type: 'linear',
+                    position: {y: 0},
+                    min: graphData.xMin,
+                    max: graphData.xMax,
+                    grid: {
+                        color: (context) => context.tick.value === 0 ? '#000' : '#e0e0e0',
+                        lineWidth: (context) => context.tick.value === 0 ? 2 : 1,
+                        drawOnChartArea: true
+                    },
+                    ticks: {
+                        callback: function(value) {
+                            if (Math.abs(value / Math.PI - Math.round(value / Math.PI)) < 0.01) {
+                                const piMultiple = Math.round(value / Math.PI);
+                                if (piMultiple === 0) return '0';
+                                if (piMultiple === 1) return 'π';
+                                if (piMultiple === -1) return '-π';
+                                return piMultiple + 'π';
+                            }
+                            return value.toFixed(1);
+                        }
+                    }
+                },
+                y: {
+                    type: 'linear',
+                    position: {x: 0},
+                    min: graphData.yMin,
+                    max: graphData.yMax,
+                    grid: {
+                        color: (context) => context.tick.value === 0 ? '#000' : '#e0e0e0',
+                        lineWidth: (context) => context.tick.value === 0 ? 2 : 1,
+                        drawOnChartArea: true
+                    },
+                    ticks: {
+                        callback: function(value) {
+                            return value.toFixed(1);
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top'
+                },
+                tooltip: {
+                    enabled: true,
+                    callbacks: {
+                        label: function(context) {
+                            return `(${context.parsed.x.toFixed(2)}, ${context.parsed.y.toFixed(2)})`;
+                        }
+                    }
+                }
+            }
+        }
+    });
 }

@@ -314,10 +314,53 @@ header h1 {
     margin-bottom: 15px;
 }
 
+.question-id-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .question-id {
     font-weight: bold;
     color: var(--primary-color);
     font-size: 0.9em;
+}
+
+.json-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.json-index {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75em;
+    background: #fff3cd;
+    color: #856404;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid #ffeaa7;
+    cursor: help;
+}
+
+.copy-search-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-search-btn:hover {
+    background: #3a7bd5;
+    transform: scale(1.1);
+}
+
+.copy-search-btn:active {
+    transform: scale(0.95);
 }
 
 .question-badges {
@@ -476,4 +519,41 @@ header h1 {
     padding: 40px;
     color: var(--secondary-color);
     font-size: 1.1em;
+}
+
+/* Graphiques - même style que dans styles.css */
+.graph-container {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.graph-container canvas {
+    max-width: 100%;
+    width: 100%;
+}
+
+.answer-graph {
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    max-width: 300px;
+}
+
+.answer-graph canvas {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.question-formula {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-color);
 }
