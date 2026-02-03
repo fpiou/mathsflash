@@ -13244,5 +13244,146 @@
             { "formula": "10 \\text{ élèves}", "correct": false }
         ],
         "explanation": "Par la formule de Poincaré : $n(F \\cup B) = n(F) + n(B) - n(F \\cap B) = 18 + 15 - 8 = 25$ élèves."
+    },
+    {
+        "question": "Résoudre l'inéquation $x^2 - 5x + 6 > 0$.",
+        "formula": "x^2 - 5x + 6 > 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x \\in ]-\\infty; 2[ \\cup ]3; +\\infty[", "correct": true },
+            { "formula": "x \\in ]2; 3[", "correct": false },
+            { "formula": "x \\in [-\\infty; 2] \\cup [3; +\\infty[", "correct": false },
+            { "formula": "x \\in \\mathbb{R}", "correct": false }
+        ],
+        "explanation": "$\\Delta = 25 - 24 = 1 > 0$. Racines : $x_1 = 2$ et $x_2 = 3$. Parabole tournée vers le haut ($a=1>0$), donc $x^2 - 5x + 6 > 0$ à l'extérieur des racines : $x \\in ]-\\infty; 2[ \\cup ]3; +\\infty[$."
+    },
+    {
+        "question": "Résoudre l'inéquation $-2x^2 + 8x - 6 \\geq 0$.",
+        "formula": "-2x^2 + 8x - 6 \\geq 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x \\in [1; 3]", "correct": true },
+            { "formula": "x \\in ]-\\infty; 1] \\cup [3; +\\infty[", "correct": false },
+            { "formula": "x \\in ]1; 3[", "correct": false },
+            { "formula": "x \\in \\emptyset", "correct": false }
+        ],
+        "explanation": "$-2x^2 + 8x - 6 = -2(x^2 - 4x + 3)$. $\\Delta = 16 - 12 = 4 > 0$. Racines : $x_1 = 1$ et $x_2 = 3$. Parabole tournée vers le bas ($a=-2<0$), donc $-2x^2 + 8x - 6 \\geq 0$ entre les racines : $x \\in [1; 3]$."
+    },
+    {
+        "question": "Résoudre l'inéquation $x^2 + 4x + 4 \\leq 0$.",
+        "formula": "x^2 + 4x + 4 \\leq 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x = -2", "correct": true },
+            { "formula": "x \\in ]-\\infty; -2]", "correct": false },
+            { "formula": "x \\in [-2; +\\infty[", "correct": false },
+            { "formula": "x \\in \\emptyset", "correct": false }
+        ],
+        "explanation": "$x^2 + 4x + 4 = (x+2)^2$. $\\Delta = 0$, racine double : $x_0 = -2$. Parabole tournée vers le haut, donc $(x+2)^2 \\leq 0$ seulement en $x = -2$."
+    },
+    {
+        "question": "Résoudre l'inéquation $3x^2 + 2x + 5 < 0$.",
+        "formula": "3x^2 + 2x + 5 < 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x \\in \\emptyset", "correct": true },
+            { "formula": "x \\in \\mathbb{R}", "correct": false },
+            { "formula": "x \\in ]-\\infty; -1[", "correct": false },
+            { "formula": "x \\in ]0; +\\infty[", "correct": false }
+        ],
+        "explanation": "$\\Delta = 4 - 60 = -56 < 0$. Pas de racine réelle. Parabole tournée vers le haut ($a=3>0$), donc $3x^2 + 2x + 5 > 0$ pour tout $x \\in \\mathbb{R}$. L'inéquation $< 0$ n'a pas de solution."
+    },
+    {
+        "question": "Résoudre l'inéquation $-x^2 - 2x - 3 > 0$.",
+        "formula": "-x^2 - 2x - 3 > 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x \\in \\emptyset", "correct": true },
+            { "formula": "x \\in \\mathbb{R}", "correct": false },
+            { "formula": "x \\in ]-\\infty; -3[ \\cup ]-1; +\\infty[", "correct": false },
+            { "formula": "x \\in [-3; -1]", "correct": false }
+        ],
+        "explanation": "$\\Delta = 4 - 12 = -8 < 0$. Pas de racine réelle. Parabole tournée vers le bas ($a=-1<0$), donc $-x^2 - 2x - 3 < 0$ pour tout $x \\in \\mathbb{R}$. L'inéquation $> 0$ n'a pas de solution."
+    },
+    {
+        "question": "Résoudre l'inéquation $2x^2 - 7x + 3 \\leq 0$.",
+        "formula": "2x^2 - 7x + 3 \\leq 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x \\in [\\frac{1}{2}; 3]", "correct": true },
+            { "formula": "x \\in ]-\\infty; \\frac{1}{2}] \\cup [3; +\\infty[", "correct": false },
+            { "formula": "x \\in ]\\frac{1}{2}; 3[", "correct": false },
+            { "formula": "x \\in \\mathbb{R}", "correct": false }
+        ],
+        "explanation": "$\\Delta = 49 - 24 = 25 > 0$. $x = \\frac{7 \\pm 5}{4}$. Racines : $x_1 = \\frac{1}{2}$ et $x_2 = 3$. Parabole vers le haut ($a=2>0$), donc $2x^2 - 7x + 3 \\leq 0$ entre les racines : $x \\in [\\frac{1}{2}; 3]$."
+    },
+    {
+        "question": "Résoudre l'inéquation $-3x^2 + 12x - 12 \\geq 0$.",
+        "formula": "-3x^2 + 12x - 12 \\geq 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x = 2", "correct": true },
+            { "formula": "x \\in [2; +\\infty[", "correct": false },
+            { "formula": "x \\in ]-\\infty; 2]", "correct": false },
+            { "formula": "x \\in \\mathbb{R}", "correct": false }
+        ],
+        "explanation": "$-3x^2 + 12x - 12 = -3(x^2 - 4x + 4) = -3(x-2)^2$. $\\Delta = 0$, racine double : $x_0 = 2$. Parabole vers le bas, donc $-3(x-2)^2 \\geq 0$ seulement en $x = 2$."
+    },
+    {
+        "question": "Résoudre l'inéquation $x^2 - 9 > 0$.",
+        "formula": "x^2 - 9 > 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x \\in ]-\\infty; -3[ \\cup ]3; +\\infty[", "correct": true },
+            { "formula": "x \\in ]-3; 3[", "correct": false },
+            { "formula": "x \\in [-3; 3]", "correct": false },
+            { "formula": "x \\in \\mathbb{R}", "correct": false }
+        ],
+        "explanation": "$x^2 - 9 = (x-3)(x+3)$. Racines : $x_1 = -3$ et $x_2 = 3$. Parabole vers le haut ($a=1>0$), donc $x^2 - 9 > 0$ à l'extérieur des racines : $x \\in ]-\\infty; -3[ \\cup ]3; +\\infty[$."
+    },
+    {
+        "question": "Résoudre l'inéquation $4 - x^2 \\geq 0$.",
+        "formula": "4 - x^2 \\geq 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x \\in [-2; 2]", "correct": true },
+            { "formula": "x \\in ]-\\infty; -2] \\cup [2; +\\infty[", "correct": false },
+            { "formula": "x \\in ]-2; 2[", "correct": false },
+            { "formula": "x \\in \\emptyset", "correct": false }
+        ],
+        "explanation": "$4 - x^2 = -(x^2 - 4) = -(x-2)(x+2)$. Racines : $x_1 = -2$ et $x_2 = 2$. Parabole vers le bas ($a=-1<0$), donc $4 - x^2 \\geq 0$ entre les racines : $x \\in [-2; 2]$."
+    },
+    {
+        "question": "Pour quelles valeurs de $x$ a-t-on $x(x-4) < 0$ ?",
+        "formula": "x(x-4) < 0",
+        "level": "1reS",
+        "theme": "Algèbre",
+        "competence": "Résoudre une inéquation du second degré",
+        "answers": [
+            { "formula": "x \\in ]0; 4[", "correct": true },
+            { "formula": "x \\in ]-\\infty; 0[ \\cup ]4; +\\infty[", "correct": false },
+            { "formula": "x \\in [0; 4]", "correct": false },
+            { "formula": "x \\in \\mathbb{R}", "correct": false }
+        ],
+        "explanation": "$x(x-4) = x^2 - 4x$. Racines : $x_1 = 0$ et $x_2 = 4$. Parabole vers le haut ($a=1>0$), donc $x(x-4) < 0$ entre les racines : $x \\in ]0; 4[$."
     }
 ]
+
