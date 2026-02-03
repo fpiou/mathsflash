@@ -3,6 +3,13 @@
 const levels = ['2de','1reS'];
 const themes = ['Fonctions', 'Dérivées', 'Intégrales', 'Équations-Inéquations', 'Géométrie', 'Trigonométrie', 'Calcul littéral', 'Probabilités', 'Statistiques','Algèbre'];
 
+// Fonction pour échapper le HTML
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
 // Système de suivi des compétences
 class SkillsTracker {
     constructor() {
@@ -1416,7 +1423,7 @@ function displaySkillsList(filter) {
         skillCard.innerHTML = `
             <div class="skill-header">
                 <span class="skill-icon">${statusIcon}</span>
-                <h3 class="skill-name">${skill.name}</h3>
+                <h3 class="skill-name">${escapeHtml(skill.name)}</h3>
                 <span class="skill-status ${status}">${statusText}</span>
             </div>
             <div class="skill-level-display">

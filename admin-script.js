@@ -88,6 +88,78 @@ function populateFilters() {
     });
 }
 
+// Mettre à jour les thèmes disponibles selon le niveau sélectionné
+function updateThemeFilter() {
+    const levelFilter = document.getElementById('filter-level').value;
+    const themeSelect = document.getElementById('filter-theme');
+    
+    // Filtrer les questions selon le niveau
+    const questionsToFilter = levelFilter 
+        ? allQuestions.filter(q => q.level === levelFilter)
+        : allQuestions;
+    
+    // Obtenir les thèmes disponibles
+    const themes = [...new Set(questionsToFilter.map(q => q.theme))].sort();
+    
+    // Sauvegarder la valeur actuelle
+    const currentValue = themeSelect.value;
+    
+    // Vider et repeupler le select
+    themeSelect.innerHTML = '<option value="">Tous les thèmes</option>';
+    
+    themes.forEach(theme => {
+        const option = document.createElement('option');
+        option.value = theme;
+        option.textContent = theme;
+        themeSelect.appendChild(option);
+    });
+    
+    // Restaurer la valeur si elle existe encore
+    if (currentValue && themes.includes(currentValue)) {
+        themeSelect.value = currentValue;
+    }
+    
+    // Mettre à jour les compétences car le niveau a changé
+    updateCompetenceFilter();
+}
+
+// Mettre à jour les compétences disponibles selon le niveau et thème sélectionnés
+function updateCompetenceFilter() {
+    const levelFilter = document.getElementById('filter-level').value;
+    const themeFilter = document.getElementById('filter-theme').value;
+    const competenceSelect = document.getElementById('filter-competence');
+    
+    // Filtrer les questions selon niveau et thème
+    let questionsToFilter = allQuestions;
+    if (levelFilter) {
+        questionsToFilter = questionsToFilter.filter(q => q.level === levelFilter);
+    }
+    if (themeFilter) {
+        questionsToFilter = questionsToFilter.filter(q => q.theme === themeFilter);
+    }
+    
+    // Obtenir les compétences disponibles
+    const competences = [...new Set(questionsToFilter.map(q => q.competence))].sort();
+    
+    // Sauvegarder la valeur actuelle
+    const currentValue = competenceSelect.value;
+    
+    // Vider et repeupler le select
+    competenceSelect.innerHTML = '<option value="">Toutes les compétences</option>';
+    
+    competences.forEach(competence => {
+        const option = document.createElement('option');
+        option.value = competence;
+        option.textContent = competence;
+        competenceSelect.appendChild(option);
+    });
+    
+    // Restaurer la valeur si elle existe encore
+    if (currentValue && competences.includes(currentValue)) {
+        competenceSelect.value = currentValue;
+    }
+}
+
 // Mettre à jour les statistiques détaillées
 function updateDetailedStats() {
     updateLevelStats();
@@ -305,6 +377,15 @@ function setupEventListeners() {
     // Filtres
     document.getElementById('apply-filters').addEventListener('click', applyFilters);
     document.getElementById('reset-filters').addEventListener('click', resetFilters);
+    
+    // Mise à jour en cascade des filtres
+    document.getElementById('filter-level').addEventListener('change', () => {
+        updateThemeFilter();
+    });
+    
+    document.getElementById('filter-theme').addEventListener('change', () => {
+        updateCompetenceFilter();
+    });
     
     // Appliquer les filtres en appuyant sur Entrée dans la recherche
     document.getElementById('filter-search').addEventListener('keypress', (e) => {
