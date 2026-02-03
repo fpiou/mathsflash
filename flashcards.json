@@ -201,6 +201,22 @@
     },
     {
         "level": "2de",
+        "theme": "Géométrie",
+        "type": "méthode",
+        "front": "$(d) : y = mx + p$\n Donner un vecteur directeur.",
+        "back": "$\\overrightarrow{u}\\begin{pmatrix}1\\\\m\\end{pmatrix}$",
+        "explanation": "Un vecteur directeur a pour coordonnées $(1; m)$ où $m$ est le coefficient directeur."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "méthode",
+        "front": "$(d) : ax + by + c = 0$\n Donner un vecteur directeur.",
+        "back": "$\\overrightarrow{u}\\begin{pmatrix}-b\\\\a\\end{pmatrix}$",
+        "explanation": "Un vecteur directeur a pour coordonnées $(-b; a)$. On peut aussi utiliser $(b; -a)$."
+    },
+    {
+        "level": "2de",
         "theme": "Calcul littéral",
         "type": "définition",
         "front": "Définition de la valeur absolue",
