@@ -1,0 +1,97 @@
+[
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "formule",
+        "front": "Dérivée de $x^n$",
+        "back": "$\\frac{d}{dx}(x^n) = nx^{n-1}$",
+        "explanation": "On multiplie par l'exposant puis on diminue l'exposant de 1."
+    },
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "formule",
+        "front": "Dérivée de $(u+v)$",
+        "back": "$(u+v)' = u' + v'$",
+        "explanation": "La dérivée d'une somme est la somme des dérivées."
+    },
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "formule",
+        "front": "Dérivée de $(ku)$ où $k$ est une constante",
+        "back": "$(ku)' = k \\cdot u'$",
+        "explanation": "La dérivée d'un produit par une constante."
+    },
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "formule",
+        "front": "Dérivée d'un produit $(uv)$",
+        "back": "$(uv)' = u'v + uv'$",
+        "explanation": "Formule du produit : dérivée du premier fois le second + premier fois dérivée du second."
+    },
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "formule",
+        "front": "Dérivée d'un quotient $\\frac{u}{v}$",
+        "back": "$\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$",
+        "explanation": "Formule du quotient, avec $v \\neq 0$."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Norme d'un vecteur $\\overrightarrow{u}\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+        "back": "$\\|\\overrightarrow{u}\\| = \\sqrt{x^2 + y^2}$",
+        "explanation": "La norme est la longueur du vecteur, calculée avec le théorème de Pythagore."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Distance entre deux points $A(x_A; y_A)$ et $B(x_B; y_B)$",
+        "back": "$AB = \\|\\overrightarrow{AB}\\| = \\sqrt{(x_B - x_A)^2 + (y_B - y_A)^2}$",
+        "explanation": "C'est la norme du vecteur $\\overrightarrow{AB}$."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Coordonnées du milieu $I$ de $[AB]$",
+        "back": "$I\\left(\\frac{x_A + x_B}{2}; \\frac{y_A + y_B}{2}\\right)$",
+        "explanation": "Le milieu a pour coordonnées la moyenne des coordonnées des extrémités."
+    },
+    {
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "type": "méthode",
+        "front": "Résoudre une équation du premier degré $ax + b = c$",
+        "back": "1. Soustraire $b$ des deux côtés\n2. diviser par $a$ (si $a \\neq 0$)",
+        "explanation": "On effectue les mêmes opérations des deux côtés de l'égalité."
+    },
+    {
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "type": "méthode",
+        "front": "Quelle opération sur les inégalités change le sens de l'inégalité ?",
+        "back": "Multiplier ou diviser par un nombre **négatif**",
+        "explanation": "Exemple: $-2x < 6$ devient $x > -3$ (division par -2, donc on inverse)"
+    },{
+        "level": "2de",
+        "theme": "Fonctions",
+        "type": "définition",
+        "front": "Définition: fonction croissante sur un intervalle $I$",
+        "back": "Si $x_1 < x_2$ alors $f(x_1) \\leq f(x_2)$. Autrement dit la fonction conserve l'ordre.",
+        "explanation": "Quand $x$ augmente, $f(x)$ augmente aussi."
+    },
+    {
+        "level": "2de",
+        "theme": "Fonctions",
+        "type": "définition",
+        "front": "Définition: fonction décroissante sur un intervalle $I$",
+        "back": "Si $x_1 < x_2$ alors $f(x_1) \\geq f(x_2)$. Autrement dit la fonction inverse l'ordre.",
+        "explanation": "Quand $x$ augmente, $f(x)$ diminue."
+    }
+]

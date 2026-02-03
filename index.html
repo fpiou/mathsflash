@@ -19,6 +19,8 @@
         <header>
             <h1><a href="index.html" style="text-decoration: none; color: inherit;">Quiz Mathématiques</a></h1>
             <div class="header-actions">
+                <a href="flashcards.html" class="btn-icon" title="Flashcards">📚 Flashcards</a>
+                <a href="admin.html" class="btn-icon" title="Administration">⚙️ Admin</a>
                 <button id="header-skills-btn" class="btn-icon" title="Voir mes compétences">📊 Compétences</button>
                 <div class="score-container">
                     <span>Score: <span id="score">0</span>/<span id="total">0</span></span>
@@ -28,7 +30,20 @@
 
         <!-- Sélection de niveau et thème -->
         <div class="selection-container" id="selection-container">
-            <h2>Choisir un quiz</h2>
+            <h2>🎯 Test par niveau</h2>
+            <p class="section-description">Évaluez vos compétences sur l'ensemble d'un niveau avec un test de 20 questions aléatoires.</p>
+            
+            <div class="level-cards" id="level-cards">
+                <!-- Les cartes de niveau seront générées dynamiquement -->
+            </div>
+
+            <div class="separator">
+                <span>ou</span>
+            </div>
+
+            <h2>📚 Entraînement en autonomie</h2>
+            <p class="section-description">Travaillez une compétence ou un thème spécifique à votre rythme.</p>
+            
             <div class="selection-grid">
                 <div class="selection-group">
                     <label for="level-select">Niveau:</label>
@@ -55,9 +70,7 @@
                     <span>Mélanger les questions</span>
                 </label>
             </div>
-            <button id="start-quiz-btn" class="btn btn-primary" disabled>Démarrer le quiz</button>
-            <button id="start-level-test-btn" class="btn btn-success" style="display: none; margin-top: 10px;">🎯 Test complet du niveau (20 questions)</button>
-            <button id="start-theme-test-btn" class="btn btn-success" style="display: none; margin-top: 10px;">🎯 Test complet du thème (20 questions)</button>
+            <button id="start-quiz-btn" class="btn btn-primary" disabled>Démarrer l'entraînement</button>
         </div>
 
         <div class="quiz-container" style="display: none;">

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quiz Mathématiques</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <!-- KaTeX pour les formules mathématiques -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Administration - Quiz Mathématiques</h1>
+            <div class="header-actions">
+                <a href="flashcards.html" class="btn btn-secondary">📚 Flashcards</a>
+                <a href="index.html" class="btn btn-secondary">← Quiz</a>
+            </div>
+        </header>
+
+        <!-- Statistiques globales -->
+        <div class="stats-container">
+            <h2>Statistiques globales</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-questions">0</div>
+                    <div class="stat-label">Questions totales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-levels">0</div>
+                    <div class="stat-label">Niveaux</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-themes">0</div>
+                    <div class="stat-label">Thèmes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-competences">0</div>
+                    <div class="stat-label">Compétences</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtres -->
+        <div class="filters-container">
+            <h2>Filtres</h2>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="filter-level">Niveau:</label>
+                    <select id="filter-level">
+                        <option value="">Tous les niveaux</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-theme">Thème:</label>
+                    <select id="filter-theme">
+                        <option value="">Tous les thèmes</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-competence">Compétence:</label>
+                    <select id="filter-competence">
+                        <option value="">Toutes les compétences</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-search">Recherche:</label>
+                    <input type="text" id="filter-search" placeholder="Chercher dans les questions...">
+                </div>
+            </div>
+            <div class="filter-actions">
+                <button id="apply-filters" class="btn btn-primary">Appliquer les filtres</button>
+                <button id="reset-filters" class="btn btn-secondary">Réinitialiser</button>
+            </div>
+            <div class="results-count">
+                <span id="filtered-count">0</span> question(s) affichée(s)
+            </div>
+        </div>
+
+        <!-- Statistiques détaillées -->
+        <div class="detailed-stats">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="by-level">Par niveau</button>
+                <button class="tab-btn" data-tab="by-theme">Par thème</button>
+                <button class="tab-btn" data-tab="by-competence">Par compétence</button>
+            </div>
+            
+            <div class="tab-content active" id="by-level">
+                <h3>Répartition par niveau</h3>
+                <div id="level-stats" class="stats-table"></div>
+            </div>
+            
+            <div class="tab-content" id="by-theme">
+                <h3>Répartition par thème</h3>
+                <div id="theme-stats" class="stats-table"></div>
+            </div>
+            
+            <div class="tab-content" id="by-competence">
+                <h3>Répartition par compétence</h3>
+                <div id="competence-stats" class="stats-table"></div>
+            </div>
+        </div>
+
+        <!-- Liste des questions -->
+        <div class="questions-list-container">
+            <h2>Liste des questions</h2>
+            <div id="questions-list" class="questions-list">
+                <!-- Les questions seront générées dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

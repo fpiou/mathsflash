@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Mathématiques</title>
+    <link rel="stylesheet" href="flashcards.css">
+    <!-- KaTeX pour les formules mathématiques -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <!-- Chart.js pour les graphiques -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Flashcards Mathématiques</h1>
+            <div class="header-actions">
+                <a href="index.html" class="btn btn-secondary">Quiz</a>
+                <a href="admin.html" class="btn btn-secondary">Admin</a>
+            </div>
+        </header>
+
+        <!-- Sélection du mode -->
+        <div class="mode-selection" id="mode-selection">
+            <h2>Choisir un mode d'apprentissage</h2>
+            <div class="mode-grid">
+                <div class="mode-card" onclick="selectMode('learn')">
+                    <div class="mode-icon">🎓</div>
+                    <h3>Apprentissage</h3>
+                    <p>Découvrir de nouvelles cartes</p>
+                </div>
+                <div class="mode-card" onclick="selectMode('review')">
+                    <div class="mode-icon">🔄</div>
+                    <h3>Révision</h3>
+                    <p>Revoir les cartes à réviser aujourd'hui</p>
+                    <div class="review-count" id="review-count">0 carte(s)</div>
+                </div>
+                <div class="mode-card" onclick="selectMode('browse')">
+                    <div class="mode-icon">📖</div>
+                    <h3>Parcourir</h3>
+                    <p>Explorer toutes les cartes</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtres -->
+        <div class="filters-container" id="filters-container" style="display: none;">
+            <h2>Filtres</h2>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="filter-level">Niveau:</label>
+                    <select id="filter-level">
+                        <option value="">Tous les niveaux</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-theme">Thème:</label>
+                    <select id="filter-theme">
+                        <option value="">Tous les thèmes</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-type">Type:</label>
+                    <select id="filter-type">
+                        <option value="">Tous les types</option>
+                        <option value="formule">Formule</option>
+                        <option value="méthode">Méthode</option>
+                        <option value="définition">Définition</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-actions">
+                <button id="start-session" class="btn btn-primary">Commencer</button>
+                <button id="back-to-mode" class="btn btn-secondary">Retour</button>
+            </div>
+        </div>
+
+        <!-- Session de révision -->
+        <div class="flashcard-session" id="flashcard-session" style="display: none;">
+            <div class="session-header">
+                <div class="session-progress">
+                    <span id="current-card">0</span> / <span id="total-cards">0</span>
+                </div>
+                <button id="end-session" class="btn btn-secondary">Terminer</button>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard" onclick="flipCard()">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <div class="card-header">
+                                <span class="card-type" id="card-type"></span>
+                                <span class="card-badges">
+                                    <span class="badge" id="card-level"></span>
+                                    <span class="badge" id="card-theme"></span>
+                                </span>
+                            </div>
+                            <div class="card-content" id="front-content"></div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="card-header">
+                                <span class="card-type" id="card-type-back"></span>
+                                <span class="card-badges">
+                                    <span class="badge" id="card-level-back"></span>
+                                    <span class="badge" id="card-theme-back"></span>
+                                </span>
+                            </div>
+                            <div class="card-content" id="back-content"></div>
+                            <div class="card-explanation" id="explanation"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-hint">Cliquez pour retourner la carte</div>
+            </div>
+
+            <div class="rating-buttons" id="rating-buttons" style="display: none;">
+                <button class="rating-btn rating-again" onclick="rateCard(1)">
+                    <span class="rating-label">À revoir</span>
+                    <span class="rating-time" id="rating-1-time"></span>
+                </button>
+                <button class="rating-btn rating-good" onclick="rateCard(3)">
+                    <span class="rating-label">Correct</span>
+                    <span class="rating-time" id="rating-3-time"></span>
+                </button>
+                <button class="rating-btn rating-easy" onclick="rateCard(4)">
+                    <span class="rating-label">Facile</span>
+                    <span class="rating-time" id="rating-4-time"></span>
+                </button>
+            </div>
+
+            <div class="browse-navigation" id="browse-navigation" style="display: none;">
+                <button class="btn btn-secondary" onclick="browsePrevious()" id="browse-prev">← Précédente</button>
+                <button class="btn btn-secondary" onclick="browseNext()" id="browse-next">Suivante →</button>
+            </div>
+        </div>
+
+        <!-- Statistiques -->
+        <div class="stats-container" id="stats-container" style="display: none;">
+            <h2>Statistiques de la session</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-cards-studied">0</div>
+                    <div class="stat-label">Cartes étudiées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-new-cards">0</div>
+                    <div class="stat-label">Nouvelles cartes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-avg-rating">0</div>
+                    <div class="stat-label">Note moyenne</div>
+                </div>
+            </div>
+            <button id="new-session" class="btn btn-primary">Nouvelle session</button>
+        </div>
+    </div>
+
+    <script src="flashcards.js"></script>
+</body>
+</html>

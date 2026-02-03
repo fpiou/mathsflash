@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test Markdown</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+    <div id="test" style="padding: 20px; font-size: 20px;"></div>
+    
+    <script>
+        function convertMarkdown(text) {
+            if (!text) return text;
+            
+            console.log("INPUT:", text);
+            
+            // Protéger les formules mathématiques $...$ et $$...$$ AVANT toute conversion
+            const mathPlaceholders = [];
+            let counter = 0;
+            
+            // Sauvegarder les formules $$...$$ (display) - doit être fait en premier
+            text = text.replace(/\$\$([\s\S]*?)\$\$/g, (match) => {
+                const placeholder = `___MATH_DISPLAY_${counter}___`;
+                mathPlaceholders.push({ placeholder, content: match });
+                console.log("DISPLAY MATCH:", match);
+                counter++;
+                return placeholder;
+            });
+            
+            // Sauvegarder les formules $...$ (inline)
+            text = text.replace(/\$((?:[^$]|\\\$)*?)\$/g, (match) => {
+                const placeholder = `___MATH_INLINE_${counter}___`;
+                mathPlaceholders.push({ placeholder, content: match });
+                console.log("INLINE MATCH:", match);
+                counter++;
+                return placeholder;
+            });
+            
+            console.log("AFTER MATH PROTECTION:", text);
+            
+            // Convertir les sauts de ligne en <br>
+            text = text.replace(/\n/g, '<br>');
+            
+            // Maintenant appliquer les conversions Markdown
+            // Gras: **texte** -> <strong>texte</strong>
+            text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+            
+            // Italique: *texte* -> <em>texte</em>
+            text = text.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+            
+            // Restaurer les formules mathématiques
+            mathPlaceholders.forEach(({ placeholder, content }) => {
+                text = text.replace(placeholder, content);
+            });
+            
+            console.log("OUTPUT:", text);
+            return text;
+        }
+        
+        const testText = "1. Isoler les termes en $x$ d'un côté\n2. Isoler les constantes de l'autre\n3. Diviser par le coefficient de $x$\n\nRésultat: $x = \\frac{c - b}{a}$ (si $a \\neq 0$)";
+        
+        const result = convertMarkdown(testText);
+        document.getElementById('test').innerHTML = result;
+        
+        setTimeout(() => {
+            if (typeof renderMathInElement !== 'undefined') {
+                renderMathInElement(document.getElementById('test'), {
+                    delimiters: [
+                        {left: '$$', right: '$$', display: true},
+                        {left: '$', right: '$', display: false}
+                    ],
+                    throwOnError: false
+                });
+            }
+        }, 100);
+    </script>
+</body>
+</html>

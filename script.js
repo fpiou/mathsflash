@@ -1,7 +1,7 @@
 // Niveaux et thèmes disponibles
 // const levels = ['2de', '1re', '1reSpécialité', 'TleSpécialité'];
-const levels = ['2de'];
-const themes = ['Fonctions', 'Dérivées', 'Intégrales', 'Équations-Inéquations', 'Géométrie', 'Trigonométrie', 'Calcul littéral', 'Probabilités', 'Statistiques'];
+const levels = ['2de','1reS'];
+const themes = ['Fonctions', 'Dérivées', 'Intégrales', 'Équations-Inéquations', 'Géométrie', 'Trigonométrie', 'Calcul littéral', 'Probabilités', 'Statistiques','Algèbre'];
 
 // Système de suivi des compétences
 class SkillsTracker {
@@ -148,14 +148,34 @@ function parseFunction(funcString) {
     return new Function('x', `return ${funcString}`);
 }
 
+// Générer un hash simple pour créer un ID unique basé sur le contenu
+function generateQuestionHash(question) {
+    // Utiliser les champs stables de la question pour créer l'ID
+    const content = [
+        question.question || '',
+        question.formula || '',
+        question.level || '',
+        question.theme || '',
+        question.competence || ''
+    ].join('|');
+    
+    // Hash simple mais suffisant (djb2 algorithm)
+    let hash = 5381;
+    for (let i = 0; i < content.length; i++) {
+        hash = ((hash << 5) + hash) + content.charCodeAt(i);
+    }
+    return `q_${Math.abs(hash).toString(36)}`;
+}
+
 // Convertir les graphiques JSON en objets avec fonctions
 function processQuizData(data) {
     return data.map((question, index) => {
         const processedQuestion = { ...question };
         
-        // Ajouter un ID unique si la question n'en a pas
+        // Générer un ID unique basé sur le contenu de la question
+        // Cet ID reste stable même si l'ordre des questions change
         if (!processedQuestion.id) {
-            processedQuestion.id = `q_${index}_${Date.now()}`;
+            processedQuestion.id = generateQuestionHash(question);
         }
         
         // Traiter le graphique de la question si présent
@@ -246,8 +266,6 @@ const totalSkillsDisplay = document.getElementById('total-skills');
 const masteredSkillsDisplay = document.getElementById('mastered-skills');
 const progressPercentageDisplay = document.getElementById('progress-percentage');
 const headerSkillsBtn = document.getElementById('header-skills-btn');
-const startLevelTestBtn = document.getElementById('start-level-test-btn');
-const startThemeTestBtn = document.getElementById('start-theme-test-btn');
 const showAnswersBtn = document.getElementById('show-answers-btn');
 
 // Variables pour le mode test complet
@@ -281,18 +299,181 @@ async function initApp() {
     const loaded = await loadQuestions();
     if (loaded) {
         populateLevelSelect();
+        generateLevelCards();
         // Cocher le mélange par défaut
         shuffleQuestionsCheckbox.checked = true;
     }
 }
 
+// Générer les cartes de niveau pour la page d'accueil
+function generateLevelCards() {
+    const levelCardsContainer = document.getElementById('level-cards');
+    if (!levelCardsContainer) return;
+    
+    levelCardsContainer.innerHTML = '';
+    
+    const levelIcons = {
+        '2de': '📐',
+        '1re': '📊',
+        '1reS': '🎓',
+        'TleS': '🏆'
+    };
+    
+    const levelNames = {
+        '2de': 'Seconde G.T.',
+        '1reS': 'Première Spécialité Mathématiques',
+        '1re': 'Première Mathématiques spécifiques',
+        'TleS': 'Terminale Spécialité Mathématiques'
+    };
+    
+    const levelDescriptions = {
+        '2de': 'Bases essentielles en mathématiques',
+        '1re': 'Développement des compétences',
+        '1reS': 'Approfondissement mathématique',
+        '1reSpécialité': 'Approfondissement mathématique',
+        'TleSpécialité': 'Préparation au supérieur'
+    };
+    
+    levels.forEach(level => {
+        // Compter les questions disponibles pour ce niveau
+        const totalQuestions = quizData.filter(q => q.level === level).length;
+        const validatedQuestions = quizData.filter(q => {
+            return q.level === level && 
+                   q.competence && 
+                   q.id && 
+                   skillsTracker.isQuestionValidated(q.id, q.competence);
+        }).length;
+        
+        const card = document.createElement('div');
+        card.className = 'level-card';
+        card.dataset.level = level;
+        
+        card.innerHTML = `
+            <div class="level-card-icon">${levelIcons[level] || '📚'}</div>
+            <div class="level-card-title">${levelNames[level] || level}</div>
+            <div class="level-card-description">${levelDescriptions[level] || 'Test de niveau'}</div>
+            <div class="level-card-stats">
+                ${validatedQuestions} / ${totalQuestions} questions validées
+            </div>
+        `;
+        
+        card.addEventListener('click', () => {
+            startLevelTestFromCard(level);
+        });
+        
+        levelCardsContainer.appendChild(card);
+    });
+}
+
+// Sélectionner des questions en privilégiant la diversité des compétences et des thèmes
+function selectDiverseQuestions(questions, targetCount) {
+    if (questions.length <= targetCount) {
+        return shuffleArray(questions);
+    }
+    
+    // Regrouper les questions par thème + compétence
+    const questionsByThemeAndCompetence = {};
+    questions.forEach(q => {
+        const theme = q.theme || 'Sans thème';
+        const comp = q.competence || 'Sans compétence';
+        const key = `${theme}|${comp}`;
+        if (!questionsByThemeAndCompetence[key]) {
+            questionsByThemeAndCompetence[key] = [];
+        }
+        questionsByThemeAndCompetence[key].push(q);
+    });
+    
+    // Mélanger les questions dans chaque groupe
+    Object.keys(questionsByThemeAndCompetence).forEach(key => {
+        questionsByThemeAndCompetence[key] = shuffleArray(questionsByThemeAndCompetence[key]);
+    });
+    
+    const selectedQuestions = [];
+    const keys = shuffleArray(Object.keys(questionsByThemeAndCompetence)); // Mélanger l'ordre des groupes
+    
+    // Phase 1 : Prendre une question de chaque combinaison thème/compétence
+    keys.forEach(key => {
+        if (selectedQuestions.length < targetCount && questionsByThemeAndCompetence[key].length > 0) {
+            selectedQuestions.push(questionsByThemeAndCompetence[key].shift());
+        }
+    });
+    
+    // Phase 2 : Compléter avec les questions restantes en tournant sur les groupes
+    let keyIndex = 0;
+    while (selectedQuestions.length < targetCount) {
+        const key = keys[keyIndex];
+        if (questionsByThemeAndCompetence[key] && questionsByThemeAndCompetence[key].length > 0) {
+            selectedQuestions.push(questionsByThemeAndCompetence[key].shift());
+        }
+        keyIndex = (keyIndex + 1) % keys.length;
+        
+        // Vérifier s'il reste des questions
+        const hasRemainingQuestions = Object.values(questionsByThemeAndCompetence).some(arr => arr.length > 0);
+        if (!hasRemainingQuestions) break;
+    }
+    
+    // Mélanger l'ordre final des questions sélectionnées
+    return shuffleArray(selectedQuestions);
+}
+
+// Démarrer un test de niveau depuis une carte
+function startLevelTestFromCard(level) {
+    selectedLevel = level;
+    selectedTheme = '';
+    selectedCompetence = '';
+    isLevelTestMode = true;
+    
+    // Récupérer toutes les questions du niveau, en excluant celles déjà validées
+    const levelQuestions = quizData.filter(q => {
+        if (q.level !== level) return false;
+        // Exclure les questions déjà validées
+        if (q.competence && q.id && skillsTracker.isQuestionValidated(q.id, q.competence)) {
+            return false;
+        }
+        return true;
+    });
+    
+    // Vérifier s'il reste des questions non validées
+    if (levelQuestions.length === 0) {
+        alert('🎉 Félicitations ! Vous avez déjà validé toutes les questions de ce niveau !');
+        return;
+    }
+    
+    // Sélectionner jusqu'à 20 questions en privilégiant des compétences différentes
+    const questionsToUse = Math.min(20, levelQuestions.length);
+    filteredQuizData = selectDiverseQuestions(levelQuestions, questionsToUse);
+    
+    // Masquer la sélection et afficher le quiz
+    selectionContainer.style.display = 'none';
+    quizContainer.style.display = 'block';
+    
+    // Initialiser le quiz
+    currentQuestion = 0;
+    score = 0;
+    userAnswers = new Array(filteredQuizData.length).fill(null);
+    shuffledAnswers = new Array(filteredQuizData.length).fill(null);
+    totalDisplay.textContent = filteredQuizData.length;
+    scoreDisplay.textContent = score;
+    
+    populateQuestionSelect();
+    showQuestion();
+}
+
 // Peupler le sélecteur de niveaux
 function populateLevelSelect() {
+    const levelNames = {
+        '2de': 'Seconde G.T.',
+        '1re': 'Première',
+        '1reS': 'Première Spécialité Mathématiques',
+        '1reSpécialité': 'Première Spécialité Mathématiques',
+        'TleSpécialité': 'Terminale Spécialité Mathématiques'
+    };
+    
     levelSelect.innerHTML = '<option value="">-- Sélectionner un niveau --</option>';
     levels.forEach(level => {
         const option = document.createElement('option');
         option.value = level;
-        option.textContent = level;
+        option.textContent = levelNames[level] || level;
         levelSelect.appendChild(option);
     });
 }
@@ -315,16 +496,6 @@ function populateThemeSelect() {
         themeSelect.appendChild(option);
     });
     themeSelect.disabled = false;
-    
-    // Afficher le bouton de test complet si un niveau est sélectionné
-    if (selectedLevel) {
-        const levelQuestions = quizData.filter(q => q.level === selectedLevel);
-        if (levelQuestions.length >= 20) {
-            startLevelTestBtn.style.display = 'block';
-        } else {
-            startLevelTestBtn.style.display = 'none';
-        }
-    }
 }
 
 // Peupler le sélecteur de compétences
@@ -363,16 +534,6 @@ function populateCompetenceSelect() {
         competenceSelect.appendChild(option);
     });
     competenceSelect.disabled = false;
-    
-    // Afficher le bouton de test complet du thème si un thème est sélectionné
-    if (selectedTheme) {
-        const themeQuestions = quizData.filter(q => q.level === selectedLevel && q.theme === selectedTheme);
-        if (themeQuestions.length >= 20) {
-            startThemeTestBtn.style.display = 'block';
-        } else {
-            startThemeTestBtn.style.display = 'none';
-        }
-    }
 }
 
 // Filtrer les questions disponibles
@@ -382,23 +543,15 @@ function filterQuestions() {
         const matchTheme = q.theme === selectedTheme;
         const matchCompetence = !selectedCompetence || q.competence === selectedCompetence;
         
-        // Exclure les questions déjà validées (uniquement si on filtre sans thème spécifique ni compétence)
-        // car cela signifie qu'on est en mode "par niveau"
-        if (matchLevel && !selectedTheme && !selectedCompetence) {
-            if (q.competence && q.id && skillsTracker.isQuestionValidated(q.id, q.competence)) {
-                return false;
-            }
-        }
-        
         return matchLevel && matchTheme && matchCompetence;
     });
     
     if (filteredQuizData.length > 0) {
         startQuizBtn.disabled = false;
-        startQuizBtn.textContent = `Démarrer le quiz (${filteredQuizData.length} question${filteredQuizData.length > 1 ? 's' : ''})`;
+        startQuizBtn.textContent = `Démarrer l'entraînement (${filteredQuizData.length} question${filteredQuizData.length > 1 ? 's' : ''})`;
     } else {
         startQuizBtn.disabled = true;
-        startQuizBtn.textContent = 'Démarrer le quiz';
+        startQuizBtn.textContent = 'Démarrer l\'entraînement';
         alert(`Aucune question disponible pour cette sélection.`);
     }
 }
@@ -423,74 +576,6 @@ function init() {
     // Peupler le menu déroulant de navigation
     populateQuestionSelect();
     
-    showQuestion();
-}
-
-// Démarrer un test complet du niveau (20 questions aléatoires)
-function startLevelTest() {
-    isLevelTestMode = true;
-    
-    // Récupérer toutes les questions du niveau, en excluant celles déjà validées
-    const levelQuestions = quizData.filter(q => {
-        if (q.level !== selectedLevel) return false;
-        // Exclure les questions déjà validées
-        if (q.competence && q.id && skillsTracker.isQuestionValidated(q.id, q.competence)) {
-            return false;
-        }
-        return true;
-    });
-    
-    // Vérifier s'il reste des questions non validées
-    if (levelQuestions.length === 0) {
-        alert('🎉 Félicitations ! Vous avez déjà validé toutes les questions de ce niveau !');
-        return;
-    }
-    
-    // Sélectionner jusqu'à 20 questions aléatoires (ou moins s'il en reste moins)
-    // Les questions sont TOUJOURS mélangées pour les tests par niveau
-    const questionsToUse = Math.min(20, levelQuestions.length);
-    filteredQuizData = shuffleArray(levelQuestions).slice(0, questionsToUse);
-    
-    // Masquer la sélection et afficher le quiz
-    selectionContainer.style.display = 'none';
-    quizContainer.style.display = 'block';
-    
-    // Initialiser le quiz
-    currentQuestion = 0;
-    score = 0;
-    userAnswers = new Array(filteredQuizData.length).fill(null);
-    shuffledAnswers = new Array(filteredQuizData.length).fill(null);
-    totalDisplay.textContent = filteredQuizData.length;
-    scoreDisplay.textContent = score;
-    
-    populateQuestionSelect();
-    showQuestion();
-}
-
-// Démarrer un test complet du thème (20 questions aléatoires)
-function startThemeTest() {
-    isLevelTestMode = false;
-    isThemeTestMode = true;
-    
-    // Récupérer toutes les questions du thème
-    const themeQuestions = quizData.filter(q => q.level === selectedLevel && q.theme === selectedTheme);
-    
-    // Sélectionner 20 questions aléatoires
-    filteredQuizData = shuffleArray(themeQuestions).slice(0, 20);
-    
-    // Masquer la sélection et afficher le quiz
-    selectionContainer.style.display = 'none';
-    quizContainer.style.display = 'block';
-    
-    // Initialiser le quiz
-    currentQuestion = 0;
-    score = 0;
-    userAnswers = new Array(20).fill(null);
-    shuffledAnswers = new Array(20).fill(null);
-    totalDisplay.textContent = 20;
-    scoreDisplay.textContent = score;
-    
-    populateQuestionSelect();
     showQuestion();
 }
 
@@ -1043,21 +1128,18 @@ submitBtn.addEventListener('click', () => {
 restartBtn.addEventListener('click', () => {
     resultsContainer.style.display = 'none';
     
-    // Si on était en mode test complet, relancer un nouveau test
-    if (isLevelTestMode) {
-        startLevelTest();
-    } else if (isThemeTestMode) {
-        startThemeTest();
-    } else {
-        selectionContainer.style.display = 'block';
-        levelSelect.value = '';
-        themeSelect.value = '';
-        themeSelect.disabled = true;
-        competenceSelect.value = '';
-        competenceSelect.disabled = true;
-        startQuizBtn.disabled = true;
-        startQuizBtn.textContent = 'Démarrer le quiz';
-    }
+    // Retourner à l'écran d'accueil et régénérer les cartes de niveau
+    selectionContainer.style.display = 'block';
+    levelSelect.value = '';
+    themeSelect.value = '';
+    themeSelect.disabled = true;
+    competenceSelect.value = '';
+    competenceSelect.disabled = true;
+    startQuizBtn.disabled = true;
+    startQuizBtn.textContent = 'Démarrer l\'entraînement';
+    
+    // Régénérer les cartes pour mettre à jour les stats
+    generateLevelCards();
 });
 
 // Bouton pour voir les compétences
@@ -1094,16 +1176,14 @@ levelSelect.addEventListener('change', (e) => {
         competenceSelect.value = '';
         competenceSelect.disabled = true;
         startQuizBtn.disabled = true;
-        startQuizBtn.textContent = 'Démarrer le quiz';
+        startQuizBtn.textContent = 'Démarrer l\'entraînement';
     } else {
         themeSelect.disabled = true;
         themeSelect.innerHTML = '<option value="">-- Sélectionner un thème --</option>';
         competenceSelect.disabled = true;
         competenceSelect.innerHTML = '<option value="">-- Toutes les compétences --</option>';
         startQuizBtn.disabled = true;
-        startQuizBtn.textContent = 'Démarrer le quiz';
-        startLevelTestBtn.style.display = 'none';
-        startThemeTestBtn.style.display = 'none';
+        startQuizBtn.textContent = 'Démarrer l\'entraînement';
     }
 });
 
@@ -1117,8 +1197,7 @@ themeSelect.addEventListener('change', (e) => {
         competenceSelect.disabled = true;
         competenceSelect.innerHTML = '<option value="">-- Toutes les compétences --</option>';
         startQuizBtn.disabled = true;
-        startQuizBtn.textContent = 'Démarrer le quiz';
-        startThemeTestBtn.style.display = 'none';
+        startQuizBtn.textContent = 'Démarrer l\'entraînement';
     }
 });
 
@@ -1133,16 +1212,6 @@ startQuizBtn.addEventListener('click', () => {
     selectionContainer.style.display = 'none';
     quizContainer.style.display = 'block';
     init();
-});
-
-// Démarrer un test complet du niveau
-startLevelTestBtn.addEventListener('click', () => {
-    startLevelTest();
-});
-
-// Démarrer un test complet du thème
-startThemeTestBtn.addEventListener('click', () => {
-    startThemeTest();
 });
 
 // Navigation via le menu déroulant
