@@ -48,10 +48,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation du premier degré",
         "answers": [
-            { "text": "$x = 4$", "correct": true },
-            { "text": "$x = 9$", "correct": false },
-            { "text": "$x = 8$", "correct": false },
-            { "text": "$x = 6{,}5$", "correct": false }
+            { "text": "$S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{9\\}$", "correct": false },
+            { "text": "$S=\\{8\\}$", "correct": false },
+            { "text": "$S=\\{6{,}5\\}$", "correct": false }
         ],
         "explanation": "$2x = 13 - 5$, donc $2x = 8$, donc $x = 4$"
     },
@@ -62,10 +62,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation du premier degré",
         "answers": [
-            { "text": "$x = 6$", "correct": true },
-            { "text": "$x = 4$", "correct": false },
-            { "text": "$x = 18$", "correct": false },
-            { "text": "$x = 3$", "correct": false }
+            { "text": "$S=\\{6\\}$", "correct": true },
+            { "text": "$S=\\{4\\}$", "correct": false },
+            { "text": "$S=\\{18\\}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false }
         ],
         "explanation": "$3x = 11 + 7$, donc $3x = 18$, donc $x = 6$"
     },
@@ -76,10 +76,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation du premier degré",
         "answers": [
-            { "text": "$x = -1$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = -\\frac{5}{3}$", "correct": false },
-            { "text": "$x = \\frac{5}{3}$", "correct": false }
+            { "text": "$S=\\{-1\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{-\\frac{5}{3}\\}$", "correct": false },
+            { "text": "$S=\\{\\frac{5}{3}\\}$", "correct": false }
         ],
         "explanation": "$6x = 2 - 8$, donc $6x = -6$, donc $x = -1$"
     },
@@ -90,10 +90,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec l'inconnue des deux côtés",
         "answers": [
-            { "text": "$x = 4$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 6$", "correct": false },
-            { "text": "$x = 8$", "correct": false }
+            { "text": "$S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{6\\}$", "correct": false },
+            { "text": "$S=\\{8\\}$", "correct": false }
         ],
         "explanation": "$5x - 3x = 10 - 2$, donc $2x = 8$, donc $x = 4$"
     },
@@ -104,10 +104,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec parenthèses",
         "answers": [
-            { "text": "$x = 5$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 4$", "correct": false },
-            { "text": "$x = 6$", "correct": false }
+            { "text": "$S=\\{5\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{4\\}$", "correct": false },
+            { "text": "$S=\\{6\\}$", "correct": false }
         ],
         "explanation": "On divise par 4 : $x - 2 = 3$, donc $x = 5$. Ou bien on développe : $4x - 8 = 12$, donc $4x = 20$, donc $x = 5$"
     },
@@ -118,10 +118,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec fractions",
         "answers": [
-            { "text": "$x = 18$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 9$", "correct": false },
-            { "text": "$x = 3$", "correct": false }
+            { "text": "$S=\\{18\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{9\\}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false }
         ],
         "explanation": "On multiplie les deux côtés par 3 : $x = 6 \\times 3 = 18$"
     },
@@ -132,10 +132,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation en développant et réduisant",
         "answers": [
-            { "text": "$x = 5$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "$x = 7$", "correct": false }
+            { "text": "$S=\\{5\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\{7\\}$", "correct": false }
         ],
         "explanation": "On développe : $2x + 6 = 5x - 9$, donc $6 + 9 = 5x - 2x$, donc $15 = 3x$, donc $x = 5$"
     },
@@ -146,10 +146,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec coefficient négatif",
         "answers": [
-            { "text": "$x = -3$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = -\\frac{17}{3}$", "correct": false },
-            { "text": "$x = \\frac{17}{3}$", "correct": false }
+            { "text": "$S=\\{-3\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{-\\frac{17}{3}\\}$", "correct": false },
+            { "text": "$S=\\{\\frac{17}{3}\\}$", "correct": false }
         ],
         "explanation": "$-3x = 13 - 4$, donc $-3x = 9$, donc $x = -3$"
     },
@@ -160,10 +160,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation produit nul",
         "answers": [
-            { "text": "$x = 0$ ou $x = 5$", "correct": true },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = 0$", "correct": false },
-            { "text": "$x = -5$ ou $x = 0$", "correct": false }
+            { "text": "$S=\\{0, 5\\}$", "correct": true },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$", "correct": false },
+            { "text": "$S=\\{-5, 0\\}$", "correct": false }
         ],
         "explanation": "Un produit est nul si et seulement si l'un des facteurs est nul. Donc $x = 0$ ou $x - 5 = 0$, soit $x = 0$ ou $x = 5$"
     },
@@ -174,10 +174,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation du premier degré",
         "answers": [
-            { "text": "$x = 3$", "correct": true },
-            { "text": "$x = -3$", "correct": false },
-            { "text": "$x = 4$", "correct": false },
-            { "text": "$x = 6$", "correct": false }
+            { "text": "$S=\\{3\\}$", "correct": true },
+            { "text": "$S=\\{-3\\}$", "correct": false },
+            { "text": "$S=\\{4\\}$", "correct": false },
+            { "text": "$S=\\{6\\}$", "correct": false }
         ],
         "explanation": "$-2x = 1 - 7$, donc $-2x = -6$, donc $x = 3$"
     },
@@ -188,10 +188,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec fractions",
         "answers": [
-            { "text": "$x = 7$", "correct": true },
-            { "text": "$x = 14$", "correct": false },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = 8$", "correct": false }
+            { "text": "$S=\\{7\\}$", "correct": true },
+            { "text": "$S=\\{14\\}$", "correct": false },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{8\\}$", "correct": false }
         ],
         "explanation": "On multiplie par 3 : $2x + 1 = 15$, donc $2x = 14$, donc $x = 7$"
     },
@@ -237,10 +237,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation du second degré",
         "answers": [
-            { "text": "$x = 2$ ou $x = 3$", "correct": true },
-            { "text": "$x = 1$ ou $x = 6$", "correct": false },
-            { "text": "$x = -2$ ou $x = -3$", "correct": false },
-            { "text": "$x = 5$ ou $x = 1$", "correct": false }
+            { "text": "$S = \\{2; 3\\}$", "correct": true },
+            { "text": "$S = \\{1; 6\\}$", "correct": false },
+            { "text": "$S = \\{-2; -3\\}$", "correct": false },
+            { "text": "$S = \\{5; 1\\}$", "correct": false }
         ],
         "explanation": "On peut factoriser : $(x - 2)(x - 3) = 0$, donc $x = 2$ ou $x = 3$"
     },
@@ -1413,10 +1413,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec l'inconnue des deux côtés",
         "answers": [
-            { "text": "$x = 4$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 6$", "correct": false },
-            { "text": "$x = 3$", "correct": false }
+            { "text": "$S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{6\\}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false }
         ],
         "explanation": "$7x - 4x = 9 + 3$, donc $3x = 12$, donc $x = 4$"
     },
@@ -1427,10 +1427,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec l'inconnue des deux côtés",
         "answers": [
-            { "text": "$x = -2$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = -\\frac{5}{3}$", "correct": false },
-            { "text": "$x = \\frac{5}{3}$", "correct": false }
+            { "text": "$S=\\{-2\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{-\\frac{5}{3}\\}$", "correct": false },
+            { "text": "$S=\\{\\frac{5}{3}\\}$", "correct": false }
         ],
         "explanation": "$8x - 2x = -11 - 1$, donc $6x = -12$, donc $x = -2$"
     },
@@ -1441,10 +1441,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec parenthèses",
         "answers": [
-            { "text": "$x = 3$", "correct": true },
-            { "text": "$x = 7$", "correct": false },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = 9$", "correct": false }
+            { "text": "$S=\\{3\\}$", "correct": true },
+            { "text": "$S=\\{7\\}$", "correct": false },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{9\\}$", "correct": false }
         ],
         "explanation": "On divise par 3 : $x + 4 = 7$, donc $x = 3$. Ou bien on développe : $3x + 12 = 21$, donc $3x = 9$, donc $x = 3$"
     },
@@ -1455,10 +1455,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec parenthèses",
         "answers": [
-            { "text": "$x = 2$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 4$", "correct": false }
+            { "text": "$S=\\{2\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{4\\}$", "correct": false }
         ],
         "explanation": "On divise par 5 : $2x - 1 = 3$, donc $2x = 4$, donc $x = 2$"
     },
@@ -1469,10 +1469,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec fractions",
         "answers": [
-            { "text": "$x = 10$", "correct": true },
-            { "text": "$x = \\frac{8}{5}$", "correct": false },
-            { "text": "$x = 20$", "correct": false },
-            { "text": "$x = \\frac{20}{2}$", "correct": false }
+            { "text": "$S=\\{10\\}$", "correct": true },
+            { "text": "$S=\\{\\frac{8}{5}\\}$", "correct": false },
+            { "text": "$S=\\{20\\}$", "correct": false },
+            { "text": "$S=\\{\\frac{20}{2}\\}$", "correct": false }
         ],
         "explanation": "On multiplie les deux côtés par 5 : $2x = 20$, donc $x = 10$"
     },
@@ -1483,10 +1483,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation en développant et réduisant",
         "answers": [
-            { "text": "$x = 11$", "correct": true },
-            { "text": "$x = 7$", "correct": false },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "$x = 1$", "correct": false }
+            { "text": "$S=\\{11\\}$", "correct": true },
+            { "text": "$S=\\{7\\}$", "correct": false },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$", "correct": false }
         ],
         "explanation": "On développe : $3x - 6 = 2x + 5$, donc $3x - 2x = 5 + 6$, donc $x = 11$"
     },
@@ -1497,10 +1497,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation en développant et réduisant",
         "answers": [
-            { "text": "$x = 5$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 7$", "correct": false }
+            { "text": "$S=\\{5\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{7\\}$", "correct": false }
         ],
         "explanation": "On développe : $4x + 4 = 3x + 9$, donc $4x - 3x = 9 - 4$, donc $x = 5$"
     },
@@ -1511,10 +1511,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec coefficient négatif",
         "answers": [
-            { "text": "$x = -3$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = -\\frac{29}{5}$", "correct": false },
-            { "text": "$x = \\frac{29}{5}$", "correct": false }
+            { "text": "$S=\\{-3\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{-\\frac{29}{5}\\}$", "correct": false },
+            { "text": "$S=\\{\\frac{29}{5}\\}$", "correct": false }
         ],
         "explanation": "$-5x = 22 - 7$, donc $-5x = 15$, donc $x = -3$"
     },
@@ -1525,10 +1525,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation avec coefficient négatif",
         "answers": [
-            { "text": "$x = -6$", "correct": true },
-            { "text": "$x = 6$", "correct": false },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = -3$", "correct": false }
+            { "text": "$S=\\{-6\\}$", "correct": true },
+            { "text": "$S=\\{6\\}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{-3\\}$", "correct": false }
         ],
         "explanation": "$-2x = 9 + 3$, donc $-2x = 12$, donc $x = -6$"
     },
@@ -1539,10 +1539,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation produit nul",
         "answers": [
-            { "text": "$x = -\\frac{3}{2}$ ou $x = 1$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = -\\frac{3}{2}$", "correct": false },
-            { "text": "$x = \\frac{3}{2}$ ou $x = -1$", "correct": false }
+            { "text": "$S = \\{-\\frac{3}{2}; 1\\}$", "correct": true },
+            { "text": "$S = \\{1\\}$", "correct": false },
+            { "text": "$S = \\{-\\frac{3}{2}\\}$", "correct": false },
+            { "text": "$S = \\{\\frac{3}{2}; -1\\}$", "correct": false }
         ],
         "explanation": "Un produit est nul si et seulement si l'un des facteurs est nul. Donc $2x + 3 = 0$ ou $x - 1 = 0$, soit $x = -\\frac{3}{2}$ ou $x = 1$"
     },
@@ -1553,10 +1553,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation produit nul",
         "answers": [
-            { "text": "$x = 0$ ou $x = -2$", "correct": true },
-            { "text": "$x = 0$ ou $x = 2$", "correct": false },
-            { "text": "$x = -2$", "correct": false },
-            { "text": "$x = 0$", "correct": false }
+            { "text": "$S = \\{0; -2\\}$", "correct": true },
+            { "text": "$S = \\{0; 2\\}$", "correct": false },
+            { "text": "$S = \\{-2\\}$", "correct": false },
+            { "text": "$S = \\{0\\}$", "correct": false }
         ],
         "explanation": "Un produit est nul si et seulement si l'un des facteurs est nul. Donc $x = 0$ ou $3x + 6 = 0$, soit $x = 0$ ou $x = -2$"
     },
@@ -1637,10 +1637,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation du second degré",
         "answers": [
-            { "text": "$x = 3$ ou $x = 4$", "correct": true },
-            { "text": "$x = 2$ ou $x = 6$", "correct": false },
-            { "text": "$x = -3$ ou $x = -4$", "correct": false },
-            { "text": "$x = 1$ ou $x = 12$", "correct": false }
+            { "text": "$S = \\{3; 4\\}$", "correct": true },
+            { "text": "$S = \\{2; 6\\}$", "correct": false },
+            { "text": "$S = \\{-3; -4\\}$", "correct": false },
+            { "text": "$S = \\{1; 12\\}$", "correct": false }
         ],
         "explanation": "On peut factoriser : $(x - 3)(x - 4) = 0$, donc $x = 3$ ou $x = 4$"
     },
@@ -1651,10 +1651,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation du second degré",
         "answers": [
-            { "text": "$x = -2$ ou $x = -3$", "correct": true },
-            { "text": "$x = 2$ ou $x = 3$", "correct": false },
-            { "text": "$x = -1$ ou $x = -6$", "correct": false },
-            { "text": "$x = 1$ ou $x = 6$", "correct": false }
+            { "text": "$S = \\{-2; -3\\}$", "correct": true },
+            { "text": "$S = \\{2; 3\\}$", "correct": false },
+            { "text": "$S = \\{-1; -6\\}$", "correct": false },
+            { "text": "$S = \\{1; 6\\}$", "correct": false }
         ],
         "explanation": "On peut factoriser : $(x + 2)(x + 3) = 0$, donc $x = -2$ ou $x = -3$"
     },
@@ -2937,10 +2937,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme x² = a",
         "answers": [
-            { "text": "$x = 3$ ou $x = -3$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = -3$", "correct": false },
-            { "text": "$x = \\pm 9$", "correct": false }
+            { "text": "$S = \\{3; -3\\}$", "correct": true },
+            { "text": "$S = \\{3\\}$", "correct": false },
+            { "text": "$S = \\{-3\\}$", "correct": false },
+            { "text": "$S = \\{-9;9\\}$", "correct": false }
         ],
         "explanation": "L'équation $x^2 = 9$ a deux solutions : $x = \\sqrt{9} = 3$ et $x = -\\sqrt{9} = -3$."
     },
@@ -2951,10 +2951,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme x² = a",
         "answers": [
-            { "text": "$x = 4$ ou $x = -4$", "correct": true },
-            { "text": "$x = 4$", "correct": false },
-            { "text": "$x = -4$", "correct": false },
-            { "text": "$x = 8$", "correct": false }
+            { "text": "$S = \\{4; -4\\}$", "correct": true },
+            { "text": "$S = \\{4\\}$", "correct": false },
+            { "text": "$S = \\{-4\\}$", "correct": false },
+            { "text": "$S = \\{8\\}$", "correct": false }
         ],
         "explanation": "L'équation $x^2 = 16$ admet deux solutions : $x = 4$ et $x = -4$."
     },
@@ -2965,10 +2965,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme x² = a",
         "answers": [
-            { "text": "$x = 5$ ou $x = -5$", "correct": true },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = \\pm 12{,}5$", "correct": false },
-            { "text": "$x = 25$", "correct": false }
+            { "text": "$S = \\{5; -5\\}$", "correct": true },
+            { "text": "$S = \\{5\\}$", "correct": false },
+            { "text": "$S = \\{-12{,}5;12{,}5\\}$", "correct": false },
+            { "text": "$S = \\{25\\}$", "correct": false }
         ],
         "explanation": "Les solutions de $x^2 = 25$ sont $x = \\sqrt{25} = 5$ et $x = -\\sqrt{25} = -5$."
     },
@@ -2979,10 +2979,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme x² = a",
         "answers": [
-            { "text": "$x = 1$ ou $x = -1$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 0$ ou $x = 1$", "correct": false },
-            { "text": "$x = 0$", "correct": false }
+            { "text": "$S = \\{1; -1\\}$", "correct": true },
+            { "text": "$S = \\{1\\}$", "correct": false },
+            { "text": "$S = \\{0; 1\\}$", "correct": false },
+            { "text": "$S = \\{0\\}$", "correct": false }
         ],
         "explanation": "L'équation $x^2 = 1$ a deux solutions : $x = 1$ et $x = -1$."
     },
@@ -2993,10 +2993,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme x² = a",
         "answers": [
-            { "text": "Pas de solution dans $\\mathbb{R}$", "correct": true },
-            { "text": "$x = 2$ ou $x = -2$", "correct": false },
-            { "text": "$x = 2i$", "correct": false },
-            { "text": "$x = -2$", "correct": false }
+            { "text": "$S = \\emptyset$", "correct": true },
+            { "text": "$S = \\{2; -2\\}$", "correct": false },
+            { "text": "$S = \\{-4;4\\}$", "correct": false },
+            { "text": "$S = \\{-2\\}$", "correct": false }
         ],
         "explanation": "Un carré est toujours positif ou nul. L'équation $x^2 = -4$ n'admet donc pas de solution dans $\\mathbb{R}$."
     },
@@ -3007,10 +3007,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme x² = a",
         "answers": [
-            { "text": "$x = 0$", "correct": true },
-            { "text": "$x = 0$ ou $x = 1$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
-            { "text": "$x = \\pm 0$", "correct": false }
+            { "text": "$S = \\{0\\}$", "correct": true },
+            { "text": "$S = \\{0; 1\\}$", "correct": false },
+            { "text": "$S = \\emptyset$", "correct": false },
+            { "text": "$S = \\{\\pm 0\\}$", "correct": false }
         ],
         "explanation": "L'équation $x^2 = 0$ admet une unique solution : $x = 0$."
     },
@@ -3021,10 +3021,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation du premier degré",
         "answers": [
-            { "text": "$x > 4$", "correct": true },
-            { "text": "$x < 4$", "correct": false },
-            { "text": "$x \\geqslant 4$", "correct": false },
-            { "text": "$x > 9$", "correct": false }
+            { "text": "$S=]4; +\\infty[$", "correct": true },
+            { "text": "$S=]-\\infty; 4[$", "correct": false },
+            { "text": "$S=[4; +\\infty[$", "correct": false },
+            { "text": "$S=]9; +\\infty[$", "correct": false }
         ],
         "explanation": "$2x > 13 - 5$, donc $2x > 8$, donc $x > 4$."
     },
@@ -3035,10 +3035,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation du premier degré",
         "answers": [
-            { "text": "$x \\leqslant 6$", "correct": true },
-            { "text": "$x \\geqslant 6$", "correct": false },
-            { "text": "$x < 6$", "correct": false },
-            { "text": "$x \\leqslant 4$", "correct": false }
+            { "text": "$S = ]-\\infty; 6]$", "correct": true },
+            { "text": "$S = [6; +\\infty[$", "correct": false },
+            { "text": "$S = ]-\\infty; 6[$", "correct": false },
+            { "text": "$S = ]-\\infty; 4]$", "correct": false }
         ],
         "explanation": "$3x \\leqslant 11 + 7$, donc $3x \\leqslant 18$, donc $x \\leqslant 6$."
     },
@@ -3049,10 +3049,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation du premier degré",
         "answers": [
-            { "text": "$x > -3$", "correct": true },
-            { "text": "$x < -3$", "correct": false },
-            { "text": "$x > 3$", "correct": false },
-            { "text": "$x < 3$", "correct": false }
+            { "text": "$S = ]-3; +\\infty[$", "correct": true },
+            { "text": "$S = ]-\\infty; -3[$", "correct": false },
+            { "text": "$S = ]3; +\\infty[$", "correct": false },
+            { "text": "$S = ]-\\infty; 3[$", "correct": false }
         ],
         "explanation": "$-2x < 10 - 4$, donc $-2x < 6$. En divisant par $-2$, on change le sens de l'inégalité : $x > -3$."
     },
@@ -3063,10 +3063,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation du premier degré",
         "answers": [
-            { "text": "$x \\geqslant 3$", "correct": true },
-            { "text": "$x \\leqslant 3$", "correct": false },
-            { "text": "$x > 3$", "correct": false },
-            { "text": "$x \\geqslant 5$", "correct": false }
+            { "text": "$S = [3; +\\infty[$", "correct": true },
+            { "text": "$S = ]-\\infty; 3]$", "correct": false },
+            { "text": "$S = ]3; +\\infty[$", "correct": false },
+            { "text": "$S = [5; +\\infty[$", "correct": false }
         ],
         "explanation": "$5x - 2x \\geqslant 12 - 3$, donc $3x \\geqslant 9$, donc $x \\geqslant 3$."
     },
@@ -3077,10 +3077,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation du premier degré",
         "answers": [
-            { "text": "$x \\leqslant -3$", "correct": true },
-            { "text": "$x \\geqslant -3$", "correct": false },
-            { "text": "$x \\leqslant 3$", "correct": false },
-            { "text": "$x \\geqslant 3$", "correct": false }
+            { "text": "$S = ]-\\infty; -3]$", "correct": true },
+            { "text": "$S = [ -3; +\\infty[$", "correct": false },
+            { "text": "$S = ]-\\infty; 3]$", "correct": false },
+            { "text": "$S = [3; +\\infty[$", "correct": false }
         ],
         "explanation": "En divisant par $-4$ (nombre négatif), on change le sens de l'inégalité : $x \\leqslant \\frac{12}{-4} = -3$."
     },
@@ -3091,10 +3091,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation du premier degré",
         "answers": [
-            { "text": "$x > 2$", "correct": true },
-            { "text": "$x < 2$", "correct": false },
-            { "text": "$x > -2$", "correct": false },
-            { "text": "$x \\geqslant 2$", "correct": false }
+            { "text": "$S = ]2; +\\infty[$", "correct": true },
+            { "text": "$S = ]-\\infty; 2[$", "correct": false },
+            { "text": "$S = ]-2; +\\infty[$", "correct": false },
+            { "text": "$S = [2; +\\infty[$", "correct": false }
         ],
         "explanation": "$-3x < 1 - 7$, donc $-3x < -6$. En divisant par $-3$, on change le sens : $x > 2$."
     },
@@ -3245,10 +3245,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
         "answers": [
-            { "text": "$x \\in ]-3; 3[$", "correct": true },
-            { "text": "$x \\in ]-\\infty; -3[ \\cup ]3; +\\infty[$", "correct": false },
-            { "text": "$x \\in [-3; 3]$", "correct": false },
-            { "text": "$x \\in ]-9; 9[$", "correct": false }
+            { "text": "$S=]-3; 3[$", "correct": true },
+            { "text": "$S=]-\\infty; -3[ \\cup ]3; +\\infty[$", "correct": false },
+            { "text": "$S=[-3; 3]$", "correct": false },
+            { "text": "$S=]-9; 9[$", "correct": false }
         ],
         "explanation": "$x^2 < 9$ équivaut à $x^2 < 3^2$, soit $-3 < x < 3$. L'ensemble des solutions est $]-3; 3[$."
     },
@@ -3259,10 +3259,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
         "answers": [
-            { "text": "$x \\in ]-\\infty; -4[ \\cup ]4; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-4; 4[$", "correct": false },
-            { "text": "$x \\in ]-\\infty; -16[ \\cup ]16; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]-\\infty; -4[ \\cup ]4; +\\infty[$", "correct": true },
+            { "text": "$S=]-4; 4[$", "correct": false },
+            { "text": "$S=]-\\infty; -16[ \\cup ]16; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "$x^2 > 16$ équivaut à $x < -4$ ou $x > 4$. L'ensemble des solutions est $]-\\infty; -4[ \\cup ]4; +\\infty[$."
     },
@@ -3273,10 +3273,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
         "answers": [
-            { "text": "$x \\in [-5; 5]$", "correct": true },
-            { "text": "$x \\in ]-5; 5[$", "correct": false },
-            { "text": "$x \\in ]-\\infty; -5] \\cup [5; +\\infty[$", "correct": false },
-            { "text": "$x \\in [-25; 25]$", "correct": false }
+            { "text": "$S=[-5; 5]$", "correct": true },
+            { "text": "$S=]-5; 5[$", "correct": false },
+            { "text": "$S=]-\\infty; -5] \\cup [5; +\\infty[$", "correct": false },
+            { "text": "$S=[-25; 25]$", "correct": false }
         ],
         "explanation": "$x^2 \\leqslant 25$ équivaut à $-5 \\leqslant x \\leqslant 5$. L'ensemble des solutions est $[-5; 5]$."
     },
@@ -3287,10 +3287,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
         "answers": [
-            { "text": "$x \\in ]-\\infty; -2] \\cup [2; +\\infty[$", "correct": true },
-            { "text": "$x \\in [-2; 2]$", "correct": false },
-            { "text": "$x \\in ]-\\infty; -2[ \\cup ]2; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]-\\infty; -2] \\cup [2; +\\infty[$", "correct": true },
+            { "text": "$S=[-2; 2]$", "correct": false },
+            { "text": "$S=]-\\infty; -2[ \\cup ]2; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "$x^2 \\geqslant 4$ équivaut à $x \\leqslant -2$ ou $x \\geqslant 2$. L'ensemble des solutions est $]-\\infty; -2] \\cup [2; +\\infty[$."
     },
@@ -3301,10 +3301,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
         "answers": [
-            { "text": "$x \\in \\mathbb{R}^*$ (ou $x \\in ]-\\infty; 0[ \\cup ]0; +\\infty[$)", "correct": true },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "$x \\in ]0; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\mathbb{R}^*$ (ou $S=]-\\infty; 0[ \\cup ]0; +\\infty[$)", "correct": true },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=]0; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "$x^2 > 0$ pour tout $x \\neq 0$. L'ensemble des solutions est $\\mathbb{R}^*$ (tous les réels sauf 0)."
     },
@@ -3315,10 +3315,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une inéquation de la forme x² < a ou x² > a",
         "answers": [
-            { "text": "Pas de solution dans $\\mathbb{R}$", "correct": true },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "$x \\in ]-1; 1[$", "correct": false },
-            { "text": "$x = 0$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=]-1; 1[$", "correct": false },
+            { "text": "$S=\\{0\\}$", "correct": false }
         ],
         "explanation": "Un carré est toujours positif ou nul. Il est impossible d'avoir $x^2 < -1$. L'inéquation n'a pas de solution dans $\\mathbb{R}$."
     },
@@ -3329,10 +3329,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme (x+a)² = b",
         "answers": [
-            { "text": "$x = 1$ ou $x = -7$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = -7$", "correct": false },
-            { "text": "$x = 13$ ou $x = -19$", "correct": false }
+            { "text": "$S=\\{1, -7\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{-7\\}$", "correct": false },
+            { "text": "$S=\\{13, -19\\}$", "correct": false }
         ],
         "explanation": "$(x+3)^2 = 16 \\Rightarrow x+3 = 4$ ou $x+3 = -4 \\Rightarrow x = 1$ ou $x = -7$"
     },
@@ -3343,10 +3343,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme (x+a)² = b",
         "answers": [
-            { "text": "$x = 5$ ou $x = -1$", "correct": true },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "$x = 11$ ou $x = -7$", "correct": false }
+            { "text": "$S=\\{5, -1\\}$", "correct": true },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\{11, -7\\}$", "correct": false }
         ],
         "explanation": "$(x-2)^2 = 9 \\Rightarrow x-2 = 3$ ou $x-2 = -3 \\Rightarrow x = 5$ ou $x = -1$"
     },
@@ -3357,10 +3357,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme (x+a)² = b",
         "answers": [
-            { "text": "$x = -1$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 0$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{-1\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "$(x+1)^2 = 0 \\Rightarrow x+1 = 0 \\Rightarrow x = -1$ (solution unique car le second membre est nul)"
     },
@@ -3371,10 +3371,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme (x+a)² = b",
         "answers": [
-            { "text": "Pas de solution dans $\\mathbb{R}$", "correct": true },
-            { "text": "$x = 3$ ou $x = 7$", "correct": false },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = 1$ ou $x = 9$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{3, 7\\}$", "correct": false },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{1, 9\\}$", "correct": false }
         ],
         "explanation": "Un carré est toujours positif ou nul. L'équation $(x-5)^2 = -4$ n'a pas de solution dans $\\mathbb{R}$."
     },
@@ -3385,10 +3385,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme (x+a)² = b",
         "answers": [
-            { "text": "$x = 1$ ou $x = -9$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = -9$", "correct": false },
-            { "text": "$x = 21$ ou $x = -29$", "correct": false }
+            { "text": "$S=\\{1, -9\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{-9\\}$", "correct": false },
+            { "text": "$S=\\{21, -29\\}$", "correct": false }
         ],
         "explanation": "$(x+4)^2 = 25 \\Rightarrow x+4 = 5$ ou $x+4 = -5 \\Rightarrow x = 1$ ou $x = -9$"
     },
@@ -3399,10 +3399,10 @@
         "theme": "Équations-Inéquations",
         "competence": "Résoudre une équation de la forme (x+a)² = b",
         "answers": [
-            { "text": "$x = 3$ ou $x = -1$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "$x = 5$ ou $x = -3$", "correct": false }
+            { "text": "$S=\\{3, -1\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\{5, -3\\}$", "correct": false }
         ],
         "explanation": "$(x-1)^2 = 4 \\Rightarrow x-1 = 2$ ou $x-1 = -2 \\Rightarrow x = 3$ ou $x = -1$"
     },
@@ -4688,10 +4688,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -3$ ou $x = 1$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{-3, 1\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la courbe et la droite $y=2$. On trouve $x=-3$ et $x=1$"
     },
@@ -4709,10 +4709,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -2$ ou $x = 2$", "correct": true },
-            { "text": "$x = 0$", "correct": false },
-            { "text": "$x = -4$ ou $x = 4$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{-2, 2\\}$", "correct": true },
+            { "text": "$S=\\{0\\}$", "correct": false },
+            { "text": "$S=\\{-4, 4\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la courbe et la droite $y=4$. On trouve $x=-2$ et $x=2$"
     },
@@ -4730,10 +4730,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 1$ ou $x = 5$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = -3$", "correct": false },
-            { "text": "$x = 0$ ou $x = 6$", "correct": false }
+            { "text": "$S=\\{1, 5\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{-3\\}$", "correct": false },
+            { "text": "$S=\\{0, 6\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=-3$. On trouve $x=1$ et $x=5$"
     },
@@ -4751,10 +4751,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -1$ ou $x = 3$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = -2$ ou $x = 4$", "correct": false },
-            { "text": "$x = 1$", "correct": false }
+            { "text": "$S=\\{-1, 3\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{-2, 4\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=2$. On trouve $x=-1$ et $x=3$"
     },
@@ -4772,10 +4772,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$ ou $x = 4$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 0$ ou $x = 6$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{2, 4\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{0, 6\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=3$. On trouve $x=2$ et $x=4$"
     },
@@ -4793,10 +4793,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -2$ ou $x = 2$", "correct": true },
-            { "text": "$x = -4$", "correct": false },
-            { "text": "$x = 0$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{-2, 2\\}$", "correct": true },
+            { "text": "$S=\\{-4\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=-4$. On trouve $x=-2$ et $x=2$"
     },
@@ -4814,10 +4814,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$ ou $x = 4$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 1$ ou $x = 5$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{2, 4\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{1, 5\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=3$. On trouve $x=2$ et $x=4$"
     },
@@ -4835,10 +4835,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -3$ ou $x = 1$", "correct": true },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "$x = 0$", "correct": false }
+            { "text": "$S=\\{-3, 1\\}$", "correct": true },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=5$. On trouve $x=-3$ et $x=1$"
     },
@@ -4856,10 +4856,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -1$ ou $x = 5$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = -2$", "correct": false },
-            { "text": "$x = 0$ ou $x = 4$", "correct": false }
+            { "text": "$S=\\{-1, 5\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{-2\\}$", "correct": false },
+            { "text": "$S=\\{0, 4\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=-2$. On trouve $x=-1$ et $x=5$"
     },
@@ -4877,10 +4877,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -1$ ou $x = 3$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 6$", "correct": false },
-            { "text": "$x = 0$ ou $x = 2$", "correct": false }
+            { "text": "$S=\\{-1, 3\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{6\\}$", "correct": false },
+            { "text": "$S=\\{0, 2\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=6$. On trouve $x=-1$ et $x=3$"
     },
@@ -4898,10 +4898,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -2$ ou $x = 4$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 0$ ou $x = 2$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{-2, 4\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{0, 2\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=1$. On trouve $x=-2$ et $x=4$"
     },
@@ -4919,10 +4919,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 1$ ou $x = 5$", "correct": true },
-            { "text": "$x = 0$", "correct": false },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{1, 5\\}$", "correct": true },
+            { "text": "$S=\\{0\\}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points où la courbe coupe l'axe des abscisses. On trouve $x=1$ et $x=5$"
     },
@@ -4940,10 +4940,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$", "correct": true },
-            { "text": "$x = -3$", "correct": false },
-            { "text": "$x = 0$ ou $x = 4$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{2\\}$", "correct": true },
+            { "text": "$S=\\{-3\\}$", "correct": false },
+            { "text": "$S=\\{0, 4\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=-3$. La parabole admet un minimum en $x=2$, il n'y a qu'une seule solution"
     },
@@ -4961,10 +4961,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -1$", "correct": true },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = -3$ ou $x = 1$", "correct": false },
-            { "text": "$x = 0$", "correct": false }
+            { "text": "$S=\\{-1\\}$", "correct": true },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{-3, 1\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=5$. La parabole admet un maximum en $x=-1$, il n'y a qu'une seule solution"
     },
@@ -4982,10 +4982,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 3$", "correct": true },
-            { "text": "$x = 0$", "correct": false },
-            { "text": "$x = 1$ ou $x = 5$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{3\\}$", "correct": true },
+            { "text": "$S=\\{0\\}$", "correct": false },
+            { "text": "$S=\\{1, 5\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points où la courbe coupe l'axe des abscisses. La parabole touche l'axe en un seul point : $x=3$"
     },
@@ -5003,10 +5003,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 1$", "correct": true },
-            { "text": "$x = 4$", "correct": false },
-            { "text": "$x = -1$ ou $x = 3$", "correct": false },
-            { "text": "$x = 0$ ou $x = 2$", "correct": false }
+            { "text": "$S=\\{1\\}$", "correct": true },
+            { "text": "$S=\\{4\\}$", "correct": false },
+            { "text": "$S=\\{-1, 3\\}$", "correct": false },
+            { "text": "$S=\\{0, 2\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=4$. La parabole admet un maximum en $x=1$, il n'y a qu'une seule solution"
     },
@@ -5024,10 +5024,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -2$", "correct": true },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "$x = -4$ ou $x = 0$", "correct": false },
-            { "text": "$x = 2$", "correct": false }
+            { "text": "$S=\\{-2\\}$", "correct": true },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\{-4, 0\\}$", "correct": false },
+            { "text": "$S=\\{2\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=-1$. La parabole admet un minimum en $x=-2$, il n'y a qu'une seule solution"
     },
@@ -5045,10 +5045,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 4$", "correct": true },
-            { "text": "$x = 7$", "correct": false },
-            { "text": "$x = 2$ ou $x = 6$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{7\\}$", "correct": false },
+            { "text": "$S=\\{2, 6\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=7$. La parabole admet un maximum en $x=4$, il n'y a qu'une seule solution"
     },
@@ -5066,10 +5066,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 0$ ou $x = 2$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{0, 2\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=2$. La parabole admet un minimum de $3$ en $x=1$, donc la droite $y=2$ ne coupe jamais la courbe"
     },
@@ -5087,10 +5087,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = -2$", "correct": false },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = -4$ ou $x = 0$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{-2\\}$", "correct": false },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{-4, 0\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=5$. La parabole admet un maximum de $4$ en $x=-2$, donc la droite $y=5$ ne coupe jamais la courbe"
     },
@@ -5108,10 +5108,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 2$ ou $x = 4$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{2, 4\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=-1$. La parabole admet un minimum de $0$ en $x=3$, donc la droite $y=-1$ ne coupe jamais la courbe"
     },
@@ -5129,10 +5129,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 8$", "correct": false },
-            { "text": "$x = 1$ ou $x = 3$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{8\\}$", "correct": false },
+            { "text": "$S=\\{1, 3\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=8$. La parabole admet un maximum de $7$ en $x=2$, donc la droite $y=8$ ne coupe jamais la courbe"
     },
@@ -5150,10 +5150,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "$x = -2$ ou $x = 0$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\{-2, 0\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=1$. La parabole admet un minimum de $2$ en $x=-1$, donc la droite $y=1$ ne coupe jamais la courbe"
     },
@@ -5171,10 +5171,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = 4$", "correct": false },
-            { "text": "$x = 10$", "correct": false },
-            { "text": "$x = 3$ ou $x = 5$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{4\\}$", "correct": false },
+            { "text": "$S=\\{10\\}$", "correct": false },
+            { "text": "$S=\\{3, 5\\}$", "correct": false }
         ],
         "explanation": "On cherche les points d'intersection avec $y=10$. La parabole admet un maximum de $9$ en $x=4$, donc la droite $y=10$ ne coupe jamais la courbe"
     },
@@ -5192,10 +5192,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]1 ; 5[$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in [1 ; 5]$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]1 ; 5[$", "correct": true },
+            { "text": "$S=] -\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "$S=[1 ; 5]$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole est en dessous de la droite $y=3$ entre les abscisses $1$ et $5$ (valeurs exclues car on cherche strictement inférieur)"
     },
@@ -5213,10 +5213,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-2 ; 2[$", "correct": false },
-            { "text": "$x \\in [-2 ; 2]$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=] -\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": true },
+            { "text": "$S=] -2 ; 2[$", "correct": false },
+            { "text": "$S=[-2 ; 2]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est en dessous de la droite $y=2$ à l'extérieur de l'intervalle $[-2 ; 2]$"
     },
@@ -5234,10 +5234,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x \\in ]2 ; 4[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=]2 ; 4[$", "correct": false },
+            { "text": "$S=]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $-1$ en $x=3$, elle est donc toujours supérieure ou égale à $-1$. L'inéquation $f(x) < -1$ n'a pas de solution"
     },
@@ -5255,10 +5255,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]-1 ; +\\infty[$", "correct": true },
-            { "text": "$x = -1$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=] -\\infty ; -1[ \\cup ]-1 ; +\\infty[$", "correct": true },
+            { "text": "$S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole admet un maximum de $6$ en $x=-1$, elle est donc toujours inférieure ou égale à $6$. L'inéquation $f(x) < 6$ est vraie pour tout $x \\neq -1$"
     },
@@ -5276,10 +5276,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-2 ; 4[$", "correct": true },
-            { "text": "$x \\in [-2 ; 4]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]4 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=] -2 ; 4[$", "correct": true },
+            { "text": "$S=[-2 ; 4]$", "correct": false },
+            { "text": "$S=] -\\infty ; -2[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous de l'axe des abscisses (donc $f(x) < 0$) entre $x=-2$ et $x=4$ (valeurs exclues)"
     },
@@ -5297,10 +5297,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]0 ; 4[$", "correct": true },
-            { "text": "$x \\in [0 ; 4]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 0[ \\cup ]4 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]0 ; 4[$", "correct": true },
+            { "text": "$S=[0 ; 4]$", "correct": false },
+            { "text": "$S=]-\\infty ; 0[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "Pour trouver où $f(x) < 5$, on cherche où la courbe est en dessous de $y=5$. En résolvant $(x-2)^2+1=5$, on trouve $x=0$ ou $x=4$. La solution est $]0 ; 4[$"
     },
@@ -5318,10 +5318,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]1 ; 3[$", "correct": true },
-            { "text": "$x \\in [1 ; 3]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]3 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]1 ; 3[$", "correct": true },
+            { "text": "$S=[1 ; 3]$", "correct": false },
+            { "text": "$S=]-\\infty ; 1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous de $y=-2$ entre les racines $x=1$ et $x=3$ (valeurs exclues)"
     },
@@ -5339,10 +5339,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-1 ; 3[$", "correct": false },
-            { "text": "$x \\in [-1 ; 3]$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-1 ; 3[$", "correct": false },
+            { "text": "$S=[-1 ; 3]$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est en dessous de $y=4$ à l'extérieur de l'intervalle $[-1 ; 3]$"
     },
@@ -5360,10 +5360,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x \\in ]-\\infty ; -3[$", "correct": false },
-            { "text": "$x \\in ]-3 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=]-\\infty ; -3[$", "correct": false },
+            { "text": "$S=]-3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $1$ en $x=-3$, donc $f(x) \\geqslant 1$ pour tout $x$. L'inéquation $f(x) < 1$ n'a pas de solution"
     },
@@ -5381,10 +5381,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole admet un maximum de $8$ en $x=2$, donc $f(x) \\leqslant 8$ pour tout $x$. L'inéquation $f(x) < 8$ est vraie pour tout $x \\neq 2$"
     },
@@ -5402,10 +5402,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-1 ; 3[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-1 ; 3[$", "correct": false },
+            { "text": "$S=]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est en dessous de $y=3$ à l'extérieur de l'intervalle $[-1 ; 3]$"
     },
@@ -5423,10 +5423,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-1 ; 3[$", "correct": true },
-            { "text": "$x \\in [-1 ; 3]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]-1 ; 3[$", "correct": true },
+            { "text": "$S=[-1 ; 3]$", "correct": false },
+            { "text": "$S=]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "Pour $f(x) < 4$, on résout $(x-1)^2 < 4$, soit $(x-1)^2+0=4$ qui donne $x=-1$ ou $x=3$. La parabole est en dessous de $y=4$ sur $]-1 ; 3[$"
     },
@@ -5444,10 +5444,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-1 ; 5[$", "correct": true },
-            { "text": "$x \\in [-1 ; 5]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]5 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-1 ; 5[$", "correct": true },
+            { "text": "$S=[-1 ; 5]$", "correct": false },
+            { "text": "$S=]-\\infty ; -1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous de $y=-4$ entre les racines $x=-1$ et $x=5$ (valeurs exclues)"
     },
@@ -5465,10 +5465,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]2 ; 4[$", "correct": false },
-            { "text": "$x \\in [2 ; 4]$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": true },
+            { "text": "$S=]2 ; 4[$", "correct": false },
+            { "text": "$S=[2 ; 4]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est en dessous de $y=6$ à l'extérieur de l'intervalle $[2 ; 4]$"
     },
@@ -5486,10 +5486,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x \\in ]2 ; 6[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 4[ \\cup ]4 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=]2 ; 6[$", "correct": false },
+            { "text": "$S=]-\\infty ; 4[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $2$ en $x=4$, donc $f(x) \\geqslant 2 > 0$ pour tout $x$. L'inéquation $f(x) < 0$ n'a pas de solution"
     },
@@ -5507,10 +5507,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -3[ \\cup ]-3 ; +\\infty[$", "correct": true },
-            { "text": "$x = -3$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; -3[ \\cup ]-3 ; +\\infty[$", "correct": true },
+            { "text": "$S=\\{-3\\}$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole admet un maximum de $5$ en $x=-3$, donc $f(x) \\leqslant 5$ pour tout $x$. L'inéquation $f(x) < 5$ est vraie pour tout $x \\neq -3$"
     },
@@ -5528,10 +5528,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]2 ; 6[$", "correct": true },
-            { "text": "$x \\in [2 ; 6]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]6 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]2 ; 6[$", "correct": true },
+            { "text": "$S=[2 ; 6]$", "correct": false },
+            { "text": "$S=]-\\infty ; 2[ \\cup ]6 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous de $y=1$ entre les racines $x=2$ et $x=6$ (valeurs exclues)"
     },
@@ -5549,10 +5549,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in [1 ; 5]$", "correct": true },
-            { "text": "$x \\in ]1 ; 5[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=[1 ; 5]$", "correct": true },
+            { "text": "$S=]1 ; 5[$", "correct": false },
+            { "text": "$S=]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole est en dessous ou sur la droite $y=4$ entre les abscisses $1$ et $5$ (valeurs incluses car inégalité large)"
     },
@@ -5570,10 +5570,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in [-1 ; 3]$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$S=[-1 ; 3]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est en dessous ou sur $y=3$ à l'extérieur de l'intervalle $]-1 ; 3[$, donc sur $]-\\infty ; -1] \\cup [3 ; +\\infty[$"
     },
@@ -5591,10 +5591,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$", "correct": true },
-            { "text": "$x \\in ]1 ; 3[$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=\\{2\\}$", "correct": true },
+            { "text": "$S=]1 ; 3[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $-2$ en $x=2$. L'inéquation $f(x) \\leqslant -2$ n'est vraie que pour $x=2$"
     },
@@ -5612,10 +5612,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\mathbb{R}$", "correct": true },
+            { "text": "$S=]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole admet un maximum de $7$ en $x=1$, donc $f(x) \\leqslant 7$ pour tout $x$. La solution est $\\mathbb{R}$"
     },
@@ -5633,10 +5633,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in [-3 ; 3]$", "correct": true },
-            { "text": "$x \\in ]-3 ; 3[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -3] \\cup [3 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=[-3 ; 3]$", "correct": true },
+            { "text": "$S=]-3 ; 3[$", "correct": false },
+            { "text": "$S=]-\\infty ; -3] \\cup [3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous ou sur l'axe des abscisses (donc $f(x) \\leqslant 0$) entre $x=-3$ et $x=3$ (valeurs incluses)"
     },
@@ -5654,10 +5654,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in [1 ; 5]$", "correct": true },
-            { "text": "$x \\in ]1 ; 5[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=[1 ; 5]$", "correct": true },
+            { "text": "$S=]1 ; 5[$", "correct": false },
+            { "text": "$S=]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "Pour $f(x) \\leqslant 6$, on résout $(x-3)^2+2 \\leqslant 6$, soit $(x-3)^2 \\leqslant 4$. Les racines sont $x=1$ et $x=5$, la solution est $[1 ; 5]$"
     },
@@ -5675,10 +5675,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in [-2 ; 4]$", "correct": true },
-            { "text": "$x \\in ]-2 ; 4[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=[-2 ; 4]$", "correct": true },
+            { "text": "$S=]-2 ; 4[$", "correct": false },
+            { "text": "$S=]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous ou sur $y=-3$ entre les racines $x=-2$ et $x=4$ (valeurs incluses)"
     },
@@ -5696,10 +5696,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -2] \\cup [2 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in [-2 ; 2]$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; -2] \\cup [2 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": false },
+            { "text": "$S=[-2 ; 2]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est en dessous ou sur $y=5$ à l'extérieur de l'intervalle $]-2 ; 2[$, donc sur $]-\\infty ; -2] \\cup [2 ; +\\infty[$"
     },
@@ -5717,10 +5717,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -1$", "correct": true },
-            { "text": "$x \\in [-2 ; 0]$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=\\{-1\\}$", "correct": true },
+            { "text": "$S=[-2 ; 0]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $1$ en $x=-1$. L'inéquation $f(x) \\leqslant 1$ n'est vraie que pour $x=-1$"
     },
@@ -5738,10 +5738,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": false },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\mathbb{R}$", "correct": true },
+            { "text": "$S=]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole admet un maximum de $9$ en $x=3$, donc $f(x) \\leqslant 9$ pour tout $x$. La solution est $\\mathbb{R}$"
     },
@@ -5759,10 +5759,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in [1 ; 5]$", "correct": true },
-            { "text": "$x \\in ]1 ; 5[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=[1 ; 5]$", "correct": true },
+            { "text": "$S=]1 ; 5[$", "correct": false },
+            { "text": "$S=]-\\infty ; 1] \\cup [5 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous ou sur $y=2$ entre les racines $x=1$ et $x=5$ (valeurs incluses)"
     },
@@ -5780,10 +5780,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "$x \\in [0 ; 4]$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=[0 ; 4]$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $3$ en $x=2$, donc $f(x) \\geqslant 3 > 0$ pour tout $x$. L'inéquation $f(x) \\leqslant 0$ n'a pas de solution"
     },
@@ -5801,10 +5801,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]2 ; 4[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": true },
+            { "text": "$S=]2 ; 4[$", "correct": false },
+            { "text": "$S=]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est au-dessus de $y=3$ à l'extérieur de l'intervalle $[2 ; 4]$ (valeurs exclues)"
     },
@@ -5822,10 +5822,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-1 ; 3[$", "correct": true },
-            { "text": "$x \\in [-1 ; 3]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-1 ; 3[$", "correct": true },
+            { "text": "$S=[-1 ; 3]$", "correct": false },
+            { "text": "$S=]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est au-dessus de $y=5$ entre les racines $x=-1$ et $x=3$ (valeurs exclues)"
     },
@@ -5843,10 +5843,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; 3[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $2$ en $x=3$, donc $f(x) > 2$ pour tout $x \\neq 3$"
     },
@@ -5864,10 +5864,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole admet un maximum de $6$ en $x=2$, donc $f(x) \\leqslant 6$ pour tout $x$. L'inéquation $f(x) > 6$ n'a pas de solution"
     },
@@ -5885,10 +5885,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-2 ; 2[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -2] \\cup [2 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]-\\infty ; -2[ \\cup ]2 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-2 ; 2[$", "correct": false },
+            { "text": "$S=]-\\infty ; -2] \\cup [2 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole est au-dessus de $y=1$ à l'extérieur de l'intervalle $[-2 ; 2]$ (valeurs exclues)"
     },
@@ -5906,10 +5906,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $-4$ en $x=1$, donc $f(x) > -4$ pour tout $x \\neq 1$"
     },
@@ -5948,10 +5948,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in [-1 ; 5]$", "correct": true },
-            { "text": "$x \\in ]-1 ; 5[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -1] \\cup [5 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=[-1 ; 5]$", "correct": true },
+            { "text": "$S=]-1 ; 5[$", "correct": false },
+            { "text": "$S=]-\\infty ; -1] \\cup [5 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est au-dessus ou sur $y=2$ entre les racines $x=-1$ et $x=5$ (valeurs incluses)"
     },
@@ -5969,10 +5969,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -3] \\cup [3 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; -3[ \\cup ]3 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in [-3 ; 3]$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; -3] \\cup [3 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-\\infty ; -3[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$S=[-3 ; 3]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est au-dessus ou sur l'axe des abscisses à l'extérieur de l'intervalle $]-3 ; 3[$ (valeurs incluses)"
     },
@@ -5990,10 +5990,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\mathbb{R}$", "correct": true },
+            { "text": "$S=]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole admet un minimum de $5$ en $x=2$, donc $f(x) \\geqslant 5$ pour tout $x$. La solution est $\\mathbb{R}$"
     },
@@ -6011,10 +6011,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 1$", "correct": true },
-            { "text": "$x \\in [0 ; 2]$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{1\\}$", "correct": true },
+            { "text": "$S=[0 ; 2]$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole admet un maximum de $8$ en $x=1$. L'inéquation $f(x) \\geqslant 8$ n'est vraie que pour $x=1$"
     },
@@ -6032,10 +6032,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; -2[ \\cup ]4 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in [-2 ; 4]$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-\\infty ; -2[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$S=[-2 ; 4]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est au-dessus ou sur $y=-1$ à l'extérieur de l'intervalle $]-2 ; 4[$ (valeurs incluses)"
     },
@@ -6053,10 +6053,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$ ou $x = 4$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 1$ ou $x = 5$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{2\\}$ ou $S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$ ou $S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=2$ et $x=4$"
     },
@@ -6074,10 +6074,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -1$ ou $x = 3$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 0$ ou $x = 2$", "correct": false },
-            { "text": "$x = 2$", "correct": false }
+            { "text": "$S=\\{-1\\}$ ou $S=\\{3\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$ ou $S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{2\\}$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=-1$ et $x=3$"
     },
@@ -6095,10 +6095,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 3$", "correct": true },
-            { "text": "$x = 1$ ou $x = 3$", "correct": false },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{3\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$ ou $S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole et la droite ne se coupent qu'en un seul point d'abscisse $x=3$"
     },
@@ -6116,10 +6116,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 1$ ou $x = 3$", "correct": false },
-            { "text": "$x = 0$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$ ou $S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$", "correct": false }
         ],
         "explanation": "La parabole et la droite ne se coupent pas, il n'y a pas de solution"
     },
@@ -6137,10 +6137,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -2$ ou $x = 4$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 0$ ou $x = 2$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{-2\\}$ ou $S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$ ou $S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=-2$ et $x=4$"
     },
@@ -6158,10 +6158,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$", "correct": true },
-            { "text": "$x = 5$", "correct": false },
-            { "text": "$x = 0$ ou $x = 4$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{2\\}$", "correct": true },
+            { "text": "$S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$ ou $S=\\{4\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "Les deux droites se coupent en un seul point d'abscisse $x=2$"
     },
@@ -6179,10 +6179,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 1$ ou $x = 5$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 0$ ou $x = 6$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{1\\}$ ou $S=\\{5\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$ ou $S=\\{6\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=1$ et $x=5$"
     },
@@ -6200,10 +6200,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 1$ ou $x = 5$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{2\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$ ou $S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole et la droite ne se coupent qu'en un seul point d'abscisse $x=2$"
     },
@@ -6221,10 +6221,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -1$ ou $x = 3$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "$x = 0$ ou $x = 2$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{-1\\}$ ou $S=\\{3\\}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$ ou $S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=-1$ et $x=3$"
     },
@@ -6242,10 +6242,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 0$ ou $x = 4$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 1$ ou $x = 3$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{0\\}$ ou $S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$ ou $S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=0$ et $x=4$"
     },
@@ -6263,10 +6263,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$ ou $x = 4$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 1$ ou $x = 5$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{2\\}$ ou $S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$ ou $S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite. On trouve $x=2$ et $x=4$"
     },
@@ -6284,10 +6284,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = -4$ ou $x = 0$", "correct": true },
-            { "text": "$x = -2$", "correct": false },
-            { "text": "$x = -3$ ou $x = -1$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{-4\\}$ ou $S=\\{0\\}$", "correct": true },
+            { "text": "$S=\\{-2\\}$", "correct": false },
+            { "text": "$S=\\{-3\\}$ ou $S=\\{-1\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "On cherche les abscisses des points d'intersection entre la parabole et la droite horizontale $y=3$. On trouve $x=-4$ et $x=0$"
     },
@@ -6305,10 +6305,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]1 ; 5[$", "correct": true },
-            { "text": "$x \\in [1 ; 5]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]1 ; 5[$", "correct": true },
+            { "text": "$S=[1 ; 5]$", "correct": false },
+            { "text": "$S=]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous de la droite entre $x=1$ et $x=5$ (valeurs exclues)"
     },
@@ -6326,10 +6326,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-1 ; 3[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-1 ; 3[$", "correct": false },
+            { "text": "$S=]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est en dessous de la droite à l'extérieur de l'intervalle $[-1 ; 3]$"
     },
@@ -6347,10 +6347,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in [2 ; 4]$", "correct": true },
-            { "text": "$x \\in ]2 ; 4[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=[2 ; 4]$", "correct": true },
+            { "text": "$S=]2 ; 4[$", "correct": false },
+            { "text": "$S=]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est en dessous ou sur la droite entre $x=2$ et $x=4$ (valeurs incluses car inégalité large)"
     },
@@ -6368,10 +6368,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": true },
-            { "text": "$x \\in ]1 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
-            { "text": "$x \\in [-1 ; 3]$", "correct": false }
+            { "text": "$S=\\mathbb{R}$", "correct": true },
+            { "text": "$S=]1 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false },
+            { "text": "$S=[-1 ; 3]$", "correct": false }
         ],
         "explanation": "La parabole est toujours en dessous ou sur la droite, la solution est $\\mathbb{R}$"
     },
@@ -6390,9 +6390,9 @@
         },
         "answers": [
             { "text": "$x \\in ]-\\infty ; -2[ \\cup ]4 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-2 ; 4[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-2 ; 4[$", "correct": false },
+            { "text": "$S=]-\\infty ; -2] \\cup [4 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est au-dessus de la droite à l'extérieur de l'intervalle $[-2 ; 4]$"
     },
@@ -6410,10 +6410,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]1 ; 5[$", "correct": true },
-            { "text": "$x \\in [1 ; 5]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]1 ; 5[$", "correct": true },
+            { "text": "$S=[1 ; 5]$", "correct": false },
+            { "text": "$S=]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est au-dessus de la droite entre $x=1$ et $x=5$ (valeurs exclues)"
     },
@@ -6431,10 +6431,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 3] \\cup [5 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; 3] \\cup [5 ; +\\infty[$", "correct": true },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole touche la droite en $x=3$ mais est au-dessus partout ailleurs"
     },
@@ -6452,10 +6452,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in [-1 ; 3]$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; -1] \\cup [3 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-\\infty ; -1[ \\cup ]3 ; +\\infty[$", "correct": false },
+            { "text": "$S=[-1 ; 3]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole est au-dessus ou sur la droite à l'extérieur de l'intervalle $]-1 ; 3[$ (valeurs incluses)"
     },
@@ -6473,10 +6473,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x \\in ]-\\infty ; 2[$", "correct": false },
-            { "text": "$x \\in ]2 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=]-\\infty ; 2[$", "correct": false },
+            { "text": "$S=]2 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole est toujours au-dessus de la droite, l'inéquation $f(x) < g(x)$ n'a pas de solution"
     },
@@ -6494,10 +6494,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 0] \\cup [4 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; 0[ \\cup ]4 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in [0 ; 4]$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]-\\infty ; 0] \\cup [4 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-\\infty ; 0[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$S=[0 ; 4]$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole tournée vers le bas est en dessous ou sur la droite à l'extérieur de l'intervalle $]0 ; 4[$"
     },
@@ -6515,10 +6515,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]2 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in [2 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 2[$", "correct": false },
-            { "text": "$x = 2$", "correct": false }
+            { "text": "$S=]2 ; +\\infty[$", "correct": true },
+            { "text": "$S=[2 ; +\\infty[$", "correct": false },
+            { "text": "$S=]-\\infty ; 2[$", "correct": false },
+            { "text": "$S=\\{2\\}$", "correct": false }
         ],
         "explanation": "La droite $f$ est au-dessus de la droite $g$ pour $x > 2$"
     },
@@ -6536,10 +6536,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 1$", "correct": true },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{1\\}$", "correct": true },
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole admet un maximum de 5 en $x=1$, elle est au-dessus ou sur la droite uniquement en $x=1$"
     },
@@ -6557,10 +6557,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 1$ ou $x = 5$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 2$ ou $x = 4$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{1\\}$ ou $S=\\{5\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{2\\}$ ou $S=\\{4\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "Les deux paraboles se coupent en $x=1$ et $x=5$"
     },
@@ -6578,10 +6578,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 1$ ou $x = 3$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 0$ ou $x = 4$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{1\\}$ ou $S=\\{3\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{0\\}$ ou $S=\\{4\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole montante et la parabole descendante se coupent en $x=1$ et $x=3$"
     },
@@ -6599,10 +6599,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 2$ ou $x = 4$", "correct": true },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "$x = 1$ ou $x = 5$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{2\\}$ ou $S=\\{4\\}$", "correct": true },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\{1\\}$ ou $S=\\{5\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "Les deux paraboles se coupent en $x=2$ et $x=4$"
     },
@@ -6620,10 +6620,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]1 ; 5[$", "correct": true },
-            { "text": "$x \\in [1 ; 5]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]1 ; 5[$", "correct": true },
+            { "text": "$S=[1 ; 5]$", "correct": false },
+            { "text": "$S=]-\\infty ; 1[ \\cup ]5 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole montante est en dessous de la parabole descendante entre $x=1$ et $x=5$"
     },
@@ -6641,10 +6641,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in [1 ; 3]$", "correct": true },
-            { "text": "$x \\in ]1 ; 3[$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1] \\cup [3 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=[1 ; 3]$", "correct": true },
+            { "text": "$S=]1 ; 3[$", "correct": false },
+            { "text": "$S=]-\\infty ; 1] \\cup [3 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole montante est en dessous ou sur la parabole descendante entre $x=1$ et $x=3$ (inclus)"
     },
@@ -6662,10 +6662,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]2 ; 4[$", "correct": true },
-            { "text": "$x \\in [2 ; 4]$", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in \\mathbb{R}$", "correct": false }
+            { "text": "$S=]2 ; 4[$", "correct": true },
+            { "text": "$S=[2 ; 4]$", "correct": false },
+            { "text": "$S=]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "La parabole descendante est au-dessus de la parabole montante entre $x=2$ et $x=4$"
     },
@@ -6683,10 +6683,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in ]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": true },
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": false },
-            { "text": "$x \\in [2 ; 4]$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=]-\\infty ; 2] \\cup [4 ; +\\infty[$", "correct": true },
+            { "text": "$S=]-\\infty ; 2[ \\cup ]4 ; +\\infty[$", "correct": false },
+            { "text": "$S=[2 ; 4]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole montante est au-dessus ou sur la parabole descendante à l'extérieur de l'intervalle $]2 ; 4[$"
     },
@@ -6704,10 +6704,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": true },
-            { "text": "$x = 1$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false }
+            { "text": "$S=\\mathbb{R}$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false },
+            { "text": "$S=]-\\infty ; 1[ \\cup ]1 ; +\\infty[$", "correct": false }
         ],
         "explanation": "La première parabole est toujours strictement en dessous de la seconde (même sommet mais ordonnées différentes)"
     },
@@ -6725,10 +6725,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": false },
-            { "text": "$x \\in [-1 ; 3]$", "correct": false },
-            { "text": "Pas de solution", "correct": true },
-            { "text": "$x = 1$", "correct": false }
+            { "text": "$S=\\mathbb{R}$", "correct": false },
+            { "text": "$S=[-1 ; 3]$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": true },
+            { "text": "$S=\\{1\\}$", "correct": false }
         ],
         "explanation": "Les deux paraboles ont la même forme mais la première est toujours en dessous de la seconde"
     },
@@ -6746,10 +6746,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "Pas de solution", "correct": false },
-            { "text": "$x \\in ]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false }
+            { "text": "$S=\\mathbb{R}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false },
+            { "text": "$S=]-\\infty ; 2[ \\cup ]2 ; +\\infty[$", "correct": false }
         ],
         "explanation": "Les deux paraboles descendantes ont même sommet mais la première est toujours strictement au-dessus"
     },
@@ -6767,10 +6767,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x \\in \\mathbb{R}$", "correct": true },
-            { "text": "$x \\in [2 ; 4]$", "correct": false },
-            { "text": "$x = 3$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\mathbb{R}$", "correct": true },
+            { "text": "$S=[2 ; 4]$", "correct": false },
+            { "text": "$S=\\{3\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "Les deux paraboles ont la même forme mais la première est toujours au-dessus ou égale à la seconde"
     },
@@ -6788,10 +6788,10 @@
             "label": ""
         },
         "answers": [
-            { "text": "$x = 0$ ou $x = 4$", "correct": true },
-            { "text": "$x = 2$", "correct": false },
-            { "text": "$x = 1$ ou $x = 3$", "correct": false },
-            { "text": "Pas de solution", "correct": false }
+            { "text": "$S=\\{0, 4\\}$", "correct": true },
+            { "text": "$S=\\{2\\}$", "correct": false },
+            { "text": "$S=\\{1, 3\\}$", "correct": false },
+            { "text": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "La parabole montante et la parabole descendante se coupent en $x=0$ et $x=4$"
     },
@@ -13252,10 +13252,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x \\in ]-\\infty; 2[ \\cup ]3; +\\infty[", "correct": true },
-            { "formula": "x \\in ]2; 3[", "correct": false },
-            { "formula": "x \\in [-\\infty; 2] \\cup [3; +\\infty[", "correct": false },
-            { "formula": "x \\in \\mathbb{R}", "correct": false }
+            { "formula": "$S=]-\\infty; 2[ \\cup ]3; +\\infty[$", "correct": true },
+            { "formula": "$S=]2; 3[$", "correct": false },
+            { "formula": "$S=[-\\infty; 2] \\cup [3; +\\infty[$", "correct": false },
+            { "formula": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "$\\Delta = 25 - 24 = 1 > 0$. Racines : $x_1 = 2$ et $x_2 = 3$. Parabole tournée vers le haut ($a=1>0$), donc $x^2 - 5x + 6 > 0$ à l'extérieur des racines : $x \\in ]-\\infty; 2[ \\cup ]3; +\\infty[$."
     },
@@ -13266,10 +13266,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x \\in [1; 3]", "correct": true },
-            { "formula": "x \\in ]-\\infty; 1] \\cup [3; +\\infty[", "correct": false },
-            { "formula": "x \\in ]1; 3[", "correct": false },
-            { "formula": "x \\in \\emptyset", "correct": false }
+            { "formula": "$S=[1; 3]$", "correct": true },
+            { "formula": "$S=]-\\infty; 1] \\cup [3; +\\infty[$", "correct": false },
+            { "formula": "$S=]1; 3[$", "correct": false },
+            { "formula": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "$-2x^2 + 8x - 6 = -2(x^2 - 4x + 3)$. $\\Delta = 16 - 12 = 4 > 0$. Racines : $x_1 = 1$ et $x_2 = 3$. Parabole tournée vers le bas ($a=-2<0$), donc $-2x^2 + 8x - 6 \\geq 0$ entre les racines : $x \\in [1; 3]$."
     },
@@ -13280,10 +13280,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x = -2", "correct": true },
-            { "formula": "x \\in ]-\\infty; -2]", "correct": false },
-            { "formula": "x \\in [-2; +\\infty[", "correct": false },
-            { "formula": "x \\in \\emptyset", "correct": false }
+            { "formula": "$S=\\{-2\\}$", "correct": true },
+            { "formula": "$S=]-\\infty; -2]$", "correct": false },
+            { "formula": "$S=[-2; +\\infty[$", "correct": false },
+            { "formula": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "$x^2 + 4x + 4 = (x+2)^2$. $\\Delta = 0$, racine double : $x_0 = -2$. Parabole tournée vers le haut, donc $(x+2)^2 \\leq 0$ seulement en $x = -2$."
     },
@@ -13294,10 +13294,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x \\in \\emptyset", "correct": true },
-            { "formula": "x \\in \\mathbb{R}", "correct": false },
-            { "formula": "x \\in ]-\\infty; -1[", "correct": false },
-            { "formula": "x \\in ]0; +\\infty[", "correct": false }
+            { "formula": "$S=\\emptyset$", "correct": true },
+            { "formula": "$S=\\mathbb{R}$", "correct": false },
+            { "formula": "$S=]-\\infty; -1[$", "correct": false },
+            { "formula": "$S=]0; +\\infty[$", "correct": false }
         ],
         "explanation": "$\\Delta = 4 - 60 = -56 < 0$. Pas de racine réelle. Parabole tournée vers le haut ($a=3>0$), donc $3x^2 + 2x + 5 > 0$ pour tout $x \\in \\mathbb{R}$. L'inéquation $< 0$ n'a pas de solution."
     },
@@ -13308,10 +13308,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x \\in \\emptyset", "correct": true },
-            { "formula": "x \\in \\mathbb{R}", "correct": false },
-            { "formula": "x \\in ]-\\infty; -3[ \\cup ]-1; +\\infty[", "correct": false },
-            { "formula": "x \\in [-3; -1]", "correct": false }
+            { "formula": "$S=\\emptyset$", "correct": true },
+            { "formula": "$S=\\mathbb{R}$", "correct": false },
+            { "formula": "$S=]-\\infty; -3[ \\cup ]-1; +\\infty[$", "correct": false },
+            { "formula": "$S=[-3; -1]$", "correct": false }
         ],
         "explanation": "$\\Delta = 4 - 12 = -8 < 0$. Pas de racine réelle. Parabole tournée vers le bas ($a=-1<0$), donc $-x^2 - 2x - 3 < 0$ pour tout $x \\in \\mathbb{R}$. L'inéquation $> 0$ n'a pas de solution."
     },
@@ -13322,10 +13322,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x \\in [\\frac{1}{2}; 3]", "correct": true },
-            { "formula": "x \\in ]-\\infty; \\frac{1}{2}] \\cup [3; +\\infty[", "correct": false },
-            { "formula": "x \\in ]\\frac{1}{2}; 3[", "correct": false },
-            { "formula": "x \\in \\mathbb{R}", "correct": false }
+            { "formula": "$S=[\\frac{1}{2}; 3]$", "correct": true },
+            { "formula": "$S=]-\\infty; \\frac{1}{2}] \\cup [3; +\\infty[$", "correct": false },
+            { "formula": "$S=]\\frac{1}{2}; 3[$", "correct": false },
+            { "formula": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "$\\Delta = 49 - 24 = 25 > 0$. $x = \\frac{7 \\pm 5}{4}$. Racines : $x_1 = \\frac{1}{2}$ et $x_2 = 3$. Parabole vers le haut ($a=2>0$), donc $2x^2 - 7x + 3 \\leq 0$ entre les racines : $x \\in [\\frac{1}{2}; 3]$."
     },
@@ -13336,10 +13336,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x = 2", "correct": true },
-            { "formula": "x \\in [2; +\\infty[", "correct": false },
-            { "formula": "x \\in ]-\\infty; 2]", "correct": false },
-            { "formula": "x \\in \\mathbb{R}", "correct": false }
+            { "formula": "$S=\\{2\\}$", "correct": true },
+            { "formula": "$S=[2; +\\infty[$", "correct": false },
+            { "formula": "$S=]-\\infty; 2]$", "correct": false },
+            { "formula": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "$-3x^2 + 12x - 12 = -3(x^2 - 4x + 4) = -3(x-2)^2$. $\\Delta = 0$, racine double : $x_0 = 2$. Parabole vers le bas, donc $-3(x-2)^2 \\geq 0$ seulement en $x = 2$."
     },
@@ -13350,10 +13350,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x \\in ]-\\infty; -3[ \\cup ]3; +\\infty[", "correct": true },
-            { "formula": "x \\in ]-3; 3[", "correct": false },
-            { "formula": "x \\in [-3; 3]", "correct": false },
-            { "formula": "x \\in \\mathbb{R}", "correct": false }
+            { "formula": "$S=]-\\infty; -3[ \\cup ]3; +\\infty[$", "correct": true },
+            { "formula": "$S=]-3; 3[$", "correct": false },
+            { "formula": "$S=[-3; 3]$", "correct": false },
+            { "formula": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "$x^2 - 9 = (x-3)(x+3)$. Racines : $x_1 = -3$ et $x_2 = 3$. Parabole vers le haut ($a=1>0$), donc $x^2 - 9 > 0$ à l'extérieur des racines : $x \\in ]-\\infty; -3[ \\cup ]3; +\\infty[$."
     },
@@ -13364,10 +13364,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x \\in [-2; 2]", "correct": true },
-            { "formula": "x \\in ]-\\infty; -2] \\cup [2; +\\infty[", "correct": false },
-            { "formula": "x \\in ]-2; 2[", "correct": false },
-            { "formula": "x \\in \\emptyset", "correct": false }
+            { "formula": "$S=[-2; 2]$", "correct": true },
+            { "formula": "$S=]-\\infty; -2] \\cup [2; +\\infty[$", "correct": false },
+            { "formula": "$S=]-2; 2[$", "correct": false },
+            { "formula": "$S=\\emptyset$", "correct": false }
         ],
         "explanation": "$4 - x^2 = -(x^2 - 4) = -(x-2)(x+2)$. Racines : $x_1 = -2$ et $x_2 = 2$. Parabole vers le bas ($a=-1<0$), donc $4 - x^2 \\geq 0$ entre les racines : $x \\in [-2; 2]$."
     },
@@ -13378,10 +13378,10 @@
         "theme": "Algèbre",
         "competence": "Résoudre une inéquation du second degré",
         "answers": [
-            { "formula": "x \\in ]0; 4[", "correct": true },
-            { "formula": "x \\in ]-\\infty; 0[ \\cup ]4; +\\infty[", "correct": false },
-            { "formula": "x \\in [0; 4]", "correct": false },
-            { "formula": "x \\in \\mathbb{R}", "correct": false }
+            { "formula": "$S=]0; 4[$", "correct": true },
+            { "formula": "$S=]-\\infty; 0[ \\cup ]4; +\\infty[$", "correct": false },
+            { "formula": "$S=[0; 4]$", "correct": false },
+            { "formula": "$S=\\mathbb{R}$", "correct": false }
         ],
         "explanation": "$x(x-4) = x^2 - 4x$. Racines : $x_1 = 0$ et $x_2 = 4$. Parabole vers le haut ($a=1>0$), donc $x(x-4) < 0$ entre les racines : $x \\in ]0; 4[$."
     }
