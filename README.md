@@ -1,9 +1,10 @@
 # Quiz Mathématiques - Application Web
 
-Une application web interactive pour afficher des quiz mathématiques avec support des formules mathématiques (via KaTeX) et des graphiques de fonctions (via Chart.js).
+Une application web interactive pour les quiz mathématiques et l'apprentissage par flashcards avec répétition espacée (SRS). Support complet des formules mathématiques (KaTeX) et des graphiques de fonctions (Chart.js).
 
 ## Fonctionnalités
 
+### Quiz
 - ✅ Affichage de formules mathématiques élégantes avec KaTeX
 - ✅ Graphiques interactifs de fonctions avec quadrillage
 - ✅ Questions à choix multiples
@@ -15,6 +16,19 @@ Une application web interactive pour afficher des quiz mathématiques avec suppo
 - ✅ Résultats détaillés à la fin du quiz
 - ✅ Design responsive et moderne
 - ✅ **Questions stockées en JSON** pour faciliter l'ajout et la modification
+
+### Flashcards (Système de Répétition Espacée v2)
+- ✅ **Algorithme SRS inspiré d'Anki** pour une mémorisation optimale
+- ✅ **États d'apprentissage** : nouveau → apprentissage → révision (avec réapprentissage)
+- ✅ **Étapes d'apprentissage** : 10 min → 1 jour avant graduation
+- ✅ **Réapprentissage** : retour à 10 min si oublié
+- ✅ **UID stables** : les cartes conservent leur historique même si le contenu est modifié
+- ✅ **File intra-session** : les cartes ratées reviennent après leur délai (pas immédiatement)
+- ✅ **4 niveaux de notation** : À revoir (1) / Difficile (2) / Correct (3) / Facile (4)
+- ✅ **Migration automatique** depuis l'ancien système avec backup
+- ✅ **Logs de debug** pour suivre l'évolution de chaque carte
+- ✅ Filtres par niveau, thème, type et compétence
+- ✅ Modes : Apprentissage (nouvelles cartes) / Révision (cartes à réviser) / Mixte
 
 ## Technologies utilisées
 
@@ -29,21 +43,44 @@ Une application web interactive pour afficher des quiz mathématiques avec suppo
 
 ```
 quizs/
-├── index.html        # Page principale
-├── styles.css        # Feuille de styles
-├── script.js         # Logique de l'application
-├── questions.json    # Base de données des questions
-└── README.md         # Documentation
+├── index.html           # Page principale (quiz)
+├── styles.css           # Feuille de styles (quiz)
+├── script.js            # Logique du quiz
+├── questions.json       # Base de données des questions
+├── flashcards.html      # Page des flashcards
+├── flashcards.js        # Logique SRS et flashcards
+├── flashcards.json      # Base de données des flashcards
+├── admin.html           # Interface d'administration
+├── admin-script.js      # Logique de l'admin
+├── admin-styles.css     # Styles de l'admin
+└── README.md            # Documentation
 ```
 
 ## Comment utiliser
 
+### Quiz
 1. Ouvrez le fichier `index.html` dans votre navigateur web (via serveur HTTP)
 2. Sélectionnez un niveau et un thème
 3. Cliquez sur "Démarrer le quiz"
 4. Répondez aux questions
 5. Naviguez entre les questions avec les boutons
 6. Consultez vos résultats à la fin
+
+### Flashcards
+1. Ouvrez le fichier `flashcards.html` dans votre navigateur web (via serveur HTTP)
+2. Sélectionnez les filtres souhaités (niveau, thème, type, compétence)
+3. Choisissez un mode :
+   - **Apprentissage** : nouvelles cartes uniquement
+   - **Révision** : cartes à réviser aujourd'hui
+   - **Mixte** : combinaison des deux (15 nouvelles max + 60 révisions max)
+4. Cliquez pour retourner la carte
+5. Évaluez votre mémorisation avec les boutons :
+   - **À revoir (1)** : carte oubliée → retour à 10 min
+   - **Difficile (2)** : réponse hésitante → intervalle réduit
+   - **Correct (3)** : réponse correcte → intervalle normal
+   - **Facile (4)** : réponse immédiate → intervalle augmenté
+6. Les cartes ratées reviennent dans la session après leur délai
+7. Consultez vos statistiques à la fin
 
 ## ⚠️ Important : Serveur local requis
 
@@ -66,6 +103,73 @@ python -m http.server 8000
 ```bash
 npx http-server
 ```
+
+## Système de Répétition Espacée (SRS v2)
+
+### Principes de l'algorithme
+
+Le système utilise un algorithme inspiré d'Anki pour optimiser la mémorisation :
+
+#### États des cartes
+1. **Nouveau** : carte jamais étudiée
+2. **Apprentissage** : en cours de mémorisation initiale (étapes : 10 min → 1 jour)
+3. **Révision** : mémorisée, intervalles croissants (2j → 5j → 12j → 30j...)
+4. **Réapprentissage** : oubliée, retour à 10 min
+
+#### Progression
+- **Nouvelles cartes** : 10 min → 1 jour → graduation en révision
+- **Cartes oubliées** : retour à 10 min (réapprentissage)
+- **Facteur d'aisance** : ajusté selon vos réponses (1.3 à 2.8)
+- **Intervalle maximum** : 3650 jours (10 ans)
+
+#### Configuration
+```javascript
+SRS_CONFIG = {
+    learningStepsMins: [10, 1440],      // 10 min, 1 jour
+    relearningStepsMins: [10],           // 10 min
+    easyIntervalDays: 4,                 // Facile : 4 jours
+    goodFirstIntervalDays: 2,            // Bon premier intervalle : 2 jours
+    hardFactor: 1.2,                     // Multiplicateur difficile
+    easeMin: 1.3,                        // Aisance minimale
+    easeMax: 2.8,                        // Aisance maximale
+    maxIntervalDays: 3650,               // 10 ans max
+    newPerSession: 15,                   // 15 nouvelles max/session
+    maxReviewsPerSession: 60,            // 60 révisions max/session
+    maxTotal: 80                         // 80 cartes max/session
+}
+```
+
+#### Migration depuis l'ancien système
+Au premier chargement après mise à jour :
+- Création automatique d'un backup : `flashcardsSRS_backup_[timestamp]`
+- Migration des données historiques vers le nouveau format
+- Génération d'UID stables pour toutes les cartes
+- Conservation de la progression (intervalles, dates d'échéance)
+
+### Format des flashcards (flashcards.json)
+
+```json
+{
+    "level": "2de",
+    "theme": "Ensembles de nombres",
+    "type": "Définition",
+    "front": "Qu'est-ce que ℕ ?",
+    "back": "L'ensemble des **entiers naturels** : 0, 1, 2, 3, ...",
+    "explanation": "ℕ commence à 0 et contient tous les entiers positifs."
+}
+```
+
+**Champs obligatoires** :
+- `level` : niveau scolaire
+- `theme` : thème mathématique
+- `type` : type de flashcard (Définition, Formule, Propriété, etc.)
+- `front` : question (recto)
+- `back` : réponse (verso)
+
+**Champ optionnel** :
+- `explanation` : explication complémentaire
+
+**Support LaTeX** : utilisez la syntaxe KaTeX dans front/back/explanation
 
 ## Ajouter de nouvelles questions
 
