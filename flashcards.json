@@ -1,43 +1,139 @@
 [
     {
-        "level": "1reS",
-        "theme": "Dérivation",
-        "type": "formule",
-        "front": "Dérivée de $x^n$",
-        "back": "$\\frac{d}{dx}(x^n) = nx^{n-1}$",
-        "explanation": "On multiplie par l'exposant puis on diminue l'exposant de 1."
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Ensemble des entiers naturels",
+        "back": "$\\mathbb{N} = \\{0, 1, 2, 3, 4, ...\\}$",
+        "explanation": "Les entiers naturels sont les nombres entiers positifs ou nuls. On commence à 0."
     },
     {
-        "level": "1reS",
-        "theme": "Dérivation",
-        "type": "formule",
-        "front": "Dérivée de $(u+v)$",
-        "back": "$(u+v)' = u' + v'$",
-        "explanation": "La dérivée d'une somme est la somme des dérivées."
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Ensemble des entiers relatifs",
+        "back": "$\\mathbb{Z} = \\{..., -3, -2, -1, 0, 1, 2, 3, ...\\}$",
+        "explanation": "Les entiers relatifs comprennent les entiers positifs, négatifs et zéro. $\\mathbb{N} \\subset \\mathbb{Z}$"
     },
     {
-        "level": "1reS",
-        "theme": "Dérivation",
-        "type": "formule",
-        "front": "Dérivée de $(ku)$ où $k$ est une constante",
-        "back": "$(ku)' = k \\cdot u'$",
-        "explanation": "La dérivée d'un produit par une constante."
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Ensemble des nombres décimaux",
+        "back": "Nombres qui ont une écriture décimale finie",
+        "explanation": "Exemples : $3{,}5$ ; $-2{,}73$ ; $0{,}12879$. On a $\\mathbb{Z} \\subset \\mathbb{D}$"
     },
     {
-        "level": "1reS",
-        "theme": "Dérivation",
-        "type": "formule",
-        "front": "Dérivée d'un produit $(uv)$",
-        "back": "$(uv)' = u'v + uv'$",
-        "explanation": "Formule du produit : dérivée du premier fois le second + premier fois dérivée du second."
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Ensemble des nombres rationnels",
+        "back": "$\\mathbb{Q} = \\left\\{\\frac{a}{b} \\mid a \\in \\mathbb{Z}, b \\in \\mathbb{Z}^*\\right\\}$",
+        "explanation": "Les rationnels sont les nombres qui s'écrivent comme quotient de deux entiers. $\\mathbb{D} \\subset \\mathbb{Q}$"
     },
     {
-        "level": "1reS",
-        "theme": "Dérivation",
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Ensemble des nombres réels",
+        "back": "Noté $\\mathbb{R}$. Tous les nombres de la droite numérique",
+        "explanation": "Les réels comprennent les rationnels et les irrationnels (comme $\\sqrt{2}$, $\\pi$). $\\mathbb{Q} \\subset \\mathbb{R}$"
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "méthode",
+        "front": "Inclusions des ensembles de nombres",
+        "back": "$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{D} \\subset \\mathbb{Q} \\subset \\mathbb{R}$",
+        "explanation": "Chaque ensemble contient le précédent. Tout entier naturel est relatif, tout relatif est décimal, etc."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "méthode",
+        "front": "Addition de fractions de même dénominateur",
+        "back": "$\\frac{a}{c} + \\frac{b}{c} = \\frac{a+b}{c}$",
+        "explanation": "On additionne les numérateurs et on garde le dénominateur commun."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "méthode",
+        "front": "Addition de fractions de dénominateurs différents",
+        "back": "Réduire au même dénominateur puis additionner",
+        "explanation": "On peut utiliser le produit des dénominateurs comme dénominateur commun ou chercher un plus petit multiple commun."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "méthode",
+        "front": "Multiplication de fractions",
+        "back": "$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$",
+        "explanation": "On multiplie les numérateurs entre eux et les dénominateurs entre eux."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "méthode",
+        "front": "Division de fractions",
+        "back": "$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c} = \\frac{ad}{bc}$",
+        "explanation": "Diviser par une fraction revient à multiplier par son inverse."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
         "type": "formule",
-        "front": "Dérivée d'un quotient $\\frac{u}{v}$",
-        "back": "$\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$",
-        "explanation": "Formule du quotient, avec $v \\neq 0$."
+        "front": "Produit de puissances de même base",
+        "back": "$a^m \\times a^n = a^{m+n}$",
+        "explanation": "On additionne les exposants quand on multiplie des puissances de même base."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Quotient de puissances de même base",
+        "back": "$\\frac{a^m}{a^n} = a^{m-n}$",
+        "explanation": "On soustrait les exposants quand on divise des puissances de même base."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Puissance de puissance",
+        "back": "$(a^m)^n = a^{m \\times n}$",
+        "explanation": "On multiplie les exposants quand on élève une puissance à une autre puissance."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Puissance d'un produit",
+        "back": "$(ab)^n = a^n \\times b^n$",
+        "explanation": "La puissance d'un produit est le produit des puissances."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Puissance d'un quotient",
+        "back": "$\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$",
+        "explanation": "La puissance d'un quotient est le quotient des puissances."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Puissance négative",
+        "back": "$a^{-n} = \\frac{1}{a^n}$",
+        "explanation": "Une puissance négative est l'inverse de la puissance positive correspondante."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Coordonnées du vecteur $\\overrightarrow{AB}$",
+        "back": "$\\overrightarrow{AB} = \\begin{pmatrix} x_B - x_A \\\\ y_B - y_A \\end{pmatrix}$",
+        "explanation": "On soustrait les coordonnées du point de départ de celles du point d'arrivée."
     },
     {
         "level": "2de",
@@ -51,47 +147,320 @@
         "level": "2de",
         "theme": "Géométrie",
         "type": "formule",
-        "front": "Distance entre deux points $A(x_A; y_A)$ et $B(x_B; y_B)$",
-        "back": "$AB = \\|\\overrightarrow{AB}\\| = \\sqrt{(x_B - x_A)^2 + (y_B - y_A)^2}$",
-        "explanation": "C'est la norme du vecteur $\\overrightarrow{AB}$."
+        "front": "Déterminant de deux vecteurs $\\vec{u}\\begin{pmatrix}x\\\\y\\end{pmatrix}$ et $\\vec{v}\\begin{pmatrix}x'\\\\y'\\end{pmatrix}$",
+        "back": "$\\det(\\vec{u},\\vec{v}) = x \\cdot y' - y \\cdot x'$",
+        "explanation": "Produit en croix des coordonnées."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "méthode",
+        "front": "Condition pour que trois points $A$, $B$, $C$ soient alignés",
+        "back": "$\\det(\\overrightarrow{AB}, \\overrightarrow{AC}) = 0$",
+        "explanation": "Si le déterminant est nul, les vecteurs sont colinéaires, donc les points sont alignés."
     },
     {
         "level": "2de",
         "theme": "Géométrie",
         "type": "formule",
-        "front": "Coordonnées du milieu $I$ de $[AB]$",
-        "back": "$I\\left(\\frac{x_A + x_B}{2}; \\frac{y_A + y_B}{2}\\right)$",
-        "explanation": "Le milieu a pour coordonnées la moyenne des coordonnées des extrémités."
+        "front": "Équation réduite d'une droite",
+        "back": "$y = mx + p$\n\n$m$ : coefficient directeur\n$p$ : ordonnée à l'origine",
+        "explanation": "Cette forme n'existe que si la droite n'est pas verticale."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Équation cartésienne d'une droite",
+        "back": "$ax + by + c = 0$\n\navec $(a; b) \\neq (0; 0)$",
+        "explanation": "Cette forme existe pour toutes les droites, y compris les droites verticales."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Coefficient directeur d'une droite passant par $A(x_A; y_A)$ et $B(x_B; y_B)$",
+        "back": "$m = \\frac{y_B - y_A}{x_B - x_A}$ (si $x_B \\neq x_A$)",
+        "explanation": "C'est le rapport de la variation verticale sur la variation horizontale."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Équation d'une droite parallèle à l'axe des abscisses",
+        "back": "$y = k$ où $k$ est une constante",
+        "explanation": "Tous les points de la droite ont la même ordonnée. Le coefficient directeur est $m = 0$."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Équation d'une droite parallèle à l'axe des ordonnées",
+        "back": "$x = k$ où $k$ est une constante",
+        "explanation": "Tous les points de la droite ont la même abscisse. Cette droite n'a pas de coefficient directeur (droite verticale)."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "définition",
+        "front": "Définition de la valeur absolue",
+        "back": "$|x| = \\begin{cases} x & \\text{si } x \\geq 0 \\\\ -x & \\text{si } x < 0 \\end{cases}$",
+        "explanation": "La valeur absolue d'un nombre est sa distance à zéro. Elle est toujours positive ou nulle."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Identité remarquable: $(a+b)^2$",
+        "back": "$(a+b)^2 = a^2 + 2ab + b^2$",
+        "explanation": "Le carré d'une somme."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Identité remarquable: $(a-b)^2$",
+        "back": "$(a-b)^2 = a^2 - 2ab + b^2$",
+        "explanation": "Le carré d'une différence."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Identité remarquable: $(a+b)(a-b)$",
+        "back": "$(a+b)(a-b) = a^2 - b^2$",
+        "explanation": "Différence de deux carrés."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "méthode",
+        "front": "Double distributivité: $(a+b)(c+d)$",
+        "back": "$(a+b)(c+d) = ac + ad + bc + bd$",
+        "explanation": "Chaque terme du premier facteur multiplie chaque terme du second facteur."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "Simplification de $\\sqrt{a^2}$",
+        "back": "$\\sqrt{a^2} = |a|$",
+        "explanation": "Si $a \\geq 0$, alors $\\sqrt{a^2} = a$; sinon, $\\sqrt{a^2} = -a$."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "$\\sqrt{a\\times b}$ avec $a \\geq 0$ et $b \\geq 0$",
+        "back": "$\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}$",
+        "explanation": "La racine carrée d'un produit est le produit des racines carrées."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "formule",
+        "front": "$\\sqrt{\\dfrac{a}{b}}$ avec $a \\geq 0$ et $b > 0$",
+        "back": "$\\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}$",
+        "explanation": "La racine carrée d'un quotient est le quotient des racines carrées."
     },
     {
         "level": "2de",
         "theme": "Équations-Inéquations",
         "type": "méthode",
-        "front": "Résoudre une équation du premier degré $ax + b = c$",
-        "back": "1. Soustraire $b$ des deux côtés\n2. diviser par $a$ (si $a \\neq 0$)",
-        "explanation": "On effectue les mêmes opérations des deux côtés de l'égalité."
+        "front": "Résoudre une équation produit nul $A \\times B = 0$",
+        "back": "Un produit est nul si et seulement si **au moins un** des facteurs est nul.\n\nDonc: $A = 0$ **ou** $B = 0$",
+        "explanation": "On résout séparément $A = 0$ et $B = 0$."
     },
     {
         "level": "2de",
         "theme": "Équations-Inéquations",
         "type": "méthode",
-        "front": "Quelle opération sur les inégalités change le sens de l'inégalité ?",
-        "back": "Multiplier ou diviser par un nombre **négatif**",
-        "explanation": "Exemple: $-2x < 6$ devient $x > -3$ (division par -2, donc on inverse)"
-    },{
-        "level": "2de",
-        "theme": "Fonctions",
-        "type": "définition",
-        "front": "Définition: fonction croissante sur un intervalle $I$",
-        "back": "Si $x_1 < x_2$ alors $f(x_1) \\leq f(x_2)$. Autrement dit la fonction conserve l'ordre.",
-        "explanation": "Quand $x$ augmente, $f(x)$ augmente aussi."
+        "front": "Résoudre $x^2 = a$ avec $a > 0$",
+        "back": "$x = \\sqrt{a}$ ou $x = -\\sqrt{a}$\n\nSouvent noté: $x = \\pm\\sqrt{a}$",
+        "explanation": "Il y a toujours deux solutions opposées."
     },
     {
         "level": "2de",
-        "theme": "Fonctions",
-        "type": "définition",
-        "front": "Définition: fonction décroissante sur un intervalle $I$",
-        "back": "Si $x_1 < x_2$ alors $f(x_1) \\geq f(x_2)$. Autrement dit la fonction inverse l'ordre.",
-        "explanation": "Quand $x$ augmente, $f(x)$ diminue."
+        "theme": "Statistiques",
+        "type": "formule",
+        "front": "Coefficient multiplicateur associé à une augmentation de $t\\%$",
+        "back": "$CM = 1 + \\frac{t}{100}$",
+        "explanation": "Exemple: +20% → CM = 1,20"
+    },
+    {
+        "level": "2de",
+        "theme": "Statistiques",
+        "type": "formule",
+        "front": "Coefficient multiplicateur associé à une diminution de $t\\%$",
+        "back": "$CM = 1 - \\frac{t}{100}$",
+        "explanation": "Exemple: -20% → CM = 0,80"
+    },
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "formule",
+        "front": "Dérivée de $\\sqrt{x}$",
+        "back": "$(\\sqrt{x})' = \\frac{1}{2\\sqrt{x}}$",
+        "explanation": "Pour $x > 0$"
+    },
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "formule",
+        "front": "Dérivée de $\\frac{1}{x}$",
+        "back": "$\\left(\\frac{1}{x}\\right)' = -\\frac{1}{x^2}$",
+        "explanation": "Pour $x \\neq 0$"
+    },
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "méthode",
+        "front": "Comment déterminer les variations d'une fonction $f$ ?",
+        "back": "Calculer $f'(x)$ puis étudier son signe sur l'intervalle $I$:\n• Si $f'(x) > 0$ sur $I$, alors $f$ est **croissante** sur $I$\n• Si $f'(x) < 0$ sur $I$, alors $f$ est **décroissante** sur $I$\n• Si $f'(x) = 0$ sur $I$, alors $f$ est **constante** sur $I$",
+        "explanation": "La dérivée donne le sens de variation."
+    },
+    {
+        "level": "1reS",
+        "theme": "Dérivation",
+        "type": "formule",
+        "front": "Abscisse du sommet d'une parabole $f(x) = ax^2 + bx + c$",
+        "back": "$x_{sommet} = -\\frac{b}{2a}$",
+        "explanation": "C'est aussi l'abscisse où $f'(x) = 0$."
+    },
+    {
+        "level": "1reS",
+        "theme": "Algèbre",
+        "type": "formule",
+        "front": "Discriminant d'un polynôme du second degré $ax^2 + bx + c$",
+        "back": "$\\Delta = b^2 - 4ac$",
+        "explanation": "Le discriminant permet de déterminer le nombre de racines."
+    },
+    {
+        "level": "1reS",
+        "theme": "Algèbre",
+        "type": "méthode",
+        "front": "Nombre de racines d'un polynôme selon le signe de $\\Delta$",
+        "back": "• Si $\\Delta > 0$ : **2 racines** distinctes\n• Si $\\Delta = 0$ : **1 racine** double\n• Si $\\Delta < 0$ : **aucune racine** réelle",
+        "explanation": "Le discriminant détermine le nombre de solutions."
+    },
+    {
+        "level": "1reS",
+        "theme": "Algèbre",
+        "type": "formule",
+        "front": "Formule des racines d'un polynôme du second degré (si $\\Delta \\geq 0$)",
+        "back": "$x_1 = \\frac{-b - \\sqrt{\\Delta}}{2a}$ et $x_2 = \\frac{-b + \\sqrt{\\Delta}}{2a}$",
+        "explanation": "Si $\\Delta = 0$, les deux racines sont égales."
+    },
+    {
+        "level": "1reS",
+        "theme": "Algèbre",
+        "type": "formule",
+        "front": "Forme canonique d'un polynôme du second degré",
+        "back": "$f(x) = a(x - \\alpha)^2 + \\beta$\n\navec $\\alpha = -\\frac{b}{2a}$ et $\\beta = f(\\alpha)$",
+        "explanation": "Le sommet de la parabole est $S(\\alpha; \\beta)$."
+    },
+    {
+        "level": "1reS",
+        "theme": "Trigonométrie",
+        "type": "formule",
+        "front": "Valeurs de $\\cos(0)$ et $\\sin(0)$",
+        "back": "$\\cos(0) = 1$\n\n$\\sin(0) = 0$",
+        "explanation": "Angles remarquables du cercle trigonométrique."
+    },
+    {
+        "level": "1reS",
+        "theme": "Trigonométrie",
+        "type": "formule",
+        "front": "Valeurs de $\\cos\\left(\\frac{\\pi}{6}\\right)$ et $\\sin\\left(\\frac{\\pi}{6}\\right)$",
+        "back": "$\\cos\\left(\\frac{\\pi}{6}\\right) = \\frac{\\sqrt{3}}{2}$\n\n$\\sin\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{2}$",
+        "explanation": "Soit 30°"
+    },
+    {
+        "level": "1reS",
+        "theme": "Trigonométrie",
+        "type": "formule",
+        "front": "Valeurs de $\\cos\\left(\\frac{\\pi}{4}\\right)$ et $\\sin\\left(\\frac{\\pi}{4}\\right)$",
+        "back": "$\\cos\\left(\\frac{\\pi}{4}\\right) = \\frac{\\sqrt{2}}{2}$\n\n$\\sin\\left(\\frac{\\pi}{4}\\right) = \\frac{\\sqrt{2}}{2}$",
+        "explanation": "Soit 45°"
+    },
+    {
+        "level": "1reS",
+        "theme": "Trigonométrie",
+        "type": "formule",
+        "front": "Valeurs de $\\cos\\left(\\frac{\\pi}{3}\\right)$ et $\\sin\\left(\\frac{\\pi}{3}\\right)$",
+        "back": "$\\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}$\n\n$\\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}$",
+        "explanation": "Soit 60°"
+    },
+    {
+        "level": "1reS",
+        "theme": "Trigonométrie",
+        "type": "formule",
+        "front": "Valeurs de $\\cos\\left(\\frac{\\pi}{2}\\right)$ et $\\sin\\left(\\frac{\\pi}{2}\\right)$",
+        "back": "$\\cos\\left(\\frac{\\pi}{2}\\right) = 0$\n\n$\\sin\\left(\\frac{\\pi}{2}\\right) = 1$",
+        "explanation": "Soit 90°"
+    },
+    {
+        "level": "1reS",
+        "theme": "Trigonométrie",
+        "type": "formule",
+        "front": "Formule fondamentale de la trigonométrie",
+        "back": "$\\cos^2(x) + \\sin^2(x) = 1$",
+        "explanation": "Valable pour tout angle $x$."
+    },
+    {
+        "level": "1reS",
+        "theme": "Trigonométrie",
+        "type": "formule",
+        "front": "Période des fonctions cosinus et sinus",
+        "back": "Période $= 2\\pi$\n\n$\\cos(x + 2\\pi) = \\cos(x)$\n$\\sin(x + 2\\pi) = \\sin(x)$",
+        "explanation": "Les valeurs des fonctions se répètent tous les $2\\pi$ radians."
+    },
+    {
+        "level": "1reS",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Produit scalaire avec les coordonnées: $\\vec{u}\\begin{pmatrix}x\\\\y\\end{pmatrix} \\cdot \\vec{v}\\begin{pmatrix}x'\\\\y'\\end{pmatrix}$",
+        "back": "$\\vec{u} \\cdot \\vec{v} = x \\cdot x' + y \\cdot y'$",
+        "explanation": "Somme des produits des coordonnées."
+    },
+    {
+        "level": "1reS",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Produit scalaire avec norme et angle",
+        "back": "$\\vec{u} \\cdot \\vec{v} = \\|\\vec{u}\\| \\times \\|\\vec{v}\\| \\times \\cos(\\theta)$\n\navec $\\theta$ la mesure de l'angle  géométrique entre les deux vecteurs",
+        "explanation": "Formule géométrique du produit scalaire."
+    },
+    {
+        "level": "1reS",
+        "theme": "Géométrie",
+        "type": "méthode",
+        "front": "Condition d'orthogonalité de deux vecteurs",
+        "back": "$\\vec{u} \\perp \\vec{v} \\Leftrightarrow \\vec{u} \\cdot \\vec{v} = 0$",
+        "explanation": "Deux vecteurs sont perpendiculaires si leur produit scalaire est nul."
+    },
+    {
+        "level": "1reS",
+        "theme": "Géométrie",
+        "type": "formule",
+        "front": "Théorème d'Al-Kashi",
+        "back": "Dans un triangle $ABC$:\n\n$BC^2 = AB^2 + AC^2 - 2 \\cdot AB \\cdot AC \\cdot \\cos(\\widehat{BAC})$",
+        "explanation": "Généralisation du théorème de Pythagore."
+    },
+    {
+        "level": "1reS",
+        "theme": "Probabilités",
+        "type": "formule",
+        "front": "Probabilité conditionnelle $P_A(B)$",
+        "back": "$P_A(B) = \\frac{P(A \\cap B)}{P(A)}$ avec $P(A) \\neq 0$",
+        "explanation": "Probabilité que $B$ se réalise sachant que $A$ est réalisé."
+    },
+    {
+        "level": "1reS",
+        "theme": "Probabilités",
+        "type": "formule",
+        "front": "Formule des probabilités totales",
+        "back": "Si $A_1, A_2, ..., A_n$ forment une partition de l'univers:\n\n$P(B) = P(A_1) \\cdot P_{A_1}(B) + P(A_2) \\cdot P_{A_2}(B) + ... + P(A_n) \\cdot P_{A_n}(B)$",
+        "explanation": "Permet de calculer la probabilité de $B$ en fonction des événements $A_i$."
     }
 ]
