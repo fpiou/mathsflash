@@ -414,7 +414,7 @@
             { "text": "$y = 5x + 8$", "correct": true },
             { "text": "$y = -5x - 2$", "correct": false },
             { "text": "$y = 2x - 2$", "correct": false },
-            { "text": "$y = 5x - 2$", "correct": false }
+            { "text": "$y = 2x + 5$", "correct": false }
         ],
         "explanation": "Une droite parallèle doit avoir le même coefficient directeur ($5$) mais une ordonnée à l'origine différente. Seule $y = 5x + 8$ convient."
     },
