@@ -98,6 +98,30 @@
     {
         "level": "2de",
         "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels supérieurs ou égaux à $a$",
+        "back": "$[a; +\\infty[ = \\{x \\in \\mathbb{R} \\mid x \\geqslant a\\}$",
+        "explanation": "Tous les réels supérieurs ou égaux à $a$. L'infini est toujours avec un crochet ouvert."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels inférieurs à $b$",
+        "back": "$]-\\infty; b[ = \\{x \\in \\mathbb{R} \\mid x < b\\}$",
+        "explanation": "Tous les réels inférieurs à $b$. L'infini est toujours avec un crochet ouvert."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
+        "type": "définition",
+        "front": "Notation intervalle pour l'ensemble des réels supérieurs à $a$",
+        "back": "$]a; +\\infty[ = \\{x \\in \\mathbb{R} \\mid x > a\\}$",
+        "explanation": "Tous les réels supérieurs à $a$. L'infini est toujours avec un crochet ouvert."
+    },
+    {
+        "level": "2de",
+        "theme": "Nombres",
         "type": "méthode",
         "front": "Comment déterminer si un nombre rationnel est décimal ?",
         "back": "Écrire la fraction sous forme irréductible $\\frac{a}{b}$. Elle est décimale si et seulement si la décomposition en facteurs premiers de $b$ ne contient que des facteurs 2 et/ou 5.",
@@ -211,6 +235,14 @@
         "level": "2de",
         "theme": "Géométrie",
         "type": "formule",
+        "front": "Relation de Chasles",
+        "back": "Pour tous points $A$, $B$ et $C$ :\n\n$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$",
+        "explanation": "Cette relation fondamentale permet de décomposer un vecteur en somme de vecteurs intermédiaires. Elle est valable pour tous points, même non alignés."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "formule",
         "front": "Coordonnées du vecteur $\\overrightarrow{AB}$",
         "back": "$\\overrightarrow{AB} = \\begin{pmatrix} x_B - x_A \\\\ y_B - y_A \\end{pmatrix}$",
         "explanation": "On soustrait les coordonnées du point de départ de celles du point d'arrivée."
@@ -238,6 +270,14 @@
         "front": "Condition pour que trois points $A$, $B$, $C$ soient alignés",
         "back": "$\\det(\\overrightarrow{AB}, \\overrightarrow{AC}) = 0$",
         "explanation": "Si le déterminant est nul, les vecteurs sont colinéaires, donc les points sont alignés."
+    },
+    {
+        "level": "2de",
+        "theme": "Géométrie",
+        "type": "méthode",
+        "front": "Condition pour que deux droites $(AB)$ et $(CD)$ soient parallèles",
+        "back": "$\\det(\\overrightarrow{AB}, \\overrightarrow{CD}) = 0$",
+        "explanation": "Si le déterminant est nul, les vecteurs sont colinéaires, donc les droites sont parallèles."
     },
     {
         "level": "2de",
