@@ -140,6 +140,83 @@ class SkillsTracker {
 
 const skillsTracker = new SkillsTracker();
 
+// Fonction pour afficher l'animation de passage de niveau
+function showLevelUpAnimation(level, maxLevel, validatedCount, totalCount, isMastered = false) {
+    // Créer l'overlay d'animation
+    const overlay = document.createElement('div');
+    overlay.className = 'level-up-animation';
+    
+    // Créer le contenu
+    const content = document.createElement('div');
+    content.className = 'level-up-content';
+    
+    // Adapter l'apparence pour la maîtrise complète
+    if (isMastered) {
+        content.style.background = 'linear-gradient(135deg, #28a745 0%, #20c997 50%, #28a745 100%)';
+        content.style.boxShadow = '0 0 50px rgba(40, 167, 69, 0.8), 0 0 100px rgba(40, 167, 69, 0.5)';
+    }
+    
+    // Rayons lumineux
+    const lightRays = document.createElement('div');
+    lightRays.className = 'light-rays';
+    content.appendChild(lightRays);
+    
+    // Badge étoile (ou trophée pour maîtrise complète)
+    const badge = document.createElement('div');
+    badge.className = 'level-up-badge';
+    badge.textContent = isMastered ? '🏆' : '⭐';
+    content.appendChild(badge);
+    
+    // Titre
+    const title = document.createElement('div');
+    title.className = 'level-up-title';
+    title.textContent = isMastered ? 'COMPÉTENCE MAÎTRISÉE !' : 'NIVEAU SUPÉRIEUR !';
+    content.appendChild(title);
+    
+    // Sous-titre avec le niveau
+    const subtitle = document.createElement('div');
+    subtitle.className = 'level-up-subtitle';
+    subtitle.textContent = `Niveau ${level}/${maxLevel}`;
+    content.appendChild(subtitle);
+    
+    // Détails
+    const details = document.createElement('div');
+    details.className = 'level-up-details';
+    details.textContent = `${validatedCount}/${totalCount} questions validées`;
+    content.appendChild(details);
+    
+    // Créer des confettis (plus nombreux pour la maîtrise complète)
+    const confettiCount = isMastered ? 100 : 50;
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.animationDelay = Math.random() * 0.5 + 's';
+        confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        content.appendChild(confetti);
+    }
+    
+    overlay.appendChild(content);
+    document.body.appendChild(overlay);
+    
+    // Retirer l'animation après 2.5 secondes (3 secondes pour maîtrise complète)
+    const displayDuration = isMastered ? 3000 : 2500;
+    setTimeout(() => {
+        overlay.style.animation = 'fadeIn 0.3s ease-out reverse';
+        setTimeout(() => {
+            overlay.remove();
+        }, 300);
+    }, displayDuration);
+    
+    // Permettre de cliquer pour fermer l'animation
+    overlay.addEventListener('click', () => {
+        overlay.style.animation = 'fadeIn 0.3s ease-out reverse';
+        setTimeout(() => {
+            overlay.remove();
+        }, 300);
+    });
+}
+
 // Fonction pour mélanger un tableau aléatoirement (algorithme Fisher-Yates)
 function shuffleArray(array) {
     const shuffled = [...array];
@@ -806,10 +883,14 @@ function selectAnswer(index) {
             
             if (isNewValidation) {
                 if (skillsTracker.isSkillMastered(currentCompetence)) {
+                    // Afficher une animation spéciale pour la maîtrise complète
+                    showLevelUpAnimation(skill.level, skill.maxLevel, validatedCount, totalCount, true);
                     feedback.innerHTML += `<br><span class="skill-mastered">🏆 Compétence totalement maîtrisée ! Niveau ${skill.level}/${skill.maxLevel} (${validatedCount}/${totalCount} questions)</span>`;
                 } else if (skill.level > 0) {
                     const previousLevel = Math.floor((skill.successes - 1) / 3);
                     if (skill.level > previousLevel) {
+                        // Afficher l'animation de passage de niveau
+                        showLevelUpAnimation(skill.level, skill.maxLevel, validatedCount, totalCount, false);
                         feedback.innerHTML += `<br><span class="skill-level-up">⭐ Niveau supérieur ! Niveau ${skill.level}/${skill.maxLevel} (${validatedCount}/${totalCount} questions validées)</span>`;
                     } else {
                         feedback.innerHTML += `<br><span class="skill-progress">📈 Progression : Niveau ${skill.level}/${skill.maxLevel} - ${validatedCount}/${totalCount} questions (${skill.successes % 3}/3 pour le prochain niveau)</span>`;

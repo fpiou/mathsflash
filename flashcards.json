@@ -235,8 +235,7 @@
         "level": "2de",
         "theme": "Géométrie",
         "type": "formule",
-        "front": "Relation de Chasles",
-        "back": "Pour tous points $A$, $B$ et $C$ :\n\n$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$",
+        "front": "Relation de Chasles","back": "Pour tous points $A$, $B$ et $C$ :\n\n$\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC}$",
         "explanation": "Cette relation fondamentale permet de décomposer un vecteur en somme de vecteurs intermédiaires. Elle est valable pour tous points, même non alignés."
     },
     {
@@ -521,6 +520,22 @@
     },
     {
         "level": "1reS",
+        "theme": "Fonctions",
+        "type": "définition",
+        "front": "Exemple de fonction du second degré: $f(x) = x^2 - 2x - 3$",
+        "back": "Forme développée: $f(x) = x^2 - 2x - 3$\n\nForme factorisée: $f(x) = (x-3)(x+1)$\n\nRacines: $x_1 = -1$ et $x_2 = 3$\n\nSommet: $S(1; -4)$",
+        "backGraphFunction": "x*x - 2*x - 3",
+        "backGraphParams": {
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 7,
+            "label": "f(x) = x² - 2x - 3"
+        },
+        "explanation": "Cette parabole s'ouvre vers le haut ($a=1>0$), coupe l'axe des abscisses en $-1$ et $3$, et admet un minimum en $(1; -4)$."
+    },
+    {
+        "level": "1reS",
         "theme": "Trigonométrie",
         "type": "formule",
         "front": "Valeurs de $\\cos(0)$ et $\\sin(0)$",
@@ -558,6 +573,30 @@
         "front": "Valeurs de $\\cos\\left(\\frac{\\pi}{2}\\right)$ et $\\sin\\left(\\frac{\\pi}{2}\\right)$",
         "back": "$\\cos\\left(\\frac{\\pi}{2}\\right) = 0$\n\n$\\sin\\left(\\frac{\\pi}{2}\\right) = 1$",
         "explanation": "Soit 90°"
+    },
+    {
+        "level": "1reS",
+        "theme": "Trigonométrie",
+        "type": "définition",
+        "front": "Courbes des fonctions sinus et cosinus",
+        "frontGraphFunction": ["Math.sin(x)", "Math.cos(x)"],
+        "frontGraphParams": {
+            "xMin": -6.28,
+            "xMax": 6.28,
+            "yMin": -1.5,
+            "yMax": 1.5,
+            "label": "sin et cos"
+        },
+        "back": "**Fonction sinus:** courbe en bleu\n- Oscillation entre $-1$ et $1$\n- Période: $2\\pi$\n- $\\sin(0) = 0$\n\n**Fonction cosinus:** courbe en rose\n- Oscillation entre $-1$ et $1$\n- Période: $2\\pi$\n- $\\cos(0) = 1$",
+        "backGraphFunction": ["Math.sin(x)", "Math.cos(x)"],
+        "backGraphParams": {
+            "xMin": -6.28,
+            "xMax": 6.28,
+            "yMin": -1.5,
+            "yMax": 1.5,
+            "label": "sin et cos"
+        },
+        "explanation": "Les deux fonctions sont **périodiques** et **décalées** d'un quart de période ($\\frac{\\pi}{2}$). On note que $\\cos(x) = \\sin(x + \\frac{\\pi}{2})$."
     },
     {
         "level": "1reS",

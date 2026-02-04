@@ -446,3 +446,20 @@ header h1 {
     margin: 1em 0;
 }
 
+/* Graphiques */
+.graph-container {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    max-height: 280px;
+}
+
+.graph-container canvas {
+    max-width: 100%;
+    max-height: 250px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+}

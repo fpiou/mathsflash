@@ -1056,8 +1056,8 @@
         "theme": "Géométrie",
         "competence": "Déterminer si deux droites sont parallèles",
         "answers": [
-            { "text": "Oui", "correct": true },
-            { "text": "Non", "correct": false }
+            { "text": "Non", "correct": true },
+            { "text": "Oui", "correct": false }
         ],
         "explanation": "$\\overrightarrow{AB}\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$ et $\\overrightarrow{CD}\\begin{pmatrix} 4 \\\\ -8 \\end{pmatrix}$. $\\det(\\overrightarrow{AB}, \\overrightarrow{CD}) = 2 \\times (-8) - (-3) \\times 4 = -16 + 12 = -4 \\neq 0$. Les droites ne sont pas parallèles."
     },
@@ -1078,8 +1078,8 @@
         "theme": "Géométrie",
         "competence": "Déterminer si deux droites sont parallèles",
         "answers": [
-            { "text": "Non", "correct": true },
-            { "text": "Oui", "correct": false }
+            { "text": "Oui", "correct": true },
+            { "text": "Non", "correct": false }
         ],
         "explanation": "$\\overrightarrow{AB}\\begin{pmatrix} 3 \\\\ 3 \\end{pmatrix}$ et $\\overrightarrow{CD}\\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}$. $\\det(\\overrightarrow{AB}, \\overrightarrow{CD}) = 3 \\times 4 - 3 \\times 4 = 0$. Les droites sont parallèles."
     },

@@ -10,6 +10,8 @@ let sessionStats = {
     ratings: []
 };
 let intraSessionQueue = []; // File pour les cartes à revoir dans la session
+let frontChartInstance = null; // Instance du graphique du recto
+let backChartInstance = null; // Instance du graphique du verso
 
 // Configuration SRS v2
 const SRS_CONFIG = {
@@ -154,6 +156,308 @@ function convertMarkdown(text) {
     
     return text;
 }
+
+// Fonction pour parser les fonctions mathématiques des graphiques
+function parseFunction(fnString) {
+    // Remplacer les opérations mathématiques courantes
+    fnString = fnString.replace(/Math\./g, 'Math.');
+    fnString = fnString.replace(/pi/gi, 'Math.PI');
+    
+    // Créer une fonction à partir de la chaîne
+    return new Function('x', `return ${fnString};`);
+}
+
+// Fonction pour dessiner un graphique dans un canvas
+function drawGraph(graphData, canvasId) {
+    const canvas = document.getElementById(canvasId);
+    const ctx = canvas.getContext('2d');
+    
+    // Détruire l'instance précédente si elle existe
+    if (canvasId === 'front-graph-canvas' && frontChartInstance) {
+        frontChartInstance.destroy();
+        frontChartInstance = null;
+    } else if (canvasId === 'back-graph-canvas' && backChartInstance) {
+        backChartInstance.destroy();
+        backChartInstance = null;
+    }
+    
+    // Gérer les différents types de graphiques
+    if (graphData.type === 'vectors') {
+        drawVectorGraph(graphData, canvasId);
+        return;
+    }
+    
+    // Générer les datasets pour les fonctions
+    const datasets = [];
+    const colors = ['#667eea', '#f093fb', '#4facfe', '#43e97b', '#fa709a'];
+    
+    if (graphData.functions) {
+        // Plusieurs fonctions
+        const functionLabels = ['f', 'g', 'h', 'i', 'j'];
+        graphData.functions.forEach((func, index) => {
+            const step = (graphData.xMax - graphData.xMin) / 100;
+            const dataPoints = [];
+            
+            for (let x = graphData.xMin; x <= graphData.xMax; x += step) {
+                dataPoints.push({
+                    x: x,
+                    y: func(x)
+                });
+            }
+            
+            datasets.push({
+                label: functionLabels[index] || `Fonction ${index + 1}`,
+                data: dataPoints,
+                borderColor: colors[index % colors.length],
+                backgroundColor: `${colors[index % colors.length]}20`,
+                borderWidth: 2,
+                pointRadius: 0,
+                tension: 0.4
+            });
+        });
+    } else if (graphData.function) {
+        // Une seule fonction
+        const step = (graphData.xMax - graphData.xMin) / 100;
+        const dataPoints = [];
+        
+        for (let x = graphData.xMin; x <= graphData.xMax; x += step) {
+            dataPoints.push({
+                x: x,
+                y: graphData.function(x)
+            });
+        }
+        
+        datasets.push({
+            label: graphData.label || 'f',
+            data: dataPoints,
+            borderColor: '#667eea',
+            backgroundColor: 'rgba(102, 126, 234, 0.1)',
+            borderWidth: 2,
+            pointRadius: 0,
+            tension: 0.4
+        });
+    }
+    
+    const chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 2.5,
+            scales: {
+                x: {
+                    type: 'linear',
+                    min: graphData.xMin,
+                    max: graphData.xMax,
+                    grid: {
+                        color: (context) => context.tick.value === 0 ? '#000' : '#e0e0e0',
+                        lineWidth: (context) => context.tick.value === 0 ? 2 : 1
+                    },
+                    ticks: {
+                        callback: function(value) {
+                            if (Math.abs(value / Math.PI - Math.round(value / Math.PI)) < 0.01) {
+                                const piMultiple = Math.round(value / Math.PI);
+                                if (piMultiple === 0) return '0';
+                                if (piMultiple === 1) return 'π';
+                                if (piMultiple === -1) return '-π';
+                                return piMultiple + 'π';
+                            }
+                            return value.toFixed(1);
+                        }
+                    }
+                },
+                y: {
+                    type: 'linear',
+                    min: graphData.yMin,
+                    max: graphData.yMax,
+                    grid: {
+                        color: (context) => context.tick.value === 0 ? '#000' : '#e0e0e0',
+                        lineWidth: (context) => context.tick.value === 0 ? 2 : 1
+                    },
+                    ticks: {
+                        callback: function(value) {
+                            return value.toFixed(1);
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top'
+                },
+                tooltip: {
+                    enabled: true,
+                    callbacks: {
+                        label: function(context) {
+                            return `(${context.parsed.x.toFixed(2)}, ${context.parsed.y.toFixed(2)})`;
+                        }
+                    }
+                }
+            }
+        }
+    });
+    
+    // Stocker l'instance
+    if (canvasId === 'front-graph-canvas') {
+        frontChartInstance = chartInstance;
+    } else if (canvasId === 'back-graph-canvas') {
+        backChartInstance = chartInstance;
+    }
+}
+
+// Fonction pour dessiner un graphique de vecteurs avec Canvas natif
+function drawVectorGraph(graphData, canvasId) {
+    const canvas = document.getElementById(canvasId);
+    const ctx = canvas.getContext('2d');
+    
+    // Définir la taille du canvas
+    canvas.width = canvas.offsetWidth;
+    canvas.height = Math.min(canvas.offsetWidth / 2, 250);
+    
+    // Calculer les échelles
+    const xMin = graphData.xMin || 0;
+    const xMax = graphData.xMax || 5;
+    const yMin = graphData.yMin || 0;
+    const yMax = graphData.yMax || 5;
+    
+    const padding = 40;
+    const scaleX = (canvas.width - 2 * padding) / (xMax - xMin);
+    const scaleY = (canvas.height - 2 * padding) / (yMax - yMin);
+    
+    // Fonction pour convertir coordonnées mathématiques en coordonnées canvas
+    const toCanvasX = (x) => padding + (x - xMin) * scaleX;
+    const toCanvasY = (y) => canvas.height - padding - (y - yMin) * scaleY;
+    
+    // Effacer le canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // Dessiner la grille
+    ctx.strokeStyle = '#e0e0e0';
+    ctx.lineWidth = 0.5;
+    for (let x = Math.ceil(xMin); x <= xMax; x++) {
+        ctx.beginPath();
+        ctx.moveTo(toCanvasX(x), padding);
+        ctx.lineTo(toCanvasX(x), canvas.height - padding);
+        ctx.stroke();
+    }
+    for (let y = Math.ceil(yMin); y <= yMax; y++) {
+        ctx.beginPath();
+        ctx.moveTo(padding, toCanvasY(y));
+        ctx.lineTo(canvas.width - padding, toCanvasY(y));
+        ctx.stroke();
+    }
+    
+    // Dessiner les axes
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 2;
+    
+    // Axe X (si y=0 est visible)
+    if (yMin <= 0 && yMax >= 0) {
+        ctx.beginPath();
+        ctx.moveTo(padding, toCanvasY(0));
+        ctx.lineTo(canvas.width - padding, toCanvasY(0));
+        ctx.stroke();
+    }
+    
+    // Axe Y (si x=0 est visible)
+    if (xMin <= 0 && xMax >= 0) {
+        ctx.beginPath();
+        ctx.moveTo(toCanvasX(0), padding);
+        ctx.lineTo(toCanvasX(0), canvas.height - padding);
+        ctx.stroke();
+    }
+    
+    // Dessiner les graduations et labels des axes
+    ctx.fillStyle = '#666';
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'center';
+    for (let x = Math.ceil(xMin); x <= xMax; x++) {
+        if (x !== 0) {
+            ctx.fillText(x.toString(), toCanvasX(x), canvas.height - padding + 20);
+        }
+    }
+    ctx.textAlign = 'right';
+    for (let y = Math.ceil(yMin); y <= yMax; y++) {
+        if (y !== 0) {
+            ctx.fillText(y.toString(), padding - 10, toCanvasY(y) + 4);
+        }
+    }
+    
+    // Dessiner les vecteurs (flèches)
+    if (graphData.vectors) {
+        graphData.vectors.forEach((vector, index) => {
+            const x1 = toCanvasX(vector.from.x);
+            const y1 = toCanvasY(vector.from.y);
+            const x2 = toCanvasX(vector.to.x);
+            const y2 = toCanvasY(vector.to.y);
+            
+            ctx.strokeStyle = vector.color || '#667eea';
+            ctx.fillStyle = vector.color || '#667eea';
+            ctx.lineWidth = 3;
+            
+            // Dessiner la ligne
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.stroke();
+            
+            // Dessiner la pointe de la flèche
+            const angle = Math.atan2(y2 - y1, x2 - x1);
+            const arrowLength = 15;
+            const arrowAngle = Math.PI / 6;
+            
+            ctx.beginPath();
+            ctx.moveTo(x2, y2);
+            ctx.lineTo(
+                x2 - arrowLength * Math.cos(angle - arrowAngle),
+                y2 - arrowLength * Math.sin(angle - arrowAngle)
+            );
+            ctx.moveTo(x2, y2);
+            ctx.lineTo(
+                x2 - arrowLength * Math.cos(angle + arrowAngle),
+                y2 - arrowLength * Math.sin(angle + arrowAngle)
+            );
+            ctx.stroke();
+            
+            // Label du vecteur (au milieu)
+            if (vector.label) {
+                const midX = (x1 + x2) / 2;
+                const midY = (y1 + y2) / 2;
+                ctx.fillStyle = vector.color || '#667eea';
+                ctx.font = 'bold 14px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText(vector.label, midX, midY - 8);
+            }
+        });
+    }
+    
+    // Dessiner les points
+    if (graphData.points) {
+        graphData.points.forEach((point) => {
+            const x = toCanvasX(point.x);
+            const y = toCanvasY(point.y);
+            
+            // Point
+            ctx.fillStyle = '#333';
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Label du point
+            if (point.label) {
+                ctx.fillStyle = '#000';
+                ctx.font = 'bold 16px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText(point.label, x, y - 12);
+            }
+        });
+    }
+}
+
 
 // Système de répétition espacée v2 (Anki-like)
 class SRSManager {
@@ -515,11 +819,71 @@ async function loadFlashcards() {
         const response = await fetch('flashcards.json');
         const cardsData = await response.json();
         
-        // Générer/récupérer les UID stables pour chaque carte
-        allFlashcards = cardsData.map(card => ({
-            ...card,
-            uid: uidManager.getOrCreateUID(card)
-        }));
+        // Générer/récupérer les UID stables pour chaque carte et traiter les graphiques
+        allFlashcards = cardsData.map(card => {
+            const processedCard = { 
+                ...card,
+                uid: uidManager.getOrCreateUID(card)
+            };
+            
+            // Traiter le graphique du recto si présent
+            if (card.frontGraphFunction) {
+                if (Array.isArray(card.frontGraphFunction)) {
+                    processedCard.frontGraph = {
+                        type: 'line',
+                        functions: card.frontGraphFunction.map(f => parseFunction(f)),
+                        ...card.frontGraphParams
+                    };
+                } else {
+                    processedCard.frontGraph = {
+                        type: 'line',
+                        function: parseFunction(card.frontGraphFunction),
+                        ...card.frontGraphParams
+                    };
+                }
+                delete processedCard.frontGraphFunction;
+                delete processedCard.frontGraphParams;
+            }
+            
+            // Traiter les graphiques vectoriels du recto
+            if (card.frontGraphData) {
+                processedCard.frontGraph = {
+                    type: 'vectors',
+                    ...card.frontGraphData
+                };
+                delete processedCard.frontGraphData;
+            }
+            
+            // Traiter le graphique du verso si présent
+            if (card.backGraphFunction) {
+                if (Array.isArray(card.backGraphFunction)) {
+                    processedCard.backGraph = {
+                        type: 'line',
+                        functions: card.backGraphFunction.map(f => parseFunction(f)),
+                        ...card.backGraphParams
+                    };
+                } else {
+                    processedCard.backGraph = {
+                        type: 'line',
+                        function: parseFunction(card.backGraphFunction),
+                        ...card.backGraphParams
+                    };
+                }
+                delete processedCard.backGraphFunction;
+                delete processedCard.backGraphParams;
+            }
+            
+            // Traiter les graphiques vectoriels du verso
+            if (card.backGraphData) {
+                processedCard.backGraph = {
+                    type: 'vectors',
+                    ...card.backGraphData
+                };
+                delete processedCard.backGraphData;
+            }
+            
+            return processedCard;
+        });
         
         debugLog(`Loaded ${allFlashcards.length} flashcards with UIDs`);
         populateFilters();
@@ -658,6 +1022,32 @@ function showCardByIndex(index) {
     document.getElementById('card-theme-back').textContent = card.theme;
     backContent.innerHTML = `<div>${convertMarkdown(card.back)}</div>`;
     explanation.innerHTML = card.explanation ? `<strong>💡 Info:</strong> ${convertMarkdown(card.explanation)}` : '';
+
+    // Gérer les graphiques du recto
+    const frontGraphContainer = document.getElementById('front-graph-container');
+    if (card.frontGraph) {
+        frontGraphContainer.style.display = 'block';
+        drawGraph(card.frontGraph, 'front-graph-canvas');
+    } else {
+        frontGraphContainer.style.display = 'none';
+        if (frontChartInstance) {
+            frontChartInstance.destroy();
+            frontChartInstance = null;
+        }
+    }
+
+    // Gérer les graphiques du verso
+    const backGraphContainer = document.getElementById('back-graph-container');
+    if (card.backGraph) {
+        backGraphContainer.style.display = 'block';
+        drawGraph(card.backGraph, 'back-graph-canvas');
+    } else {
+        backGraphContainer.style.display = 'none';
+        if (backChartInstance) {
+            backChartInstance.destroy();
+            backChartInstance = null;
+        }
+    }
 
     // Préparer les boutons selon le mode
     if (currentMode !== 'browse') {
