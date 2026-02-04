@@ -52,7 +52,7 @@
         "theme": "Nombres",
         "type": "définition",
         "front": "Notation intervalle pour l'ensemble des réels compris entre $a$ et $b$ (bornes incluses)",
-        "back": "$[a; b] = \\{x \\in \\mathbb{R} \\mid a \\leq x \\leq b\\}$",
+        "back": "$[a; b] = \\{x \\in \\mathbb{R} \\mid a \\leqslant x \\leqslant b\\}$",
         "explanation": "Tous les réels entre $a$ et $b$, bornes **incluses**. Les crochets fermés indiquent l'inclusion."
     },
     {
@@ -68,7 +68,7 @@
         "theme": "Nombres",
         "type": "définition",
         "front": "Notation intervalle pour l'ensemble des réels supérieurs ou égaux à $a$ et inférieurs à $b$ (borne $a$ incluse, borne $b$ exclue)",
-        "back": "$[a; b[ = \\{x \\in \\mathbb{R} \\mid a \\leq x < b\\}$",
+        "back": "$[a; b[ = \\{x \\in \\mathbb{R} \\mid a \\leqslant x < b\\}$",
         "explanation": "Tous les réels entre $a$ et $b$, borne $a$ **incluse**, borne $b$ **exclue**."
     },
     {
@@ -76,7 +76,7 @@
         "theme": "Nombres",
         "type": "définition",
         "front": "Notation intervalle pour l'ensemble des réels compris entre $a$ (exclu) et $b$ (inclus)",
-        "back": "$]a; b] = \\{x \\in \\mathbb{R} \\mid a < x \\leq b\\}$",
+        "back": "$]a; b] = \\{x \\in \\mathbb{R} \\mid a < x \\leqslant b\\}$",
         "explanation": "Tous les réels entre $a$ et $b$, borne $a$ **exclue**, borne $b$ **incluse**."
     },
     {
@@ -92,7 +92,7 @@
         "theme": "Nombres",
         "type": "définition",
         "front": "Notation intervalle pour l'ensemble des réels inférieurs ou égaux à $b$",
-        "back": "$]-\\infty; b] = \\{x \\in \\mathbb{R} \\mid x \\leq b\\}$",
+        "back": "$]-\\infty; b] = \\{x \\in \\mathbb{R} \\mid x \\leqslant b\\}$",
         "explanation": "Tous les réels inférieurs ou égaux à $b$. L'infini est toujours avec un crochet ouvert."
     },
     {
@@ -142,6 +142,14 @@
         "front": "Multiplication de fractions",
         "back": "$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$",
         "explanation": "On multiplie les numérateurs entre eux et les dénominateurs entre eux."
+    },
+    {
+        "level": "2de",
+        "theme": "Calcul littéral",
+        "type": "méthode",
+        "front": "Multiplier un nombre par une fraction",
+        "back": "$k \\times \\frac{a}{b} = \\frac{k \\times a}{b}$",
+        "explanation": "Pour multiplier un nombre par une fraction, on multiplie ce nombre par le numérateur et on conserve le dénominateur."
     },
     {
         "level": "2de",
@@ -371,9 +379,25 @@
         "level": "2de",
         "theme": "Équations-Inéquations",
         "type": "méthode",
-        "front": "Résoudre $x^2 = a$ avec $a > 0$",
-        "back": "$x = \\sqrt{a}$ ou $x = -\\sqrt{a}$\n\nSouvent noté: $x = \\pm\\sqrt{a}$",
+        "front": "Résoudre $x^2 = a$",
+        "back": "Si $a>0$ : $S=\\{\\sqrt{a}; -\\sqrt{a}\\}$\n\nSi $a=0$ : $S=\\{0\\}$\n\nSi $a<0$ : $S=\\emptyset$",
         "explanation": "Il y a toujours deux solutions opposées."
+    },
+    {
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "type": "méthode",
+        "front": "Résoudre $x^2 < a$ ou $x^2 \\leqslant a$",
+        "back": "Si $a>0$ : $x^2 < a \\Leftrightarrow x \\in ]-\\sqrt{a}; \\sqrt{a}[$\n\nSi $a>0$ : $x^2 \\leqslant a \\Leftrightarrow x \\in [-\\sqrt{a}; \\sqrt{a}]$\n\nSi $a \\leqslant 0$ : $S = \\emptyset$",
+        "explanation": "Un carré ne peut pas être inférieur ou égal à un nombre négatif. Quand $a > 0$, les solutions sont les valeurs entre $-\\sqrt{a}$ et $\\sqrt{a}$."
+    },
+    {
+        "level": "2de",
+        "theme": "Équations-Inéquations",
+        "type": "méthode",
+        "front": "Résoudre $x^2 > a$ ou $x^2 \\geqslant a$",
+        "back": "Si $a>0$ : $x^2 > a \\Leftrightarrow x \\in ]-\\infty; -\\sqrt{a}[ \\cup ]\\sqrt{a}; +\\infty[$\n\nSi $a>0$ : $x^2 \\geqslant a \\Leftrightarrow x \\in ]-\\infty; -\\sqrt{a}] \\cup [\\sqrt{a}; +\\infty[$\n\nSi $a<0$ : $S = \\mathbb{R}$\n\nSi $a=0$ : $x^2>0 \\Leftrightarrow x\\in\\mathbb{R}^*$ et $x^2 \\geqslant 0 \\Leftrightarrow x\\in\\mathbb{R}$",
+        "explanation": "Quand $a > 0$, les solutions sont en dehors de l'intervalle $[-\\sqrt{a}; \\sqrt{a}]$. Si $a < 0$, tout carré étant positif, tous les réels sont solutions."
     },
     {
         "level": "2de",
