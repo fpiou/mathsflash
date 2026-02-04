@@ -1954,7 +1954,7 @@
         "answers": [
             { "text": "$y = -2x + 7$", "correct": true },
             { "text": "$y = 2x + 1$", "correct": false },
-            { "text": "$y = -2x + 1$", "correct": false },
+            { "text": "$y = x - 2$", "correct": false },
             { "text": "$y = \\frac{1}{2}x + 1$", "correct": false }
         ],
         "explanation": "Une droite parallèle doit avoir le même coefficient directeur ($-2$) mais une ordonnée à l'origine différente. Seule $y = -2x + 7$ convient."
