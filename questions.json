@@ -4604,7 +4604,7 @@
         "answers": [
             { "text": "$f(1) < f(2)$", "correct": true },
             { "text": "$f(2) < f(3)$", "correct": false },
-            { "text": "$f(4) < f(3)$", "correct": false },
+            { "text": "$f(3) < f(4)$", "correct": false },
             { "text": "$f(-2) < f(-3)$", "correct": false }
         ],
         "explanation": "$f$ est croissante sur $[-3; 2]$ donc $1 < 2$ implique $f(1) < f(2)$"
@@ -4655,7 +4655,7 @@
         "competence": "Utiliser le sens de variation d'une fonction",
         "answers": [
             { "text": "$f(-1) < f(2)$", "correct": true },
-            { "text": "$f(-2) < f(-3)$", "correct": false },
+            { "text": "$f(-3) < f(-2)$", "correct": false },
             { "text": "$f(1) < f(0)$", "correct": false },
             { "text": "$f(-1) > f(0)$", "correct": false }
         ],
