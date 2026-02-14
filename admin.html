@@ -22,6 +22,74 @@
             </div>
         </header>
 
+        <!-- Bac à sable -->
+        <div class="sandbox-container">
+            <div class="sandbox-header">
+                <h2>🧪 Bac à sable - Tester des questions JSON</h2>
+                <button id="toggle-sandbox" class="btn btn-secondary">Afficher / Masquer</button>
+            </div>
+            
+            <div id="sandbox-content" class="sandbox-content" style="display: none;">
+                <!-- Éditeur JSON -->
+                <div class="sandbox-json-editor">
+                    <h3>Coller le code JSON des questions</h3>
+                    <p class="instructions">
+                        Copiez-collez ici une ou plusieurs questions au format JSON depuis questions.json. 
+                        Pas besoin d'ajouter les crochets [ ], le système les ajoute automatiquement !
+                    </p>
+                    
+                    <div class="form-group">
+                        <textarea id="sandbox-json-input" rows="20" placeholder='{
+    "question": "Quelle est la dérivée de la fonction suivante ?",
+    "formula": "f(x) = x^2 + 3x + 2",
+    "level": "1reS",
+    "theme": "Dérivation",
+    "competence": "Calculer la dérivée d\'un polynôme",
+    "answers": [
+        { "formula": "f\'(x) = 2x + 3", "correct": true },
+        { "formula": "f\'(x) = x + 3", "correct": false }
+    ],
+    "explanation": "La dérivée de $x^2$ est $2x$..."
+},
+{
+    "question": "Une autre question...",
+    "level": "2de",
+    ...
+}'></textarea>
+                    </div>
+
+                    <div class="sandbox-actions">
+                        <button id="parse-json" class="btn btn-primary">✓ Valider et afficher les questions</button>
+                        <button id="clear-sandbox" class="btn btn-secondary">🗑️ Effacer</button>
+                    </div>
+                    
+                    <div id="json-error" class="json-error" style="display: none;"></div>
+                </div>
+
+                <!-- Affichage des questions -->
+                <div id="sandbox-questions" class="sandbox-questions" style="display: none;">
+                    <h3>Questions chargées (<span id="sandbox-count">0</span>)</h3>
+                    <div class="sandbox-nav">
+                        <button id="prev-sandbox-question" class="btn btn-secondary">← Précédent</button>
+                        <span id="sandbox-position">Question 1 / 1</span>
+                        <button id="next-sandbox-question" class="btn btn-secondary">Suivant →</button>
+                    </div>
+                    
+                    <!-- Prévisualisation -->
+                    <div id="sandbox-preview" class="sandbox-preview">
+                        <div id="sandbox-preview-content"></div>
+                    </div>
+
+                    <!-- Mode test -->
+                    <div id="sandbox-test" class="sandbox-test">
+                        <h4>Mode Test</h4>
+                        <div id="sandbox-test-content"></div>
+                        <div id="sandbox-test-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Statistiques globales -->
         <div class="stats-container">
             <h2>Statistiques globales</h2>

@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadQuestions();
     initializeInterface();
     setupEventListeners();
+    initializeSandbox();
 });
 
 // Charger les questions depuis le fichier JSON
@@ -670,4 +671,328 @@ function drawGraph(canvas, graphData) {
             }
         }
     });
+}
+
+// ==============================
+// BAC À SABLE
+// ==============================
+
+let sandboxQuestions = [];
+let currentSandboxIndex = 0;
+
+function initializeSandbox() {
+    // Toggle affichage du bac à sable
+    document.getElementById('toggle-sandbox').addEventListener('click', () => {
+        const content = document.getElementById('sandbox-content');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    });
+
+    // Boutons d'action
+    document.getElementById('parse-json').addEventListener('click', parseAndDisplayQuestions);
+    document.getElementById('clear-sandbox').addEventListener('click', clearSandbox);
+    
+    // Navigation
+    document.getElementById('prev-sandbox-question').addEventListener('click', () => navigateSandbox(-1));
+    document.getElementById('next-sandbox-question').addEventListener('click', () => navigateSandbox(1));
+}
+
+function parseAndDisplayQuestions() {
+    let jsonInput = document.getElementById('sandbox-json-input').value.trim();
+    const errorDiv = document.getElementById('json-error');
+    const questionsDiv = document.getElementById('sandbox-questions');
+    
+    // Masquer les erreurs précédentes
+    errorDiv.style.display = 'none';
+    errorDiv.innerHTML = '';
+    
+    if (!jsonInput) {
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML = '<strong>Erreur:</strong> Veuillez coller du code JSON.';
+        return;
+    }
+    
+    try {
+        // Si le JSON commence par { et ne commence pas par [, on ajoute les crochets automatiquement
+        if (jsonInput.trim().startsWith('{') && !jsonInput.trim().startsWith('[')) {
+            // Enlever la virgule finale si elle existe (cas où on copie plusieurs objets)
+            jsonInput = jsonInput.trim();
+            if (jsonInput.endsWith(',')) {
+                jsonInput = jsonInput.slice(0, -1);
+            }
+            // Entourer de crochets
+            jsonInput = '[' + jsonInput + ']';
+        }
+        
+        // Parser le JSON
+        let parsed = JSON.parse(jsonInput);
+        
+        // Si c'est un objet unique, le mettre dans un tableau
+        if (!Array.isArray(parsed)) {
+            parsed = [parsed];
+        }
+        
+        // Valider que ce sont bien des questions
+        if (parsed.length === 0) {
+            throw new Error('Aucune question trouvée dans le JSON');
+        }
+        
+        // Valider chaque question
+        parsed.forEach((q, index) => {
+            if (!q.question) throw new Error(`Question ${index + 1}: champ "question" manquant`);
+            if (!q.level) throw new Error(`Question ${index + 1}: champ "level" manquant`);
+            if (!q.theme) throw new Error(`Question ${index + 1}: champ "theme" manquant`);
+            if (!q.competence) throw new Error(`Question ${index + 1}: champ "competence" manquant`);
+            if (!q.answers || !Array.isArray(q.answers)) throw new Error(`Question ${index + 1}: champ "answers" manquant ou invalide`);
+            if (q.answers.length < 2) throw new Error(`Question ${index + 1}: au moins 2 réponses requises`);
+            if (!q.answers.some(a => a.correct)) throw new Error(`Question ${index + 1}: au moins une réponse correcte requise`);
+        });
+        
+        // Tout est OK, stocker les questions
+        sandboxQuestions = parsed;
+        currentSandboxIndex = 0;
+        
+        // Afficher la section des questions
+        questionsDiv.style.display = 'block';
+        document.getElementById('sandbox-count').textContent = sandboxQuestions.length;
+        
+        // Afficher la première question
+        displaySandboxQuestion();
+        
+        // Faire défiler jusqu'aux questions
+        questionsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+    } catch (error) {
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML = `<strong>Erreur de parsing JSON:</strong><br>${escapeHtml(error.message)}`;
+        console.error('Erreur JSON:', error);
+    }
+}
+
+function navigateSandbox(direction) {
+    const newIndex = currentSandboxIndex + direction;
+    
+    if (newIndex < 0 || newIndex >= sandboxQuestions.length) {
+        return;
+    }
+    
+    currentSandboxIndex = newIndex;
+    displaySandboxQuestion();
+}
+
+function displaySandboxQuestion() {
+    if (sandboxQuestions.length === 0) return;
+    
+    const question = sandboxQuestions[currentSandboxIndex];
+    
+    // Mettre à jour la position
+    document.getElementById('sandbox-position').textContent = 
+        `Question ${currentSandboxIndex + 1} / ${sandboxQuestions.length}`;
+    
+    // Activer/désactiver les boutons de navigation
+    document.getElementById('prev-sandbox-question').disabled = currentSandboxIndex === 0;
+    document.getElementById('next-sandbox-question').disabled = currentSandboxIndex === sandboxQuestions.length - 1;
+    
+    // Afficher la prévisualisation
+    displaySandboxPreview(question);
+    
+    // Afficher le mode test
+    displaySandboxTest(question);
+}
+
+function displaySandboxPreview(question) {
+    const contentDiv = document.getElementById('sandbox-preview-content');
+    
+    contentDiv.innerHTML = `
+        <div class="question-card">
+            <div class="question-header">
+                <div class="question-badges">
+                    <span class="badge badge-level">${escapeHtml(levelNames[question.level] || question.level)}</span>
+                    <span class="badge badge-theme">${escapeHtml(question.theme)}</span>
+                    <span class="badge badge-competence">${escapeHtml(question.competence)}</span>
+                </div>
+            </div>
+            <div class="question-text">
+                ${escapeHtml(question.question)}
+                ${question.formula ? `<div class="question-formula">$${question.formula}$</div>` : ''}
+                ${question.graphFunction ? `<div class="graph-container"><canvas id="sandbox-preview-graph" width="400" height="200"></canvas></div>` : ''}
+            </div>
+            <h4>Choix de réponses:</h4>
+            <ul class="choices">
+                ${question.answers.map((answer, i) => `
+                    <li class="${answer.correct ? 'correct' : ''}">
+                        ${answer.text ? escapeHtml(answer.text) : ''}
+                        ${answer.formula ? `$${answer.formula}$` : ''}
+                        ${answer.correct ? ' ✓ Bonne réponse' : ''}
+                        ${answer.graphFunction ? `<div class="answer-graph"><canvas id="sandbox-preview-answer-${i}" width="300" height="150"></canvas></div>` : ''}
+                    </li>
+                `).join('')}
+            </ul>
+            ${question.explanation ? `
+                <div class="explanation">
+                    <h4>Explication:</h4>
+                    <p>${question.explanation}</p>
+                </div>
+            ` : ''}
+        </div>
+    `;
+    
+    renderKaTeX();
+    
+    // Rendre les graphiques si présents
+    if (question.graphFunction) {
+        const canvas = document.getElementById('sandbox-preview-graph');
+        if (canvas) {
+            const graphData = prepareGraphData(question.graphFunction, question.graphParams);
+            drawGraph(canvas, graphData);
+        }
+    }
+    
+    question.answers.forEach((answer, i) => {
+        if (answer.graphFunction) {
+            const canvas = document.getElementById(`sandbox-preview-answer-${i}`);
+            if (canvas) {
+                const graphData = prepareGraphData(answer.graphFunction, answer.graphParams);
+                drawGraph(canvas, graphData);
+            }
+        }
+    });
+}
+
+function displaySandboxTest(question) {
+    const contentDiv = document.getElementById('sandbox-test-content');
+    const resultDiv = document.getElementById('sandbox-test-result');
+    
+    // Mélanger les réponses pour le test
+    const shuffledAnswers = [...question.answers].sort(() => Math.random() - 0.5);
+    
+    contentDiv.innerHTML = `
+        <div class="test-question-card">
+            <div class="question-badges" style="margin-bottom: 15px;">
+                <span class="badge badge-level">${escapeHtml(levelNames[question.level] || question.level)}</span>
+                <span class="badge badge-theme">${escapeHtml(question.theme)}</span>
+                <span class="badge badge-competence">${escapeHtml(question.competence)}</span>
+            </div>
+            <div class="question-text" style="margin-bottom: 20px;">
+                <strong>${escapeHtml(question.question)}</strong>
+                ${question.formula ? `<div class="question-formula">$${question.formula}$</div>` : ''}
+                ${question.graphFunction ? `<div class="graph-container"><canvas id="sandbox-test-graph" width="400" height="200"></canvas></div>` : ''}
+            </div>
+            <div class="test-answers">
+                ${shuffledAnswers.map((answer, index) => `
+                    <div class="test-answer" data-index="${index}" data-correct="${answer.correct}">
+                        ${answer.text ? escapeHtml(answer.text) : ''}
+                        ${answer.formula ? `<span class="answer-formula-inline">$${answer.formula}$</span>` : ''}
+                        ${answer.graphFunction ? `<div class="answer-graph"><canvas id="sandbox-test-answer-${index}" width="300" height="150"></canvas></div>` : ''}
+                    </div>
+                `).join('')}
+            </div>
+            <button id="submit-sandbox-test" class="btn btn-primary" style="margin-top: 20px;">Valider ma réponse</button>
+            <button id="reset-sandbox-test" class="btn btn-secondary" style="margin-top: 20px;">Réinitialiser</button>
+        </div>
+    `;
+    
+    resultDiv.style.display = 'none';
+    resultDiv.className = '';
+    resultDiv.innerHTML = '';
+    
+    renderKaTeX();
+    
+    // Rendre les graphiques si présents
+    if (question.graphFunction) {
+        const canvas = document.getElementById('sandbox-test-graph');
+        if (canvas) {
+            const graphData = prepareGraphData(question.graphFunction, question.graphParams);
+            drawGraph(canvas, graphData);
+        }
+    }
+    
+    shuffledAnswers.forEach((answer, i) => {
+        if (answer.graphFunction) {
+            const canvas = document.getElementById(`sandbox-test-answer-${i}`);
+            if (canvas) {
+                const graphData = prepareGraphData(answer.graphFunction, answer.graphParams);
+                drawGraph(canvas, graphData);
+            }
+        }
+    });
+    
+    // Gérer la sélection des réponses
+    const answerDivs = contentDiv.querySelectorAll('.test-answer');
+    answerDivs.forEach(div => {
+        div.addEventListener('click', function() {
+            if (!this.classList.contains('disabled')) {
+                answerDivs.forEach(d => d.classList.remove('selected'));
+                this.classList.add('selected');
+            }
+        });
+    });
+    
+    // Gérer la soumission
+    document.getElementById('submit-sandbox-test').addEventListener('click', () => {
+        const selectedAnswer = contentDiv.querySelector('.test-answer.selected');
+        if (!selectedAnswer) {
+            alert('Veuillez sélectionner une réponse');
+            return;
+        }
+        
+        const isCorrect = selectedAnswer.dataset.correct === 'true';
+        
+        // Désactiver toutes les réponses et afficher les corrections
+        answerDivs.forEach(div => {
+            div.classList.add('disabled');
+            if (div.dataset.correct === 'true') {
+                div.classList.add('correct');
+            } else if (div.classList.contains('selected')) {
+                div.classList.add('incorrect');
+            }
+        });
+        
+        // Afficher le résultat
+        resultDiv.style.display = 'block';
+        if (isCorrect) {
+            resultDiv.className = 'success show';
+            resultDiv.innerHTML = `
+                <strong>✓ Correct !</strong>
+                ${question.explanation ? `<p style="margin-top: 10px;">${question.explanation}</p>` : ''}
+            `;
+        } else {
+            resultDiv.className = 'error show';
+            resultDiv.innerHTML = `
+                <strong>✗ Incorrect</strong>
+                ${question.explanation ? `<p style="margin-top: 10px;">${question.explanation}</p>` : ''}
+            `;
+        }
+        
+        renderKaTeX();
+        
+        // Désactiver le bouton de validation
+        document.getElementById('submit-sandbox-test').disabled = true;
+        document.getElementById('submit-sandbox-test').style.opacity = '0.5';
+    });
+    
+    // Gérer la réinitialisation
+    document.getElementById('reset-sandbox-test').addEventListener('click', () => {
+        displaySandboxTest(question);
+    });
+}
+
+function clearSandbox() {
+    if (!confirm('Êtes-vous sûr de vouloir effacer le bac à sable ?')) {
+        return;
+    }
+    
+    // Réinitialiser le champ JSON
+    document.getElementById('sandbox-json-input').value = '';
+    
+    // Masquer les sections
+    document.getElementById('json-error').style.display = 'none';
+    document.getElementById('sandbox-questions').style.display = 'none';
+    
+    // Réinitialiser les données
+    sandboxQuestions = [];
+    currentSandboxIndex = 0;
 }
