@@ -2,122 +2,26 @@
     {
         "level": "2de",
         "theme": "Nombres",
-        "type": "définition",
-        "front": "Ensemble des entiers naturels",
-        "back": "$\\mathbb{N} = \\{0, 1, 2, 3, 4, ...\\}$",
-        "explanation": "Les entiers naturels sont les nombres entiers positifs ou nuls. On commence à 0."
+        "type": "formule",
+        "front": "Les ensembles de nombres par ordre d'inclusion",
+        "back": "Entiers naturels : $\\mathbb{N}=\\{0, 1, 2, 3, ...\\}$\nEntiers relatifs : $\\mathbb{Z}=\\{..., -2, -1, 0, 1, 2, ...\\}$\nDécimaux : $\\mathbb{D}=\\{\\frac{a}{10^n} \\mid a \\in \\mathbb{Z}, n \\in \\mathbb{Z}\\}$\nRationnels : $\\mathbb{Q}=\\{\\frac{a}{b} \\mid a \\in \\mathbb{Z}, b \\in \\mathbb{N}^*\\}$\nRéels : $\\mathbb{R}=\\{\\text{tous les nombres dont les irrationnels ($\\sqrt{2}$, $\\pi$ \\ldots)}\\}$",
+        "explanation": "Chaque ensemble contient le précédent. Les réels comprennent aussi les irrationnels comme $\\sqrt{2}$ et $\\pi$ qui ne sont pas rationnels."
     },
     {
         "level": "2de",
         "theme": "Nombres",
-        "type": "définition",
-        "front": "Ensemble des entiers relatifs",
-        "back": "$\\mathbb{Z} = \\{..., -3, -2, -1, 0, 1, 2, 3, ...\\}$",
-        "explanation": "Les entiers relatifs comprennent les entiers positifs, négatifs et zéro. $\\mathbb{N} \\subset \\mathbb{Z}$"
+        "type": "formule",
+        "front": "Quels sont les intervalles bornés ?",
+        "back": "$[a; b]=\\{x \\in \\mathbb{R} \\mid a \\leqslant x \\leqslant b\\}$\n$]a; b[=\\{x \\in \\mathbb{R} \\mid a < x < b\\}$\n$[a; b[=\\{x \\in \\mathbb{R} \\mid a \\leqslant x < b\\}$\n$]a; b]=\\{x \\in \\mathbb{R} \\mid a < x \\leqslant b\\}$",
+        "explanation": "Un intervalle est **borné** s'il a deux extrémités finies. Les crochets fermés **[** ou **]** indiquent que la borne est **incluse**, les crochets ouverts **]** ou **[** indiquent qu'elle est **exclue**."
     },
     {
         "level": "2de",
         "theme": "Nombres",
-        "type": "définition",
-        "front": "Ensemble des nombres décimaux",
-        "back": "Nombres qui ont une écriture décimale finie",
-        "explanation": "Exemples : $3{,}5$ ; $-2{,}73$ ; $0{,}12879$. On a $\\mathbb{Z} \\subset \\mathbb{D}$"
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Ensemble des nombres rationnels",
-        "back": "$\\mathbb{Q} = \\left\\{\\frac{a}{b} \\mid a \\in \\mathbb{Z}, b \\in \\mathbb{Z}^*\\right\\}$",
-        "explanation": "Les rationnels sont les nombres qui s'écrivent comme quotient de deux entiers. $\\mathbb{D} \\subset \\mathbb{Q}$"
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Ensemble des nombres réels",
-        "back": "Noté $\\mathbb{R}$. Tous les nombres de la droite numérique",
-        "explanation": "Les réels comprennent les rationnels et les irrationnels (comme $\\sqrt{2}$, $\\pi$). $\\mathbb{Q} \\subset \\mathbb{R}$"
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "méthode",
-        "front": "Inclusions des ensembles de nombres",
-        "back": "$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{D} \\subset \\mathbb{Q} \\subset \\mathbb{R}$",
-        "explanation": "Chaque ensemble contient le précédent. Tout entier naturel est relatif, tout relatif est décimal, etc."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels compris entre $a$ et $b$ (bornes incluses)",
-        "back": "$[a; b] = \\{x \\in \\mathbb{R} \\mid a \\leqslant x \\leqslant b\\}$",
-        "explanation": "Tous les réels entre $a$ et $b$, bornes **incluses**. Les crochets fermés indiquent l'inclusion."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels compris entre $a$ et $b$ (bornes exclues)",
-        "back": "$]a; b[ = \\{x \\in \\mathbb{R} \\mid a < x < b\\}$",
-        "explanation": "Tous les réels entre $a$ et $b$, bornes **exclues**. Les crochets ouverts indiquent l'exclusion."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels supérieurs ou égaux à $a$ et inférieurs à $b$ (borne $a$ incluse, borne $b$ exclue)",
-        "back": "$[a; b[ = \\{x \\in \\mathbb{R} \\mid a \\leqslant x < b\\}$",
-        "explanation": "Tous les réels entre $a$ et $b$, borne $a$ **incluse**, borne $b$ **exclue**."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels compris entre $a$ (exclu) et $b$ (inclus)",
-        "back": "$]a; b] = \\{x \\in \\mathbb{R} \\mid a < x \\leqslant b\\}$",
-        "explanation": "Tous les réels entre $a$ et $b$, borne $a$ **exclue**, borne $b$ **incluse**."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels supérieurs ou égaux à $a$",
-        "back": "$[a; +\\infty[ = \\{x \\in \\mathbb{R} \\mid x \\geq a\\}$",
-        "explanation": "Tous les réels supérieurs ou égaux à $a$. L'infini est toujours avec un crochet ouvert."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels inférieurs ou égaux à $b$",
-        "back": "$]-\\infty; b] = \\{x \\in \\mathbb{R} \\mid x \\leqslant b\\}$",
-        "explanation": "Tous les réels inférieurs ou égaux à $b$. L'infini est toujours avec un crochet ouvert."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels supérieurs ou égaux à $a$",
-        "back": "$[a; +\\infty[ = \\{x \\in \\mathbb{R} \\mid x \\geqslant a\\}$",
-        "explanation": "Tous les réels supérieurs ou égaux à $a$. L'infini est toujours avec un crochet ouvert."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels inférieurs à $b$",
-        "back": "$]-\\infty; b[ = \\{x \\in \\mathbb{R} \\mid x < b\\}$",
-        "explanation": "Tous les réels inférieurs à $b$. L'infini est toujours avec un crochet ouvert."
-    },
-    {
-        "level": "2de",
-        "theme": "Nombres",
-        "type": "définition",
-        "front": "Notation intervalle pour l'ensemble des réels supérieurs à $a$",
-        "back": "$]a; +\\infty[ = \\{x \\in \\mathbb{R} \\mid x > a\\}$",
-        "explanation": "Tous les réels supérieurs à $a$. L'infini est toujours avec un crochet ouvert."
+        "type": "formule",
+        "front": "Quels sont les intervalles non bornés ?",
+        "back": "$[a; +\\infty[=\\{x \\in \\mathbb{R} \\mid x \\geqslant a\\}$\n$]a; +\\infty[=\\{x \\in \\mathbb{R} \\mid x > a\\}$\n$]-\\infty; b]=\\{x \\in \\mathbb{R} \\mid x \\leqslant b\\}$\n$]-\\infty; b[=\\{x \\in \\mathbb{R} \\mid x < b\\}$\n$]-\\infty; +\\infty[=\\mathbb{R}$",
+        "explanation": "Un intervalle est **non borné** s'il s'étend à l'infini dans au moins une direction. **Important** : l'infini ($\\pm\\infty$) s'écrit toujours avec un crochet **ouvert** car il n'est jamais atteint."
     },
     {
         "level": "2de",
@@ -146,90 +50,18 @@
     {
         "level": "2de",
         "theme": "Calcul littéral",
-        "type": "méthode",
-        "front": "Addition de fractions de même dénominateur",
-        "back": "$\\frac{a}{c} + \\frac{b}{c} = \\frac{a+b}{c}$",
-        "explanation": "On additionne les numérateurs et on garde le dénominateur commun."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "méthode",
-        "front": "Addition de fractions de dénominateurs différents",
-        "back": "Réduire au même dénominateur puis additionner les numérateurs tout en gardant le dénominateur commun.",
-        "explanation": "On peut utiliser le produit des dénominateurs comme dénominateur commun ou chercher un plus petit multiple commun."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "méthode",
-        "front": "Multiplication de fractions",
-        "back": "$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$",
-        "explanation": "On multiplie les numérateurs entre eux et les dénominateurs entre eux."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "méthode",
-        "front": "Multiplier un nombre par une fraction",
-        "back": "$k \\times \\frac{a}{b} = \\frac{k \\times a}{b}$",
-        "explanation": "Pour multiplier un nombre par une fraction, on multiplie ce nombre par le numérateur et on conserve le dénominateur."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "méthode",
-        "front": "Division de fractions",
-        "back": "$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c} = \\frac{ad}{bc}$",
-        "explanation": "Diviser par une fraction revient à multiplier par son inverse."
+        "type": "formule",
+        "front": "Opérations avec les fractions",
+        "back": "• **Addition (même dénominateur)** : $\\frac{a}{c} + \\frac{b}{c} = \\frac{a+b}{c}$\n• **Addition (dénominateurs différents)** : réduire au même dénominateur\n• **Multiplication** : $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$\n• **Nombre × fraction** : $k \\times \\frac{a}{b} = \\frac{k \\times a}{b}$\n• **Division** : $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c} = \\frac{ad}{bc}$",
+        "explanation": "Pour additionner : même dénominateur requis. Pour multiplier : numérateurs × numérateurs, dénominateurs × dénominateurs. Pour diviser : multiplier par l'inverse."
     },
     {
         "level": "2de",
         "theme": "Calcul littéral",
         "type": "formule",
-        "front": "Produit de puissances de même base",
-        "back": "$a^m \\times a^n = a^{m+n}$",
-        "explanation": "On additionne les exposants quand on multiplie des puissances de même base."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "Quotient de puissances de même base",
-        "back": "$\\frac{a^m}{a^n} = a^{m-n}$",
-        "explanation": "On soustrait les exposants quand on divise des puissances de même base."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "Puissance de puissance",
-        "back": "$(a^m)^n = a^{m \\times n}$",
-        "explanation": "On multiplie les exposants quand on élève une puissance à une autre puissance."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "Puissance d'un produit",
-        "back": "$(ab)^n = a^n \\times b^n$",
-        "explanation": "La puissance d'un produit est le produit des puissances."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "Puissance d'un quotient",
-        "back": "$\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$",
-        "explanation": "La puissance d'un quotient est le quotient des puissances."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "Puissance négative",
-        "back": "$a^{-n} = \\frac{1}{a^n}$",
-        "explanation": "Une puissance négative est l'inverse de la puissance positive correspondante."
+        "front": "Opérations avec les puissances",
+        "back": "• **Produit** : $a^m \\times a^n = a^{m+n}$\n• **Quotient** : $\\frac{a^m}{a^n} = a^{m-n}$\n• **Puissance de puissance** : $(a^m)^n = a^{m \\times n}$\n• **Puissance d'un produit** : $(ab)^n = a^n \\times b^n$\n• **Puissance d'un quotient** : $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$\n• **Puissance négative** : $a^{-n} = \\frac{1}{a^n}$",
+        "explanation": "Règles pour manipuler les puissances : additionner/soustraire les exposants pour produits/quotients de même base, multiplier les exposants pour puissance de puissance, distribuer l'exposant sur produits/quotients."
     },
     {
         "level": "2de",
@@ -347,32 +179,16 @@
         "theme": "Calcul littéral",
         "type": "définition",
         "front": "Définition de la valeur absolue",
-        "back": "$|x| = \\begin{cases} x & \\text{si } x \\geq 0 \\\\ -x & \\text{si } x < 0 \\end{cases}$",
+        "back": "$|x| = \\begin{cases} x & \\text{si } x \\geqslant 0 \\\\ -x & \\text{si } x < 0 \\end{cases}$",
         "explanation": "La valeur absolue d'un nombre est sa distance à zéro. Elle est toujours positive ou nulle."
     },
     {
         "level": "2de",
         "theme": "Calcul littéral",
         "type": "formule",
-        "front": "Identité remarquable: $(a+b)^2$",
-        "back": "$(a+b)^2 = a^2 + 2ab + b^2$",
-        "explanation": "Le carré d'une somme."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "Identité remarquable: $(a-b)^2$",
-        "back": "$(a-b)^2 = a^2 - 2ab + b^2$",
-        "explanation": "Le carré d'une différence."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "Identité remarquable: $(a+b)(a-b)$",
-        "back": "$(a+b)(a-b) = a^2 - b^2$",
-        "explanation": "Différence de deux carrés."
+        "front": "Identités remarquables",
+        "back": "• $(a+b)^2 = a^2 + 2ab + b^2$\n• $(a-b)^2 = a^2 - 2ab + b^2$\n• $(a+b)(a-b) = a^2 - b^2$",
+        "explanation": "Les trois identités remarquables fondamentales : carré d'une somme, carré d'une différence, et différence de deux carrés."
     },
     {
         "level": "2de",
@@ -386,25 +202,9 @@
         "level": "2de",
         "theme": "Calcul littéral",
         "type": "formule",
-        "front": "Simplification de $\\sqrt{a^2}$",
-        "back": "$\\sqrt{a^2} = |a|$",
-        "explanation": "Si $a \\geq 0$, alors $\\sqrt{a^2} = a$; sinon, $\\sqrt{a^2} = -a$."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "$\\sqrt{a\\times b}$ avec $a \\geq 0$ et $b \\geq 0$",
-        "back": "$\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}$",
-        "explanation": "La racine carrée d'un produit est le produit des racines carrées."
-    },
-    {
-        "level": "2de",
-        "theme": "Calcul littéral",
-        "type": "formule",
-        "front": "$\\sqrt{\\dfrac{a}{b}}$ avec $a \\geq 0$ et $b > 0$",
-        "back": "$\\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}$",
-        "explanation": "La racine carrée d'un quotient est le quotient des racines carrées."
+        "front": "Règles de calcul avec la racine carrée",
+        "back": "$(\\sqrt{a})^2= a$ si $a\\geqslant 0$\n$\\sqrt{a^2} = |a|$\n $\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}$ (avec $a, b \\geqslant 0$)\n $\\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}$ (avec $a \\geqslant 0$ et $b > 0$)",
+        "explanation": "La racine carrée d'un carré donne la valeur absolue. La racine d'un produit est le produit des racines. La racine d'un quotient est le quotient des racines."
     },
     {
         "level": "2de",
@@ -506,7 +306,7 @@
         "level": "1reS",
         "theme": "Algèbre",
         "type": "formule",
-        "front": "Formule des racines d'un polynôme du second degré (si $\\Delta \\geq 0$)",
+        "front": "Formule des racines d'un polynôme du second degré (si $\\Delta \\geqslant 0$)",
         "back": "$x_1 = \\frac{-b - \\sqrt{\\Delta}}{2a}$ et $x_2 = \\frac{-b + \\sqrt{\\Delta}}{2a}$",
         "explanation": "Si $\\Delta = 0$, les deux racines sont égales."
     },

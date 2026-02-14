@@ -996,10 +996,18 @@ function showCard(index) {
 function showCardByIndex(index) {
     currentCardIndex = index;
     const card = sessionCards[index];
+    const flashcardElement = document.getElementById('flashcard');
+    
+    // Masquer temporairement la carte pendant le changement
+    flashcardElement.style.opacity = '0';
+    
+    // Réinitialiser immédiatement l'état de retournement sans transition
+    flashcardElement.style.transition = 'none';
+    flashcardElement.classList.remove('flipped');
     isFlipped = false;
-
-    // Réinitialiser la carte
-    document.getElementById('flashcard').classList.remove('flipped');
+    
+    // Forcer un reflow pour appliquer les changements immédiatement
+    void flashcardElement.offsetHeight;
 
     // Mise à jour des compteurs
     document.getElementById('current-card').textContent = index + 1;
@@ -1007,21 +1015,12 @@ function showCardByIndex(index) {
 
     // Nettoyer les anciens rendus KaTeX
     const frontContent = document.getElementById('front-content');
-    const backContent = document.getElementById('back-content');
-    const explanation = document.getElementById('explanation');
     
-    // Remplir les informations de la carte (recto)
+    // ===== REMPLIR UNIQUEMENT LE RECTO D'ABORD =====
     document.getElementById('card-type').textContent = card.type;
     document.getElementById('card-level').textContent = levelNames[card.level] || card.level;
     document.getElementById('card-theme').textContent = card.theme;
     frontContent.innerHTML = `<div>${convertMarkdown(card.front)}</div>`;
-
-    // Remplir les informations de la carte (verso)
-    document.getElementById('card-type-back').textContent = card.type;
-    document.getElementById('card-level-back').textContent = levelNames[card.level] || card.level;
-    document.getElementById('card-theme-back').textContent = card.theme;
-    backContent.innerHTML = `<div>${convertMarkdown(card.back)}</div>`;
-    explanation.innerHTML = card.explanation ? `<strong>💡 Info:</strong> ${convertMarkdown(card.explanation)}` : '';
 
     // Gérer les graphiques du recto
     const frontGraphContainer = document.getElementById('front-graph-container');
@@ -1033,19 +1032,6 @@ function showCardByIndex(index) {
         if (frontChartInstance) {
             frontChartInstance.destroy();
             frontChartInstance = null;
-        }
-    }
-
-    // Gérer les graphiques du verso
-    const backGraphContainer = document.getElementById('back-graph-container');
-    if (card.backGraph) {
-        backGraphContainer.style.display = 'block';
-        drawGraph(card.backGraph, 'back-graph-canvas');
-    } else {
-        backGraphContainer.style.display = 'none';
-        if (backChartInstance) {
-            backChartInstance.destroy();
-            backChartInstance = null;
         }
     }
 
@@ -1066,9 +1052,39 @@ function showCardByIndex(index) {
         document.getElementById('browse-next').disabled = (currentCardIndex === sessionCards.length - 1);
     }
 
-    // Forcer le re-rendu de KaTeX
+    // Forcer le re-rendu de KaTeX pour le recto et réafficher la carte
     requestAnimationFrame(() => {
-        renderKaTeX();
+        // Réactiver les transitions et réafficher la carte
+        setTimeout(() => {
+            flashcardElement.style.transition = '';
+            flashcardElement.style.opacity = '1';
+            
+            // ===== MAINTENANT REMPLIR LE VERSO (APRÈS QUE LE RECTO SOIT VISIBLE) =====
+            const backContent = document.getElementById('back-content');
+            const explanation = document.getElementById('explanation');
+            
+            document.getElementById('card-type-back').textContent = card.type;
+            document.getElementById('card-level-back').textContent = levelNames[card.level] || card.level;
+            document.getElementById('card-theme-back').textContent = card.theme;
+            backContent.innerHTML = `<div>${convertMarkdown(card.back)}</div>`;
+            explanation.innerHTML = card.explanation ? `<strong>💡 Info:</strong> ${convertMarkdown(card.explanation)}` : '';
+
+            // Gérer les graphiques du verso
+            const backGraphContainer = document.getElementById('back-graph-container');
+            if (card.backGraph) {
+                backGraphContainer.style.display = 'block';
+                drawGraph(card.backGraph, 'back-graph-canvas');
+            } else {
+                backGraphContainer.style.display = 'none';
+                if (backChartInstance) {
+                    backChartInstance.destroy();
+                    backChartInstance = null;
+                }
+            }
+            
+            // Rendre KaTeX une seule fois pour tout (recto + verso)
+            renderKaTeX();
+        }, 10);
     });
 }
 
